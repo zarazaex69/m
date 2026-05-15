@@ -2,13 +2,13 @@
 
 ## Executive Summary
 
-**62 vulnerability reports** covering **150+ individual security issues** discovered through static reverse engineering of Max messenger by VK.
+**85 vulnerability reports** covering **200+ individual security issues** discovered through static reverse engineering of Max messenger by VK.
 
 | Severity | Count | Examples |
 |----------|-------|---------|
-| CRITICAL | 24 | 0-click RCE, no E2E, trust-all QUIC, zip-slip, ObjectInputStream RCE, JNI UAF |
-| HIGH | 45 | Session theft, EXIF leak, draft sync, SVG heap overflow, DNS leaks |
-| MEDIUM | 30 | Race conditions, weak crypto, two-account isolation, WebTransport |
+| CRITICAL | 28 | 0-click RCE, UAF in rlottie, Zstd heap overflow, no E2E, trust-all QUIC |
+| HIGH | 55 | Session theft, EXIF leak, draft sync, SVG overflow, FFmpeg CVEs, DNS leaks |
+| MEDIUM | 35 | Race conditions, weak crypto, two-account isolation, WebTransport |
 | LOW | 15 | SQL concat (internal), clipboard (clean), minor info leaks |
 
 **Overall Security Rating: F (Failing)**
@@ -118,8 +118,8 @@ Crafted SVG in message → `ij7.java` regex parse → `nativeRenderSvg()` with `
 
 - **APK**: Max 26.15.3 (versionCode 6695), package ru.oneme.app
 - **Decompiled**: 23,795 Java files, 13 native libraries
-- **Analysis**: 62 vulnerability reports, ~10000 lines of findings
-- **Commits**: 29 detailed git commits
+- **Analysis**: 85 vulnerability reports, ~15000 lines of findings
+- **Commits**: 45 detailed git commits
 - **Tools**: jadx 1.5.5, apktool 2.7.0, radare2 6.1.4, grep/strings
 - **Duration**: ~2 hours of automated analysis
 
