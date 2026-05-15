@@ -1,3 +1,15 @@
+---
+tags: [killswitch, server-control, force-update, sideload, oddity]
+status: confirmed
+sources:
+  - work/jadx_base/sources/defpackage/mec.java
+  - work/jadx_base/sources/defpackage/pb8.java
+  - work/apktool_base/AndroidManifest.xml
+related:
+  - "[[03-pms-server-flags]]"
+  - "[[04-telemetry-endpoints]]"
+---
+
 # Force update: серверный killswitch и обновление APK мимо Google Play
 
 ## Триггер с сервера

@@ -1,3 +1,16 @@
+---
+tags: [contacts, surveillance, sync-adapter, content-observer]
+status: confirmed
+sources:
+  - work/jadx_base/sources/defpackage/a40.java
+  - work/jadx_base/sources/defpackage/ndi.java
+  - findings/raw/pms_keys.txt
+related:
+  - "[[03-pms-server-flags]]"
+  - "[[14-stat-prefs-metrics]]"
+  - "[[10-webapp-jsbridge]]"
+---
+
 # Контакты: ContentObserver на адресной книге, обратная запись через SyncAdapter, не-контакты
 
 ## Чтение

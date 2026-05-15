@@ -1,3 +1,15 @@
+---
+tags: [deeplink, idp, oauth, oidc, intent-surface, government]
+status: confirmed
+sources:
+  - work/apktool_base/AndroidManifest.xml
+  - work/jadx_base/sources/one/me/android/LinkInterceptorActivity.java
+related:
+  - "[[01-mobile-id-cleartext]]"
+  - "[[10-webapp-jsbridge]]"
+  - "[[11-state-bots-and-content-policy]]"
+---
+
 # Deeplink-схема: `:auth` external callback и Identity Provider
 
 ## Регистрация

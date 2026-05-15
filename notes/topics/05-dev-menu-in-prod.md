@@ -1,3 +1,13 @@
+---
+tags: [dev-menu, debug-in-prod, server-switch, oddity]
+status: confirmed
+sources:
+  - work/jadx_base/sources/one/me/devmenu/**
+related:
+  - "[[03-pms-server-flags]]"
+  - "[[04-telemetry-endpoints]]"
+---
+
 # DevMenu в production: переключение API-серверов и фича-флагов из самого приложения
 
 ## Что есть

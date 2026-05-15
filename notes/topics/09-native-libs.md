@@ -1,3 +1,16 @@
+---
+tags: [native-libs, webrtc, ffmpeg, tracer, calls]
+status: confirmed
+sources:
+  - findings/native/**
+  - work/apktool_arm64/lib/arm64-v8a/**
+  - work/jadx_base/sources/ru/ok/tracer/**
+related:
+  - "[[15-on-device-asr-kws-diarization]]"
+  - "[[16-server-pushed-ml-models-in-calls]]"
+  - "[[04-telemetry-endpoints]]"
+---
+
 # Native-библиотеки: что это и что они делают
 
 В `lib/arm64-v8a/` шестнадцать `.so`. Перечень с пояснениями:

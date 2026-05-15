@@ -1,3 +1,14 @@
+---
+tags: [background, foreground-service, persistence, wake]
+status: confirmed
+sources:
+  - work/apktool_base/AndroidManifest.xml
+  - work/jadx_base/sources/one/me/background/wake/**
+related:
+  - "[[03-pms-server-flags]]"
+  - "[[04-telemetry-endpoints]]"
+---
+
 # «Работа в фоне»: foreground service, wake на boot, упаковка как «обход перебоев интернета»
 
 ## UX-обёртка

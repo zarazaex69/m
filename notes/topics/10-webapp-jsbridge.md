@@ -1,3 +1,19 @@
+---
+tags: [webapp, js-bridge, mini-apps, mobile-id, anti-vpn]
+status: confirmed
+sources:
+  - work/jadx_base/sources/defpackage/zij.java
+  - work/jadx_base/sources/defpackage/snk.java
+  - work/jadx_base/sources/defpackage/vnk.java
+  - work/jadx_base/sources/defpackage/i6e.java
+  - work/jadx_base/sources/defpackage/upk.java
+related:
+  - "[[01-mobile-id-cleartext]]"
+  - "[[02-vpn-warning]]"
+  - "[[07-nfc-hce-webapp]]"
+  - "[[13-deeplinks-idp]]"
+---
+
 # WebApp / mini-apps: JS-bridge может вернуть MSISDN абонента через Mobile ID
 
 ## Сериализуемый запрос/ответ

@@ -1,3 +1,16 @@
+---
+tags: [telemetry, network, endpoints, third-party, surveillance]
+status: confirmed
+sources:
+  - findings/raw/urls_quoted_jadx.txt
+  - findings/raw/hosts_quoted_jadx.txt
+  - work/apktool_base/AndroidManifest.xml
+related:
+  - "[[01-mobile-id-cleartext]]"
+  - "[[09-native-libs]]"
+  - "[[12-force-update-killswitch]]"
+---
+
 # Куда MAX шлёт телеметрию
 
 ## Внешние трекеры

@@ -1,3 +1,14 @@
+---
+tags: [nfc, webapp, hce, oddity]
+status: confirmed
+sources:
+  - work/apktool_base/AndroidManifest.xml
+  - work/jadx_base/sources/one/me/webapp/util/WebAppNfcService.java
+  - work/jadx_base/sources/defpackage/jxb.java
+related:
+  - "[[10-webapp-jsbridge]]"
+---
+
 # NFC HCE для мини-приложений: телефон отвечает APDU тем, что положит мини-апа
 
 ## Что в манифесте

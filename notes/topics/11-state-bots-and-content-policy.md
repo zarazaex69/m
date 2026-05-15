@@ -1,3 +1,16 @@
+---
+tags: [user-settings, government, gost, family-protection, digital-id, server-control]
+status: confirmed
+sources:
+  - work/jadx_base/sources/defpackage/sgj.java
+  - work/jadx_base/sources/defpackage/ma4.java
+  - findings/raw/pms_keys.txt
+related:
+  - "[[03-pms-server-flags]]"
+  - "[[15-on-device-asr-kws-diarization]]"
+  - "[[13-deeplinks-idp]]"
+---
+
 # Серверно-управляемые «системные боты» и пользовательский профиль с гос-фильтрами
 
 ## UserSettings — что приходит с сервера

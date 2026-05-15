@@ -1,3 +1,15 @@
+---
+tags: [auth, cleartext, header-enrichment, surveillance, mobile-id]
+status: confirmed
+sources:
+  - work/apktool_base/res/xml/network_security_config.xml
+  - work/apktool_base/AndroidManifest.xml
+related:
+  - "[[10-webapp-jsbridge]]"
+  - "[[13-deeplinks-idp]]"
+  - "[[04-telemetry-endpoints]]"
+---
+
 # Mobile ID: вход по номеру в чистом HTTP
 
 ## Где это лежит

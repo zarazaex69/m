@@ -1,3 +1,13 @@
+---
+tags: [telemetry, metrics, prefs, contacts]
+status: confirmed
+sources:
+  - work/jadx_base/sources/defpackage/tvc.java
+related:
+  - "[[06-contacts]]"
+  - "[[04-telemetry-endpoints]]"
+---
+
 # Серверные метрики: что улетает в `stat_prefs`
 
 `defpackage/tvc.java` — отдельный SharedPreferences `"stat_prefs"`, хранилище серверной статистики:

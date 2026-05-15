@@ -1,3 +1,16 @@
+---
+tags: [server-control, killswitch, feature-flags, telemetry]
+status: confirmed
+sources:
+  - work/jadx_base/sources/ru/ok/tamtam/android/prefs/PmsKey.java
+  - findings/raw/pms_keys.txt
+related:
+  - "[[12-force-update-killswitch]]"
+  - "[[02-vpn-warning]]"
+  - "[[04-telemetry-endpoints]]"
+  - "[[16-server-pushed-ml-models-in-calls]]"
+---
+
 # PmsKey: 334 серверно-управляемых параметра поведения
 
 ## Класс

@@ -1,3 +1,16 @@
+---
+tags: [anti-vpn, ux-pressure, server-control, surveillance]
+status: confirmed
+sources:
+  - work/jadx_base/sources/one/me/vpnconnectedwarning/**
+  - findings/raw/pms_keys.txt
+  - work/jadx_base/sources/defpackage/ura.java
+related:
+  - "[[03-pms-server-flags]]"
+  - "[[10-webapp-jsbridge]]"
+  - "[[04-telemetry-endpoints]]"
+---
+
 # «Отключите VPN» — нагибание пользователя в сторону открытой сети
 
 ## Что показывает приложение
