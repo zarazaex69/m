@@ -47,8 +47,26 @@ ob2.m15756l(ob2Var, "BAD_CONNECTION_ALERT", str, "VPN", null, null, null, z, nul
 - Заголовком: `oneme_vpn_connected_title`
 - Описанием: `oneme_vpn_connected_description`
 
+## UI тексты (из strings.xml)
+
+### Снэкбар при звонке
+- Заголовок: "Лучше без VPN" / EN: "Better without VPN"
+- Подпись: "Связь станет стабильнее"
+- Кнопка: "Понятно"
+
+### Bottom Sheet (блокирующий)
+- Заголовок: "Отключите VPN" / EN: "Turn off VPN"
+- Описание: "Чтобы пользоваться MAX" / EN: "To use MAX"
+
+## Связанные классы (обфусцированные имена → реальные)
+- `one.me.sdk.vpn.VpnConnectedWarningDelegate` — делегат предупреждений
+- `one.me.background.wake.HostReachabilityChecker` — фоновая проверка хостов
+- `one.me.android.tasks.HostReachabilityTask` — задача проверки доступности
+
 ## Выводы
-1. VPN детектится через стандартный Android API (NetworkCapabilities)
+1. VPN детектится через стандартный Android API (NetworkCapabilities.hasTransport(4))
 2. Информация о VPN отправляется на сервер как "BAD_CONNECTION_ALERT"
 3. Сервер решает показывать ли предупреждение (через PmsKey флаги)
 4. Даже если UI не показывается — факт VPN всё равно репортится
+5. Есть фоновая задача HostReachabilityChecker которая проверяет доступность хостов
+6. Приложение активно просит пользователя ОТКЛЮЧИТЬ VPN
