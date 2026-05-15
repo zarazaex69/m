@@ -1,12 +1,7 @@
-# APK files (large binaries)
-apk/*.xapk
+work/jadx_base/
+work/apktool_base/
+work/apktool_arm64/
+work/inventory/
+work/*.log
 apk/xapk_contents/
-
-# Decompiled output (can be regenerated)
-decompiled/jadx/
-decompiled/apktool/
-decompiled/native/
-
-# Temp
-*.tmp
-*.swp
+apk/max.xapk
