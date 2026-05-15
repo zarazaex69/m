@@ -1,3 +1,18 @@
+---
+tags: [surveillance, ml, calls, asr, kws, native-libs]
+status: confirmed
+sources:
+  - findings/native/libEnhancementLibShared.exports.txt
+  - findings/native/libEnhancementLibShared.strings.txt
+  - work/jadx_base/sources/defpackage/sgj.java
+  - work/jadx_base/sources/defpackage/ma4.java
+related:
+  - "[[09-native-libs]]"
+  - "[[16-server-pushed-ml-models-in-calls]]"
+  - "[[03-pms-server-flags]]"
+  - "[[11-state-bots-and-content-policy]]"
+---
+
 # На-устройство ASR / Keyword Spotting / Диаризация в `libEnhancementLibShared.so`
 
 В предыдущем разборе (`09-native-libs.md`) `libEnhancementLibShared.so` (5.7 MB) описывалась как «VK-овский DSP для аудио в звонках». При вытаскивании символов через `nm -D` оказалось, что это куда больше, чем DSP.
@@ -138,9 +153,16 @@ vk::enh::dll::closeDll(void*)
 vk::enh::dll::getLastError()
 ```
 
-Это собственная обвязка над `dlopen`/`dlsym`/`dlclose` со своим именованием. То есть библиотека содержит код для **динамической загрузки сторонних .so и резолва символов в них** в рантайме. Кто и когда её вызывает — по строкам не видно (нет ни одного жёсткого литерала имени файла рядом). Это либо механизм опционального GPU/NNAPI делегата (загрузить `libGLES_*` / NNAPI runtime), либо заготовка под подгрузку модели/плагина.
+Это собственная обвязка над `dlopen`/`dlsym`/`dlclose` со своим именованием.
 
-В сочетании с тем, что в коде присутствует `vk::enh::decrypt(std::vector<unsigned char>)` — функция расшифровки байтового массива — нельзя исключать сценарий «качаем зашифрованный .so / модель с сервера, расшифровываем и грузим».
+Скептический разбор:
+
+- В самой `libEnhancementLibShared.so` я **не нашёл xref-ов** на `vk::enh::dll::Dll::open` через `rizin` (`afl ~+vk::enh::dll` показывает только определения функций, без вызовов изнутри). То есть эти функции экспортированы, но не вызываются из самой `.so`.
+- В Java-стороне строки `EnhancementLibShared` или `vk::enh::dll` я тоже не нашёл (`grep -R EnhancementLibShared` пусто).
+- Возможно, эти функции — наследие шаблонного скелета (windows-portable код, в котором `dll::*` на posix маппится в `dlopen`). Возможно, вызываются через C-обёртки в неэкспортированных функциях.
+- Утверждать, что это «механизм подгрузки .so из сети» — нельзя без отдельного подтверждения. Текущий статус: «функции расшифровки и dlopen-обвязки в коде есть, но место их вызова в библиотеке мне не видно». Это не нулевой риск, но и не доказательство.
+
+В сочетании с `vk::enh::decrypt(std::vector<unsigned char>)` (расшифровка байтового массива) — теоретически возможен сценарий «качаем зашифрованный артефакт, расшифровываем и грузим», но прямых доказательств такого сценария **в коде не нашёл**.
 
 ## 10. Encrypted models
 
