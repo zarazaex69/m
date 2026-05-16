@@ -3822,3 +3822,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 471. ok9 LogController
 
 `ap(timestamp, userId, deviceId, type, event, params)`. Retry до 3 раз. `LOG_DISCONNECTION_BLOCKER`. Подробно: `notes/topics/471-log-controller.md`.
+
+---
+
+## Дополнения 472
+
+### 472. ok9.h типы событий
+
+19 типов. Критические: `AUDIO_TRANSCRIPTION.transcription_result`/`PERMISSION.permission_changed_state`/`HOST_REACHABILITY`/`PUSH.InboundCall`/`SETTINGS.MINIAPP_BIOMETRY`. Подробно: `notes/topics/472-log-controller-event-types.md`.

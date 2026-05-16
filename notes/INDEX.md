@@ -579,3 +579,4 @@ status: living
 - [[topics/469-upload-hang-checker]] — l0d OneVideoUploadOperation: upload_hang checker, VIDEO/VIDEO_MESSAGE/AUDIO types #upload-hang #telemetry #surveillance #file-upload #video-upload
 - [[topics/470-km5-telemetry-sender]] — km5 Telemetry Sender: value1..16 + valueStr1..6, ok9.h('DEV', eventType, data), bloom filter dedup #telemetry #km5 #event-sender #surveillance #server-control
 - [[topics/471-log-controller]] — ok9 LogController: ap(timestamp, userId, deviceId, type, event, params), retry 3x, LOG_DISCONNECTION_BLOCKER #log-controller #telemetry #surveillance #event-sender #critical-event
+- [[topics/472-log-controller-event-types]] — ok9.h event types: AUDIO_TRANSCRIPTION/PERMISSION/HOST_REACHABILITY/PUSH.InboundCall/SETTINGS.MINIAPP_BIOMETRY/PRESENCE #log-controller #event-types #telemetry #surveillance #audio-transcription #push #permission #background
