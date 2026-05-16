@@ -732,3 +732,11 @@ KWS активен во время звонков. `android.wordspotter.config` 
 ### 82. MESSAGE_CLICKABLE_ELEMENT_ACTIONS + CHAT_PROFILE_CLICKABLE_ELEMENT_ACTIONS
 
 `clicked_open_link` с `message_id` и `source_id` — сервер знает, на какую ссылку в каком сообщении в каком чате нажал пользователь. `clicked_call` — нажатие на номер телефона в сообщении. `clicked_copy` — копирование текста. `CHAT_PROFILE_CLICKABLE_ELEMENT_ACTIONS` — клики в профиле чата. Подробно: `notes/topics/82-message-clickable-element-onelog.md`.
+
+---
+
+## Дополнения 83
+
+### 83. ok9.f() — geolocation_send_click, search_click, inline_button_click
+
+`geolocation_send_click` — сервер знает каждое нажатие кнопки отправки геолокации. `search_click` — клик на результат поиска. `inline_button_click` — нажатие inline-кнопок ботов. Подробно: `notes/topics/83-ok9f-geolocation-search-inline.md`.
