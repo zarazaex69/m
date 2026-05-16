@@ -1156,3 +1156,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 137. android.rating.limits + android.p2prelay.config
 
 `android.rating.limits` — `RateManagerConfig` с 4 компонентами: `rttRateHintConfig`, `lossHintConfig`, `directCandidateTypeHintConfig`, `serverCandidateTypeHintConfig`. Сервер задаёт пороги RTT/loss для оценки качества. `android.p2prelay.config` — конфиг переключения на P2P relay (условия маршрутизации через серверы VK/OK). Подробно: `notes/topics/137-rating-limits-p2prelay-config.md`.
+
+---
+
+## Дополнения 138
+
+### 138. settings.get API
+
+`GetSettings.METHOD_NAME = "settings.get"` — HTTP API для получения 6 RemoteSettings ключей звонкового SDK одним запросом. `RemoteSettingsShared` кэширует и периодически обновляет. Отдельный канал от WS-протокола и PmsKey. Подробно: `notes/topics/138-settings-get-api.md`.
