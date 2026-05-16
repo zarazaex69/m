@@ -412,3 +412,4 @@ status: living
 - [[topics/302-notif-banners-ws]] — NOTIF_BANNERS WS: showTime/banners/updateTime (all required, server controls banner schedule) #protocol #ws #banners #server-control
 - [[topics/303-update-message-event]] — UpdateMessageEvent: chatId/messageId/reactionsChanged (NOTIF_MSG_REACTIONS_CHANGED/NOTIF_MSG_YOU_REACTED) #protocol #ws #reactions
 - [[topics/304-notif-typing-ws]] — NOTIF_TYPING WS: type(VIDEO_MSG/AUDIO_MSG)/isTyping (server knows if user is recording audio/video) #protocol #ws #notif-typing #surveillance
+- [[topics/305-notif-contact-ws]] — NOTIF_CONTACT WS: ContactUpdateAction(ADD/UPDATE/REMOVE/BLOCK/UNBLOCK) #protocol #ws #notif-contact #block

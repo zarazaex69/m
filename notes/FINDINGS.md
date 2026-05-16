@@ -2488,3 +2488,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 304. NOTIF_TYPING WS
 
 `type`(VIDEO_MSG/AUDIO_MSG)/`isTyping`. Сервер знает, что именно записывает пользователь (текст/аудио/видео). Подробно: `notes/topics/304-notif-typing-ws.md`.
+
+---
+
+## Дополнения 305
+
+### 305. NOTIF_CONTACT WS
+
+`ContactUpdateAction`: ADD/UPDATE/REMOVE/BLOCK/UNBLOCK. Подробно: `notes/topics/305-notif-contact-ws.md`.
