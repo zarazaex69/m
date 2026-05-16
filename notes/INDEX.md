@@ -304,3 +304,4 @@ status: living
 - [[topics/194-start-conversation-delegate]] — StartConversationDelegate.Params: conversationId/calleeIds/chatId/isVideo/internalParams #calls #start-call
 - [[topics/195-conversation-factory]] — ConversationFactory: 6 call types (startCall/createConf/answerCall/joinCall/joinAnonByLink/joinByLink), ConversationBuilder 18+ params #calls #factory
 - [[topics/196-debug-media-dump-manager]] — DebugManager+MediaDumpManager: requestMediaDump(remote audio+video), 6 audio intercept points, enableFullAudioDump in prod #calls #debug #dump #dev-in-prod
+- [[topics/197-ml-features-conversation-feature-manager]] — MLFeaturesManager(KWS+NS delegates+DownloadService) + ConversationFeatureManager(enableFeatureForAll/Roles) #calls #ml #kws #ns #server-control
