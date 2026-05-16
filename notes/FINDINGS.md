@@ -748,3 +748,11 @@ KWS активен во время звонков. `android.wordspotter.config` 
 ### 84. TRANSCRIBE_MEDIA(202) — серверная транскрипция
 
 WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStatus` (byte). Содержимое голосовых/видеосообщений уходит на серверы MAX для транскрипции. Server-gated через `enable-audio-messages-transcription`/`enable-video-messages-transcription` PmsKey + `audio-transcription-locales` whitelist. Подробно: `notes/topics/84-transcribe-media-ws-opcode.md`.
+
+---
+
+## Дополнения 85
+
+### 85. NOTIF_* WS-опкоды — 25 server-to-client push
+
+`NOTIF_CONFIG(134)` — real-time PmsKey update без перезапуска. `NOTIF_LOCATION_REQUEST(148)` — второй канал запроса геолокации (помимо FCM). `NOTIF_DRAFT(152)/NOTIF_DRAFT_DISCARD(153)` — черновики синхронизируются с сервером в реальном времени. `NOTIF_BANNERS(292)` — server-pushed баннеры по WS. `NOTIF_TRANSCRIPTION(293)` — результат транскрипции. Подробно: `notes/topics/85-notif-ws-opcodes.md`.
