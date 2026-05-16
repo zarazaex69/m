@@ -1148,3 +1148,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 136. ev1 WebRTC session config
 
 25+ параметров WebRTC сессии. Ключевые: `emulatedSignalingError` (NONE/SERVICE_UNAVAILABLE/PARTICIPANT_LIMIT_REACHED — **сервер может принудительно завершить звонок**), `emulatedIceCandidateError` (NONE/REMOTE/LOCAL), `simulcastState` (DISABLED/ONLY_SW_VP8/ALL_SUPPORTED_CODEC), `isAudioCaptureLoggingEnabled`, `bitrateDumpGatheringState`. Подробно: `notes/topics/136-ev1-webrtc-session-config.md`.
+
+---
+
+## Дополнения 137
+
+### 137. android.rating.limits + android.p2prelay.config
+
+`android.rating.limits` — `RateManagerConfig` с 4 компонентами: `rttRateHintConfig`, `lossHintConfig`, `directCandidateTypeHintConfig`, `serverCandidateTypeHintConfig`. Сервер задаёт пороги RTT/loss для оценки качества. `android.p2prelay.config` — конфиг переключения на P2P relay (условия маршрутизации через серверы VK/OK). Подробно: `notes/topics/137-rating-limits-p2prelay-config.md`.
