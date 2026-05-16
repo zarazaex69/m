@@ -724,3 +724,11 @@ KWS активен во время звонков. `android.wordspotter.config` 
 ### 81. DANGEROUS_URL_ACTIONS, DANGEROUS_FILE_ACTIONS, REGISTRATION, INFORMER, BANNER
 
 `DANGEROUS_URL_ACTIONS` — сервер знает, когда пользователю показывалось предупреждение об опасной ссылке и перешёл ли он по ней (`go`/`close`). `DANGEROUS_FILE_ACTIONS` — показ предупреждения об опасном файле с `source_id` (chat_id), `download_file`/`not_download_file`. `REGISTRATION` — детальный лог регистрации. `INFORMER` — взаимодействие с informer-баннерами. Подробно: `notes/topics/81-dangerous-actions-registration-onelog.md`.
+
+---
+
+## Дополнения 82
+
+### 82. MESSAGE_CLICKABLE_ELEMENT_ACTIONS + CHAT_PROFILE_CLICKABLE_ELEMENT_ACTIONS
+
+`clicked_open_link` с `message_id` и `source_id` — сервер знает, на какую ссылку в каком сообщении в каком чате нажал пользователь. `clicked_call` — нажатие на номер телефона в сообщении. `clicked_copy` — копирование текста. `CHAT_PROFILE_CLICKABLE_ELEMENT_ACTIONS` — клики в профиле чата. Подробно: `notes/topics/82-message-clickable-element-onelog.md`.
