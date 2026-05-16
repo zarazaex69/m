@@ -3136,3 +3136,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 385. MyTracker детали
 
 10 модулей (RemoteConfig/Antifraud/MiniApps/...). `MyTrackerParams`: age/gender/email/phone/okId/vkId/vkConnectId/icqId. `AntiFraudConfig`: все датчики включены. `installedPackagesProvider`. Huawei HMS Install Referrer. Подробно: `notes/topics/385-mytracker-details.md`.
+
+---
+
+## Дополнения 386
+
+### 386. ShortcutBadger
+
+`applyCount(ctx, n)` — счётчик на иконке. 13 лаунчеров. Стандартная OSS библиотека. Подробно: `notes/topics/386-shortcut-badger.md`.
