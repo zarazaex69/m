@@ -3742,3 +3742,11 @@ SHA-256 fingerprint. `InvalidSslIntegrityException`/`InvalidSslSessionException`
 ### 461. isg LOGIN response
 
 LOGIN ответ → proxy/proxydomains/lang. LOGIN запрос → deviceId/pushDeviceType/buildNumber/timezone. Подробно: `notes/topics/461-login-response-proxy.md`.
+
+---
+
+## Дополнения 462
+
+### 462. NotifConfigLogic
+
+Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → Step5(chats settings). Подробно: `notes/topics/462-notif-config-logic.md`.

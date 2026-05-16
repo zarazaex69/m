@@ -569,3 +569,4 @@ status: living
 - [[topics/459-device-data-yk2]] — yk2: Build.FINGERPRINT + mcc_mnc(getSimOperator()) + tz-offset + sdk-version + net-type/mobile-subtype #sim-operator #mcc-mnc #fingerprint #timezone #network-type #surveillance #telemetry
 - [[topics/460-yag-shared-prefs]] — yag SharedPreferences: 50+ keys, device.id/user.fcmToken/user.okToken/server.timeDelta/app.first.login.time/user.callSession #shared-prefs #user-prefs #device-id #fcm-token #proxy #server-time #surveillance
 - [[topics/461-login-response-proxy]] — isg LOGIN response: proxy/proxydomains from server, LOGIN request: deviceId/pushDeviceType/buildNumber/timezone #proxy #pmskey #login-response #server-control #surveillance
+- [[topics/462-notif-config-logic]] — NotifConfigLogic: Step2(proxy/proxydomains) + Step3(debug-mode/user-debug-report/safeMode) + Step5(chats settings) #proxy #pmskey #notif-config #server-control #surveillance #debug
