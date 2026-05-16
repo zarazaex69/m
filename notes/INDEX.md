@@ -271,3 +271,4 @@ status: living
 - [[topics/162-perf-stat-display-layout]] — report-perf-stat(framesReceived/framesDecoded) + update-display-layout(server knows UI layout: size/fit/screenshare) #calls #signaling #surveillance
 - [[topics/163-conversation-stats]] — ConversationStats: 18+ components (kwsStat/mlDownloadStat/iceCandidatePairChangedStat/serverTopologyRequestedStat) #calls #stats #telemetry
 - [[topics/164-signaling-transport-stat]] — SignalingTransportStat: WS signaling stats (connect/disconnect/ping/pong/errors/timeouts) #calls #signaling #stats
+- [[topics/165-ice-candidate-pair-stat]] — IceCandidatePairChangedStat: server gets local_address/remote_address(real IPs)/SDP/reason on every ICE pair change #calls #ice #surveillance
