@@ -531,3 +531,4 @@ status: living
 - [[topics/421-webapp-request-phone]] — WebAppRequestPhone: response(requestId, phone, hash, authDate), mini-app gets phone number with verification hash #webapp #phone-request #msisdn #jsbridge #surveillance
 - [[topics/422-webapp-screen-capture-qr]] — WebApp ScreenCaptureBehavior(FLAG_SECURE) + CodeReader(QR scan → value) #webapp #screen-capture #qr-code #jsbridge #surveillance
 - [[topics/423-webapp-share-haptic]] — WebApp Share(url/title/text) + Haptic(IMPACT/NOTIFICATION/SELECTION) + CodeReader(requestId/value) #webapp #share #haptic #jsbridge
+- [[topics/424-webapp-nfc-service]] — WebAppNfcService: HostApduService, processCommandApdu(apdu), logs all APDU in hex, mini-app emulates NFC card #webapp #nfc #hce #host-apdu #jsbridge #surveillance

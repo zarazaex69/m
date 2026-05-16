@@ -3438,3 +3438,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 423. WebApp Share + Haptic
 
 `WebAppShare(url, title, text)`. `WebAppHapticFeedback`: IMPACT/NOTIFICATION/SELECTION. Подробно: `notes/topics/423-webapp-share-haptic.md`.
+
+---
+
+## Дополнения 424
+
+### 424. WebAppNfcService
+
+`HostApduService`. `processCommandApdu(apdu)` → данные от мини-приложения. Логирует все APDU в hex. Эмулирует NFC-карту через HCE. Подробно: `notes/topics/424-webapp-nfc-service.md`.
