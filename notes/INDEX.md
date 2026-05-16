@@ -479,3 +479,4 @@ status: living
 - [[topics/369-download-file-from-webapp]] — DownloadFileFromWebAppWorker: fileName/fileUrl ForegroundWorker for mini-app file downloads #webapp #file-download #worker
 - [[topics/370-tamtam-api-exceptions]] — tamtam.api exceptions: NonceException/SessionSendLimitException/UnknownOpcodeException/MaxRetryCountExceededException #protocol #api #exceptions #nonce
 - [[topics/371-media-projection-service]] — MediaProjectionService: startForeground(12) screen capture foreground service in calls #screen-capture #media-projection #foreground-service #calls
+- [[topics/372-notification-service-boot-receiver]] — NotificationTamService: directReply/pushId/eventKey + BootCompletedReceiver: BOOT_COMPLETED → BackgroundWake #notifications #service #direct-reply #push
