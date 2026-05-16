@@ -2704,3 +2704,11 @@ Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezon
 ### 331. MyTrackerUserLifecycle
 
 `trackLoginEvent(userId, null)` + `trackRegistrationEvent(userId, null)` + `trackInviteEvent()`. Подробно: `notes/topics/331-mytracker-user-lifecycle.md`.
+
+---
+
+## Дополнения 332
+
+### 332. MyTracker ActivityLifecycle
+
+`onActivityStarted(timePoint)`/`onActivityStopped(timePoint)`. Основа для подсчёта времени сессии. Подробно: `notes/topics/332-mytracker-activity-lifecycle.md`.

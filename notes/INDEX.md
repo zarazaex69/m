@@ -439,3 +439,4 @@ status: living
 - [[topics/329-mytracker-advertising-ids]] — MyTracker: Google GAID + Huawei OAID + android_id + mac #telemetry #mytracker #advertising-id #gaid #huawei #surveillance
 - [[topics/330-mytracker-device-params]] — MyTracker DeviceParams: Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen + timezone + freeSpace + currentModeType #telemetry #mytracker #device-params #surveillance
 - [[topics/331-mytracker-user-lifecycle]] — MyTrackerUserLifecycle: trackLoginEvent(userId)/trackRegistrationEvent(userId)/trackInviteEvent() #telemetry #mytracker #user-lifecycle #login #registration
+- [[topics/332-mytracker-activity-lifecycle]] — MyTracker ActivityLifecycle: onActivityStarted/Stopped(timePoint) for session tracking #telemetry #mytracker #activity-lifecycle #session
