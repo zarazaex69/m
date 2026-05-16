@@ -469,3 +469,4 @@ status: living
 - [[topics/359-z8f-decoded-strings]] — z8f decoded: IP detection (api.ipify.org/checkip.amazonaws.com/ifconfig.me/ip.mail.ru/yandex.net) + trace-flow.ru #network #ip-detection #obfuscated-strings #surveillance
 - [[topics/360-z8f-decoded-additional]] — z8f decoded additional: DPS files(dps_config.bin/dps_dont_report.bin/dps_log_entries.bin) + HostReachability JSON(appVersion/clientTs/deviceId/hosts/ip/operator/uid/vpn) #network #dps #host-reachability
 - [[topics/361-host-reachability-bzk-config]] — HostReachability bzk: reportHosts=[trace-flow.ru] + selfIpDomains=[yandex/ifconfig.me/ipify/aws/mail.ru] + timeout=10000 #network #host-reachability #trace-flow #ip-detection
+- [[topics/362-z8f-dps-metadata]] — z8f DPS metadata: ru.trace_flow.dps.API_KEY/CLIENT_VERSION/USER_ID + HostReachability config keys #network #dps #mytracker #metadata
