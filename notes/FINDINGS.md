@@ -1952,3 +1952,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 237. CallsSignalingTimeouts
 
 `enabled`/`connectTimeout`(5s)/`initialReconnectDelay`(2s)/`reconnectDelayScaleFactor`(1.0)/`maxReconnectDelay`(2s). Серверно-управляемые через PmsKey. Подробно: `notes/topics/237-calls-signaling-timeouts.md`.
+
+---
+
+## Дополнения 238
+
+### 238. chats + uploads DB схемы
+
+`chats`: id/server_id/data(BLOB)/favourite_index/sort_time/cid. `uploads`: 15 полей включая thumbhash_base64. Подробно: `notes/topics/238-chats-uploads-db-schemas.md`.

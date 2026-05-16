@@ -345,3 +345,4 @@ status: living
 - [[topics/235-qp6-additional-pmskeys]] — qp6 additional PmsKeys: gostEnvironmentCheckFlags/isWebRtcLoggingEnabled/isLogVisibleMessagesMetaEnabled/liveStreamsEnabled/callsTrafficMarkers #pmskey #server-control #gost #live-streams
 - [[topics/236-webapp-phone-hash]] — WebApp Phone Hash: mini-apps get phone+hash+authDate via JS-bridge (server-controlled via useWebAppPhoneHash PmsKey) #webapp #phone-hash #jsbridge #surveillance
 - [[topics/237-calls-signaling-timeouts]] — CallsSignalingTimeouts: enabled/connectTimeout(5s)/initialReconnectDelay(2s)/reconnectDelayScaleFactor/maxReconnectDelay (server-controlled) #calls #signaling #timeouts
+- [[topics/238-chats-uploads-db-schemas]] — chats(id/server_id/data BLOB/favourite_index/cid) + uploads(15 fields incl thumbhash_base64) DB schemas #database #chats #uploads
