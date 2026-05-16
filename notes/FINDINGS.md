@@ -1008,3 +1008,15 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 118. Media UX PmsKey
 
 `speedy-voice-messages` (#276, default=false) — «Лоудер на отправку голосовых». `open-video-from-start` (#217, default=false). `new-media-upload-ui` (#204, default=false). `new-media-edit-screen` (#203, default=false). `video-fast-seek-enabled` (#296, default=false). `video-speed` (#301). Подробно: `notes/topics/118-media-ux-pmskey.md`.
+
+---
+
+## Дополнения 119-120
+
+### 119. Folders PmsKey
+
+`folders-max-count` (#121, default=30) — максимальное количество папок. `enable-filters-for-folders` (#106, default=false) — фильтры в папках. `channels-suggests-folder` (#69) — папка рекомендованных каналов. Подробно: `notes/topics/119-folders-pmskey.md`.
+
+### 120. Multi-select и messages meta
+
+`multi-select-bars-redesign` (#193, default=false) — «Мультиселект с действиями в боттом баре». `chats-multi-select` (#78, default=false). `log-messages-meta` (#155, default=false) — «Сбор meta info видимых сообщений по клику». Подробно: `notes/topics/120-multiselect-messages-meta.md`.
