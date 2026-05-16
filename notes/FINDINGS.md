@@ -3358,3 +3358,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 413. Conversation interface
 
 23 менеджера. `sendData(participant, JSON)`/`muteAll()`/`grantRoles()`/`removeParticipant(ban)`/`queryChatHistory()`. Подробно: `notes/topics/413-conversation-interface.md`.
+
+---
+
+## Дополнения 414
+
+### 414. ConversationFactory
+
+SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegotiationErrorType`/`setBackendRenderVmoji`/`setLoadKwsBySdkEnabled`. `joinAnonByLink` — анонимный вход. Подробно: `notes/topics/414-conversation-factory.md`.
