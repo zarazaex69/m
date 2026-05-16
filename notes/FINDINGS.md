@@ -2136,3 +2136,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 260. Protos.Contact — схема контакта
 
 `serverPhone`/`gender`/`accountStatus`/`registrationTime`/`lastSearchClickTime`/`organizationIds[]`. `ContactName`: CUSTOM/DEVICE/ONEME. Подробно: `notes/topics/260-protos-contact-schema.md`.
+
+---
+
+## Дополнения 261
+
+### 261. Protos.Control — системные сообщения
+
+12 типов: NEW/ADD/REMOVE/LEAVE/TITLE/ICON/HELLO/SYSTEM/JOIN_BY_LINK/PIN/BOT_STARTED. Поля: event/chatType/userId/userIds[]/pinnedMessageId/showHistory. Подробно: `notes/topics/261-protos-control-message.md`.
