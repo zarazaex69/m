@@ -2112,3 +2112,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 257. Protos.Attach — 17 типов вложений
 
 17 типов: PHOTO/VIDEO/AUDIO/STICKER/SHARE/APP/CALL/MUSIC/FILE/CONTACT/PRESENT/INLINE_KEYBOARD/LOCATION/DAILY_MEDIA/WIDGET/POLL. Поля: `sensitive`/`sensitiveContentUnlocked`/`isProcessingOnServer`/`processingOnServerStatus`. Подробно: `notes/topics/257-protos-attach-schema.md`.
+
+---
+
+## Дополнения 258
+
+### 258. MessageElement + ReactionData + PendingUploadData
+
+`MessageElement`: 12 типов (USER_MENTION/GROUP_MENTION/STRONG/LINK/CODE/QUOTE/ANIMOJI) + entityId/from/length. `ReactionData`: reaction/type(EMOJI/STICKER). `PendingUploadData`: pendingMap. Подробно: `notes/topics/258-protos-message-elements.md`.

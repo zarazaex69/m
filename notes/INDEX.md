@@ -365,3 +365,4 @@ status: living
 - [[topics/255-protos-additional]] — Protos additional: BotsInfo(suspendedBot) + ChannelInfo(admins[]/signAdmin) + SelfProfile(restrictions Map) + RestrictionsInfo(expiration) #protocol #protos #chat #channel
 - [[topics/256-protos-chat-schema]] — Protos.Chat: 40+ fields (messagesTtlSec/lastSearchClickTime/pendingJoinRequestsCount/invitedBy/admins[]/restrictions) #protocol #chat #protos #schema
 - [[topics/257-protos-attach-schema]] — Protos.Attach: 17 types + sensitive/sensitiveContentUnlocked/isProcessingOnServer #protocol #attach #protos #sensitive-content
+- [[topics/258-protos-message-elements]] — MessageElement(12 types/entityId) + ReactionData(reaction/EMOJI/STICKER) + PendingUploadData(pendingMap) #protocol #message-elements #protos
