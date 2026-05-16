@@ -764,3 +764,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 86. NeuroAvatars — AI-генерация аватаров
 
 Модуль `one.me.login.neuroavatars`: `NeuroAvatarsScreen`, `RegistrationNeuroAvatarsScreen`, `NeuroAvatarPickerBottomSheet`. При регистрации и в настройках пользователю предлагается нейро-аватар. Фотография пользователя вероятно отправляется на серверы MAX для AI-обработки. Подробно: `notes/topics/86-neuroavatars-ai.md`.
+
+---
+
+## Дополнения 87
+
+### 87. LOCATION WS-опкоды — live location и запросы геолокации
+
+`LOCATION_SEND(125)`, `LOCATION_REQUEST(126)`, `LOCATION_STOP(124)`, `NOTIF_LOCATION(147)`, `NOTIF_LOCATION_REQUEST(148)`. `liveLocation=true` — непрерывный поток координат. `NOTIF_LOCATION_REQUEST` — сервер может запросить геолокацию по WS (второй канал помимо FCM). Координаты уходят на MAX-сервер (WS) и Yandex (HTTP) независимо. Подробно: `notes/topics/87-location-ws-opcodes.md`.
