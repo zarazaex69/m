@@ -4086,3 +4086,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 504. bhj.x() getNetworkCountryIso
 
 `getNetworkCountryIso()` → код страны. Fallback: `Locale.getDefault().getCountry()`. Подробно: `notes/topics/504-network-country-iso.md`.
+
+---
+
+## Дополнения 505
+
+### 505. Google Play Signature
+
+SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно: `notes/topics/505-google-play-signature.md`.
