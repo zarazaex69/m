@@ -2656,3 +2656,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 325. Apptracer SDK — компоненты
 
 `CrashReport`+`HeapDump`+`PerformanceMetrics`+`DiskUsage`+`SamplingProfiler`+`NativeBridge`+`SampleUpload`. Подробно: `notes/topics/325-apptracer-sdk-components.md`.
+
+---
+
+## Дополнения 326
+
+### 326. NativeBridge — JNI мост
+
+`nativeInstallBridge(qb5.Z)` — устанавливает JNI мост. `NativeBridge`: log(msg)/setKey(key, value). Подробно: `notes/topics/326-native-bridge-tracer.md`.
