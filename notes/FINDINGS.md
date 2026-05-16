@@ -4198,3 +4198,11 @@ Bluetooth audio routing. `requestBluetoothAudio(device)` / `setAudioRoute(EARPIE
 ### 518. CallsBluetoothManager
 
 SCO timeout=2500ms, max attempts=3. States: None/Unavailable/Available(Connected/Disconnected). Подробно: `notes/topics/518-calls-bluetooth-manager.md`.
+
+---
+
+## Дополнения 519
+
+### 519. jf4 ConnectionInfo
+
+VPN(`hasTransport(4)`) / roaming(`isNetworkRoaming()`) / backgroundRestriction / `registerDefaultNetworkCallback`. Подробно: `notes/topics/519-connection-info.md`.

@@ -626,3 +626,4 @@ status: living
 - [[topics/516-legal-links]] — Legal Links: FAQ:help.max.ru, Privacy Policy:legal.max.ru/pp, User Agreement:legal.max.ru/ps #legal-links #privacy-policy #user-agreement #faq #surveillance
 - [[topics/517-call-audio-controller]] — kf4 CallAudioController: Bluetooth audio routing, requestBluetoothAudio/setAudioRoute(EARPIECE/BLUETOOTH/WIRED_HEADSET/SPEAKER) #bluetooth #audio #calls #surveillance
 - [[topics/518-calls-bluetooth-manager]] — CallsBluetoothManager: SCO timeout=2500ms, max attempts=3, HeadsetState/ConnectionState/SCOAudioState #bluetooth #sco #calls #audio #surveillance
+- [[topics/519-connection-info]] — jf4 ConnectionInfo: VPN(hasTransport(4))/roaming(isNetworkRoaming())/backgroundRestriction/registerDefaultNetworkCallback #network-info #connectivity #vpn-detection #roaming #surveillance #telemetry
