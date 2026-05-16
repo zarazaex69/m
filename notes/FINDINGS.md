@@ -2976,3 +2976,11 @@ DPS: `dps_config.bin`/`dps_dont_report.bin`/`dps_log_entries.bin`. HostReachabil
 ### 365. Facebook Fresco
 
 GIF/WebP анимации + 5 потоков (FrescoIoBoundExecutor/FrescoDecodeExecutor/FrescoBackgroundExecutor/FrescoLightWeightBackgroundExecutor/FrescoAnimationWorker) + SoLoader + stat.fresco. Подробно: `notes/topics/365-facebook-fresco.md`.
+
+---
+
+## Дополнения 366
+
+### 366. ZstdUtil
+
+`nativeDecompress(bytes)` — только декомпрессия. Данные сжимаются на сервере. Подробно: `notes/topics/366-zstd-util.md`.
