@@ -458,3 +458,4 @@ status: living
 - [[topics/348-firebase-cct-transport]] — Firebase CctTransportBackend: POST+gzip+X-Goog-Api-Key+datatransport/3.1.9 (dynamic URL) #telemetry #firebase #cct-transport #google-api-key
 - [[topics/349-firebase-installations-api]] — Firebase Installations: https://firebaseinstallations.googleapis.com/v1/ (FID) #telemetry #firebase #installations #googleapis
 - [[topics/350-firebase-installations-data]] — Firebase Installations data: fid/appId/authVersion(FIS_v2)/sdkVersion(a:18.0.0) → Google #telemetry #firebase #fid #app-id #surveillance
+- [[topics/351-firebase-config-keys]] — Firebase config: google_api_key=AIzaSyABuDYeeDXIOrKTXLkUj30Ii143ofPe63Q + google_app_id=1:659634599081:android:... + project_id=max-messenger-app #telemetry #firebase #config #api-key
