@@ -1304,3 +1304,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 156. MicrophoneManager
 
 `registerAudioSampleCallback(delay, callback)` — несколько компонентов одновременно получают аудио-семплы: KWS (topic 70), ASR online (topic 152), energy calculator. `setMicEnabled(bool)` — включение/выключение микрофона. Подробно: `notes/topics/156-microphone-manager.md`.
+
+---
+
+## Дополнения 157
+
+### 157. WatchTogether + URL Sharing
+
+`add-movie` (movieId/gain/moveToAdminOnHangup), `update-movie`, `remove-movie`. `start-url-sharing`/`stop-url-sharing`. Сервер знает, какие видео и URL шарятся в звонках. Подробно: `notes/topics/157-watch-together-url-sharing.md`.
