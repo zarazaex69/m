@@ -1416,3 +1416,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 170. IceCandidateGatheringFailedStat + IceCandidateAddFailedStat
 
 `IceCandidateGatheringFailedStat`: `local_address`/`remote_url`/`transport` при ошибке сбора ICE. `IceCandidateAddFailedStat`: `ice_candidate_add_failed` с `remote_url`. Подробно: `notes/topics/170-ice-candidate-error-stats.md`.
+
+---
+
+## Дополнения 171
+
+### 171. IceRestartStat + PeerConnectionChangedStat
+
+`IceRestartStat`: `ice_restart` (без параметров). `PeerConnectionChangedStat`: `connection_state_changed` с `connection_state` (new/connecting/connected/disconnected/failed/closed) и `p2p_relay` (bool). Подробно: `notes/topics/171-ice-restart-peer-connection-stat.md`.
