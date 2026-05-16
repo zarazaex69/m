@@ -3782,3 +3782,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 466. Memory Statistics
 
 `Debug.MemoryInfo.getMemoryStat()` → java-heap/native-heap/code/stack/graphics/total-swap/total-pss. Подробно: `notes/topics/466-memory-stat.md`.
+
+---
+
+## Дополнения 467
+
+### 467. Типы событий телеметрии
+
+12 типов: STARTUP_REPORT/AB_EVENT/OPCODE/CHAT_HISTORY_WARM/CHAT_LIST/WEB_APP/UPLOAD_HANG/UPLOAD_ERROR/MEMORY/BATTERY/TRANSCODE/BAD_PUSHES. Подробно: `notes/topics/467-telemetry-event-types.md`.

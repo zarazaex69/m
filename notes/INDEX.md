@@ -574,3 +574,4 @@ status: living
 - [[topics/464-watchdog-config]] — WatchdogConfig: stuckThreshold/hangThreshold/saveStacktrace from server + keepBackgroundSocket PmsKey #watchdog #server-control #surveillance #crash-detection #stack-trace
 - [[topics/465-devnull-server-config]] — DevNullServerConfig: isOpcodeStatEnabled/isMemoryStatEnabled/isBatteryStatEnabled/isChatHistoryStatEnabled/isUploadHangCheckEnabled #devnull-server-config #server-control #surveillance #telemetry #opcode-stat #memory-stat #battery-stat
 - [[topics/466-memory-stat]] — woa Memory Statistics: Debug.MemoryInfo java-heap/native-heap/code/stack/graphics/total-swap/total-pss #memory-stat #heap #surveillance #telemetry #server-control
+- [[topics/467-telemetry-event-types]] — jm5 telemetry event types: STARTUP_REPORT/AB_EVENT/OPCODE/CHAT_HISTORY_WARM/WEB_APP/UPLOAD_HANG/MEMORY/BATTERY/BAD_PUSHES #telemetry #event-types #server-control #surveillance #opcode-stat #memory-stat #battery-stat
