@@ -299,3 +299,4 @@ status: living
 - [[topics/189-media-connection-manager]] — MediaConnectionManager: onMediaConnected(isFirstConnection)/onMediaDisconnected #calls #media-connection
 - [[topics/190-conversation-events-listener]] — ConversationEventsListener: 30+ events (onMicrophoneForciblyMuted/onParticipantsDeAnonymized/onMigratedToServerTopology) #calls #events #surveillance
 - [[topics/191-conversation-participant]] — ConversationParticipant: 20+ fields (getAcceptedCallClientType/Platform/Capabilities/NetworkStatus/isTalking/isReported) #calls #participant #surveillance
+- [[topics/192-client-capabilities]] — ClientCapabilities: 15 bits hex-encoded (BIT_SCREEN_TRACK/VIDEO/WAITING_HALL/WATCH_MOVIE/P2P_RELAY/WAIT_FOR_ADMIN) #calls #capabilities
