@@ -1276,3 +1276,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 152. AsrOnlineManager — real-time транскрипция звонков
 
 `AsrOnlineManager` — real-time транскрипция речи участников звонков. `AsrOnlineChunk`: `participantId` + `text` (кто что сказал). `enableAsrOnline(bool)` — server-controlled. Три уровня аудио-анализа: KWS (topic 70) + on-device ASR (topic 15) + online ASR. Подробно: `notes/topics/152-asr-online-manager.md`.
+
+---
+
+## Дополнения 153
+
+### 153. Signaling commands — 24 команды
+
+`mute-participant` (заглушить участника), `request-asr` (онлайн-транскрипция с start=bool), `enable-feature-for-roles` (feature gating по ролям), `report-network-stat` (timestamp+bitrate), `report-perf-stat`, `change-simulcast`, `update-display-layout`, `switch-room`, `start-url-sharing`/`stop-url-sharing`, `record-stop`, `get-hand-queue`. Подробно: `notes/topics/153-signaling-commands.md`.
