@@ -2480,3 +2480,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 303. UpdateMessageEvent
 
 `chatId`/`messageId`/`reactionsChanged`. Используется в NOTIF_MSG_REACTIONS_CHANGED и NOTIF_MSG_YOU_REACTED. Подробно: `notes/topics/303-update-message-event.md`.
+
+---
+
+## Дополнения 304
+
+### 304. NOTIF_TYPING WS
+
+`type`(VIDEO_MSG/AUDIO_MSG)/`isTyping`. Сервер знает, что именно записывает пользователь (текст/аудио/видео). Подробно: `notes/topics/304-notif-typing-ws.md`.

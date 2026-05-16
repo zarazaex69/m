@@ -411,3 +411,4 @@ status: living
 - [[topics/301-folders-polls-profile-ws]] — FOLDERS_GET(allFilterExcludeFolders/folderSync/folders/foldersOrder) + GET_POLL_UPDATES(polls) + NOTIF_PROFILE(profile) WS #protocol #ws #folders #polls
 - [[topics/302-notif-banners-ws]] — NOTIF_BANNERS WS: showTime/banners/updateTime (all required, server controls banner schedule) #protocol #ws #banners #server-control
 - [[topics/303-update-message-event]] — UpdateMessageEvent: chatId/messageId/reactionsChanged (NOTIF_MSG_REACTIONS_CHANGED/NOTIF_MSG_YOU_REACTED) #protocol #ws #reactions
+- [[topics/304-notif-typing-ws]] — NOTIF_TYPING WS: type(VIDEO_MSG/AUDIO_MSG)/isTyping (server knows if user is recording audio/video) #protocol #ws #notif-typing #surveillance
