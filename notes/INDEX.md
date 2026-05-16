@@ -615,3 +615,4 @@ status: living
 - [[topics/505-google-play-signature]] — til Google Play Signature: SHA-256 8P1sW0EP(production)/GXWy8XF3(dev-keys) #google-play #signature-verification #sha256 #in-app-review #security
 - [[topics/506-app-init-installer-mytracker]] — d6 App Init: getInstallerPackageName→ACTION.GET_INSTALL_REFERRER, MyTracker.setCustomUserId(userId), setKidMode(false) #installer-package #mytracker #user-id #surveillance #telemetry #initialization
 - [[topics/507-memory-info-collector]] — uoa Memory Info Collector: Debug.MemoryInfo + ActivityManager.MemoryInfo + /proc/self/statm(RSS/shared) + lastTrimLevel + lowMemory #memory-info #proc-statm #surveillance #telemetry #server-control
+- [[topics/508-connectivity-receiver]] — gr Connectivity BroadcastReceiver: CONNECTIVITY_CHANGE/BATTERY_CHANGED/TIMEZONE_CHANGED/AUDIO_BECOMING_NOISY #network-type #connectivity #surveillance #telemetry #broadcast-receiver

@@ -4110,3 +4110,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 507. uoa Memory Info Collector
 
 `Debug.MemoryInfo` + `ActivityManager.MemoryInfo` + `/proc/self/statm(RSS/shared)` + `lastTrimLevel` + `lowMemory/availMem/totalMem`. Подробно: `notes/topics/507-memory-info-collector.md`.
+
+---
+
+## Дополнения 508
+
+### 508. gr Connectivity BroadcastReceiver
+
+`CONNECTIVITY_CHANGE` → тип сети. `BATTERY_CHANGED` → уровень батареи. `TIMEZONE_CHANGED`. Подробно: `notes/topics/508-connectivity-receiver.md`.
