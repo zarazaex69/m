@@ -2256,3 +2256,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 275. Batch Tasks
 
 `ChatMarkBatch`: chatIds[]/maxMark. `DeleteChatsBatch`: chatIds[]. `ChatsList`: chatsSync/count/marker. `DraftDiscard`: chatId. Подробно: `notes/topics/275-tasks-batch-ops.md`.
+
+---
+
+## Дополнения 276
+
+### 276. UpdateFireTimeProtoTask + ChangeProfileOrChatPhoto
+
+`UpdateFireTimeProtoTask`: chatId/messageId/fireTime/notifySender (отложенные сообщения). `ChangeProfileOrChatPhoto`: chatId/file/lastModified/crop. Подробно: `notes/topics/276-tasks-fire-time-photo.md`.
