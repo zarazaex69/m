@@ -1904,3 +1904,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 231. MyTrackerParams — пользовательские параметры
 
 `age`/`gender`/`email`/`phone`/`okId`/`vkId`/`vkConnectId`/`icqId`. MyTracker связывает пользователя MAX с аккаунтами OK.ru/VK/ICQ. Подробно: `notes/topics/231-mytracker-params.md`.
+
+---
+
+## Дополнения 232
+
+### 232. MyTracker AntiFraudConfig + InstalledPackagesProvider
+
+`AntiFraudConfig`: 5 сенсоров (гироскоп/магнитное поле/давление/освещённость/proximity). `InstalledPackagesProvider.getInstalledPackages()` — **список установленных приложений** передаётся в MyTracker. `getApkPreinstallParams` — параметры предустановки. Подробно: `notes/topics/232-mytracker-config-antifraud.md`.

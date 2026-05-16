@@ -339,3 +339,4 @@ status: living
 - [[topics/229-lib-enhancement-exports]] — libEnhancementLibShared: ASR(predict/confidence/punct) + KWS(BCResNetKWS) + Denoise + SpeakerRecognitionEngine+Verifier (voice identification) #native #asr #kws #speaker-recognition #surveillance
 - [[topics/230-lib-enhancement-build-info]] — libEnhancementLibShared build: /home/good/mainframer/webrtc4/one-ann-audio-processing + TFLite + Kaldi #native #build-info #infrastructure
 - [[topics/231-mytracker-params]] — MyTrackerParams: age/gender/email/phone/okId/vkId/vkConnectId/icqId (cross-platform user ID linking to OK/VK/ICQ) #mytracker #telemetry #user-profile #surveillance
+- [[topics/232-mytracker-config-antifraud]] — MyTracker AntiFraudConfig(5 sensors) + InstalledPackagesProvider(installed apps list) + getApkPreinstallParams #mytracker #antiFraud #sensors #installed-apps
