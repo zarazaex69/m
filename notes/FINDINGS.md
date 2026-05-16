@@ -3246,3 +3246,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 399. AsrManager
 
 `asr-start {fileName}`/`asr-stop`. `AsrInfo(initiator, movieId)`. Отдельно от серверного `AsrOnlineManager`. Подробно: `notes/topics/399-asr-manager-record.md`.
+
+---
+
+## Дополнения 400
+
+### 400. ChatManager + ContactCallManager
+
+`InboundMessage(senderId, text, isDirect)`. `OutboundMessage(participantId, text)`. `ContactCallManager`: getIAmAnonymous/getIWasInitiallyAnonymous. Подробно: `notes/topics/400-chat-manager-contacts.md`.

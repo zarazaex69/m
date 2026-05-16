@@ -507,3 +507,4 @@ status: living
 - [[topics/397-video-sdk-screen-camera]] — Video SDK: ScreenCapture(setAudioCaptureEnabled), CameraManager, DisplayLayoutSender(server knows video layout) #video #screen-capture #camera #surveillance
 - [[topics/398-media-mute-manager]] — MediaMuteManager: updateMediaOptionsForParticipant/All (force mute), requestToEnableMediaForParticipant/All #media-mute #calls #admin #force-mute #surveillance
 - [[topics/399-asr-manager-record]] — AsrManager: asr-start{fileName}/asr-stop, AsrInfo(initiator,movieId), separate from AsrOnlineManager #asr #asr-record #calls #surveillance
+- [[topics/400-chat-manager-contacts]] — ChatManager(InboundMessage/OutboundMessage/isDirect) + ContactCallManager(getIAmAnonymous/getIWasInitiallyAnonymous) #calls-chat #messages #surveillance
