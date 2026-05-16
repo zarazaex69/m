@@ -1688,3 +1688,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 204. Opus FileWriter — нативная запись аудио
 
 `nativeAudioStartRecord(path, sampleRate, channels)` → `nativeAudioWriteFrame(ByteBuffer)` → `close`. Используется в `AsrManager` (запись для ASR) и `MediaDumpManager` (дамп pipeline). Подробно: `notes/topics/204-opus-file-writer.md`.
+
+---
+
+## Дополнения 205
+
+### 205. Tasks.proto — 60+ фоновых задач
+
+`LocationRequest`(liveLocation/messageId/requestId), `CritLog`, `SuspendBot`, `UpdateFireTimeProtoTask`, `SyncChatHistory`/`WarmChatHistory`, `MsgSend`/`MsgEdit`/`MsgDelete`, `FileUpload`/`FileDownload`. Подробно: `notes/topics/205-tasks-proto.md`.
