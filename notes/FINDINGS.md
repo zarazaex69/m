@@ -1808,3 +1808,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 219. battery + organizations DB
 
 `battery`: sliceTime/utime/stime/batteryCapacity/instantAmperage — детальная статистика энергопотребления. `organizations`: id/name/parentId/folderTemplateId/updateTime. Подробно: `notes/topics/219-battery-organizations-db.md`.
+
+---
+
+## Дополнения 220
+
+### 220. QUIC TLS — отключена проверка сертификата
+
+`qse` — null `X509TrustManager` (`checkServerTrusted` пустой). Используется для QUIC/WebTransport. Приложение само выводит `SECURITY WARNING: INSECURE configuration! Server certificate validation is disabled; QUIC connections may be subject to man-in-the-middle attacks!` — но всё равно использует. Подробно: `notes/topics/220-quic-tls-disabled.md`.
