@@ -1960,3 +1960,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 238. chats + uploads DB схемы
 
 `chats`: id/server_id/data(BLOB)/favourite_index/sort_time/cid. `uploads`: 15 полей включая thumbhash_base64. Подробно: `notes/topics/238-chats-uploads-db-schemas.md`.
+
+---
+
+## Дополнения 239
+
+### 239. informer_banner DB
+
+14 полей: click_time/show_time/close_time/show_count — полный lifecycle взаимодействия с баннером. Подробно: `notes/topics/239-informer-banner-db.md`.
