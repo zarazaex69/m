@@ -3846,3 +3846,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 474. Permission Tracking
 
 `PERMISSION.permission_changed_state {pType, pStatus}`. 13 групп разрешений. CAMERA+RECORD_AUDIO+READ_PHONE_STATE / ACCESS_FINE_LOCATION+ACCESS_BACKGROUND_LOCATION. Подробно: `notes/topics/474-permission-tracking.md`.
+
+---
+
+## Дополнения 475
+
+### 475. HOST_REACHABILITY Analytics
+
+`GET_HOST_REACHABILITY {hosts, operator, connection_type, ip, vpn}`. Отправляется после каждой проверки доступности хостов. Подробно: `notes/topics/475-host-reachability-analytics.md`.
