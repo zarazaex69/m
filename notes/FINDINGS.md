@@ -1440,3 +1440,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 173. CallFinishStat + CallInitStat
 
 `call_finish`: `reason` (ConversationEndReason), `rate_reasons` (автоматические причины плохого качества), `errorText`. `call_init`: `source` (callType + isAnon). Подробно: `notes/topics/173-call-finish-init-stat.md`.
+
+---
+
+## Дополнения 174
+
+### 174. ConversationPreparedStat
+
+`call_warmup` — время прогрева WebRTC сессии (мс). Подробно: `notes/topics/174-conversation-prepared-stat.md`.
