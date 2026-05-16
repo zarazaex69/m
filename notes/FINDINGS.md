@@ -4118,3 +4118,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 508. gr Connectivity BroadcastReceiver
 
 `CONNECTIVITY_CHANGE` → тип сети. `BATTERY_CHANGED` → уровень батареи. `TIMEZONE_CHANGED`. Подробно: `notes/topics/508-connectivity-receiver.md`.
+
+---
+
+## Дополнения 509
+
+### 509. lv6 File Path Manager
+
+`externalCacheDir`/`filesDir`/`cacheDir`/`downloadsDir`. FileProvider: `ru.oneme.app.provider`. Загрузки: `Downloads/MAX/`. Подробно: `notes/topics/509-file-path-manager.md`.
