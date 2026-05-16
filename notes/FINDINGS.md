@@ -812,3 +812,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 92. WEB_APP_INIT_DATA, VOTERS_LIST_BY_ANSWER, AUDIO_PLAY WS-опкоды
 
 `WEB_APP_INIT_DATA(160)` — сервер знает о каждом запуске мини-апки. `VOTERS_LIST_BY_ANSWER(305)` — голосование не анонимное, сервер знает кто как проголосовал. `AUDIO_PLAY(301)` — сервер знает, когда пользователь прослушивает голосовые сообщения. 5 опкодов для папок (FOLDERS_GET/UPDATE/REORDER/DELETE). `COMPLAIN/COMPLAIN_REASONS_GET` — жалобы через WS. Подробно: `notes/topics/92-webapp-complaints-folders-polls-ws.md`.
+
+---
+
+## Дополнения 93
+
+### 93. client-conv-id + send-queue-size
+
+`client-conv-id` (#82) — «Включить клиентское создание conversations id» (server-gated P2P conversation ID generation). `send-queue-size` (#265) — server-controlled лимит очереди отправки сообщений (default 30). Подробно: `notes/topics/93-client-conv-id-send-queue.md`.
