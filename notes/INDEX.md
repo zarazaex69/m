@@ -301,3 +301,4 @@ status: living
 - [[topics/191-conversation-participant]] — ConversationParticipant: 20+ fields (getAcceptedCallClientType/Platform/Capabilities/NetworkStatus/isTalking/isReported) #calls #participant #surveillance
 - [[topics/192-client-capabilities]] — ClientCapabilities: 15 bits hex-encoded (BIT_SCREEN_TRACK/VIDEO/WAITING_HALL/WATCH_MOVIE/P2P_RELAY/WAIT_FOR_ADMIN) #calls #capabilities
 - [[topics/193-call-info]] — CallInfo: endpoint/wsIps/wtEndpoint/wtIps/STUN/TURN/isP2PForbidden/deviceIndex (server controls all call routing) #calls #call-info #server-control
+- [[topics/194-start-conversation-delegate]] — StartConversationDelegate.Params: conversationId/calleeIds/chatId/isVideo/internalParams #calls #start-call
