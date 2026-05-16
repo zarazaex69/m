@@ -1196,3 +1196,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 142. ConversationParams compact format
 
 `<size>:<base64(LZ4(JSON))>` — компактный формат для push/URL. Ключи: `tkn`, `srcp`, `trne`/`trnu`/`trnp` (**TURN credentials** — username и password для каждого звонка), `stne` (STUN), `wse`/`wsip` (WS), `wte`/`wtip` (WebTransport). Подробно: `notes/topics/142-conversation-params-compact.md`.
+
+---
+
+## Дополнения 143
+
+### 143. vchat.startConversation
+
+Клиент отправляет: `isVideo`, `turnServers`, `conversationId`, `createJoinLink`, `waitForAdmin`, `capabilities` (hex-encoded возможности клиента), `protocolVersion=6` (для VOIP_MULTIPLE_DEVICES), `domainId`, `payload`, `onlyAdminCanShareMovie`. Сервер знает полные возможности клиента при каждом звонке. Подробно: `notes/topics/143-start-conversation-api.md`.
