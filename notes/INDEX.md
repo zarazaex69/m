@@ -417,3 +417,4 @@ status: living
 - [[topics/307-inbound-call-push-telemetry]] — InboundCall PUSH telemetry: p_op/chat_id/call_id/show_source/ttime/dtime(delivery delay)/fcmdtime(FCM delay) #telemetry #push #inbound-call #timing
 - [[topics/308-nm4-contact-presence-parser]] — nm4 contact/presence parser: phonebook_id/phone/phone_key/server_phone/email/first_name/last_name + presence(seen/status) #protocol #contacts #presence #surveillance
 - [[topics/309-nm4-additional-schemas]] — nm4 additional: chat(id/server_id/data) + video upload(quality/trim) + FCM notification(text/sender/push_id/bmd) #protocol #database #parser #fcm
+- [[topics/310-presence-db-schema]] — presence DB: contactServerId/seen(last online time)/status #database #presence #last-seen #surveillance

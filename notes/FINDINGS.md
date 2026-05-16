@@ -2528,3 +2528,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 309. nm4 — дополнительные схемы
 
 Чаты: id/server_id/data. Загрузки видео: quality/trim positions. FCM: text/sender/push_id/bmd. Подробно: `notes/topics/309-nm4-additional-schemas.md`.
+
+---
+
+## Дополнения 310
+
+### 310. presence DB
+
+`contactServerId`/`seen`(время последнего визита)/`status`. Локальный кэш статусов присутствия. Подробно: `notes/topics/310-presence-db-schema.md`.
