@@ -344,3 +344,4 @@ status: living
 - [[topics/234-ri9-shared-prefs]] — ri9 SharedPreferences: phoneNumber/locationCountryCode/gostLicenseCheckEnabled/allowLogSensitiveData/isDisableWebAppSsl/tenorAnonId #shared-prefs #session #debug #gost
 - [[topics/235-qp6-additional-pmskeys]] — qp6 additional PmsKeys: gostEnvironmentCheckFlags/isWebRtcLoggingEnabled/isLogVisibleMessagesMetaEnabled/liveStreamsEnabled/callsTrafficMarkers #pmskey #server-control #gost #live-streams
 - [[topics/236-webapp-phone-hash]] — WebApp Phone Hash: mini-apps get phone+hash+authDate via JS-bridge (server-controlled via useWebAppPhoneHash PmsKey) #webapp #phone-hash #jsbridge #surveillance
+- [[topics/237-calls-signaling-timeouts]] — CallsSignalingTimeouts: enabled/connectTimeout(5s)/initialReconnectDelay(2s)/reconnectDelayScaleFactor/maxReconnectDelay (server-controlled) #calls #signaling #timeouts

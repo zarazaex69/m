@@ -1944,3 +1944,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 236. WebApp Phone Hash
 
 Мини-приложения получают `phone`+`hash`+`authDate` через JS-bridge. Серверный флаг `useWebAppPhoneHash` управляет передачей. Подробно: `notes/topics/236-webapp-phone-hash.md`.
+
+---
+
+## Дополнения 237
+
+### 237. CallsSignalingTimeouts
+
+`enabled`/`connectTimeout`(5s)/`initialReconnectDelay`(2s)/`reconnectDelayScaleFactor`(1.0)/`maxReconnectDelay`(2s). Серверно-управляемые через PmsKey. Подробно: `notes/topics/237-calls-signaling-timeouts.md`.
