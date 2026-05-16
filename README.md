@@ -37,6 +37,8 @@ notes/
     21-shared-prefs-map.md      — карта SharedPreferences файлов
     22-gost-digitalid-family.md — GOST/DigitalID/FamilyProtection wiring
     23-camera-mic-screen-entry-points.md — точки запуска камеры/микрофона/screen capture
+    ...
+    (темы 24–386 — см. notes/INDEX.md)
 
 findings/raw/
   pms_keys.txt                  — все 334 серверных PmsKey
@@ -56,7 +58,7 @@ findings/native/
 ## С чего читать
 
 1. `notes/INDEX.md` — Obsidian-стайл навигация по всем темам с тегами и графом ссылок.
-2. `notes/FINDINGS.md` — общий обзор и TL;DR (исходно 14 разделов; темы 15-23 нужно интегрировать).
+2. `notes/FINDINGS.md` — общий обзор и TL;DR (386 тем).
 3. `notes/00-INVENTORY.md` — структура APK и красные флаги манифеста.
 4. По интересам — конкретные `notes/topics/*`.
 
@@ -67,6 +69,8 @@ MAX — это форк-клиент TamTam (`ru.ok.tamtam.*`) с полным O
 Для входа MAX напрямую интегрирован с Header Enrichment-эндпоинтами всех крупных операторов РФ (МТС, Мегафон, Билайн, Tele2 / T2). Эти запросы идут в **открытом HTTP** — операторы не могут подставлять заголовки в TLS-соединение. Параллельно есть JS-bridge `verify_mobile_id`, через который мини-приложения внутри MAX могут получать MSISDN абонента, и deeplink `https://max.ru/:auth?externalCallback=1` для использования MAX как Identity Provider в других приложениях.
 
 Поведение клиента почти полностью контролируется сервером: 334 PmsKey-флага + UserSettings-объект + ML-модели KWS/NS с серверно-задаваемым URL. Серверный killswitch версии превращает любую клиентскую версию в `ForceUpdateScreen` с кнопкой на собственный CDN `https://download.max.ru/`, мимо Google Play. Apptracer-стек штатно умеет heap-dumps процесса и `sample`-uploader произвольных артефактов на `sdk-api.apptracer.ru`. Push-канал FCM — командный (`InboundCall`, `MessageRemoved`, `LocationRequest` wake-trigger, `TamtamSpam` с произвольным URI). В release-сборке сохранилось dev-меню для переключения API-сервера и всех фича-флагов.
+
+В звонках работают два параллельных ASR: on-device (`libEnhancementLibShared.so`) и серверный (`AsrOnlineManager`). Серверный ASR включается **автоматически** при переходе на серверную топологию (групповые звонки) и возвращает `AsrOnlineChunk(participantId, text)` — транскрипцию с атрибуцией по участникам. Запись звонков (`RecordManager`) сохраняется на сервере как видео с `privacy="PUBLIC"` по умолчанию и поддерживает стриминг. Каждое срабатывание KWS отправляется на сервер событием `bad_call_detected_by_audio_spotter(confidence)`. MyTracker собирает полный профиль пользователя (age/gender/email/phone/okId/vkId/vkConnectId/icqId), список установленных приложений и данные всех датчиков (гироскоп/магнитное поле/давление/освещённость/близость) под видом «антифрода». Все deeplink-переходы проходят через `MyTracker.handleDeeplink(intent)`. Мини-приложения блокируются при обнаружении VPN (`WebAppHttpClient.WebAppHasVpnException`).
 
 ## Стиль заметок
 
