@@ -964,3 +964,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 112. user-debug-report + userLogReportChatId
 
 `user-debug-report` (#292) — server-pushed режим debug-репортирования. `userLogReportChatId` — **ID чата, в который отправляются логи пользователя** (сервер может направить логи в конкретный чат через WS). `debug-mode` (#3) — server-pushed режим отладки. Подробно: `notes/topics/112-user-debug-report-chat.md`.
+
+---
+
+## Дополнения 113
+
+### 113. invalidate-db-force — серверная инвалидация БД
+
+`invalidate-db-force` (#141) — сервер может принудительно инвалидировать (удалить) локальную БД клиента через версионирование (`configVer > curVer`). Это означает, что **сервер может удалить всю локальную историю сообщений**. `invalidate-db-msg-exception` (#142) — инвалидация при ошибке обработки сообщений. Подробно: `notes/topics/113-invalidate-db-force.md`.
