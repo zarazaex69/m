@@ -996,3 +996,15 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 116. join-requests
 
 `join-requests` (#148) — server-gated функция заявок на вступление в закрытые чаты/каналы. `JoinRequestsScreen` с `chatId`. Подробно: `notes/topics/116-join-requests.md`.
+
+---
+
+## Дополнения 117-118
+
+### 117. Call UI PmsKey
+
+`horizontal-call-mode` (#130, default=false) — горизонтальный UI звонка. `hide-incoming-call-notif` (#129, default=false) — скрытие уведомления при входящем. `ringtone-player-focus` (#258) — 3 режима аудио-фокуса. `calls-android-ssttl` (#117) — TTL общих настроек звонка. Подробно: `notes/topics/117-call-ui-pmskey.md`.
+
+### 118. Media UX PmsKey
+
+`speedy-voice-messages` (#276, default=false) — «Лоудер на отправку голосовых». `open-video-from-start` (#217, default=false). `new-media-upload-ui` (#204, default=false). `new-media-edit-screen` (#203, default=false). `video-fast-seek-enabled` (#296, default=false). `video-speed` (#301). Подробно: `notes/topics/118-media-ux-pmskey.md`.
