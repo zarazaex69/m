@@ -1664,3 +1664,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 201. Calls SDK — архитектурная сводка (ИТОГ)
 
 24 менеджера, 24 сигналинг-команды, 18+ stat-структур. Ключевые индикаторы: нет E2E, ASR on-device+server-side, KWS «не слышу», `requestMediaDump` (удалённый дамп аудио+видео в prod), `onParticipantsDeAnonymized`, `onMicrophoneForciblyMuted`, device fingerprint (ISP+geo) в каждом запросе, `ClientCapabilities` hex-encoded, WebRTC field trials с сервера. Подробно: `notes/topics/201-calls-sdk-architecture-summary.md`.
+
+---
+
+## Дополнения 202
+
+### 202. OneLog — механизм загрузки
+
+`Collector` (файловый буфер `onelog/<collector>/append+upload`) → `Uploader` → `OneLogApiRequest`. В каждом запросе: `application=ru.oneme.app:26153:26.15.3`, `platform=android:phone:<Android version>`. `UploadService` — фоновый `IntentService`. Подробно: `notes/topics/202-onelog-upload-mechanism.md`.
