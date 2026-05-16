@@ -3606,3 +3606,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 444. CallAdminSettingsScreen
 
 `ADMIN_CALL_SETTINGS{screen, camera, microphone, screenshare, recording, waiting}`. `CallDebugMenuScreen` в production. Подробно: `notes/topics/444-call-admin-settings.md`.
+
+---
+
+## Дополнения 445
+
+### 445. CallRateBottomSheet + StartRecordBottomSheet + VpnPanelWidget
+
+`CallRateBottomSheet(call_id, is_group_call, is_video_call, sdk_reasons)`. `StartRecordBottomSheet`: имя записи (max 250 символов). `VpnPanelWidget`. Подробно: `notes/topics/445-call-rate-record-vpn.md`.
