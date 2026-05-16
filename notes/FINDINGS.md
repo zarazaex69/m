@@ -772,3 +772,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 87. LOCATION WS-опкоды — live location и запросы геолокации
 
 `LOCATION_SEND(125)`, `LOCATION_REQUEST(126)`, `LOCATION_STOP(124)`, `NOTIF_LOCATION(147)`, `NOTIF_LOCATION_REQUEST(148)`. `liveLocation=true` — непрерывный поток координат. `NOTIF_LOCATION_REQUEST` — сервер может запросить геолокацию по WS (второй канал помимо FCM). Координаты уходят на MAX-сервер (WS) и Yandex (HTTP) независимо. Подробно: `notes/topics/87-location-ws-opcodes.md`.
+
+---
+
+## Дополнения 88
+
+### 88. Call Rate — оценка качества звонков
+
+`CallRateBottomSheet` с `callId`, `isGroupCall`, `isVideoCall`, `sdkReasons` (технические причины плохого качества от WebRTC SDK). Сервер получает оценку + технические причины. Условия показа server-controlled через `call-rate` PmsKey и `android.rating.limits`. Подробно: `notes/topics/88-call-rate-quality-rating.md`.
