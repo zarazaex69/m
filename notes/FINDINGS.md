@@ -1220,3 +1220,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 145. vchat.getOkIdsByExternalIds + vchat.getExternalIdsByOkIds
 
 Двусторонний маппинг: external_id ↔ ok_id. Позволяет связывать пользователей MAX с аккаунтами в других сервисах VK/OK. Используется для идентификации участников звонков из разных сервисов. Подробно: `notes/topics/145-ok-external-ids-mapping.md`.
+
+---
+
+## Дополнения 146
+
+### 146. vchat.getLogUploadUrl + device fingerprint
+
+`vchat.getLogUploadUrl` — сервер выдаёт URL для загрузки диагностических логов звонков. `och.java` — каждый запрос к звонковому API содержит: `device=Build.MANUFACTURER/Build.MODEL` (модель устройства), `osVersion`, `ispAsOrg`, `locCc`, `locReg`. Сервер знает точную модель телефона каждого участника звонка. Подробно: `notes/topics/146-log-upload-device-fingerprint.md`.
