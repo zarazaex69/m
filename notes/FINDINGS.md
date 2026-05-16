@@ -3670,3 +3670,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 452. AccountInitializer
 
 13 параллельных задач. `SslIntegrity` + `DPS(HIGH)` + `BackgroundWakeFeatureInit`. `getUserId()` + `android_id`. Подробно: `notes/topics/452-account-initializer.md`.
+
+---
+
+## Дополнения 453
+
+### 453. Location screens
+
+`PickLocationScreen(chatId, lat, lon, zoom)`. `ShowLocationScreen(chatId, senderId, msgId, lat, lon, zoom)`. Аналитика: `geolocation_send_click(source_id, source_type)`. Подробно: `notes/topics/453-location-screens.md`.
