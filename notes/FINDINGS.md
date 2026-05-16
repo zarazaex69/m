@@ -2040,3 +2040,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 248. Task Types — 46 типов
 
 `TYPE_LOCATION_REQUEST`/`TYPE_LOCATION_STOP`, `TYPE_STAT_CRIT_EVENT`, `TYPE_SUSPEND_BOT`, `TYPE_WARM_CHAT_HISTORY`, `TYPE_CHAT_MARK_BATCH`/`TYPE_CHAT_DELETE_BATCH`. Подробно: `notes/topics/248-task-types.md`.
+
+---
+
+## Дополнения 249
+
+### 249. MsgSend + ChatPersonalConfig + ChatGroupMark
+
+`MsgSend`: chatId/messageId/userId/traceId/lastKnownDraftTime/notify. `ChatPersonalConfig`: hideNonContactBar. `ChatGroupMark`: flagType/enabled. Подробно: `notes/topics/249-msg-send-chat-tasks.md`.
