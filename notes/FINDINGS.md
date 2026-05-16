@@ -4270,3 +4270,11 @@ RTD флаг для фейковых чатов в `PickerChatsListWidget`. По
 ### 527. DevMenuFeatureTogglesPageScreen
 
 Редакторы Boolean/Long/Integer/String/JSON/PmsKey. Источник `"SERVER"`. DevMenu в production. Подробно: `notes/topics/527-devmenu-feature-toggles.md`.
+
+---
+
+## Дополнения 528
+
+### 528. DevMenuInfoScreen + ThreadsStateViewerScreen
+
+`DevMenuInfoScreen`: PerfClass/Density. `ThreadsStateViewerScreen`: потоки. `MemoryDebuggerScreen`: заглушка. Подробно: `notes/topics/528-devmenu-info-threads.md`.

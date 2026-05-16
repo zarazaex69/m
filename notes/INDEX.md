@@ -635,3 +635,4 @@ status: living
 - [[topics/525-integrity-logs-viewer]] — IntegrityLogsViewerScreen: integrity logs viewer in DevMenu (production), .dex/.so pattern #integrity-logs #devmenu #debug #surveillance
 - [[topics/526-json-bottom-sheet]] — JsonBottomSheet: JSON editor in DevMenu (production), button_id/initial_json/descriptions #json-editor #devmenu #debug #server-control
 - [[topics/527-devmenu-feature-toggles]] — DevMenuFeatureTogglesPageScreen: Boolean/Long/Integer/String/JSON/PmsKey editors, SERVER source, DevMenu in production #devmenu #feature-toggles #server-control #debug
+- [[topics/528-devmenu-info-threads]] — DevMenuInfoScreen (PerfClass/Density) + ThreadsStateViewerScreen + MemoryDebuggerScreen (stub) #devmenu #device-info #debug #surveillance
