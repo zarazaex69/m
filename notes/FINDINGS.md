@@ -3390,3 +3390,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 417. MyTracker GAID + OAID
 
 `GoogleAdInfoDataProvider`: GAID + isLimitAdTrackingEnabled. `HuaweiAdInfoDataProvider`: OAID + isLimitAdTrackingEnabled. Подробно: `notes/topics/417-mytracker-gaid-oaid.md`.
+
+---
+
+## Дополнения 418
+
+### 418. MyTracker AppsDataProvider
+
+Список не-системных приложений (packageName + firstInstallTime). Хэш `appsHash` — отправляется при изменении. Подробно: `notes/topics/418-mytracker-installed-packages.md`.
