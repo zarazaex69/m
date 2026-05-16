@@ -272,3 +272,4 @@ status: living
 - [[topics/163-conversation-stats]] — ConversationStats: 18+ components (kwsStat/mlDownloadStat/iceCandidatePairChangedStat/serverTopologyRequestedStat) #calls #stats #telemetry
 - [[topics/164-signaling-transport-stat]] — SignalingTransportStat: WS signaling stats (connect/disconnect/ping/pong/errors/timeouts) #calls #signaling #stats
 - [[topics/165-ice-candidate-pair-stat]] — IceCandidatePairChangedStat: server gets local_address/remote_address(real IPs)/SDP/reason on every ICE pair change #calls #ice #surveillance
+- [[topics/166-accept-call-stat]] — AcceptCallStat: call_accepted_incoming with isCaller/isMe/isConcurrent flags #calls #stats
