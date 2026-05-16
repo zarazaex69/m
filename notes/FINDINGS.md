@@ -2568,3 +2568,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 314. folder_and_chats + message_uploads + notifications_read_marks DB
 
 `folder_and_chats`: chatId/folderId. `message_uploads`: path/upload_type/video_quality/trim. `notifications_read_marks`: chat_id/mark. Подробно: `notes/topics/314-folder-chats-uploads-marks-db.md`.
+
+---
+
+## Дополнения 315
+
+### 315. comments + complain_reasons DB
+
+`comments`: 28 полей (аналог messages + parent_chat_server_id/parent_message_server_id). `complain_reasons`: id/type_id/complain_reasons(BLOB). Подробно: `notes/topics/315-comments-complain-reasons-db.md`.
