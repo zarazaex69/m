@@ -3990,3 +3990,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 492. geolocation_send_click
 
 `{source_id, source_type}`. Открытие в Яндекс.Картах (`yandexmaps://`). Подробно: `notes/topics/492-geolocation-send-click.md`.
+
+---
+
+## Дополнения 493
+
+### 493. log.externalLog API
+
+`{collector, application, platform, items}`. Gzip сжатие. Подробно: `notes/topics/493-log-external-api.md`.

@@ -600,3 +600,4 @@ status: living
 - [[topics/490-push-notification-analytics]] — a6c Push Analytics: show/drop/open_chats/open_chat/open_url, all push notifications fully logged with trid/eKey/ttime/dtime/fcmdtime #push-analytics #telemetry #surveillance #notification #push-action #drop #show
 - [[topics/491-daily-analytics-worker]] — DailyAnalyticsWorker: PERMISSION.permission_status daily report: push/contacts/fsi/gallery/camera/microphone/geo #permission-status #daily-analytics #telemetry #surveillance #worker
 - [[topics/492-geolocation-send-click]] — geolocation_send_click: {source_id, source_type}, Yandex Maps fallback #geolocation #telemetry #surveillance #yandex-maps #location-share
+- [[topics/493-log-external-api]] — mcc log.externalLog API: {collector, application, platform, items}, gzip, priority=2 #log-external #telemetry #surveillance #onelog #collector #application #platform
