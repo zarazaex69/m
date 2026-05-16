@@ -3542,3 +3542,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 436. WebAppContactData
 
 `WebAppContactData(displayName, avatarUrl, abbreviationModel)`. Мини-приложение получает данные профиля пользователя. Подробно: `notes/topics/436-webapp-contact-data.md`.
+
+---
+
+## Дополнения 437
+
+### 437. TwoFA
+
+6 экранов: Settings/Creation/Onboarding/CheckPass/StartRestore/ProfileDeletion. `twofa_settings_track_id_key` для аналитики. Подробно: `notes/topics/437-twofa-screens.md`.

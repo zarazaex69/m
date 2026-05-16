@@ -544,3 +544,4 @@ status: living
 - [[topics/434-change-media-settings]] — change-media-settings: isVideoEnabled/isAudioEnabled/isScreenSharingEnabled/isAnimojiEnabled/isAudioSharingEnabled #calls #media-settings #signaling #audio #video #screen-share #surveillance
 - [[topics/435-webrtc-experiments]] — ev1 WebRTC Experiments: 30+ flags, isAudioCaptureLoggingEnabled/bitrateDumpGatheringState/isBackendRenderVmojiEnabled/isCorruptWsEndpointEnabled #calls #experiments #webrtc #server-control #surveillance
 - [[topics/436-webapp-contact-data]] — WebAppContactData: displayName/avatarUrl/abbreviationModel, mini-app gets user profile data #webapp #contact-data #jsbridge #surveillance
+- [[topics/437-twofa-screens]] — TwoFA: Settings/Creation/Onboarding/CheckPass/StartRestore/ProfileDeletion, twofa_settings_track_id_key #twofa #2fa #two-factor-auth #security #settings
