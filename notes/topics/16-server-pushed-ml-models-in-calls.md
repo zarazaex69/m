@@ -1,6 +1,6 @@
 ---
-tags: [surveillance, server-control, ml, calls, kws, native-libs]
-status: confirmed
+tags: [surveillance, server-control, ml, calls, kws, native-libs, partially-removed-in-26.16.0]
+status: partially-removed-in-26.16.0
 sources:
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/ml/**
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/audio/KeywordSpotterManagerImpl.java
@@ -9,7 +9,21 @@ related:
   - "[[15-on-device-asr-kws-diarization]]"
   - "[[09-native-libs]]"
   - "[[03-pms-server-flags]]"
+  - "[[530-version-26.16.0-diff]]"
 ---
+
+> ## ⚠️ В MAX 26.16.0 — KWS-модель более не качается с сервера
+>
+> ❌ Серверный ключ **`android.mlfeatures.ws_0`** (URL + checksum + enabled для KWS-модели `.tflite`) — клиент его больше не запрашивает. `KwsFeatureConfigProvider` удалён.  
+> ✅ Серверный ключ **`android.mlfeatures.ns_1`** (NoiseSuppression-модель) — продолжает работать. `NSFeatureConfigProvider` на месте.  
+> ✅ `DownloadService` (HTTP + MD5-validation) — на месте, обслуживает теперь только NS-модель.
+>
+> То есть механизм «качать ML-модели по URL с сервера в рантайме» сохранён — но конкретно для KWS отключён. Если решат вернуть KWS, инфраструктура для это уже готова. См. [[530-version-26.16.0-diff]].
+>
+> Ниже — описание полного на 26.15.3 пайплайна.
+>
+> ---
+
 
 # Серверно-управляемые ML-модели в звонках (KWS / NS / DownloadService)
 

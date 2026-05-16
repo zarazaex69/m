@@ -1,6 +1,6 @@
 ---
-tags: [server-control, killswitch, feature-flags, telemetry]
-status: confirmed
+tags: [server-control, killswitch, feature-flags, telemetry, renamed-in-26.16.0]
+status: renamed-in-26.16.0
 sources:
   - work/jadx_base/sources/ru/ok/tamtam/android/prefs/PmsKey.java
   - findings/raw/pms_keys.txt
@@ -9,7 +9,28 @@ related:
   - "[[02-vpn-warning]]"
   - "[[04-telemetry-endpoints]]"
   - "[[16-server-pushed-ml-models-in-calls]]"
+  - "[[530-version-26.16.0-diff]]"
 ---
+
+> ## ⚠️ В MAX 26.16.0 — переименован в `PmsProperty`
+>
+> ❌ Класс `ru.ok.tamtam.android.prefs.PmsKey` (единый enum с 334 значениями) — **удалён**.  
+> ✅ Заменён на `one.me.sdk.prefs.PmsProperty` — **каждый флаг теперь отдельный property-метод**.  
+> ✅ Все 334 строковых ключа (`log-sensitive`, `show-vpn-chat-bottomsheet`, `invalidate-db-force`, `fake-chats`, `calls-sdk-log-audio` и т.д.) — **на месте**.  
+> ✅ Серверный пуш конфигурации — **работает как раньше**, поведение клиента не изменилось.
+>
+> Метрика: `PmsKey` упоминаний 3254 → **0** (всё перенесли). Это **обфускация без изменения функциональности** — реверсу теперь нельзя получить список флагов одним `grep PmsKey`. Но строки самих ключей сохранились в smali — их можно собрать через `grep "log-\|show-\|fake-"`.
+>
+> Пример из smali нового класса:
+> ```smali
+> const-string v15, "log-sensitive"
+> const-string v14, "logSensitive()Lone/me/sdk/prefs/PmsProperty;"
+> ```
+>
+> Полный список 334 флагов в `findings/raw/pms_keys.txt` остаётся актуальным — это **имена ключей с сервера**, они не меняются. См. также [[530-version-26.16.0-diff]].
+>
+> ---
+
 
 # PmsKey: 334 серверно-управляемых параметра поведения
 

@@ -1,6 +1,6 @@
 ---
-tags: [ml, kws, ns, tflite, model-download, calls, surveillance, server-control]
-status: confirmed
+tags: [ml, kws, ns, tflite, model-download, calls, surveillance, server-control, partially-removed-in-26.16.0]
+status: partially-removed-in-26.16.0
 sources:
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/ml/MLFeaturesManager.java
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/ml/model/MLFeatureType.java
@@ -13,6 +13,24 @@ sources:
 related:
   - "[[15-on-device-asr-kws-diarization]]"
   - "[[16-server-pushed-ml-models-in-calls]]"
+  - "[[530-version-26.16.0-diff]]"
+---
+
+> ## ⚠️ В MAX 26.16.0 — частично удалено
+>
+> ❌ `KwsFeatureDelegate` + `Companion` — **удалены**.  
+> ❌ `KwsFeatureConfigProvider` + `Companion` — **удалены**.  
+> ❌ `MLFeaturesManagerImpl$delegates$1$2` (lambda для регистрации KWS-делегата) — удалена.  
+> ❌ Ключ `android.mlfeatures.ws_0` (KWS-модель с сервера) — больше не загружается.  
+> ✅ `NSFeatureDelegate` + `NSFeatureConfigProvider` (NoiseSuppression) — **на месте**.  
+> ✅ `MLFeaturesManager` интерфейс — на месте (теперь обслуживает только NS).  
+> ✅ Ключ `android.mlfeatures.ns_1` (NS-модель с сервера) — продолжает работать.
+>
+> Метрика: `MLFeatures` упоминаний 144 → 131 (-13, ровно KWS-делегаты).
+>
+> Ниже — описание для **26.15.3** с обоими делегатами. См. [[530-version-26.16.0-diff]].
+>
+> ---
   - "[[376-asr-online-manager]]"
 ---
 

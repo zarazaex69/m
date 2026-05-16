@@ -167,7 +167,7 @@ Gradle-переменная `${REQUEST_INSTALL_PACKAGES}` сохранилась
 - `com.facebook.soloader.enabled = false` (отключение SoLoader, см. [[09-native-libs]]).
 - `tracer_environment = "release"` или подобное (нужно отдельно вытащить).
 - `tracer_mapping_uuid` — задаётся в Gradle при сборке, идёт в `osi.c.uuid` (см. [[17-apptracer-uplink]]).
-- Иконка приложения — `@mipmap/ic_launcher_9may` («9 мая»).
+- Иконка приложения — `@mipmap/ic_launcher_9may` («9 мая»). **⚠️ В 26.16.0 заменена на обычный `@mipmap/ic_launcher`** — сезонная иконка, прошёл май. См. [[530-version-26.16.0-diff]].
 
 ## 8. Сводка
 

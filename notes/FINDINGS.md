@@ -1,5 +1,20 @@
 # MAX 26.15.3 — что внутри. Сухие факты для статьи
 
+> ## ⚠️ ОБНОВЛЕНИЕ: MAX 26.16.0 (14 мая 2026)
+>
+> Эта выжимка описывает **26.15.3**. 14 мая 2026 в RuStore вышла **26.16.0** (versionCode 6698). Что изменилось:
+>
+> - 🔥 ~~**KWS (детектор ключевых слов в звонках) — удалён полностью**~~. И Java-обёртка, и native-код (`vk::enh::BCResNetKWS`, `BCResNetExternalStateKWS`, `FeatureExtractor`), и статистика `bad_call_detected_by_audio_spotter`, и MLFeatures-делегаты. Это единственное, на что громко возмущалась пресса — испугались и убрали. **Я сохранил все заметки** ([[topics/15-on-device-asr-kws-diarization|15]], [[topics/70-keyword-spotter-in-calls|70]], [[topics/394-audio-sdk-kws-mic-proximity|394]], [[topics/395-keyword-spotter-impl|395]], [[topics/380-ml-features-manager|380]]) — они исторически верны для 26.15.3.
+> - 🔄 **PmsKey → PmsProperty** (`one.me.sdk.prefs.PmsProperty`). 334 серверных флага на месте, теперь как property-методы вместо enum'а. Реверсу сложнее агрегировать — поведение то же. См. [[topics/03-pms-server-flags|topic 03]].
+> - ✅ **Что осталось без изменений:** Mobile ID cleartext HTTP к 6 операторам, серверный `AsrOnlineManager` (полная транскрипция речи), Speaker Recognition, MediaDumpManager + DebugManager в production, killswitch + `download.max.ru`, HostReachabilityChecker, Apptracer (heap-dumps + sample-uploader), DevMenu в release, NFC HCE для мини-апок, MyTracker (5 сенсоров + список приложений), все 159+ WS-опкодов.
+> - 🆕 **Что добавили:** CameraX (миграция с Camera1/2), `AspectRatiosBottomSheet` для кропа, flash-call логин (вместо SMS), транскрипция видеосообщений (TRANSCRIBE_MEDIA для видео), `Tasks$CallHistoryClearBatch`, иконка `ic_launcher_9may` → обычная.
+>
+> **Полный diff с числовыми метриками:** [[topics/530-version-26.16.0-diff|topic 530]].
+>
+> **Финальный диагноз:** косметический ремонт под общественное давление. Убрали одну фичу из десятка проблемных. Реверсу труднее искать PmsKey, но поведение клиента не изменилось.
+
+---
+
 Анализ APK `ru.oneme.app` версии 26.15.3 (база `apk/max-26.15.3-base.apk`, нативные либы `apk/max-26.15.3-arm64.apk`). Декомпиляция — apktool 2.x + jadx 1.5.5 (≈15 782 классов, 23 795 java-файлов в jadx-выводе, ≈2 783 ресурса).
 
 Ниже — выжимка из подробных тем в `notes/topics/`. Это не «список CVE», это про то, **как продукт устроен и что из этого устройства следует**.

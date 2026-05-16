@@ -1,6 +1,6 @@
 ---
-tags: [kws, keyword-spotter, wordspotter, server-control, surveillance, audio]
-status: confirmed
+tags: [kws, keyword-spotter, wordspotter, server-control, surveillance, audio, removed-in-26.16.0]
+status: removed-in-26.16.0
 sources:
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/audio/internal/KeywordSpotterConfigProviderImpl.java
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/audio/KeywordSpotterManagerImpl.java
@@ -9,7 +9,15 @@ related:
   - "[[380-ml-features-manager]]"
   - "[[382-conversation-stats]]"
   - "[[384-externcalls-sdk-config]]"
+  - "[[530-version-26.16.0-diff]]"
 ---
+
+> ## ⚠️ В MAX 26.16.0 — УДАЛЕНО
+>
+> `KeywordSpotterManagerImpl`, `KeywordSpotterConfigProvider`, `setKeywordSpotterParams`, `bad_call_detected_by_audio_spotter`, нативный `BCResNetKWS::score(...)` — всё ликвидировано. См. [[530-version-26.16.0-diff]]. Заметка сохранена для исторической полноты по 26.15.3.
+>
+> ---
+
 
 # KeywordSpotterManagerImpl — детали KWS
 

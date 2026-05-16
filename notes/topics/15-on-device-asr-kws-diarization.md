@@ -1,6 +1,6 @@
 ---
-tags: [surveillance, ml, calls, asr, kws, native-libs]
-status: confirmed
+tags: [surveillance, ml, calls, asr, kws, native-libs, partially-removed-in-26.16.0]
+status: partially-removed-in-26.16.0
 sources:
   - findings/native/libEnhancementLibShared.exports.txt
   - findings/native/libEnhancementLibShared.strings.txt
@@ -11,7 +11,27 @@ related:
   - "[[16-server-pushed-ml-models-in-calls]]"
   - "[[03-pms-server-flags]]"
   - "[[11-state-bots-and-content-policy]]"
+  - "[[530-version-26.16.0-diff]]"
 ---
+
+> ## ⚠️ В MAX 26.16.0 — KWS-часть удалена из libEnhancementLibShared
+>
+> ❌ `vk::enh::BCResNetKWS` (класс + конструктор + computeProbs/doScoreData/extractFeatures/reset + 3 перегрузки `score`) — **удалён**  
+> ❌ `vk::enh::BCResNetExternalStateKWS` (тот же набор методов) — **удалён**  
+> ❌ `vk::enh::FeatureExtractor` (extract, extract_, fft, spectrogram, buildHammingWindow + конструктор) — **удалён**  
+> ❌ `vk::enh::buildMelBasis` — удалён  
+> ✅ `vk::enh::AsrService` (Conformer-CTC ASR) — **на месте**  
+> ✅ `vk::enh::SpeakerRecognitionEngineFactory` / `SpeakerRecognitionVerifierFactory` — **на месте**  
+> ✅ Diarization — на месте  
+> ✅ Wav2Lip (animoji) — на месте  
+> ✅ Denoise — на месте
+>
+> Размер `libEnhancementLibShared.so`: 5.72 MB → 5.66 MB (−62 KB на KWS-стек). Экспортов `vk::enh`: 306 → 281 (−25).
+>
+> Ниже — описание полного на 26.15.3 стека. См. [[530-version-26.16.0-diff]].
+>
+> ---
+
 
 # На-устройство ASR / Keyword Spotting / Диаризация в `libEnhancementLibShared.so`
 

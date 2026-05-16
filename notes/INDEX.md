@@ -1,11 +1,21 @@
 ---
-tags: [moc, index, max, max-26.15.3]
+tags: [moc, index, max, max-26.15.3, max-26.16.0]
 status: living
 ---
 
-# MAX 26.15.3 — Map of Content
+# MAX 26.15.3 → 26.16.0 — Map of Content
 
 Главная точка входа в реверс-конспект. Каждый узел — отдельная заметка.
+
+## ⚠️ Версия 26.16.0 (14 мая 2026)
+
+> **Что испугались и удалили:** KWS (детектор ключевых слов в звонках) — Java + Native + статистика. ~~[[15-on-device-asr-kws-diarization]]~~, ~~[[70-keyword-spotter-in-calls]]~~, ~~[[394-audio-sdk-kws-mic-proximity]]~~, ~~[[395-keyword-spotter-impl]]~~ — **сохранены для истории**, но в 26.16.0 этого больше нет.
+>
+> **Что переименовали:** `PmsKey` → `PmsProperty` (пакет `one.me.sdk.prefs`). 334 серверных флага на месте, поведение то же. См. [[03-pms-server-flags]].
+>
+> **Что осталось без изменений:** Mobile ID cleartext, серверный ASR, MediaDump в production, killswitch + download.max.ru, HostReachability, Apptracer heap-dumps, DevMenu в release, NFC HCE, MyTracker.
+>
+> Полный diff: **[[530-version-26.16.0-diff|530 — diff 26.15.3 → 26.16.0]]**.
 
 ## TL;DR
 
@@ -637,3 +647,7 @@ status: living
 - [[topics/527-devmenu-feature-toggles]] — DevMenuFeatureTogglesPageScreen: Boolean/Long/Integer/String/JSON/PmsKey editors, SERVER source, DevMenu in production #devmenu #feature-toggles #server-control #debug
 - [[topics/528-devmenu-info-threads]] — DevMenuInfoScreen (PerfClass/Density) + ThreadsStateViewerScreen + MemoryDebuggerScreen (stub) #devmenu #device-info #debug #surveillance
 - [[topics/529-sessions-devices-opcodes]] — SettingsDevicesScreen: sessions with location field, opcodes 96(sessions)/97(terminate)/98(SMS/CALL code)/99(registration) #sessions #devices #ws-opcodes #surveillance #auth
+
+### 🔄 Версионный diff
+
+- [[topics/530-version-26.16.0-diff]] — **полный diff 26.15.3 → 26.16.0**: KWS удалён (Java+Native+stats), PmsKey→PmsProperty, Mobile ID/ASR/MediaDump/killswitch на месте, flash-call логин, CameraX, транскрипция видеосообщений #version-diff #26.16.0 #kws-removed #pmskey-renamed #cosmetic-fix #surveillance

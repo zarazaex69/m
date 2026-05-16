@@ -1,6 +1,6 @@
 ---
-tags: [audio, kws, keyword-spotter, microphone, proximity, surveillance, server-control]
-status: confirmed
+tags: [audio, kws, keyword-spotter, microphone, proximity, surveillance, server-control, partially-removed-in-26.16.0]
+status: partially-removed-in-26.16.0
 sources:
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/audio/KeywordSpotterManager.java
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/audio/MicrophoneManager.java
@@ -10,7 +10,19 @@ related:
   - "[[15-on-device-asr-kws-diarization]]"
   - "[[380-ml-features-manager]]"
   - "[[382-conversation-stats]]"
+  - "[[530-version-26.16.0-diff]]"
 ---
+
+> ## ⚠️ В MAX 26.16.0 — частично удалено
+>
+> ❌ `KeywordSpotterManager` + `KeywordSpotterConfig` + `KeywordSpotterParams` — **удалены**.  
+> ✅ `MicrophoneManager.registerAudioSampleCallback` — на месте (его теперь дёргает только ASR/Speaker Recognition).  
+> ✅ `ProximityTracker`, `VideoTracker` — на месте.
+>
+> Ниже описано полное состояние SDK для 26.15.3. См. также [[530-version-26.16.0-diff]].
+>
+> ---
+
 
 # Audio SDK — KeywordSpotter, Microphone, Proximity
 

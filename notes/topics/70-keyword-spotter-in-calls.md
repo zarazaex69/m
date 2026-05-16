@@ -1,6 +1,6 @@
 ---
-tags: [kws, keyword-spotting, calls, server-control, surveillance, ml]
-status: confirmed
+tags: [kws, keyword-spotting, calls, server-control, surveillance, ml, removed-in-26.16.0]
+status: removed-in-26.16.0
 sources:
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/audio/KeywordSpotterManagerImpl.java
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/audio/internal/KeywordSpotterConfigProviderImpl.java
@@ -10,7 +10,19 @@ related:
   - "[[15-on-device-asr-kws-diarization]]"
   - "[[16-server-pushed-ml-models-in-calls]]"
   - "[[69-remote-settings-calls-sdk]]"
+  - "[[530-version-26.16.0-diff]]"
 ---
+
+> ## ⚠️ В MAX 26.16.0 (14 мая 2026) — УДАЛЕНО ПОЛНОСТЬЮ
+>
+> Java-обёртка KWS, native-код (`vk::enh::BCResNetKWS`, `BCResNetExternalStateKWS`, `FeatureExtractor`), статистика `bad_call_detected_by_audio_spotter`, `ConversationKwsStat`, `KwsFeatureDelegate`, `KwsFeatureConfigProvider`, `KeywordSpotterManager*`, **`android.wordspotter.config`** — всё убрано. Java упоминаний `KeywordSpotter`: 304 → **0**. Native экспортов KWS: 11 → **0**.
+>
+> **Испугались и удалили** ровно эту фичу — единственное, на что громко возмущалась пресса как на «прослушку нейросетью».
+>
+> Ниже — описание для **26.15.3** (исторически верно). Полный diff: [[530-version-26.16.0-diff]].
+>
+> ---
+
 
 # KeywordSpotter в звонках — server-controlled KWS с turnOffInMs
 
