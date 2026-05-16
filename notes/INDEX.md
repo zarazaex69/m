@@ -49,9 +49,11 @@ status: living
 - [[topics/30-root-detection-telemetry]] — root-detection без блокировки, isRooted в телеметрию #root-detection
 - [[topics/31-onelog-event-categories]] — карта event-категорий OneLog (PUSH/CALL/PERMISSION/...) #telemetry
 - [[topics/32-presence-server-controlled]] — hiddenOnline сервероуправляемый, presence-* PmsKey #presence
-- [[topics/30-root-detection-telemetry]] — root-detection без блокировки, isRooted в телеметрию #root-detection
-- [[topics/31-onelog-event-categories]] — карта event-категорий OneLog (PUSH/CALL/PERMISSION/...) #telemetry
-- [[topics/32-presence-server-controlled]] — hiddenOnline сервероуправляемый, presence-* PmsKey #presence
+- [[topics/41-server-side-client-diagnostic-struct]] — серверная структура клиент-диагностики (proxy/isVpn/country/app-update) #server-control #anti-vpn
+
+### Серверная контроль (медиа и сообщения)
+
+- [[topics/42-voice-messages-opus-server-controlled]] — голосовухи: OPUS encoder/bitrate/sample-rate server-tunable #voice-messages #server-control
 
 ### Протокол и манифест
 
