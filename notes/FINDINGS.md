@@ -1244,3 +1244,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 148. CallExternalAnalyticsApiRequest
 
 Внешняя аналитика звонков с `application`, `collector`, `platform`. Два независимых канала аналитики: нативный (`vchat.clientStats` с sdkVersion) и внешний (с collector). Подробно: `notes/topics/148-call-external-analytics.md`.
+
+---
+
+## Дополнения 149
+
+### 149. UploadConfig — конфиг загрузки аналитики звонков
+
+`DEFAULT_DISABLE_UPLOAD_IN_CALL=true` — загрузка отключена во время активного звонка. `DEFAULT_MAX_EVENT_COUNT=800` — буфер до 800 событий. `DEFAULT_MAX_FILE_SIZE_KB=15`. `DEFAULT_LOCAL_FILE_COUNT=100`. Подробно: `notes/topics/149-upload-config-calls-analytics.md`.
