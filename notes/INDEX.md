@@ -419,3 +419,4 @@ status: living
 - [[topics/309-nm4-additional-schemas]] — nm4 additional: chat(id/server_id/data) + video upload(quality/trim) + FCM notification(text/sender/push_id/bmd) #protocol #database #parser #fcm
 - [[topics/310-presence-db-schema]] — presence DB: contactServerId/seen(last online time)/status #database #presence #last-seen #surveillance
 - [[topics/311-contacts-phones-db]] — contacts(id/server_id/data BLOB) + phones(phonebook_id/phone/phone_key/server_phone/email/first_name/last_name) DB schemas #database #contacts #phones #surveillance
+- [[topics/312-stickers-profile-db]] — stickers(16 fields: url/mp4_url/lottie_url/audio/tags) + sticker_sets(name/author_id/link) + profile(BLOB) DB schemas #database #stickers #profile

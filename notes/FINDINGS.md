@@ -2544,3 +2544,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 311. contacts + phones DB
 
 `contacts`: id/server_id/data(BLOB protobuf). `phones`: phonebook_id/contact_id/phone/phone_key/server_phone/email/first_name/last_name/avatar_path. Подробно: `notes/topics/311-contacts-phones-db.md`.
+
+---
+
+## Дополнения 312
+
+### 312. stickers + sticker_sets + profile DB
+
+`stickers`: 16 полей (url/mp4_url/lottie_url/audio/tags). `sticker_sets`: name/icon_url/author_id/link. `profile`: id/server_id/profile(BLOB). Подробно: `notes/topics/312-stickers-profile-db.md`.
