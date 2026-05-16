@@ -1816,3 +1816,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 220. QUIC TLS — отключена проверка сертификата
 
 `qse` — null `X509TrustManager` (`checkServerTrusted` пустой). Используется для QUIC/WebTransport. Приложение само выводит `SECURITY WARNING: INSECURE configuration! Server certificate validation is disabled; QUIC connections may be subject to man-in-the-middle attacks!` — но всё равно использует. Подробно: `notes/topics/220-quic-tls-disabled.md`.
+
+---
+
+## Дополнения 221
+
+### 221. network_security_config.xml — cleartext HTTP
+
+Явно разрешён cleartext HTTP для 6 доменов: `mobileid.megafon.ru`, `idgw.mobileid.mts.ru`, `hhe.mts.ru`, `he-mc.tele2.ru`, `he-mc.t2.ru`, `balance.beeline.ru`. Подтверждение [[01-mobile-id-cleartext]]. Подробно: `notes/topics/221-network-security-config.md`.
