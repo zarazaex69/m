@@ -3550,3 +3550,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 437. TwoFA
 
 6 экранов: Settings/Creation/Onboarding/CheckPass/StartRestore/ProfileDeletion. `twofa_settings_track_id_key` для аналитики. Подробно: `notes/topics/437-twofa-screens.md`.
+
+---
+
+## Дополнения 438
+
+### 438. SafeMode
+
+Скрытие профиля + звонки только от контактов + чаты только со знакомыми + фильтр контента. `safeMode`/`safeModeNoPin` в UserSettings. Подробно: `notes/topics/438-safe-mode.md`.
