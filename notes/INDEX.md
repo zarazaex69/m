@@ -220,3 +220,4 @@ status: living
 - [[topics/111-invite-friends-frequency]] — invite-friends-sheet-frequency: server-controlled invite schedule (array of days) #growth #server-control
 - [[topics/112-user-debug-report-chat]] — user-debug-report + userLogReportChatId (server directs user logs to specific chat) + debug-mode #debug #surveillance
 - [[topics/113-invalidate-db-force]] — invalidate-db-force: server can force-delete local DB via version bump #database #destructive #server-control
+- [[topics/114-views-count-enabled]] — views-count-enabled: server-gated post view tracking in channels #channels #surveillance #server-control
