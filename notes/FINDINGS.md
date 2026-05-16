@@ -2408,3 +2408,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 294. EXTERNAL_CALLBACK + PHONE_BIND_REQUEST WS
 
 `EXTERNAL_CALLBACK`: botId/startParam/chats. `PHONE_BIND_REQUEST`: blockingDuration/trackId/codeLength. Подробно: `notes/topics/294-external-callback-phone-bind-ws.md`.
+
+---
+
+## Дополнения 295
+
+### 295. NOTIF_CALL_START WS
+
+`conversation_id`/`rejectedParticipants`/`internalCallerParams`. Подробно: `notes/topics/295-notif-call-start-ws.md`.
