@@ -1696,3 +1696,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 205. Tasks.proto — 60+ фоновых задач
 
 `LocationRequest`(liveLocation/messageId/requestId), `CritLog`, `SuspendBot`, `UpdateFireTimeProtoTask`, `SyncChatHistory`/`WarmChatHistory`, `MsgSend`/`MsgEdit`/`MsgDelete`, `FileUpload`/`FileDownload`. Подробно: `notes/topics/205-tasks-proto.md`.
+
+---
+
+## Дополнения 206
+
+### 206. Protos.java — 50+ protobuf nano схем
+
+`Location`: `latitude`/`longitude`/`altitude`/`accuracy`/`bearing`/`speed`/`livePeriod`/`startTime`/`endTime`/`ttl`/`zoom`/`corrupted`. `VideoConversation`: `conversationId`/`joinLink`/`previewParticipantIds`/`approxParticipantCount`/`type(BY_LINK/FROM_CHAT)`. `LogEvent`: `event`/`params(bytes)`/`sessionId`. Подробно: `notes/topics/206-protos-schemas.md`.

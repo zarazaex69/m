@@ -313,3 +313,4 @@ status: living
 - [[topics/203-live-location]] — Live Location: lat/lon/alt/accuracy/bearing/speed/livePeriod + FCM LocationRequest push (server-initiated geolocation) #location #surveillance #fcm
 - [[topics/204-opus-file-writer]] — Opus FileWriter: nativeAudioStartRecord(path/sampleRate/channels)/nativeAudioWriteFrame (used in ASR+MediaDump) #calls #opus #audio-recording #native
 - [[topics/205-tasks-proto]] — Tasks.proto: 60+ background task types (LocationRequest/CritLog/SuspendBot/UpdateFireTimeProtoTask/SyncChatHistory) #protocol #tasks #protobuf
+- [[topics/206-protos-schemas]] — Protos.java: 50+ protobuf nano schemas (Location/ttl/livePeriod, VideoConversation/previewParticipantIds, LogEvent) #protocol #protobuf #messages
