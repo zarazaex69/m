@@ -2632,3 +2632,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 322. Apptracer sample/initUpload
 
 `https://sdk-api.apptracer.ru/api/sample/initUpload?sampleToken=<token>` — загрузка произвольных файлов (heap dumps, CPU profiles) с feature/sampleSize/attr1/attr2/tag. Подробно: `notes/topics/322-apptracer-sample-upload.md`.
+
+---
+
+## Дополнения 323
+
+### 323. Apptracer — все endpoints
+
+`api/crash/trackSession`(device_id/sessions/drops) + `api/perf/upload`(samples) + `api/sample/initUpload`+`api/sample/upload`. Подробно: `notes/topics/323-apptracer-all-endpoints.md`.

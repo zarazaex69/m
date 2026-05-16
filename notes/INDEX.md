@@ -430,3 +430,4 @@ status: living
 - [[topics/320-health-stats-api]] — HealthStats.takeMyUidSnapshot(): mobile(rx/tx/idle)/wifi(rx/tx/idle) + fallback to TrafficStats #surveillance #health-stats #network-stats #uid
 - [[topics/321-apptracer-perf-upload]] — Apptracer perf/upload: sdk-api.apptracer.ru/api/perf/upload?crashToken (BatterySnapshot CPU/battery/network samples) #telemetry #apptracer #battery #performance #upload
 - [[topics/322-apptracer-sample-upload]] — Apptracer sample/initUpload: sdk-api.apptracer.ru/api/sample/initUpload?sampleToken (arbitrary files: heap dumps/CPU profiles) #telemetry #apptracer #sample-upload #surveillance
+- [[topics/323-apptracer-all-endpoints]] — Apptracer all endpoints: api/crash/trackSession(device_id/sessions/drops) + api/perf/upload + api/sample/initUpload+upload #telemetry #apptracer #endpoints #surveillance
