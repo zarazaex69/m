@@ -377,3 +377,4 @@ status: living
 - [[topics/267-protos-chat-settings-reactions]] — ChatSettings(dontDisturbUntil/hideLiveLocationPanel/lastNotifMark) + ChatReactionsSettings(count/included/isActive/isFull) #protocol #chat-settings #reactions #live-location
 - [[topics/268-protos-group-chat-info]] — GroupChatInfo(groupId/isImportant/isModerator/messagingPermissions DISABLED/MEMBERS/ALL) + GroupOptions(groupPremium) #protocol #group-chat #protos #permissions
 - [[topics/269-protos-sticker]] — Protos.Sticker: stickerId/setId/stickerType(STATIC/LIVE/POSTCARD/LOTTIE)/audio + AnimationProperties(fps/framesCount) #protocol #sticker #protos
+- [[topics/270-tasks-draft-msgview-assets]] — DraftSave(draft bytes) + MsgView(messageIds[]/registerView — server knows which messages viewed) + AssetsAdd + SyncChatHistory #protocol #tasks #draft #msg-view #surveillance

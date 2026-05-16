@@ -2208,3 +2208,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 269. Protos.Sticker
 
 `stickerId`/`setId`/`stickerType`(STATIC/LIVE/POSTCARD/LOTTIE)/`authorType`(SYSTEM/USER)/`audio`. `AnimationProperties`: duration/fps/framesCount/replayDelay. Подробно: `notes/topics/269-protos-sticker.md`.
+
+---
+
+## Дополнения 270
+
+### 270. DraftSave + MsgView + AssetsAdd + SyncChatHistory
+
+`MsgView`: chatId/messageIds[]/registerView/time — **сервер знает, какие сообщения просмотрены**. `DraftSave`: chatId/draft(bytes) — черновики синхронизируются с сервером. Подробно: `notes/topics/270-tasks-draft-msgview-assets.md`.
