@@ -478,3 +478,4 @@ status: living
 - [[topics/368-webapp-vpn-exception]] — WebAppHttpClient.WebAppHasVpnException: VPN detected in WebApp HTTP client (mini-apps blocked with VPN) #webapp #vpn-detection #surveillance
 - [[topics/369-download-file-from-webapp]] — DownloadFileFromWebAppWorker: fileName/fileUrl ForegroundWorker for mini-app file downloads #webapp #file-download #worker
 - [[topics/370-tamtam-api-exceptions]] — tamtam.api exceptions: NonceException/SessionSendLimitException/UnknownOpcodeException/MaxRetryCountExceededException #protocol #api #exceptions #nonce
+- [[topics/371-media-projection-service]] — MediaProjectionService: startForeground(12) screen capture foreground service in calls #screen-capture #media-projection #foreground-service #calls
