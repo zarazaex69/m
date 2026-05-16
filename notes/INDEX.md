@@ -352,3 +352,4 @@ status: living
 - [[topics/242-notifications-tracker-db]] — notifications_tracker_messages: chat_id/message_id/time/fcm/drop_reason (tracks why notifications dropped) #database #notifications #tracking
 - [[topics/243-chat-folder-db]] — chat_folder DB: 14 fields (filters/filterSubjects/widgets/templateId/sourceId) #database #chat-folder #filters
 - [[topics/244-log-sensitive-server-flag]] — log-sensitive/log-full in LOGIN response: server enables auth token logging + full contacts logging #server-control #logging #sensitive-data #surveillance
+- [[topics/245-login-ws-response]] — LOGIN WS response: config/drafts/presence/contacts/messages/profile/updates/time/calls/chats + log-full/log-sensitive #protocol #login #ws #session-init

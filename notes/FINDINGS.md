@@ -2008,3 +2008,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 244. log-sensitive / log-full — серверное управление логированием
 
 `log-sensitive=true` в ответе LOGIN — **сервер включает логирование токена авторизации** в открытом виде. `log-full=true` — полное логирование контактов. PmsKey `logsensitive`. Подробно: `notes/topics/244-log-sensitive-server-flag.md`.
+
+---
+
+## Дополнения 245
+
+### 245. LOGIN WS ответ
+
+Поля: config/drafts/presence/contacts/messages/profile/updates/time/calls/chats + log-full/log-sensitive. `LOGIN.Response`: profile/token/chatMarker/videoChatHistory/resetAt/contactInfos/config. Подробно: `notes/topics/245-login-ws-response.md`.
