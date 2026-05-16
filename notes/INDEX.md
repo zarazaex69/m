@@ -602,3 +602,4 @@ status: living
 - [[topics/492-geolocation-send-click]] — geolocation_send_click: {source_id, source_type}, Yandex Maps fallback #geolocation #telemetry #surveillance #yandex-maps #location-share
 - [[topics/493-log-external-api]] — mcc log.externalLog API: {collector, application, platform, items}, gzip, priority=2 #log-external #telemetry #surveillance #onelog #collector #application #platform
 - [[topics/494-log-entry-structure]] — qk9 LogEntry: type/event/userId/sessionId/params/time, every event contains userId+sessionId+timestamp #log-entry #telemetry #surveillance #event-structure
+- [[topics/495-server-host-selector]] — r58 ServerHostSelector: api.oneme.ru/api-test.oneme.ru/api-tg.oneme.ru/api-test2.oneme.ru + Custom, dev_tools SharedPreferences #api-servers #dev-tools #server-switch #surveillance #server-control

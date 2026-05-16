@@ -4006,3 +4006,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 494. qk9 LogEntry
 
 `type/event/userId/sessionId/params/time`. Каждое событие содержит userId + sessionId + timestamp. Подробно: `notes/topics/494-log-entry-structure.md`.
+
+---
+
+## Дополнения 495
+
+### 495. ServerHostSelector
+
+`api.oneme.ru`/`api-test.oneme.ru`/`api-tg.oneme.ru`/`api-test2.oneme.ru` + Custom. SharedPreferences `dev_tools`. Подробно: `notes/topics/495-server-host-selector.md`.
