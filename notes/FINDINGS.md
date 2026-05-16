@@ -2080,3 +2080,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 253. ChatUpdate + ChatMembersUpdate Tasks
 
 `ChatUpdate`: description/photoToken/pinMessageId/notifyPin/theme. `ChatMembersUpdate`: userIds[]/operation/chatMemberType/showHistory. Подробно: `notes/topics/253-chat-update-members-tasks.md`.
+
+---
+
+## Дополнения 254
+
+### 254. Crash/Log Upload
+
+Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.gzip)/logs(logs.gzip)/drops(drops.json). Полные логи и дамп потоков при краше. Подробно: `notes/topics/254-crash-log-upload.md`.
