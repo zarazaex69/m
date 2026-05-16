@@ -3150,3 +3150,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ## 387. ИТОГОВЫЙ СВОДНЫЙ АНАЛИЗ
 
 Полный анализ MAX 26.15.3. 386 тем. 12 категорий: идентификация/ASR/запись/серверный контроль/профилирование/push/VPN-блокировка. Подробно: `notes/topics/387-final-summary.md`.
+
+---
+
+## Дополнения 388
+
+### 388. OkApiServiceInternal
+
+13 методов. `sendSupportedCodecsStatistics`. `getExternalIdsByOkIds`/`getOkIdsByExternalIds` (деанонимизация). `requestUploadUrl`. `hangupConversation(reason)`. Подробно: `notes/topics/388-ok-api-service-internal.md`.
