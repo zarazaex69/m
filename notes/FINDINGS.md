@@ -1736,3 +1736,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 210. SEARCH_RESPONSE — телеметрия поиска
 
 `inputQuery` — **поисковый запрос отправляется на сервер**. `counters`: RECENTS/ALL_CONTACTS/LOCAL_SEARCH. Подробно: `notes/topics/210-search-response-telemetry.md`.
+
+---
+
+## Дополнения 211
+
+### 211. PRESENCE/EVENT_MESSAGE_COUNTER + MESSAGE_CLICKABLE_ELEMENT_ACTIONS
+
+`EVENT_MESSAGE_COUNTER`: 8 счётчиков (online/offline × contact/stranger × opened/closed). `MESSAGE_CLICKABLE_ELEMENT_ACTIONS`: clicked_copy/clicked_open_link/clicked_call/clicked_update_app + messageId/source_id. Подробно: `notes/topics/211-presence-message-click-telemetry.md`.

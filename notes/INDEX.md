@@ -318,3 +318,4 @@ status: living
 - [[topics/208-webapp-telemetry]] — WebApp telemetry: WEBAPP_ACTION(OPEN/CLOSE/MINIAPP_TAKE_PHOTO) + WEBAPP_BRIDGE(every JS call: botId/method/code) #webapp #telemetry #surveillance
 - [[topics/209-install-referrer]] — GET_INSTALL_REFERRER: getInstallerPackageName()+is_update_version via CritLog (server knows install source) #telemetry #install #attribution
 - [[topics/210-search-response-telemetry]] — SEARCH_RESPONSE: inputQuery(search terms sent to server) + counters(RECENTS/ALL_CONTACTS/LOCAL_SEARCH) #telemetry #search #surveillance
+- [[topics/211-presence-message-click-telemetry]] — PRESENCE/EVENT_MESSAGE_COUNTER(8 chat-open counters) + MESSAGE_CLICKABLE_ELEMENT_ACTIONS(7 click types with messageId) #telemetry #presence #surveillance
