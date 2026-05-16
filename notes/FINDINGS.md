@@ -2176,3 +2176,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 265. Protos.Poll + Photo + File
 
 `Poll.AnswerStats`: userId/timestamp (кто и когда голосовал). `Poll.State.voterPreviewIds[]`. `Photo`: photoId/height/width/gif/thumbhashData. `File`: fileId/size. Подробно: `notes/topics/265-protos-poll-photo-file.md`.
+
+---
+
+## Дополнения 266
+
+### 266. Protos.ChatOptions — 13 флагов
+
+`onlyAdminCanCall`/`contentLevelChat`/`joinRequest`/`membersCanSeePrivateLink`/`signAdmin`/`aPlusChannel`/`official`/`serviceChat`. Подробно: `notes/topics/266-protos-chat-options.md`.

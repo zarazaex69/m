@@ -373,3 +373,4 @@ status: living
 - [[topics/263-protos-video-schema]] — Protos.Video: videoId/duration/live/transcriptionStatus/thumbhashData + Quality(bitrate/height/width/isOriginal) #protocol #video #protos #transcription
 - [[topics/264-protos-audio-schema]] — Protos.Audio: audioId/duration/startTime/transcriptionStatus(5 states)/wave(waveform bytes) #protocol #audio #protos #transcription
 - [[topics/265-protos-poll-photo-file]] — Protos.Poll(AnswerStats.userId/timestamp + voterPreviewIds[]) + Photo(photoId/gif/thumbhashData) + File(fileId/size) #protocol #poll #photo #file #protos
+- [[topics/266-protos-chat-options]] — Protos.ChatOptions: 13 flags (onlyAdminCanCall/contentLevelChat/joinRequest/membersCanSeePrivateLink/signAdmin) #protocol #chat-options #protos #server-control
