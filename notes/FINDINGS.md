@@ -1368,3 +1368,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 164. SignalingTransportStat
 
 Детальная статистика WS-сигналинга: `onConnect`/`onConnected`/`onRestart`/`onMessageReceived`(isPing)/`onCommandSent`/`onFailedByPings`/`onFailedByException`/`onTimeout`. `connectedAtLeastOnceInCall`, `startConnectTime`, `lastMessageReceived`, `firstFailTime`. Подробно: `notes/topics/164-signaling-transport-stat.md`.
+
+---
+
+## Дополнения 165
+
+### 165. IceCandidatePairChangedStat
+
+При каждом изменении ICE pair: `local_address`/`remote_address` (**реальные IP-адреса участников**), `local.sdp`/`remote.sdp` (SDP с типом кандидата/IP/порт), `reason`, `lastDataReceivedMs`. Сервер получает полную историю маршрутизации медиа-трафика. Подробно: `notes/topics/165-ice-candidate-pair-stat.md`.
