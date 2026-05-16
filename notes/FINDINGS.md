@@ -1180,3 +1180,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 140. vchat.getConversationParams — ConversationParams
 
 `ispAsNo` (ASN провайдера), `ispAsOrg` (организация провайдера), `locCc` (country code), `locReg` (регион) — **сервер знает провайдера и геолокацию каждого участника звонка**. `isP2PForbidden` — запрет P2P. `stunTurnServers` — server-controlled ICE серверы. `wsIps` — IP-адреса WS-серверов. `rateCallData` — данные для оценки качества. Подробно: `notes/topics/140-conversation-params.md`.
+
+---
+
+## Дополнения 141
+
+### 141. RateCallData — server-pushed вопросы для оценки звонка
+
+`maxRateForQuestion` (шкала) + `questions[index, title]` — сервер полностью контролирует содержимое диалога оценки звонка. Приходит через `vchat.getConversationParams`. Подробно: `notes/topics/141-rate-call-data.md`.
