@@ -932,3 +932,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 108. fresco-executor + system-thread-pool-queue
 
 `fresco-executor` (#122) — «Enable Fresco executor-hack» (server-gated). `system-thread-pool-queue` (#286) — «Disable LinkedTransferQueue34» (server-gated). Оба — performance-хаки для конкретных устройств/версий Android. Подробно: `notes/topics/108-fresco-executor-thread-pool.md`.
+
+---
+
+## Дополнения 109
+
+### 109. Presence PmsKey — полная карта
+
+9 presence-PmsKey: `presence-ttl=300s`, `presence-view-port` (viewport optimization), `presence-external` (запрос presence незнакомцев), `presence-seen-eq` (не-legacy сравнение), `presence-stat` (статистика), `presence-keep-bg-cache`, `notif-typing-presence`, `presence-offline-move-timeout`, `presence-offline-log`. Подробно: `notes/topics/109-presence-pmskey-full.md`.
