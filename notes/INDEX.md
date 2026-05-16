@@ -195,3 +195,4 @@ status: living
 - [[topics/86-neuroavatars-ai]] — NeuroAvatars: AI avatar generation at registration, photo likely sent to server #ai #biometrics #registration
 - [[topics/87-location-ws-opcodes]] — LOCATION WS: NOTIF_LOCATION_REQUEST (server requests geo), liveLocation stream, MAX+Yandex recipients #location #surveillance #ws
 - [[topics/88-call-rate-quality-rating]] — Call Rate: quality rating dialog (callId, sdkReasons), server-controlled conditions #calls #analytics
+- [[topics/89-video-transcoding-config]] — video-transcoding-class (server-controlled quality: low/average/high) + one-video-uploader-config #video #server-control
