@@ -988,3 +988,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 115. quotes-enabled + media-playlist-enabled
 
 `quotes-enabled` (#247) — «Отображение и отправка markdown quote элемента» (default=false). `media-playlist-enabled` (#175) — медиа-плейлист (default=false). Оба server-gated. Подробно: `notes/topics/115-quotes-media-playlist.md`.
+
+---
+
+## Дополнения 116
+
+### 116. join-requests
+
+`join-requests` (#148) — server-gated функция заявок на вступление в закрытые чаты/каналы. `JoinRequestsScreen` с `chatId`. Подробно: `notes/topics/116-join-requests.md`.
