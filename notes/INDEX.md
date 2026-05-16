@@ -465,3 +465,4 @@ status: living
 - [[topics/355-deeplink-routes-full]] — Deeplink routes: :auth/:share-self-out/joincall/<id>/join/<id>/stickerset/<id>/c/<chatId>/<msgId>/:folder/:current #deeplinks #routing #max-ru
 - [[topics/356-api-oneme-ru-servers]] — api.oneme.ru servers: prod + api-test.oneme.ru + api-tg.oneme.ru + api-test2.oneme.ru #api #endpoints #oneme #test-servers
 - [[topics/357-host-reachability-full]] — HostReachability: gstatic.com/mtalk.googl.com/calls.okcdn.ru/gosuslugi.ru/pushtrs.push.hicloud.com (int-encoded) #network #host-reachability #gosuslugi #huawei #calls
+- [[topics/358-api-ok-ru-uri]] — api.ok.ru URI: https://api.ok.ru + ok://api/api/<method> scheme (calls SDK uses OK.ru API) #api #ok-ru #calls-sdk #uri-scheme
