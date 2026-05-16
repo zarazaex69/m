@@ -2520,3 +2520,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 308. nm4 — парсер контактов и presence
 
 `phonebook_id`/`contact_id`/`phone`/`phone_key`/`server_phone`/`email`/`first_name`/`last_name`/`avatar_path` + presence(`seen`/`status`). Подробно: `notes/topics/308-nm4-contact-presence-parser.md`.
+
+---
+
+## Дополнения 309
+
+### 309. nm4 — дополнительные схемы
+
+Чаты: id/server_id/data. Загрузки видео: quality/trim positions. FCM: text/sender/push_id/bmd. Подробно: `notes/topics/309-nm4-additional-schemas.md`.
