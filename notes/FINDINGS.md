@@ -4134,3 +4134,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 510. ndi Contacts Sync
 
 `ContactsContract`. `sync1` = userId MAX. `tt_contact_mimetype`. Операции: add/remove/sync. Подробно: `notes/topics/510-contacts-sync.md`.
+
+---
+
+## Дополнения 511
+
+### 511. j5f String Resources
+
+`app_host=max.ru`, `app_scheme=max`. Google API key: `AIzaSyABuDYeeDXIOrKTXLkUj30Ii143ofPe63Q`. Подробно: `notes/topics/511-string-resources-urls.md`.
