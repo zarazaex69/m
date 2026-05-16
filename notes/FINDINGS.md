@@ -3878,3 +3878,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 478. PRESENCE Analytics
 
 8 счётчиков: online/offline contact/stranger opened/closed. `presenceofflinelog` PmsKey. Подробно: `notes/topics/478-presence-analytics.md`.
+
+---
+
+## Дополнения 479
+
+### 479. ACTION events
+
+`ACTION_CACHE_CLEARED` / `FCM_ON_DELETED_MESSAGES` / `GET_INSTALL_REFERRER {value: referrer}`. Подробно: `notes/topics/479-action-events.md`.

@@ -586,3 +586,4 @@ status: living
 - [[topics/476-push-inbound-call-analytics]] — PUSH.InboundCall: {trid,eKey,suid,ttime,dtime,fcmdtime,p_op=show,chat_id,call_id,show_source} #push #inbound-call #telemetry #surveillance #fcm #call-analytics
 - [[topics/477-settings-analytics]] — SETTINGS analytics: MINIAPP_BIOMETRY{paramValue,webappId}/BACKGROUND/THEME/TEXT_SIZE #settings #telemetry #surveillance #biometry #theme #background #text-size
 - [[topics/478-presence-analytics]] — PRESENCE.EVENT_MESSAGE_COUNTER: 8 counters online/offline contact/stranger opened/closed #presence #telemetry #surveillance #online-status #contact-tracking
+- [[topics/479-action-events]] — ACTION events: ACTION_CACHE_CLEARED/FCM_ON_DELETED_MESSAGES/GET_INSTALL_REFERRER{value:referrer} #action-events #telemetry #surveillance #cache #fcm #install-referrer
