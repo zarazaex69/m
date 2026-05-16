@@ -367,3 +367,4 @@ status: living
 - [[topics/257-protos-attach-schema]] — Protos.Attach: 17 types + sensitive/sensitiveContentUnlocked/isProcessingOnServer #protocol #attach #protos #sensitive-content
 - [[topics/258-protos-message-elements]] — MessageElement(12 types/entityId) + ReactionData(reaction/EMOJI/STICKER) + PendingUploadData(pendingMap) #protocol #message-elements #protos
 - [[topics/259-protos-call-history]] — Protos.Call(callType/hangupType/duration/contactIds[]) + CallHistoryState(MissedMessagesItem.ids[]) #protocol #call #protos #call-history
+- [[topics/260-protos-contact-schema]] — Protos.Contact: serverPhone/gender/accountStatus/registrationTime/lastSearchClickTime/organizationIds[]/ContactName(CUSTOM/DEVICE/ONEME) #protocol #contact #protos #surveillance

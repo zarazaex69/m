@@ -2128,3 +2128,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 259. Protos.Call + CallHistoryState
 
 `Call`: callType(AUDIO/VIDEO)/hangupType(HANGUP/CANCELED/REJECTED/MISSED)/duration/contactIds[]. `CallHistoryState`: backwardMarker/forwardMarker/MissedMessagesItem.ids[]. Подробно: `notes/topics/259-protos-call-history.md`.
+
+---
+
+## Дополнения 260
+
+### 260. Protos.Contact — схема контакта
+
+`serverPhone`/`gender`/`accountStatus`/`registrationTime`/`lastSearchClickTime`/`organizationIds[]`. `ContactName`: CUSTOM/DEVICE/ONEME. Подробно: `notes/topics/260-protos-contact-schema.md`.
