@@ -398,3 +398,4 @@ status: living
 - [[topics/288-ok-token-ws]] — OK_TOKEN WS: token_refresh_ts/token_lifetime_ts (server updates auth token via WS) #protocol #ws #ok-token #auth
 - [[topics/289-phone-webapp-share-ws]] — PHONE_WEBAPP_SHARE WS: phone/hash/contact (phone number sent to mini-app via WS) #webapp #phone-share #ws #surveillance
 - [[topics/290-notif-message-ws]] — NOTIF_MESSAGE WS: chat_id/message/chat/mark/unread/ttl/url/prevMessageId/invisible #protocol #ws #notif-message
+- [[topics/291-notif-mark-attach-ws]] — NOTIF_MARK(chat_id/mark/unread/userId — read receipts) + NOTIF_ATTACH(fileId/audioId/videoId/error) WS #protocol #ws #notif-mark #read-receipts

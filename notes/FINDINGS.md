@@ -2376,3 +2376,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 290. NOTIF_MESSAGE WS
 
 `chat_id`/`message`/`chat`/`mark`/`unread`/`ttl`/`url`/`prevMessageId`/`invisible`. Подробно: `notes/topics/290-notif-message-ws.md`.
+
+---
+
+## Дополнения 291
+
+### 291. NOTIF_MARK + NOTIF_ATTACH WS
+
+`NOTIF_MARK`: chat_id/mark/unread/userId (read receipts — сервер уведомляет, кто прочитал). `NOTIF_ATTACH`: fileId/audioId/videoId/error. Подробно: `notes/topics/291-notif-mark-attach-ws.md`.
