@@ -948,3 +948,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 110. Audio playback PmsKey
 
 `audio-play-opus` (default=false), `audio-download` (default=false), `audio-download-fallback` (default=**true**), `audio-prefetch` (default=false), `audio-play-cache-ttl`, `audio-peaks-count`, `calc-audio-wave`. Загрузка аудио выключена по умолчанию — сервер включает. Подробно: `notes/topics/110-audio-playback-pmskey.md`.
+
+---
+
+## Дополнения 111
+
+### 111. invite-friends-sheet-frequency
+
+`invite-friends-sheet-frequency` (#143) — server-pushed массив интервалов в днях для показа листа «пригласить друзей». Сервер контролирует growth-механизм. `alreadyInvitedFriends` в `yag.java` — сервер знает, приглашал ли пользователь кого-то. Подробно: `notes/topics/111-invite-friends-frequency.md`.
