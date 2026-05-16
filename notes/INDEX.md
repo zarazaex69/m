@@ -225,3 +225,5 @@ status: living
 - [[topics/116-join-requests]] — join-requests: server-gated join requests for closed chats/channels #groups #server-control
 - [[topics/117-call-ui-pmskey]] — call UI PmsKey: horizontal-call-mode/hide-incoming-call-notif/ringtone-player-focus #calls #ui #server-control
 - [[topics/118-media-ux-pmskey]] — media UX PmsKey: speedy-voice-messages/open-video-from-start/new-media-upload-ui/video-fast-seek #media #ux #server-control
+- [[topics/119-folders-pmskey]] — folders PmsKey: folders-max-count(30)/enable-filters-for-folders/channels-suggests-folder #folders #server-control
+- [[topics/120-multiselect-messages-meta]] — multi-select-bars-redesign + log-messages-meta (meta info on click) #ui #server-control
