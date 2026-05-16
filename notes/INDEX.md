@@ -236,3 +236,4 @@ status: living
 - [[topics/127-calls-sdk-stats-ice-pmskey]] — calls SDK stats/ICE PmsKey: calls-sdk-incall-stat(real-time)/direct-ice-restart/no-ice-restart/opus-adapt #calls #server-control
 - [[topics/128-h265-unknown-contact-pmskey]] — H265 codec PmsKey + enable-unknown-contact-bottom-sheet (3 modes for unknown caller UI) #calls #codec #server-control
 - [[topics/129-opus-bwe-audio-pmskey]] — Opus BWE PmsKey: calls-sdk-ai-opus-bwe/calls-sdk-linear-opus-bwe(Linear BWE)/calls-sdk-log-audio(log local audio) #calls #opus #server-control
+- [[topics/130-calls-audio-pipeline-simulcast]] — calls audio pipeline: calls-sdk-disable-pipeline(Отключить аудио пайплайн)/calls-sdk-dnt-disable-audio/simulcast-sw-vp8 #calls #audio #server-control
