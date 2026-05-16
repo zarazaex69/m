@@ -260,3 +260,4 @@ status: living
 - [[topics/151-conversation-impl-callbacks]] — ConversationImpl: onCustomData(arbitrary JSON via DataChannel)/onCallParticipantFingerprint(DTLS tracking)/onRateCall(server-initiated) #calls #webrtc #datachannel
 - [[topics/152-asr-online-manager]] — AsrOnlineManager: real-time call transcription (AsrOnlineChunk: participantId+text), three audio analysis levels #calls #asr #surveillance
 - [[topics/153-signaling-commands]] — signaling commands: 24 commands (mute-participant/request-asr/enable-feature-for-roles/report-network-stat) #calls #signaling #server-control
+- [[topics/154-conversation-features-roles]] — ConversationFeature: ADD_PARTICIPANT/RECORD/MOVIE_SHARE/ASR_RECORD with role-based access #calls #features #asr #recording
