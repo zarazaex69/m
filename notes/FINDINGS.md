@@ -1100,3 +1100,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 130. Calls audio pipeline и simulcast PmsKey
 
 `calls-sdk-disable-pipeline` (#130, default=false) — «Отключить аудио пайплайн» (APM). `calls-sdk-dnt-disable-audio` (#134, default=false) — «Не блокировать звук на старте». `calls-android-simulcast-sw-vp8` (#133, default=false) — «Включить sw VP8 simulcast». `calls-android-signaling-ip` (#119) — «Подключаться к сигналингу по IP». Подробно: `notes/topics/130-calls-audio-pipeline-simulcast.md`.
+
+---
+
+## Дополнения 131
+
+### 131. Calls VTV2/LLA/NIDM PmsKey
+
+`calls-android-vtv2` (#112, default=false) — «Использовать видеотрансформер v2». `calls-android-lla` (#113, default=false) — «Использовать LL audio» (Low Latency). `calls-android-nidm` (#114, default=false) — «Разрешить маппинг только собственного ID». Подробно: `notes/topics/131-calls-vtv2-lla-nidm.md`.
