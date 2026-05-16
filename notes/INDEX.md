@@ -522,3 +522,4 @@ status: living
 - [[topics/412-protos-location]] — Protos.Location: latitude/longitude/altitude/accuracy/bearing/livePeriod/deviceId + Protos.LocationInfo(speed) #location #gps #geolocation #surveillance #live-location
 - [[topics/413-conversation-interface]] — Conversation interface: 23 managers, sendData(JSON)/muteAll/grantRoles/removeParticipant(ban)/queryChatHistory #conversation #calls-sdk #interface #surveillance #admin
 - [[topics/414-conversation-factory]] — ConversationFactory: SDK v0.1.13, call/answer/join/joinAnonByLink/createConfRoom, setEmulatedNegotiationErrorType/setBackendRenderVmoji #conversation-factory #calls-sdk #sdk-version #surveillance
+- [[topics/415-dps-client-zu5]] — zu5 (DPS client): getNetworkOperator()+getNetworkOperatorName() on every send, deviceIdSupplier/userIdSupplier, 4 threads #dps #apptracer #telephony #network-operator #surveillance

@@ -3366,3 +3366,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 414. ConversationFactory
 
 SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegotiationErrorType`/`setBackendRenderVmoji`/`setLoadKwsBySdkEnabled`. `joinAnonByLink` — анонимный вход. Подробно: `notes/topics/414-conversation-factory.md`.
+
+---
+
+## Дополнения 415
+
+### 415. zu5 (DPS клиент)
+
+`getNetworkOperator()+getNetworkOperatorName()` при каждой отправке. `deviceIdSupplier`/`userIdSupplier`. 4 потока. Подробно: `notes/topics/415-dps-client-zu5.md`.
