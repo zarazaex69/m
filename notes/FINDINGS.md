@@ -2984,3 +2984,11 @@ GIF/WebP анимации + 5 потоков (FrescoIoBoundExecutor/FrescoDecode
 ### 366. ZstdUtil
 
 `nativeDecompress(bytes)` — только декомпрессия. Данные сжимаются на сервере. Подробно: `notes/topics/366-zstd-util.md`.
+
+---
+
+## Дополнения 367
+
+### 367. LinkInterceptorActivity — MyTracker deeplink
+
+`URI → MyTracker.handleDeeplink(intent)` — все deeplink-и проходят через MyTracker. Подробно: `notes/topics/367-link-interceptor-mytracker.md`.
