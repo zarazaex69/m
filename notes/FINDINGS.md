@@ -2552,3 +2552,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 312. stickers + sticker_sets + profile DB
 
 `stickers`: 16 полей (url/mp4_url/lottie_url/audio/tags). `sticker_sets`: name/icon_url/author_id/link. `profile`: id/server_id/profile(BLOB). Подробно: `notes/topics/312-stickers-profile-db.md`.
+
+---
+
+## Дополнения 313
+
+### 313. animoji + animoji_set + organizations DB
+
+`animoji`: id/emoji/lottie_url/lottie_play_url/set_id. `animoji_set`: name/icon_url/icon_lottie_url/animoji_ids. `organizations`: +iconUrl. Подробно: `notes/topics/313-animoji-organizations-db.md`.
