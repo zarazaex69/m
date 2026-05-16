@@ -3230,3 +3230,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 397. Video SDK
 
 `ScreenCaptureManager`: setScreenCaptureEnabled/setAudioCaptureEnabled. `CameraManager`: setCameraEnabled/switchCamera. `DisplayLayoutSender.sendDisplayLayouts(items)` — сервер знает расположение видео-окон. Подробно: `notes/topics/397-video-sdk-screen-camera.md`.
+
+---
+
+## Дополнения 398
+
+### 398. MediaMuteManager
+
+`updateMediaOptionsForParticipant`/`updateMediaOptionsForAll` — принудительное изменение медиа-опций. `requestToEnableMediaForParticipant`/`requestToEnableMediaForAll`. Подробно: `notes/topics/398-media-mute-manager.md`.
