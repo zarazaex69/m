@@ -3622,3 +3622,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 446. CallServiceImpl
 
 `ConnectionService` + `WakeLock("max:calls_prx")` + уведомления(incomingCalls/activeCalls). Команды: start/restart/restart_for_screen_sharing. Подробно: `notes/topics/446-call-service-impl.md`.
+
+---
+
+## Дополнения 447
+
+### 447. RknBottomSheet
+
+"Это зарегистрированный канал" / "Он есть в перечне Роскомнадзора". Маркировка каналов РКН. Подробно: `notes/topics/447-rkn-bottomsheet.md`.
