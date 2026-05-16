@@ -3686,3 +3686,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 454. /proc файлы
 
 `/proc/self/stat` → PID/comm/state/utime/stime. Пути: `/proc/self` + `/data/data/ru.oneme.app`. Подробно: `notes/topics/454-proc-files.md`.
+
+---
+
+## Дополнения 455
+
+### 455. kyk (DPS HTTP клиент)
+
+`TrafficStats.setThreadStatsTag`. `{snapshots: [{id, ...}]}`. Параметры: `timeoutMs`/`dontReportUntil`. Подробно: `notes/topics/455-dps-http-client-kyk.md`.
