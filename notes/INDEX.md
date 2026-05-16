@@ -266,3 +266,4 @@ status: living
 - [[topics/157-watch-together-url-sharing]] — WatchTogether (add-movie: movieId/gain/moveToAdminOnHangup) + URL Sharing (start-url-sharing/stop-url-sharing) #calls #watch-together
 - [[topics/158-change-media-settings]] — change-media-settings: handleForceChangeMediaSettings (server/admin force-disables camera/mic/screen_capture) #calls #force-mute #server-control
 - [[topics/159-stereo-room-manager]] — StereoRoomManager: rooms/roles/hands (requestPromotion/grantAdmin/revokeAdmin/handsQueue) #calls #rooms #moderation
+- [[topics/160-update-media-modifiers]] — update-media-modifiers: denoise/denoiseAnn (server force-changes noise suppression during call) #calls #denoise #server-control
