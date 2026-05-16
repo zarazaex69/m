@@ -587,3 +587,4 @@ status: living
 - [[topics/477-settings-analytics]] — SETTINGS analytics: MINIAPP_BIOMETRY{paramValue,webappId}/BACKGROUND/THEME/TEXT_SIZE #settings #telemetry #surveillance #biometry #theme #background #text-size
 - [[topics/478-presence-analytics]] — PRESENCE.EVENT_MESSAGE_COUNTER: 8 counters online/offline contact/stranger opened/closed #presence #telemetry #surveillance #online-status #contact-tracking
 - [[topics/479-action-events]] — ACTION events: ACTION_CACHE_CLEARED/FCM_ON_DELETED_MESSAGES/GET_INSTALL_REFERRER{value:referrer} #action-events #telemetry #surveillance #cache #fcm #install-referrer
+- [[topics/480-app-review-analytics]] — APP_REVIEW.app_review: {session_id, screen_from, trigger, mark}, rating sent directly to MAX server #app-review #rating #telemetry #surveillance #fake-review

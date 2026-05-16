@@ -3886,3 +3886,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 479. ACTION events
 
 `ACTION_CACHE_CLEARED` / `FCM_ON_DELETED_MESSAGES` / `GET_INSTALL_REFERRER {value: referrer}`. Подробно: `notes/topics/479-action-events.md`.
+
+---
+
+## Дополнения 480
+
+### 480. APP_REVIEW Analytics
+
+`{session_id, screen_from, trigger, mark}`. Оценка пользователя отправляется напрямую на сервер MAX. Подробно: `notes/topics/480-app-review-analytics.md`.
