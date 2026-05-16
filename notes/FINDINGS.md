@@ -1672,3 +1672,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 202. OneLog — механизм загрузки
 
 `Collector` (файловый буфер `onelog/<collector>/append+upload`) → `Uploader` → `OneLogApiRequest`. В каждом запросе: `application=ru.oneme.app:26153:26.15.3`, `platform=android:phone:<Android version>`. `UploadService` — фоновый `IntentService`. Подробно: `notes/topics/202-onelog-upload-mechanism.md`.
+
+---
+
+## Дополнения 203
+
+### 203. Live Location — геолокация
+
+`LocationData`: `latitude`/`longitude`/`altitude`/`accuracy(epu)`/`bearing(hdn)`/`speed(spd)`. `livePeriod` — живая геолокация. FCM push `LocationRequest` — **сервер инициирует получение геолокации** без действий пользователя (`LocationManager.getLastKnownLocation(gps/network)`). Подробно: `notes/topics/203-live-location.md`.

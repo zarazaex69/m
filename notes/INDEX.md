@@ -310,3 +310,4 @@ status: living
 - [[topics/200-vchat-api-full-list]] — vchat API: 11 methods (clientSupportedCodecs/getConversationParams/createJoinLink/removeJoinLink/ID mapping) #calls #api #vchat
 - [[topics/201-calls-sdk-architecture-summary]] — Calls SDK architecture summary: 24 managers, 24 signaling commands, 18+ stat structs, 10 key indicators (no E2E/ASR/KWS/requestMediaDump/deAnonymize) #calls #architecture #summary
 - [[topics/202-onelog-upload-mechanism]] — OneLog upload: Collector(file buffer)/Uploader/OneLogApiRequest(application/platform in every request) #telemetry #onelog #upload
+- [[topics/203-live-location]] — Live Location: lat/lon/alt/accuracy/bearing/speed/livePeriod + FCM LocationRequest push (server-initiated geolocation) #location #surveillance #fcm
