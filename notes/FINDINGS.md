@@ -3214,3 +3214,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 395. KeywordSpotterManagerImpl
 
 `android.wordspotter.config` → `{turn_off_in_ms}`. `setKeywordSpotterParams(isEnabled, filePath)` → нативный KWS → `onKeyword(confidence)` → `bad_call_detected_by_audio_spotter` на сервер. Подробно: `notes/topics/395-keyword-spotter-impl.md`.
+
+---
+
+## Дополнения 396
+
+### 396. NoiseSuppressionManagerImpl
+
+`serversideBasic`/`serversideAnn` — NS на сервере (аудио передаётся на сервер). `clientsideAnn(filePath)` — нейросетевое NS на устройстве. Подробно: `notes/topics/396-noise-suppression-impl.md`.
