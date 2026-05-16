@@ -1052,3 +1052,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 124. Calls signaling PmsKey
 
 `outgoing-call-uri` (#223, default=`https://max.ru`) — URI для Android Telecom API. `calls-android-signaling-to` (#124) — JSON `{"use": bool, "cto": 5000, "ird": 2000, "rdsf": 1.0, "mrd": 2000}` — таймауты сигналинга. `early-call-start` (#101, default=false) — «Ранний старт входящего звонка». Подробно: `notes/topics/124-calls-signaling-pmskey.md`.
+
+---
+
+## Дополнения 125
+
+### 125. P2P relay и WebTransport PmsKey
+
+`calls-use-p2p-relay` (#61, default=false) — «Использовать p2p relay» — сервер может перенаправить весь медиа-трафик звонков через relay-серверы. `calls-use-p2p-relay-caps` (#62, default=false) — учитывать capability. `calls-sdk-wt-enabled` (#102, default=false) — WebTransport. Подробно: `notes/topics/125-p2p-relay-webtransport.md`.
