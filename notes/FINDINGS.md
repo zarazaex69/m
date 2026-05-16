@@ -2504,3 +2504,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 306. NOTIF_CONTACT_SORT WS
 
 `ids[]`(порядок контактов)/`phones[]`(порядок телефонов). Сервер синхронизирует порядок контактов между устройствами. Подробно: `notes/topics/306-notif-contact-sort-ws.md`.
+
+---
+
+## Дополнения 307
+
+### 307. InboundCall PUSH телеметрия
+
+`p_op`/`chat_id`/`call_id`/`show_source`/`ttime`/`dtime`(задержка доставки)/`fcmdtime`(задержка FCM). Подробно: `notes/topics/307-inbound-call-push-telemetry.md`.

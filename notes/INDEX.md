@@ -414,3 +414,4 @@ status: living
 - [[topics/304-notif-typing-ws]] — NOTIF_TYPING WS: type(VIDEO_MSG/AUDIO_MSG)/isTyping (server knows if user is recording audio/video) #protocol #ws #notif-typing #surveillance
 - [[topics/305-notif-contact-ws]] — NOTIF_CONTACT WS: ContactUpdateAction(ADD/UPDATE/REMOVE/BLOCK/UNBLOCK) #protocol #ws #notif-contact #block
 - [[topics/306-notif-contact-sort-ws]] — NOTIF_CONTACT_SORT WS: ids[](contact order)/phones[](phone order) — server syncs contact sort order #protocol #ws #notif-contact-sort #contacts
+- [[topics/307-inbound-call-push-telemetry]] — InboundCall PUSH telemetry: p_op/chat_id/call_id/show_source/ttime/dtime(delivery delay)/fcmdtime(FCM delay) #telemetry #push #inbound-call #timing
