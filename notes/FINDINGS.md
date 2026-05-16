@@ -1984,3 +1984,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 241. tasks + recent DB схемы
 
 `tasks`: id/type/status/fails_count/data(BLOB protobuf)/created_time. `recent`: recent_type/sticker_id/emoji/gif(BLOB)/gif_id. Подробно: `notes/topics/241-tasks-recent-db-schemas.md`.
+
+---
+
+## Дополнения 242
+
+### 242. notifications_tracker_messages DB
+
+`chat_id`/`message_id`/`time`/`fcm`/`drop_reason` — трекинг причин отброса уведомлений. Подробно: `notes/topics/242-notifications-tracker-db.md`.
