@@ -3430,3 +3430,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 422. WebApp ScreenCapture + CodeReader
 
 `WebAppSetupScreenCaptureBehavior(isEnabled)` → `FLAG_SECURE`. `WebAppOpenCodeReader` → `response(requestId, value)`. Подробно: `notes/topics/422-webapp-screen-capture-qr.md`.
+
+---
+
+## Дополнения 423
+
+### 423. WebApp Share + Haptic
+
+`WebAppShare(url, title, text)`. `WebAppHapticFeedback`: IMPACT/NOTIFICATION/SELECTION. Подробно: `notes/topics/423-webapp-share-haptic.md`.
