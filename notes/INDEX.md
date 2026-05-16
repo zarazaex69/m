@@ -362,3 +362,4 @@ status: living
 - [[topics/252-profile-chat-create-tasks]] — Profile(firstName/lastName/description/link/photoId) + ChatCreate(chatType/subjectId/subjectType/startPayload) Tasks #protocol #profile #chat-create #tasks
 - [[topics/253-chat-update-members-tasks]] — ChatUpdate(description/photoToken/pinMessageId/theme) + ChatMembersUpdate(userIds/operation/chatMemberType/showHistory) Tasks #protocol #chat-update #tasks
 - [[topics/254-crash-log-upload]] — Crash/Log Upload: stackTrace/uploadBean(severity/tags)/threadDump(gzip)/logs(gzip)/drops(json) #crash-report #logs #upload #surveillance
+- [[topics/255-protos-additional]] — Protos additional: BotsInfo(suspendedBot) + ChannelInfo(admins[]/signAdmin) + SelfProfile(restrictions Map) + RestrictionsInfo(expiration) #protocol #protos #chat #channel

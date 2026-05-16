@@ -2088,3 +2088,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 254. Crash/Log Upload
 
 Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.gzip)/logs(logs.gzip)/drops(drops.json). Полные логи и дамп потоков при краше. Подробно: `notes/topics/254-crash-log-upload.md`.
+
+---
+
+## Дополнения 255
+
+### 255. Protos.java — дополнительные схемы
+
+`BotsInfo`: hasBots/suspendedBot. `ChannelInfo`: admins[]/membersCount/signAdmin. `SelfProfile`: restrictions(Map<Integer,RestrictionsInfo>). `RestrictionsInfo`: expiration. Подробно: `notes/topics/255-protos-additional.md`.
