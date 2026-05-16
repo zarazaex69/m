@@ -341,3 +341,4 @@ status: living
 - [[topics/231-mytracker-params]] — MyTrackerParams: age/gender/email/phone/okId/vkId/vkConnectId/icqId (cross-platform user ID linking to OK/VK/ICQ) #mytracker #telemetry #user-profile #surveillance
 - [[topics/232-mytracker-config-antifraud]] — MyTracker AntiFraudConfig(5 sensors) + InstalledPackagesProvider(installed apps list) + getApkPreinstallParams #mytracker #antiFraud #sensors #installed-apps
 - [[topics/233-digital-id-url-params]] — DigitalID URL: &digitalId=<id>&oid=<userId>&photo=<base64> (user photo in GET param) #digital-id #identity #surveillance
+- [[topics/234-ri9-shared-prefs]] — ri9 SharedPreferences: phoneNumber/locationCountryCode/gostLicenseCheckEnabled/allowLogSensitiveData/isDisableWebAppSsl/tenorAnonId #shared-prefs #session #debug #gost

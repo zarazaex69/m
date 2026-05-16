@@ -1920,3 +1920,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 233. DigitalID — URL-параметры
 
 `&digitalId=<id>&oid=<userId>&photo=<base64>` — фото пользователя передаётся в GET-параметре URL при переходе с DigitalID. Подробно: `notes/topics/233-digital-id-url-params.md`.
+
+---
+
+## Дополнения 234
+
+### 234. ri9 SharedPreferences — 50+ полей
+
+`phoneNumber`/`locationCountryCode`/`gostLicenseCheckEnabled`/`allowLogSensitiveData` (разрешить логирование чувствительных данных)/`isDisableWebAppSsl`/`leakCanaryEnabledStateFlow`/`tenorAnonId` (Tenor GIF). Подробно: `notes/topics/234-ri9-shared-prefs.md`.
