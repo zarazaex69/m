@@ -2424,3 +2424,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 296. WS Opcodes — финальный список (148-160)
 
 `AUTH_QR_APPROVE`(QR-авторизация), `VOTERS_LIST_BY_ANSWER`(кто как голосовал), `TRANSCRIBE_MEDIA`/`NOTIF_TRANSCRIPTION`, `MSG_DELIVERY`, `CHAT_SUGGEST`, `ORG_INFO`, `CHAT_LIVESTREAM_INFO`. Итого 160 опкодов. Подробно: `notes/topics/296-ws-opcodes-final.md`.
+
+---
+
+## Дополнения 297
+
+### 297. TRANSCRIBE_MEDIA + NOTIF_TRANSCRIPTION WS
+
+`TRANSCRIBE_MEDIA`: transcription/transcriptionStatus. `NOTIF_TRANSCRIPTION`: messageId/chat_id/**transcription**/mediaId/transcriptionStatus. **Серверная транскрипция** — сервер получает аудио/видео и возвращает текст. Подробно: `notes/topics/297-transcribe-media-ws.md`.
