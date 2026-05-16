@@ -4054,3 +4054,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 500. TrackerConfig MyTracker URLs
 
 5 URL на `tracker-api.vk-analytics.ru`: v3/(основной)/ip4/(IPv4)/ts/mobile/v1(time spent)/mlapi/(ML prod)/beta-ml/(ML beta). Подробно: `notes/topics/500-mytracker-urls.md`.
+
+---
+
+## Дополнения 501
+
+### 501. AttributionHandler
+
+`referrer → tracker-api.vk-analytics.ru/?{referrer} → mt param → deeplink → attribution SharedPreferences`. Подробно: `notes/topics/501-attribution-handler.md`.
