@@ -1028,3 +1028,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 121. Notifications и bots PmsKey
 
 `cancel-stale-notifications` (#64, default=false) — «Отмена устаревших нотификаций в notifyAllChats» (server-gated bugfix). `new-intent-fix` (#202, default=false) — «onNewIntent NPE fix» (server-gated bugfix). `bots-channel-adding` (#19, default=false) — добавление ботов в каналы. `bot-start-param` (#18), `bot-complaint-enabled` (#17). Подробно: `notes/topics/121-notifications-bots-bugfix-pmskey.md`.
+
+---
+
+## Дополнения 122
+
+### 122. VPN UI PmsKey — три уровня предупреждений
+
+`show-vpn-snackbar` (#273, default=false), `show-vpn-chat-bottomsheet` (#272, int-режимы), `show-vpn-call-bottomsheet` (#271, int-режимы). Три независимых механизма VPN-предупреждений. Сервер контролирует интенсивность давления на пользователей с VPN. Подробно: `notes/topics/122-vpn-ui-pmskey.md`.
