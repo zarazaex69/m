@@ -333,3 +333,4 @@ status: living
 - [[topics/223-device-performance-telemetry]] — Device performance telemetry: bucket(AppStandbyBucket)/memory/exit_reason(getHistoricalProcessExitReasons)/img_cache #telemetry #device-info #surveillance
 - [[topics/224-yag-shared-prefs-full]] — yag SharedPreferences: 60+ fields (okToken/pushToken/currentProxyList/pushProxyList/firstLoginTime/isDebugHostRotationEnabled/isIceCandidateEmulationEnabled) #shared-prefs #account #session
 - [[topics/225-auth-anonym-login]] — auth.anonymLogin: device_id/version=2/client_version=android_8/client_type=SDK_ANDROID (anonymous call join with device_id) #api #auth #anonymous
+- [[topics/226-log-external-log-api]] — log.externalLog: POST+gzip, collector/application/platform/items (base for all OneLog telemetry) #api #telemetry #onelog

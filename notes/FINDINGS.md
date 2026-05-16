@@ -1856,3 +1856,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 225. auth.anonymLogin
 
 `device_id`/`version=2`/`client_version=android_8`/`client_type=SDK_ANDROID`. Анонимная авторизация для calls SDK — анонимность относительная, device_id передаётся. Подробно: `notes/topics/225-auth-anonym-login.md`.
+
+---
+
+## Дополнения 226
+
+### 226. log.externalLog — API загрузки OneLog
+
+POST+gzip. Параметры: `collector`/`application`(ru.oneme.app:26153:26.15.3)/`platform`(android:phone:ver)/`items`. Базовый класс для `CallAnalyticsApiRequest`. Подробно: `notes/topics/226-log-external-log-api.md`.
