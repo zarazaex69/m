@@ -1888,3 +1888,11 @@ POST+gzip. Параметры: `collector`/`application`(ru.oneme.app:26153:26.1
 ### 229. libEnhancementLibShared.so — нативные компоненты
 
 ASR: `c_enh_asr_predict`/`calcConfidence`/`fillPunct`. KWS: `BCResNetKWS::score`/`extractFeatures`/`computeProbs`. Denoise: `c_enh_denoise_accept_pcm`/`finalize`. **`SpeakerRecognitionEngine`+`SpeakerRecognitionVerifier`** — идентификация личности по голосу. Подробно: `notes/topics/229-lib-enhancement-exports.md`.
+
+---
+
+## Дополнения 230
+
+### 230. libEnhancementLibShared — build paths
+
+Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. Зависимости: TFLite + Kaldi. `webrtc4` — 4-я версия кастомного WebRTC VK. `one-ann-audio-processing` — внутреннее название модуля. Подробно: `notes/topics/230-lib-enhancement-build-info.md`.
