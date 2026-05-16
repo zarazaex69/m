@@ -408,3 +408,4 @@ status: living
 - [[topics/298-audio-play-send-vote-ws]] — AUDIO_PLAY(opus/mp3/m4a/callName/callerId/messagesReactions) + SEND_VOTE(trackId/chat/state) WS #protocol #ws #audio-play #polls #send-vote
 - [[topics/299-voters-org-livestream-ws]] — VOTERS_LIST_BY_ANSWER(voteCount/voters) + ORG_INFO(organizations/email/user) + CHAT_LIVESTREAM_INFO(liveStreams) WS #protocol #ws #polls #org-info #livestream
 - [[topics/300-link-info-auth-qr-ws]] — LINK_INFO(stickerSet/startPayload/chat/user/group/message/videoConference/banners) + AUTH_QR_APPROVE(tokenAttrs) WS #protocol #ws #link-info #auth-qr
+- [[topics/301-folders-polls-profile-ws]] — FOLDERS_GET(allFilterExcludeFolders/folderSync/folders/foldersOrder) + GET_POLL_UPDATES(polls) + NOTIF_PROFILE(profile) WS #protocol #ws #folders #polls

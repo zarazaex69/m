@@ -2456,3 +2456,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 300. LINK_INFO + AUTH_QR_APPROVE WS
 
 `LINK_INFO`: stickerSet/startPayload/chat/user/group/message/videoConference/banners. `AUTH_QR_APPROVE`: tokenAttrs. Подробно: `notes/topics/300-link-info-auth-qr-ws.md`.
+
+---
+
+## Дополнения 301
+
+### 301. FOLDERS_GET + GET_POLL_UPDATES + NOTIF_PROFILE WS
+
+`FOLDERS_GET`: allFilterExcludeFolders/folderSync/folders/foldersOrder. `GET_POLL_UPDATES`: polls. `NOTIF_PROFILE`: profile. Подробно: `notes/topics/301-folders-polls-profile-ws.md`.
