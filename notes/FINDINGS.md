@@ -1172,3 +1172,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 139. ApiProtocol constants
 
 `p2p_forbidden` — сервер может запретить P2P для конкретного звонка (все медиа через relay). `stun_server`/`turn_server` — server-controlled ICE серверы. `wt_endpoint` — WebTransport endpoint. `onlyAdminCanRecord`/`onlyAdminCanShareMovie` — права в звонке. Подробно: `notes/topics/139-api-protocol-constants.md`.
+
+---
+
+## Дополнения 140
+
+### 140. vchat.getConversationParams — ConversationParams
+
+`ispAsNo` (ASN провайдера), `ispAsOrg` (организация провайдера), `locCc` (country code), `locReg` (регион) — **сервер знает провайдера и геолокацию каждого участника звонка**. `isP2PForbidden` — запрет P2P. `stunTurnServers` — server-controlled ICE серверы. `wsIps` — IP-адреса WS-серверов. `rateCallData` — данные для оценки качества. Подробно: `notes/topics/140-conversation-params.md`.
