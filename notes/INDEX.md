@@ -187,3 +187,4 @@ status: living
 - [[topics/78-push-onelog-events]] — PUSH OneLog: show/drop/open_chat/m_as_read/n_q_rep with chat_id #push #surveillance
 - [[topics/79-additional-onelog-categories]] — AUDIO_TRANSCRIPTION (chat_id/waiting_time), AUTH_QR (full QR auth log), CHANNEL_RECSYS_FOLDER, PRESENCE #onelog #surveillance
 - [[topics/80-action-click-show-onelog]] — ACTION/CLICK/SHOW OneLog: GET_INSTALL_REFERRER (install source), FCM_ON_DELETED_MESSAGES, profile_button_click #onelog #telemetry
+- [[topics/81-dangerous-actions-registration-onelog]] — DANGEROUS_URL_ACTIONS/DANGEROUS_FILE_ACTIONS (server knows dangerous link clicks), REGISTRATION, INFORMER, BANNER #onelog #surveillance
