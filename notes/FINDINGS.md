@@ -4014,3 +4014,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 495. ServerHostSelector
 
 `api.oneme.ru`/`api-test.oneme.ru`/`api-tg.oneme.ru`/`api-test2.oneme.ru` + Custom. SharedPreferences `dev_tools`. Подробно: `notes/topics/495-server-host-selector.md`.
+
+---
+
+## Дополнения 496
+
+### 496. tp.b() API методы
+
+`auth.anonymLogin`/`batch.executeV2`/`log.externalLog`/`vchat.getAnonymTokenByLink`/`vchat.getLogUploadUrl`. Подробно: `notes/topics/496-api-methods-full.md`.
