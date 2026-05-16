@@ -4142,3 +4142,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 511. j5f String Resources
 
 `app_host=max.ru`, `app_scheme=max`. Google API key: `AIzaSyABuDYeeDXIOrKTXLkUj30Ii143ofPe63Q`. Подробно: `notes/topics/511-string-resources-urls.md`.
+
+---
+
+## Дополнения 512
+
+### 512. Contacts Account Type
+
+`tt_contact_account_type = ru.ok.tamtam`. `tt_contact_mimetype = vnd.android.cursor.item/vnd.ru.ok.tamtam.android.profile`. Подробно: `notes/topics/512-contacts-account-type.md`.
