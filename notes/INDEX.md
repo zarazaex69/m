@@ -334,3 +334,4 @@ status: living
 - [[topics/224-yag-shared-prefs-full]] — yag SharedPreferences: 60+ fields (okToken/pushToken/currentProxyList/pushProxyList/firstLoginTime/isDebugHostRotationEnabled/isIceCandidateEmulationEnabled) #shared-prefs #account #session
 - [[topics/225-auth-anonym-login]] — auth.anonymLogin: device_id/version=2/client_version=android_8/client_type=SDK_ANDROID (anonymous call join with device_id) #api #auth #anonymous
 - [[topics/226-log-external-log-api]] — log.externalLog: POST+gzip, collector/application/platform/items (base for all OneLog telemetry) #api #telemetry #onelog
+- [[topics/227-dns-over-https-endpoint-discovery]] — DoH: dns.google.com/resolve?name=api._endpoint.ok.ru.&type=16 (API endpoint discovery, bypass DNS blocks) #dns #doh #network #api-discovery

@@ -1864,3 +1864,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 226. log.externalLog — API загрузки OneLog
 
 POST+gzip. Параметры: `collector`/`application`(ru.oneme.app:26153:26.15.3)/`platform`(android:phone:ver)/`items`. Базовый класс для `CallAnalyticsApiRequest`. Подробно: `notes/topics/226-log-external-log-api.md`.
+
+---
+
+## Дополнения 227
+
+### 227. DNS over HTTPS — обнаружение API endpoint
+
+`https://dns.google.com/resolve?name=api._endpoint.ok.ru.&type=16` — TXT-запись DNS для динамического обнаружения API endpoint. Обход DNS-блокировок через Google DNS. Подробно: `notes/topics/227-dns-over-https-endpoint-discovery.md`.
