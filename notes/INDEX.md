@@ -494,3 +494,4 @@ status: living
 - [[topics/384-externcalls-sdk-config]] — externcalls.sdk.config: RemoteSettings(android.wordspotter.config/dump.bitrate/p2prelay), ConversationParams(isP2PForbidden/ispAsNo/locCc) #calls-config #remote-settings #server-control #surveillance
 - [[topics/385-mytracker-details]] — MyTracker: 10 modules, age/gender/email/phone/okId/vkId/icqId, AntiFraudConfig(all sensors), installedPackagesProvider #mytracker #telemetry #surveillance #anti-fraud #sensors #user-data
 - [[topics/386-shortcut-badger]] — ShortcutBadger: badge count on launcher icon, 13 launchers (Samsung/Huawei/Xiaomi/OPPO/Vivo/...) #badge #notification-count #launcher
+- [[topics/387-final-summary]] — ИТОГОВЫЙ СВОДНЫЙ АНАЛИЗ: 386 тем, все ключевые находки по 12 категориям #summary #comprehensive #backdoor #surveillance #telemetry
