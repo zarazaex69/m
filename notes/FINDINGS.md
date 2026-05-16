@@ -1776,3 +1776,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 215. Схема БД сообщений
 
 35+ полей: `ttl` (самоудаление), `live_until` (живая геолокация), `delayed_attrs_time_to_fire` (отложенная отправка), `channel_views`/`channel_forwards`, `msg_link_*` (forward chain). Подробно: `notes/topics/215-messages-db-schema.md`.
+
+---
+
+## Дополнения 216
+
+### 216. Локальная БД — 35+ таблиц
+
+`webapp_biometry` (биометрия мини-приложений), `fcm_notifications_history`, `stat_events`, `battery`, `presence`, `tasks`, `organizations`, `complain_reasons`. Подробно: `notes/topics/216-local-db-tables.md`.
