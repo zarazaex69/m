@@ -428,3 +428,4 @@ status: living
 - [[topics/318-proc-filesystem-reads]] — /proc filesystem reads: /proc/self/stat(CPU)/statm(memory)/cmdline(process name)/fd/(file descriptors) #surveillance #proc-filesystem #cpu #memory
 - [[topics/319-traffic-stats-uid]] — TrafficStats.getUidRxBytes/TxBytes(uid) — app traffic by UID for BatterySnapshot #surveillance #network-stats #traffic-stats #uid
 - [[topics/320-health-stats-api]] — HealthStats.takeMyUidSnapshot(): mobile(rx/tx/idle)/wifi(rx/tx/idle) + fallback to TrafficStats #surveillance #health-stats #network-stats #uid
+- [[topics/321-apptracer-perf-upload]] — Apptracer perf/upload: sdk-api.apptracer.ru/api/perf/upload?crashToken (BatterySnapshot CPU/battery/network samples) #telemetry #apptracer #battery #performance #upload

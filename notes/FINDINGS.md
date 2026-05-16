@@ -2616,3 +2616,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 320. HealthStats API
 
 `SystemHealthManager.takeMyUidSnapshot()`: mobile(rx/tx/idle)/wifi(rx/tx/idle). Fallback на TrafficStats. Подробно: `notes/topics/320-health-stats-api.md`.
+
+---
+
+## Дополнения 321
+
+### 321. Apptracer perf/upload
+
+`https://sdk-api.apptracer.ru/api/perf/upload?crashToken=<token>` — загрузка BatterySnapshot (CPU/battery/network) на Apptracer. Подробно: `notes/topics/321-apptracer-perf-upload.md`.
