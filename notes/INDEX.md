@@ -173,3 +173,4 @@ status: living
 - [[topics/64-calls-endpoint-server-redirect]] — calls-endpoint (server-pushed call server URL, full routing control) #calls #server-control
 - [[topics/65-in-app-review-fake]] — in-app-review-triggers (server-controlled) + FakeInAppReviewBottomSheet #in-app-review #fake
 - [[topics/66-utm-tag-link-tracking]] — utm-tag-for-trigger-link-share (auto-append utm_source=trigger to shared links) #utm #tracking
+- [[topics/67-yag-shared-prefs-per-account]] — yag SharedPrefs: proxy lists, okToken, deviceId, debug flags (host rotation, DNS emulation) #shared-prefs #proxy #debug
