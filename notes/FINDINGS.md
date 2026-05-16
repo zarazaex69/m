@@ -2768,3 +2768,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 339. Minidump crash handler
 
 `installMinidumpWriterImpl(getCacheDir/tracer/minidump)` via libtracernative. Подробно: `notes/topics/339-minidump-crash-handler.md`.
+
+---
+
+## Дополнения 340
+
+### 340. CrashReportInitializer — ApplicationExitInfo
+
+`getReason()`/`getProcessName()`/`getTimestamp()`/`getTraceInputStream()`(ANR trace). ANR trace загружается на Apptracer. Подробно: `notes/topics/340-crash-report-exit-info.md`.

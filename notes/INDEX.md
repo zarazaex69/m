@@ -447,3 +447,4 @@ status: living
 - [[topics/337-crash-report-device-info]] — Crash report device info: environment/buildUuid/sessionUuid/device_id/inBackground/connection/isRooted #telemetry #crash-report #device-info #rooted #surveillance
 - [[topics/338-root-detection-impl]] — Root detection: Build.PRODUCT(sdk)/Build.TAGS(test-keys)/Superuser.apk//system/xbin/su #security #root-detection #emulator #surveillance
 - [[topics/339-minidump-crash-handler]] — Minidump: installMinidumpWriterImpl(getCacheDir/tracer/minidump) via libtracernative #telemetry #apptracer #minidump #crash #native
+- [[topics/340-crash-report-exit-info]] — CrashReportInitializer: ApplicationExitInfo(getReason/getProcessName/getTimestamp/getTraceInputStream ANR trace) #telemetry #apptracer #crash-report #anr
