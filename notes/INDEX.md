@@ -183,3 +183,5 @@ status: living
 - [[topics/74-background-mode-onelog]] — BACKGROUND_MODE OneLog: system_curtain_shown/hidden, work_in_background_permission #background #telemetry
 - [[topics/75-settings-power-saving-onelog]] — SETTINGS OneLog: MINIAPP_BIOMETRY (webappId), THEME/BACKGROUND/TEXT_SIZE + POWER_SAVING #settings #telemetry
 - [[topics/76-contact-or-block-onelog]] — CONTACT_OR_BLOCK OneLog: server knows every add/block decision #contacts #surveillance
+- [[topics/77-share-to-max-invite-onelog]] — SHARE_TO_MAX (chatsInfo with chat types/IDs) + INVITE_MAX_BANNER #sharing #telemetry
+- [[topics/78-push-onelog-events]] — PUSH OneLog: show/drop/open_chat/m_as_read/n_q_rep with chat_id #push #surveillance
