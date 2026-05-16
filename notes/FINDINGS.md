@@ -2024,3 +2024,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 246. WS Session Fingerprint — расширенные поля
 
 `enable-audio-messages-transcription`/`enable-video-messages-transcription` (сервер управляет транскрипцией), `calls-sdk-log-audio`, `ab-status`, `one-video-player`/`one-video-uploader-config`. Итого 40+ полей. Подробно: `notes/topics/246-ws-session-fingerprint-extended.md`.
+
+---
+
+## Дополнения 247
+
+### 247. UserSettings — полный список
+
+26+ ключей: `audio.transcription.enabled`, `app.family.protection.status`, `app.privacy.phone.number.privacy`, `app.privacy.inactive.ttl`, `app.privacy.safe_mode`, `app.privacy.search_by_phone`, `app.notification.*`. Подробно: `notes/topics/247-user-settings-full.md`.

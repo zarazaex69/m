@@ -354,3 +354,4 @@ status: living
 - [[topics/244-log-sensitive-server-flag]] — log-sensitive/log-full in LOGIN response: server enables auth token logging + full contacts logging #server-control #logging #sensitive-data #surveillance
 - [[topics/245-login-ws-response]] — LOGIN WS response: config/drafts/presence/contacts/messages/profile/updates/time/calls/chats + log-full/log-sensitive #protocol #login #ws #session-init
 - [[topics/246-ws-session-fingerprint-extended]] — WS session fingerprint extended: enable-audio/video-messages-transcription + calls-sdk-log-audio + 40+ total fields #protocol #ws #session-fingerprint #transcription
+- [[topics/247-user-settings-full]] — UserSettings: 26+ keys (audio.transcription.enabled/app.family.protection.status/app.privacy.phone.number.privacy/app.privacy.inactive.ttl) #user-settings #privacy #transcription #family-protection
