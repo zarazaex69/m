@@ -276,3 +276,4 @@ status: living
 - [[topics/167-p2p-relay-requested-stat]] — P2PRelayRequestedStat: client_requested_p2p_relay with trigger/threshold/violationsCount #calls #p2p-relay #stats
 - [[topics/168-server-topology-stat]] — ServerTopologyRequestedStat: client_requested_server_topology (media through VK/OK servers) #calls #topology #stats
 - [[topics/169-negotiation-audio-error-stat]] — NegotiationErrorStat(SDP on error) + AudioErrorStat(audio_error with 3 fields) #calls #errors #stats
+- [[topics/169-negotiation-audio-error-stat]] — NegotiationErrorStat(SDP on error) + AudioErrorStat(audio_error with 3 fields) #calls #errors #stats
