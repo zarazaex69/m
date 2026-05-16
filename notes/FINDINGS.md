@@ -1912,3 +1912,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 232. MyTracker AntiFraudConfig + InstalledPackagesProvider
 
 `AntiFraudConfig`: 5 сенсоров (гироскоп/магнитное поле/давление/освещённость/proximity). `InstalledPackagesProvider.getInstalledPackages()` — **список установленных приложений** передаётся в MyTracker. `getApkPreinstallParams` — параметры предустановки. Подробно: `notes/topics/232-mytracker-config-antifraud.md`.
+
+---
+
+## Дополнения 233
+
+### 233. DigitalID — URL-параметры
+
+`&digitalId=<id>&oid=<userId>&photo=<base64>` — фото пользователя передаётся в GET-параметре URL при переходе с DigitalID. Подробно: `notes/topics/233-digital-id-url-params.md`.
