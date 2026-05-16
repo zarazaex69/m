@@ -804,3 +804,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 91. Дополнительные WS-опкоды
 
 `DEBUG(2)` — debug-команда от сервера. `LOG(5)` — клиент отправляет логи на сервер по WS (второй канал помимо apptracer). `LINK_INFO(89)` — при вставке ссылки клиент запрашивает preview у сервера — сервер видит все ссылки, которые пользователь вставляет в сообщения до отправки. `DRAFT_SAVE(176)` — черновики сохраняются на сервере. `SESSIONS_INFO(96)/SESSIONS_CLOSE(97)` — управление активными сессиями. Подробно: `notes/topics/91-additional-ws-opcodes.md`.
+
+---
+
+## Дополнения 92
+
+### 92. WEB_APP_INIT_DATA, VOTERS_LIST_BY_ANSWER, AUDIO_PLAY WS-опкоды
+
+`WEB_APP_INIT_DATA(160)` — сервер знает о каждом запуске мини-апки. `VOTERS_LIST_BY_ANSWER(305)` — голосование не анонимное, сервер знает кто как проголосовал. `AUDIO_PLAY(301)` — сервер знает, когда пользователь прослушивает голосовые сообщения. 5 опкодов для папок (FOLDERS_GET/UPDATE/REORDER/DELETE). `COMPLAIN/COMPLAIN_REASONS_GET` — жалобы через WS. Подробно: `notes/topics/92-webapp-complaints-folders-polls-ws.md`.
