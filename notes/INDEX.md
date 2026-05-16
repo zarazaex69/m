@@ -451,3 +451,4 @@ status: living
 - [[topics/341-apptracer-crash-types]] — Apptracer crash types: CRASH/NON_FATAL/FATAL/ERROR/WARNING/NOTICE/INFO/DEBUG/MINIDUMP/ANR (getCacheDir/tracer/crashes) #telemetry #apptracer #crash-types #anr #minidump
 - [[topics/342-pmskey-additional-new]] — PmsKey additional: mytracker-enabled/tracer-non-fatal-crashed-enabled/wm-*/calc-audio-wave/battery-slice-interval/ymap/views-count-enabled #pmskey #server-control #mytracker #tracer
 - [[topics/343-rtd-server-flags]] — rtd SharedPreferences: 40+ flags (userLogReportChatId/isMytrackerEnabled/statSessionBackgroundThreshold/retryTranscriptionAttempt) #pmskey #server-control #rtd #mytracker
+- [[topics/344-pmskey-debug-special]] — PmsKey debug/special: user-debug-report/fake-chats/fake-in-app-review/blocked-users/anr-config/watchdog-config #pmskey #server-control #debug #surveillance

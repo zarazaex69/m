@@ -2800,3 +2800,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 343. rtd SharedPreferences — 40+ флагов
 
 `userLogReportChatId`/`isMytrackerEnabled`/`statSessionBackgroundThreshold`/`retryTranscriptionAttempt`/`vpnChatBottomsheetEnabled`/`vpnCallBottomsheetEnabled`. Подробно: `notes/topics/343-rtd-server-flags.md`.
+
+---
+
+## Дополнения 344
+
+### 344. PmsKey debug/special
+
+`user-debug-report`/`fake-chats`/`fake-in-app-review`/`blocked-users`/`anr-config`/`watchdog-config`/`debug-mode`/`min-log-level`. Подробно: `notes/topics/344-pmskey-debug-special.md`.
