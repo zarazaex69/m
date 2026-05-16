@@ -1228,3 +1228,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 146. vchat.getLogUploadUrl + device fingerprint
 
 `vchat.getLogUploadUrl` — сервер выдаёт URL для загрузки диагностических логов звонков. `och.java` — каждый запрос к звонковому API содержит: `device=Build.MANUFACTURER/Build.MODEL` (модель устройства), `osVersion`, `ispAsOrg`, `locCc`, `locReg`. Сервер знает точную модель телефона каждого участника звонка. Подробно: `notes/topics/146-log-upload-device-fingerprint.md`.
+
+---
+
+## Дополнения 147
+
+### 147. CallNativeAnalyticsApiRequest
+
+`platform=ANDROID`, `appVersion` (версия MAX), `sdkType=ANDROID`, `sdkVersion=0.1.13`, `version=1` + 40 метрик звонка. Отправляется через `vchat.clientStats`. Подробно: `notes/topics/147-call-native-analytics-request.md`.
