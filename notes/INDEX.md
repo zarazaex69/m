@@ -513,3 +513,4 @@ status: living
 - [[topics/403-conversation-feature-manager]] — ConversationFeatureManager: 4 features (ADD_PARTICIPANT/RECORD/MOVIE_SHARE/ASR_RECORD), enableFeatureForRoles via signaling #calls-feature #roles #surveillance #server-control
 - [[topics/404-advertising-id-client]] — AdvertisingIdClient: GAID collection, isLimitAdTrackingEnabled, logs limit_ad_tracking/ad_id_size/time_spent #gaid #advertising-id #tracking #surveillance
 - [[topics/405-install-referrer]] — InstallReferrer: installReferrer/installBeginTimestamp/referrerClickTimestamp, attribution to MyTracker #install-referrer #attribution #tracking #surveillance
+- [[topics/406-mytracker-user-lifecycle]] — MyTrackerUserLifecycle: trackLoginEvent/trackRegistrationEvent/trackInviteEvent + MultipleInstallReceiver(INSTALL_REFERRER) #mytracker #user-lifecycle #login-tracking #surveillance

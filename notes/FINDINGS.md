@@ -3294,3 +3294,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 405. InstallReferrer
 
 `installReferrer`/`installBeginTimestamp`/`referrerClickTimestamp`. Передаётся в MyTracker для атрибуции. Подробно: `notes/topics/405-install-referrer.md`.
+
+---
+
+## Дополнения 406
+
+### 406. MyTrackerUserLifecycle
+
+`trackLoginEvent(userId, type)` / `trackRegistrationEvent(userId, type)` / `trackInviteEvent()`. `MultipleInstallReceiver`: перехват `INSTALL_REFERRER`. Подробно: `notes/topics/406-mytracker-user-lifecycle.md`.
