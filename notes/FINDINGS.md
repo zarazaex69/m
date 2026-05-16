@@ -1488,3 +1488,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 179. Conversation interface — 30+ менеджеров
 
 `AsrManager`, `AsrOnlineManager`, `CameraManager`, `ChatManager`, `ConversationFeatureManager`, `KeywordSpotterManager`, `MicrophoneManager`, `NoiseSuppressionManager`, `RecordManager`, `StereoRoomManager`, `UrlSharingManager`, `WatchTogetherPlayer`, `DisplayLayoutSender`, `DebugManager` (в production!). Подробно: `notes/topics/179-conversation-interface.md`.
+
+---
+
+## Дополнения 180
+
+### 180. RecordManager — запись и стриминг звонков
+
+`startRecord(StartParams)`: `isStream` (стриминг), `movieId`, `albumId`, `sessionRoomId`, `name`, `description`, `groupId`, `privacy`. Интеграция с видео-платформой VK/OK. `stopRecord`. Подробно: `notes/topics/180-record-manager.md`.
