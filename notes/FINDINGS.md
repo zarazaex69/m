@@ -1252,3 +1252,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 149. UploadConfig — конфиг загрузки аналитики звонков
 
 `DEFAULT_DISABLE_UPLOAD_IN_CALL=true` — загрузка отключена во время активного звонка. `DEFAULT_MAX_EVENT_COUNT=800` — буфер до 800 событий. `DEFAULT_MAX_FILE_SIZE_KB=15`. `DEFAULT_LOCAL_FILE_COUNT=100`. Подробно: `notes/topics/149-upload-config-calls-analytics.md`.
+
+---
+
+## Дополнения 150
+
+### 150. applyBitrateDumpGatheringConfig
+
+При `android.dump.bitrate.isEnabled=true` — создаётся файл `target_bitrate_dump_<timestamp>` для каждого звонка. `ev1.O = new av1(context)` — bitrate dump активирован. Подробно: `notes/topics/150-apply-bitrate-dump-config.md`.
