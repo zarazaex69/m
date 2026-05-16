@@ -1760,3 +1760,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 213. VIDEO_STATS + AUDIO_STATS
 
 `VIDEO_STATS`: action_play/first_bytes/content_error/close_at_empty_buffer/empty_buffer + vid/vsid/cdn_host/quality/connection_type. `AUDIO_STATS`: first_bytes. Подробно: `notes/topics/213-video-audio-stats-telemetry.md`.
+
+---
+
+## Дополнения 214
+
+### 214. WS Session Config — расширенные поля
+
+`proxy`/`proxy-domains`/`isVpn`/`location`(код страны по гео)/`reg-country-code`(код страны регистрации)/`lang`/`callsSeed`/`app-update-type`. Сервер знает VPN, прокси и страну. Подробно: `notes/topics/214-ws-session-config-extended.md`.
