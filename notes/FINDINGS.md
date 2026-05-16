@@ -2232,3 +2232,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 272. MsgDelete Task
 
 `messagesId[]`/`forMe`/`complaint` (удаление + жалоба в одной операции)/`notDeleteMessageFromDb`. Подробно: `notes/topics/272-tasks-msg-delete.md`.
+
+---
+
+## Дополнения 273
+
+### 273. VideoPlay + ChatClear + ChatDelete Tasks
+
+`VideoPlay`: videoId/place/saveToGallery/startDownload. `ChatClear`/`ChatDelete`: forAll/lastEventTime. Подробно: `notes/topics/273-tasks-video-chat-ops.md`.
