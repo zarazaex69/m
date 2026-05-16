@@ -555,3 +555,4 @@ status: living
 - [[topics/445-call-rate-record-vpn]] — CallRateBottomSheet(call_id/is_group_call/sdk_reasons) + StartRecordBottomSheet(name max 250) + VpnPanelWidget #calls #rate-call #record #vpn-panel #surveillance
 - [[topics/446-call-service-impl]] — CallServiceImpl: ConnectionService, WakeLock(max:calls_prx), incomingCalls/activeCalls notifications, onTaskRemoved #calls #connection-service #telecom #foreground-service #surveillance
 - [[topics/447-rkn-bottomsheet]] — RknBottomSheet: "Это зарегистрированный канал" / "Он есть в перечне Роскомнадзора" #rkn #roskomnadzor #channel #compliance #surveillance
+- [[topics/448-warning-link-bottomsheet]] — WarningLinkBottomSheet: "Перейти по ссылке?" + URL + analytics(a(1,1)/a(1,2)) #warning-link #messages #safety #surveillance

@@ -3630,3 +3630,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 447. RknBottomSheet
 
 "Это зарегистрированный канал" / "Он есть в перечне Роскомнадзора". Маркировка каналов РКН. Подробно: `notes/topics/447-rkn-bottomsheet.md`.
+
+---
+
+## Дополнения 448
+
+### 448. WarningLinkBottomSheet
+
+"Перейти по ссылке?" + URL + "Перейти"/"Отменить". Аналитика переходов. Подробно: `notes/topics/448-warning-link-bottomsheet.md`.
