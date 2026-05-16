@@ -3374,3 +3374,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 415. zu5 (DPS клиент)
 
 `getNetworkOperator()+getNetworkOperatorName()` при каждой отправке. `deviceIdSupplier`/`userIdSupplier`. 4 потока. Подробно: `notes/topics/415-dps-client-zu5.md`.
+
+---
+
+## Дополнения 416
+
+### 416. vm5 + cgj (Device Info)
+
+`android_id` (Settings.Secure). `cgj`: appVersion/osVersion/locale/deviceLocale/deviceName/screen/timeZone/SUPPORTED_ABIS. Подробно: `notes/topics/416-device-info-vm5-cgj.md`.

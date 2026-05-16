@@ -523,3 +523,4 @@ status: living
 - [[topics/413-conversation-interface]] — Conversation interface: 23 managers, sendData(JSON)/muteAll/grantRoles/removeParticipant(ban)/queryChatHistory #conversation #calls-sdk #interface #surveillance #admin
 - [[topics/414-conversation-factory]] — ConversationFactory: SDK v0.1.13, call/answer/join/joinAnonByLink/createConfRoom, setEmulatedNegotiationErrorType/setBackendRenderVmoji #conversation-factory #calls-sdk #sdk-version #surveillance
 - [[topics/415-dps-client-zu5]] — zu5 (DPS client): getNetworkOperator()+getNetworkOperatorName() on every send, deviceIdSupplier/userIdSupplier, 4 threads #dps #apptracer #telephony #network-operator #surveillance
+- [[topics/416-device-info-vm5-cgj]] — vm5+cgj: android_id(Settings.Secure), UserAgent(appVersion/osVersion/locale/deviceName/screen/timeZone/SUPPORTED_ABIS) #device-info #user-agent #android-id #fingerprint #surveillance
