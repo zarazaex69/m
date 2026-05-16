@@ -463,3 +463,4 @@ status: living
 - [[topics/353-strings-additional-config]] — strings.xml: tracer_mapping_uuid/legal.max.ru/pp+ps/tt_contact_mimetype #config #strings #legal #apptracer
 - [[topics/354-yandex-maps-config]] — y-map PmsKey: Yandex Maps config (tile/geocoder/static) + apikey from server + geocode-maps.yandex.ru endpoint #server-control #yandex-maps #api-key #geocoder
 - [[topics/355-deeplink-routes-full]] — Deeplink routes: :auth/:share-self-out/joincall/<id>/join/<id>/stickerset/<id>/c/<chatId>/<msgId>/:folder/:current #deeplinks #routing #max-ru
+- [[topics/356-api-oneme-ru-servers]] — api.oneme.ru servers: prod + api-test.oneme.ru + api-tg.oneme.ru + api-test2.oneme.ru #api #endpoints #oneme #test-servers
