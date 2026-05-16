@@ -4230,3 +4230,11 @@ RTD флаг для фейковых чатов в `PickerChatsListWidget`. По
 ### 522. userLogReportChatId + debug
 
 `userLogReportChatId` — ID чата для отчётов. `debug-mode`. `user-debug-report`. Все управляются сервером. Подробно: `notes/topics/522-user-log-report-debug.md`.
+
+---
+
+## Дополнения 523
+
+### 523. InviteFriendsToMaxBottomSheet
+
+`clicked_to_invite(main, trigger_max)` → `app.already.invited.friends=true`. Текст с сервера. Подробно: `notes/topics/523-invite-friends.md`.
