@@ -844,3 +844,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 96. vchat.* API — 14 методов звонкового API
 
 `vchat.clientStats` — HTTP API для 40 метрик звонка. `vchat.getLogUploadUrl` — сервер выдаёт URL для загрузки логов звонка. `vchat.clientSupportedCodecs` — клиент сообщает поддерживаемые кодеки. `vchat.getExternalIdsByOkIds/getOkIdsByExternalIds` — маппинг OK ID ↔ внешние ID. Статистика через OneLog-инфраструктуру. Подробно: `notes/topics/96-vchat-api-methods.md`.
+
+---
+
+## Дополнения 97
+
+### 97. api.oneme.ru — основной API endpoint и тестовые серверы
+
+`api.oneme.ru:443` — production. Dev-меню содержит: `api-test.oneme.ru`, `api-tg.oneme.ru` (неизвестное назначение), `api-test2.oneme.ru`. Deeplink-обработчик принимает тестовые хосты. `api-tg.oneme.ru` — суффикс `tg` требует дополнительного анализа. Подробно: `notes/topics/97-api-oneme-ru-endpoints.md`.
