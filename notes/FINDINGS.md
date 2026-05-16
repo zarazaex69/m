@@ -2576,3 +2576,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 315. comments + complain_reasons DB
 
 `comments`: 28 полей (аналог messages + parent_chat_server_id/parent_message_server_id). `complain_reasons`: id/type_id/complain_reasons(BLOB). Подробно: `notes/topics/315-comments-complain-reasons-db.md`.
+
+---
+
+## Дополнения 316
+
+### 316. BatterySnapshot
+
+`slice`/`cpuTicks`(u/s/cu/cs)/`batteryPercent`/`mobileNet`(rx/tx/idle)/`wifiNet`(rx/tx/idle)/`processes`. Подробно: `notes/topics/316-battery-snapshot.md`.
