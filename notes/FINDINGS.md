@@ -2600,3 +2600,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 318. /proc filesystem reads
 
 `/proc/self/stat`(CPU ticks)/`/proc/self/statm`(память)/`/proc/<pid>/cmdline`(имя процесса)/`/proc/self/fd/`(файловые дескрипторы). Подробно: `notes/topics/318-proc-filesystem-reads.md`.
+
+---
+
+## Дополнения 319
+
+### 319. TrafficStats — сетевая статистика по UID
+
+`getUidRxBytes`/`getUidTxBytes`(uid) — входящий/исходящий трафик MAX по UID. Используется в BatterySnapshot. Подробно: `notes/topics/319-traffic-stats-uid.md`.
