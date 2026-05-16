@@ -170,3 +170,4 @@ status: living
 - [[topics/61-leakcanary-gost-debug-flags]] — LeakCanary in production APK, gostLicenseCheckEnabled, isDisableWebAppSsl #debug #gost #security
 - [[topics/62-white-list-links-content-control]] — white-list-links (server-controlled trusted domains), show-warning-links #links #content-moderation
 - [[topics/63-complaints-server-controlled]] — available-complaints (server-controlled reasons), server-side-complains-enabled #complaints #moderation
+- [[topics/64-calls-endpoint-server-redirect]] — calls-endpoint (server-pushed call server URL, full routing control) #calls #server-control
