@@ -1552,3 +1552,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 187. NetworkConnectionManager
 
 `getTopology()` (P2P/server), `registerBadConnectionCallback`, `addNetworkConnectivityListener`. Подробно: `notes/topics/187-network-connection-manager.md`.
+
+---
+
+## Дополнения 188
+
+### 188. CameraManager
+
+`getNumberOfCameras`/`isCameraEnabled`/`isCapturingFromFrontCamera`/`setCameraEnabled`/`switchCamera`. Подробно: `notes/topics/188-camera-manager.md`.
