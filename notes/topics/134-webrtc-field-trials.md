@@ -30,11 +30,13 @@ related:
 
 | Условие | Флаг |
 |---|---|
-| `padVar.d` | `CallsSDK-Audio-EarlyStartPlayout/Enabled/` |
-| `padVar.e` | `CallsSDK-Audio-EarlyStartRecording/Enabled/` |
-| `padVar.f` | `CallsSDK-Audio-AudioProcessingOffOnMute/Enabled/` |
-| `str2 != null` | дополнительные флаги из server config |
-| `strN != null` | ещё дополнительные флаги |
+| `padVar.d` = `isEarlyAudioPlayoutEnabled` | `CallsSDK-Audio-EarlyStartPlayout/Enabled/` |
+| `padVar.e` = `isEarlyAudioRecordingEnabled` | `CallsSDK-Audio-EarlyStartRecording/Enabled/` |
+| `padVar.f` = `isAudioPipelineOffOnMuteEnabled` | `CallsSDK-Audio-AudioProcessingOffOnMute/Enabled/` |
+| `str2` = `bonusFieldTrials` | **произвольные field trials от сервера** |
+| `strN` | ещё дополнительные флаги |
+
+`pad` структура из `ConversationFactory`: `udpMarker`, `tcpMarker`, `rttMultCapMs`, `isEarlyAudioPlayoutEnabled`, `isEarlyAudioRecordingEnabled`, `isAudioPipelineOffOnMuteEnabled`, `bonusFieldTrials`.
 
 ## DRED в ead.java
 
