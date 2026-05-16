@@ -444,3 +444,4 @@ status: living
 - [[topics/334-mytracker-event-types]] — MyTracker event types: session(3L/11)/launch(2L/13)/referrer(1L/12)/install_referrer(5L/17)/custom(33L/41) #telemetry #mytracker #event-types #session
 - [[topics/335-mytracker-external-proto]] — MyTracker ExternalProtoWriters: REMOTE_CONFIG_STRING/LOCATION_INFO/NETWORK_INFO/CELL_AND_WIFI_INFO #telemetry #mytracker #location #network #cell-info #surveillance
 - [[topics/336-ilb-device-data]] — ilb.java device data: board/brand/cpuABI/cpuCount/networkOperatorName/installer #telemetry #device-info #cpu #network-operator #surveillance
+- [[topics/337-crash-report-device-info]] — Crash report device info: environment/buildUuid/sessionUuid/device_id/inBackground/connection/isRooted #telemetry #crash-report #device-info #rooted #surveillance

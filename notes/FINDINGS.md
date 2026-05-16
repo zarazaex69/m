@@ -2744,3 +2744,11 @@ Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezon
 ### 336. ilb.java — расширенные данные устройства
 
 `board`/`brand`/`cpuABI`(Build.SUPPORTED_ABIS)/`cpuCount`/`networkOperatorName`/`installer`. Подробно: `notes/topics/336-ilb-device-data.md`.
+
+---
+
+## Дополнения 337
+
+### 337. Crash Report Device Info
+
+`environment`/`buildUuid`/`sessionUuid`/`device_id`/`inBackground`/`connection`/`isRooted`. Подробно: `notes/topics/337-crash-report-device-info.md`.
