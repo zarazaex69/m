@@ -1720,3 +1720,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 208. WebApp телеметрия — WEBAPP_ACTION + WEBAPP_BRIDGE
 
 `WEBAPP_ACTION`: OPEN/CLOSE/REFRESH/MINIAPP_TAKE_PHOTO + botId/webAppName/entryPoint/sourceType. `WEBAPP_BRIDGE`: **каждый JS-bridge вызов** логируется с sessionId/botId/webAppName/success/method/code. Подробно: `notes/topics/208-webapp-telemetry.md`.
+
+---
+
+## Дополнения 209
+
+### 209. GET_INSTALL_REFERRER — источник установки
+
+`getInstallerPackageName()` → нормализация → CritLog `ACTION`/`GET_INSTALL_REFERRER`. Поля: `value` (имя пакета установщика), `is_update_version`. Отправляется один раз при первом запуске новой версии. Подробно: `notes/topics/209-install-referrer.md`.
