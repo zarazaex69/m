@@ -3382,3 +3382,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 416. vm5 + cgj (Device Info)
 
 `android_id` (Settings.Secure). `cgj`: appVersion/osVersion/locale/deviceLocale/deviceName/screen/timeZone/SUPPORTED_ABIS. Подробно: `notes/topics/416-device-info-vm5-cgj.md`.
+
+---
+
+## Дополнения 417
+
+### 417. MyTracker GAID + OAID
+
+`GoogleAdInfoDataProvider`: GAID + isLimitAdTrackingEnabled. `HuaweiAdInfoDataProvider`: OAID + isLimitAdTrackingEnabled. Подробно: `notes/topics/417-mytracker-gaid-oaid.md`.
