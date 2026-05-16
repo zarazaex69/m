@@ -3598,3 +3598,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 443. CallsSdkInitializer
 
 `calculateMeta(SHA-256 of .so files)` + `initializeSessionSeed(seed, deviceId)` (native). Подробно: `notes/topics/443-calls-sdk-initializer.md`.
+
+---
+
+## Дополнения 444
+
+### 444. CallAdminSettingsScreen
+
+`ADMIN_CALL_SETTINGS{screen, camera, microphone, screenshare, recording, waiting}`. `CallDebugMenuScreen` в production. Подробно: `notes/topics/444-call-admin-settings.md`.

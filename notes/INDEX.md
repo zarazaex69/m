@@ -551,3 +551,4 @@ status: living
 - [[topics/441-neuro-avatars]] — NeuroAvatarsScreen: AI avatar generation from photo at registration, photo sent to server #neuro-avatars #ai #registration #login #surveillance
 - [[topics/442-background-listen-service]] — BackgroundListenService: startForeground(9001) 'MAX работает в фоне', system_curtain_shown/hidden, BackgroundWakeBootReceiver #background-wake #foreground-service #boot-receiver #surveillance
 - [[topics/443-calls-sdk-initializer]] — CallsSdkInitializer: calculateMeta(SHA-256 of .so files) + initializeSessionSeed(seed, deviceId) native #calls-sdk #initialization #sha256 #native #integrity
+- [[topics/444-call-admin-settings]] — CallAdminSettingsScreen: ADMIN_CALL_SETTINGS{screen/camera/microphone/screenshare/recording/waiting} + CallDebugMenuScreen in production #calls #admin-settings #debug-menu #surveillance
