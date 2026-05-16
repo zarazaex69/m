@@ -4022,3 +4022,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 496. tp.b() API методы
 
 `auth.anonymLogin`/`batch.executeV2`/`log.externalLog`/`vchat.getAnonymTokenByLink`/`vchat.getLogUploadUrl`. Подробно: `notes/topics/496-api-methods-full.md`.
+
+---
+
+## Дополнения 497
+
+### 497. vchat.getLogUploadUrl
+
+`{conversationId, webrtcPlatform, type, anonymToken}` → URL для загрузки логов звонка. Подробно: `notes/topics/497-vchat-get-log-upload-url.md`.
