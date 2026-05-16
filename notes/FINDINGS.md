@@ -2832,3 +2832,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 347. Firebase Messaging Service
 
 `RECEIVE`/`NEW_TOKEN`. Поля: `google.message_id`/`google.product_id`/`error`. Подробно: `notes/topics/347-firebase-messaging-service.md`.
+
+---
+
+## Дополнения 348
+
+### 348. Firebase CctTransportBackend
+
+POST+gzip+`X-Goog-Api-Key`+`datatransport/3.1.9`. URL задаётся динамически. Подробно: `notes/topics/348-firebase-cct-transport.md`.
