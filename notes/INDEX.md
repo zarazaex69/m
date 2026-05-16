@@ -72,6 +72,9 @@ status: living
 - [[topics/27-hardcoded-keys-audit]] — Firebase / MyTracker / Google Maps; приватных ключей нет #secrets
 - [[topics/34-yandex-maps-integration]] — Yandex Maps endpoints и утечка координат #yandex #geolocation
 - [[topics/35-mytracker-antifraud-sensors]] — сенсорный fingerprint через MyTracker #antifraud #fingerprinting
+- [[topics/37-webapp-privilege-configuration]] — server-controlled allowlist привилегированных мини-апок #webapp #server-control
+- [[topics/38-deeplink-routes-full-map]] — 8 deeplink-роутов (`:auth`, `:share`, `:join`, `:profile`, `:chats`, ...) #deeplink #intent-surface
+- [[topics/39-libffmpg-version-license]] — FFmpeg n4.4.3 в `libffmpg.so`, GPLv3 в проприетарном продукте #ffmpeg #license #native-libs
 
 ## Источники (raw)
 
