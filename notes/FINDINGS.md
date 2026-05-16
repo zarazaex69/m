@@ -4062,3 +4062,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 501. AttributionHandler
 
 `referrer → tracker-api.vk-analytics.ru/?{referrer} → mt param → deeplink → attribution SharedPreferences`. Подробно: `notes/topics/501-attribution-handler.md`.
+
+---
+
+## Дополнения 502
+
+### 502. MyTrackerActivityHandler
+
+`onActivityStarted/Stopped` + `timespentSwitchToBackground/Foreground` + `trackLaunch` + `sensorHandlerStart`. Подробно: `notes/topics/502-mytracker-activity-handler.md`.

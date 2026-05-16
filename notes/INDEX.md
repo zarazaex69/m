@@ -609,3 +609,4 @@ status: living
 - [[topics/499-tp-uri-builder]] — tp URI Builder: ok://api/api/{method}, base URL https://api.ok.ru #api-uri #ok-api #surveillance #server-control
 - [[topics/500-mytracker-urls]] — TrackerConfig MyTracker URLs: tracker-api.vk-analytics.ru v3/ip4/ts/mlapi/beta-ml #mytracker #tracker-urls #vk-analytics #surveillance #telemetry
 - [[topics/501-attribution-handler]] — AttributionHandler: referrer → tracker-api.vk-analytics.ru/?{referrer} → mt param → deeplink → attribution SharedPreferences #mytracker #attribution #referrer #deeplink #surveillance #telemetry
+- [[topics/502-mytracker-activity-handler]] — MyTrackerActivityHandler: onActivityStarted/Stopped + timespentSwitchToBackground/Foreground + trackLaunch + sensorHandlerStart #mytracker #timespent #activity-tracking #foreground-background #surveillance #telemetry
