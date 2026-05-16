@@ -232,3 +232,4 @@ status: living
 - [[topics/123-group-calls-pmskey]] — group calls PmsKey: gc-from-p2p/gc-wait-admin/group-call-part-limit #calls #group-calls #server-control
 - [[topics/124-calls-signaling-pmskey]] — calls signaling PmsKey: outgoing-call-uri(default=https://max.ru)/calls-android-signaling-to(JSON timeouts)/early-call-start #calls #signaling
 - [[topics/125-p2p-relay-webtransport]] — calls-use-p2p-relay (server routes call media through relay) + calls-sdk-wt-enabled (WebTransport) #calls #p2p #server-control
+- [[topics/126-energy-saving-pmskey]] — energy-saving-bottom-sheet (server pressures users to disable battery saving) + call-permissions-interval #energy #server-control
