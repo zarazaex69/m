@@ -439,3 +439,68 @@ URL `https://sdk-api.apptracer.ru` захардкожен в Java. Endpoints: `/
 - `notes/topics/26-upstream-public-repos.md`
 - `notes/topics/27-hardcoded-keys-audit.md`
 - `notes/topics/28-vk-enh-decrypt-key.md`
+
+
+---
+
+## Дополнения (темы 29-36)
+
+### 29. ExternalCallback / OK_TOKEN — MAX как Identity Provider
+
+WS-опкод `EXTERNAL_CALLBACK(105)` в паре с deeplink `:auth?externalCallback=1` и UI `ExternalCallbackWidget` (`one.me.android.externalcallback.*`). Цепочка: внешнее приложение открывает deeplink → MAX показывает bottom-sheet согласия → клиент по WS оформляет подпись через сервер → внешнее приложение получает токен. `OK_TOKEN(158)` — параллельно для SSO в OK.ru/VK ID. В сочетании с `digitalid-botid` MAX-аккаунт становится единым гос-привязанным user identity, single-point-of-control для всей цифровой личности в РФ. Подробно: `notes/topics/29-external-callback-idp-flow.md`.
+
+### 30. Root-detection — без блокировки, но в телеметрию
+
+В клиенте нет активной блокировки rooted-устройств / Frida / Xposed / debuggable. Но MyTracker SDK (`com/my/tracker/core/o/m.java`) детектит Magisk через файловые пути (`/sbin/.magisk/`, `/sbin/.core/mirror`...) и передаёт флаг `isRooted` в attribution-payload. Apptracer (`defpackage/ij9.java`) и общий event-stack (`defpackage/mpf.java`) добавляют `isRooted` в JSON-события на `sdk-api.apptracer.ru`. Не блокировка, но **detect-and-report**. Подробно: `notes/topics/30-root-detection-telemetry.md`.
+
+### 31. OneLog event categories
+
+Карта категорий событий, которые улетают через `ru.ok.android.onelog.UploadService` (BIND_JOB_SERVICE). Обнаружено 60+ файлов с вызовами `ok9.h(logger, category, operation, attributes)`. Категории: `PUSH/Action` (с `p_op`: `n_q_rep`, `n_canceled`, `open_chat`, `open_url`...), `CALL`, `AUDIO_STATS`, `VIDEO_MESSAGE`, `SETTINGS`, `BACKGROUND_MODE`, `POWER_SAVING`, **`PERMISSION/permission_status`** (DailyAnalyticsWorker — отчёт всех runtime-permission'ов), `PERMISSION/permission_changed_state`, `CONTACT_OR_BLOCK`, `CONTEXT_MENU`, `CHANNEL_RECSYS_FOLDER`, `INVITE_MAX_BANNER`, `SHARE_TO_MAX`, `sticker/send_sticker`, `CLICK`, `HOST_REACHABILITY`, `DEV`. Поведенческий профиль строится в очень мелкой гранулярности. Подробно: `notes/topics/31-onelog-event-categories.md`.
+
+### 32. Presence — server-controlled видимость
+
+Поле `hiddenOnline` в UserSettings приходит с сервера и побеждает локальный чекбокс «скрыть онлайн». 9 PmsKey семейства `presence-*`: `presence-ttl`, `presence-view-port`, `presence-external` (видимость для смежных сервисов), `presence-seen-eq`, `presence-stat` (лог в OneLog), `presence-keep-bg-cache`, `presence-offline-move-timeout`, `presence-offline-log`, `notif-typing-presence`. Сервер контролирует, кто и когда видит онлайн-статус пользователя. Подробно: `notes/topics/32-presence-server-controlled.md`.
+
+### 33. WS framing — MessagePack
+
+Бинарный msgpack-RPC через `org.msgpack.core` (`defpackage/j8h.java`, `kxa.java` — обёртка `MessageUnpacker`). Формат frame-а — array первым элементом opcode short, далее payload. Типы — стандартные msgpack (varint64 для id, utf-8 length-prefix для строк, рекурсивные map/array). Сжатие zstd опционально (`libzstd.so` есть). `wss://` на TLS, без E2E внутри. Сервер может отключить TLS-валидацию через PmsKey `net-ssl-session-validate`. Подробно: `notes/topics/33-ws-msgpack-framing.md`.
+
+### 34. Yandex Maps — три endpoint-а с утечкой координат
+
+Все картографические запросы клиента идут на Yandex (не через MAX-сервер): `https://geocode-maps.yandex.ru/v1?...&geocode=<lat,lon>&apikey=...` (reverse geocoding), `https://static-maps.yandex.ru/v1?...&maptype=future_map&...` (raster preview), `https://tiles.api-maps.yandex.ru/v1/tiles/?...&projection=web_mercator&...` (tile server). Yandex видит координаты и IP пользователей MAX отдельно от сервера MAX. PmsKey `y-map` — серверный switch (теоретически может быть переключено на другой backend). Подробно: `notes/topics/34-yandex-maps-integration.md`.
+
+### 35. MyTracker AntiFraud — сенсорный fingerprint
+
+MyTracker SDK (VK) использует 5 сенсоров устройства для fingerprint'а и детекта эмулятора: light sensor, magnetic field sensor, gyroscope, pressure sensor, proximity sensor. По умолчанию все включены. Результат + derivative-метрики уходят на `tracker-api.vk-analytics.ru` в составе attribution-payload. Sber-antifraud (анонсированный для MAX в прессе для антимошеннических звонков) в этой версии **отсутствует** — есть только VK-овский attribution antifraud. Сенсорный fingerprint позволяет идентифицировать устройство сквозь переустановку приложения. Подробно: `notes/topics/35-mytracker-antifraud-sensors.md`.
+
+### 36. Channels — server-gated rollout
+
+Каналы (broadcast 1-N) — feature-flagged через PmsKey `channels-enabled` (#76). По состоянию на август 2025 (Wikipedia: «функционал недоступен обычным пользователям») фича выключена для общих пользователей. PmsKey семейства каналов: `channel-statistics-botid` (#192, серверный бот статистики), `channels-complaint-enabled`, `channels-suggests-folder`, `channel-view-config`, `bots-channel-adding`. WS-опкод `CHAT_HIDE(196)` — отдельный механизм для **серверного скрытия канала из списка пользователя без удаления** (тихая server-side модерация). Подробно: `notes/topics/36-channels-feature-gated.md`.
+
+---
+
+## Полная сводка после 36 тем
+
+К 14 исходным разделам и трём наборам дополнений (15-23, 24-28, 29-36) добавились ещё 8:
+
+1. **MAX как Identity Provider (29)** — WS+deeplink+UI цепочка для OAuth-style передачи личности внешним сервисам, плюс SSO в экосистему VK/OK через `OK_TOKEN`.
+2. **Detect-and-report для root (30)** — не блокирует, но репортит. Сервер всегда знает root-статус устройства.
+3. **OneLog событийная карта (31)** — поведенческий профиль на уровне «каждый клик / каждый swipe push / каждое изменение пермы / каждый стикер с контекстом».
+4. **Presence как серверная политика (32)** — `hiddenOnline` server-controlled, не локальный privacy-control.
+5. **MessagePack-framing (33)** — бинарный протокол; не E2E, на TLS, с серверным kill-switch валидации сессии.
+6. **Yandex как отдельный канал утечки геоданных (34)** — координаты идут на Yandex напрямую, не через MAX-server.
+7. **Сенсорный device-fingerprint (35)** — 5 датчиков для анти-эмулятор / device-identity сквозь переустановку.
+8. **Server-gated каналы + CHAT_HIDE (36)** — server-side модерация архитектурно достаточная для тихой цензуры.
+
+---
+
+Дополнительные файлы:
+
+- `notes/topics/29-external-callback-idp-flow.md`
+- `notes/topics/30-root-detection-telemetry.md`
+- `notes/topics/31-onelog-event-categories.md`
+- `notes/topics/32-presence-server-controlled.md`
+- `notes/topics/33-ws-msgpack-framing.md`
+- `notes/topics/34-yandex-maps-integration.md`
+- `notes/topics/35-mytracker-antifraud-sensors.md`
+- `notes/topics/36-channels-feature-gated.md`
