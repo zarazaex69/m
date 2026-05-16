@@ -557,3 +557,4 @@ status: living
 - [[topics/447-rkn-bottomsheet]] — RknBottomSheet: "Это зарегистрированный канал" / "Он есть в перечне Роскомнадзора" #rkn #roskomnadzor #channel #compliance #surveillance
 - [[topics/448-warning-link-bottomsheet]] — WarningLinkBottomSheet: "Перейти по ссылке?" + URL + analytics(a(1,1)/a(1,2)) #warning-link #messages #safety #surveillance
 - [[topics/449-file-download-warning]] — FileDownloadWarningBottomSheet: chat_id/message_id/attach_id/file_id/file_name/file_url/file_size #file-download #warning #messages #surveillance
+- [[topics/450-fake-inapp-review]] — FakeInAppReviewBottomSheet: own rating dialog (NOT Google Play In-App Review), ratings collected directly by MAX #in-app-review #rating #fake #google-play #surveillance

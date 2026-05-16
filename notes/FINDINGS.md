@@ -3646,3 +3646,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 449. FileDownloadWarningBottomSheet
 
 `(chat_id, message_id, attach_id, file_id, file_name, file_url, file_size)`. Предупреждение при скачивании потенциально опасного файла. Подробно: `notes/topics/449-file-download-warning.md`.
+
+---
+
+## Дополнения 450
+
+### 450. FakeInAppReviewBottomSheet
+
+Собственный диалог оценки приложения (не Google Play In-App Review). Оценки собираются напрямую MAX. Подробно: `notes/topics/450-fake-inapp-review.md`.
