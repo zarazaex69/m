@@ -2760,3 +2760,11 @@ Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezon
 ### 338. Root Detection
 
 Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.apk + /system/xbin/su. Эмулятор не считается рутированным. Подробно: `notes/topics/338-root-detection-impl.md`.
+
+---
+
+## Дополнения 339
+
+### 339. Minidump crash handler
+
+`installMinidumpWriterImpl(getCacheDir/tracer/minidump)` via libtracernative. Подробно: `notes/topics/339-minidump-crash-handler.md`.
