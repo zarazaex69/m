@@ -2360,3 +2360,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 288. OK_TOKEN WS
 
 `token_refresh_ts`/`token_lifetime_ts`. Сервер обновляет OK-токен авторизации через WS. Подробно: `notes/topics/288-ok-token-ws.md`.
+
+---
+
+## Дополнения 289
+
+### 289. PHONE_WEBAPP_SHARE WS
+
+`phone`/`hash`/`contact`. Номер телефона передаётся мини-приложению через WS. Подробно: `notes/topics/289-phone-webapp-share-ws.md`.
