@@ -4206,3 +4206,11 @@ SCO timeout=2500ms, max attempts=3. States: None/Unavailable/Available(Connected
 ### 519. jf4 ConnectionInfo
 
 VPN(`hasTransport(4)`) / roaming(`isNetworkRoaming()`) / backgroundRestriction / `registerDefaultNetworkCallback`. Подробно: `notes/topics/519-connection-info.md`.
+
+---
+
+## Дополнения 520
+
+### 520. rtd дополнительные поля
+
+19 boolean + 18 строк/чисел. Ключевые: `isFakeChatsEnabled`/`isFullLogEnabled`/`callServers`/`moneyBotId`/`vpnChatBottomsheetEnabled`. Подробно: `notes/topics/520-rtd-additional-fields.md`.
