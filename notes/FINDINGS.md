@@ -3262,3 +3262,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 401. MediaDumpManager
 
 `requestMediaDump(duration, audio, video)` → signaling `collect-debug-dump {audio, video, duration}`. 6 источников аудио. **В production сборке**. Подробно: `notes/topics/401-media-dump-manager.md`.
+
+---
+
+## Дополнения 402
+
+### 402. DebugManager
+
+`enableFullAudioDump(path)`, `registerStatListener(period)`, `setVideoSettingsOverride(maxDimension)`. **В production сборке**. Подробно: `notes/topics/402-debug-manager.md`.
