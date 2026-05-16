@@ -194,3 +194,4 @@ status: living
 - [[topics/85-notif-ws-opcodes]] — NOTIF_* WS opcodes: 25 server-to-client push (NOTIF_CONFIG/NOTIF_LOCATION_REQUEST/NOTIF_DRAFT/NOTIF_BANNERS) #ws #server-push
 - [[topics/86-neuroavatars-ai]] — NeuroAvatars: AI avatar generation at registration, photo likely sent to server #ai #biometrics #registration
 - [[topics/87-location-ws-opcodes]] — LOCATION WS: NOTIF_LOCATION_REQUEST (server requests geo), liveLocation stream, MAX+Yandex recipients #location #surveillance #ws
+- [[topics/88-call-rate-quality-rating]] — Call Rate: quality rating dialog (callId, sdkReasons), server-controlled conditions #calls #analytics
