@@ -20,6 +20,7 @@ status: living
 - [[topics/11-state-bots-and-content-policy]] — `familyProtection`, `digitalid-botid`, GOST #government #user-settings
 - [[topics/13-deeplinks-idp]] — `:auth?externalCallback=1` (MAX как Identity Provider) #idp #deeplink
 - [[topics/22-gost-digitalid-family]] — wiring GOST/DigitalID/FamilyProtection (без GOST-крипто) #government
+- [[topics/29-external-callback-idp-flow]] — детальный flow ExternalCallback / OK_TOKEN #idp #ws
 
 ### Серверный контроль и killswitch
 
