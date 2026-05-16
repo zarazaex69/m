@@ -41,7 +41,7 @@ related:
 
 ## watchdog-config (#305)
 
-`PmsKey.f305watchdogconfig` — JSON-конфиг watchdog-а. Watchdog следит за зависаниями основного потока. Конфиг задаётся сервером.
+`PmsKey.f305watchdogconfig` — JSON-конфиг watchdog-а. Default: `{"enabled":true,"stuck":1,"hang":3}`. Watchdog следит за зависаниями основного потока. Поля: `enabled` (включён ли), `stuck` (порог «застрял»), `hang` (порог «завис»). Конфиг задаётся сервером.
 
 ## Сводка
 
