@@ -3678,3 +3678,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 453. Location screens
 
 `PickLocationScreen(chatId, lat, lon, zoom)`. `ShowLocationScreen(chatId, senderId, msgId, lat, lon, zoom)`. Аналитика: `geolocation_send_click(source_id, source_type)`. Подробно: `notes/topics/453-location-screens.md`.
+
+---
+
+## Дополнения 454
+
+### 454. /proc файлы
+
+`/proc/self/stat` → PID/comm/state/utime/stime. Пути: `/proc/self` + `/data/data/ru.oneme.app`. Подробно: `notes/topics/454-proc-files.md`.
