@@ -3166,3 +3166,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 389. vchat API запросы
 
 `vchat.startConversation`: capabilities(hex)/turnServers/waitForAdmin. `vchat.joinConversation` → `{endpoint, wtEndpoint, p2pForbidden}`. `vchat.clientSupportedCodecs` → fingerprinting. `vchat.hangupConversation(reason)`. Подробно: `notes/topics/389-vchat-api-requests.md`.
+
+---
+
+## Дополнения 390
+
+### 390. ClientCapabilities
+
+15 битов, hex-encoded. Default: SCREEN_TRACK_PRODUCER/VIDEO_TRACKS/WAITING_HALL. Передаётся при каждом `startConversation`/`joinConversation`. Подробно: `notes/topics/390-client-capabilities.md`.
