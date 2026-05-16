@@ -2248,3 +2248,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 274. FileDownloadCmd + MsgSharePreview + ChatPinSetVisibility
 
 `FileDownloadCmd`: fileId/fileName/chatId/messageId. `MsgSharePreview`: messageId/text. `ChatPinSetVisibility`: chatServerId/show. Подробно: `notes/topics/274-tasks-file-share-pin.md`.
+
+---
+
+## Дополнения 275
+
+### 275. Batch Tasks
+
+`ChatMarkBatch`: chatIds[]/maxMark. `DeleteChatsBatch`: chatIds[]. `ChatsList`: chatsSync/count/marker. `DraftDiscard`: chatId. Подробно: `notes/topics/275-tasks-batch-ops.md`.

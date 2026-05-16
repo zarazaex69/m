@@ -382,3 +382,4 @@ status: living
 - [[topics/272-tasks-msg-delete]] — MsgDelete: messagesId[]/forMe/complaint(delete+report in one op)/notDeleteMessageFromDb #protocol #tasks #msg-delete #surveillance
 - [[topics/273-tasks-video-chat-ops]] — VideoPlay(videoId/place/saveToGallery) + ChatClear/ChatDelete(forAll/lastEventTime) Tasks #protocol #tasks #video-play #chat-ops #surveillance
 - [[topics/274-tasks-file-share-pin]] — FileDownloadCmd(fileId/fileName) + MsgSharePreview(messageId/text) + ChatPinSetVisibility(show) Tasks #protocol #tasks #file-download #share-preview
+- [[topics/275-tasks-batch-ops]] — ChatMarkBatch(chatIds[]/maxMark) + DeleteChatsBatch(chatIds[]) + ChatsList(chatsSync/marker) + DraftDiscard Tasks #protocol #tasks #batch-ops
