@@ -2240,3 +2240,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 273. VideoPlay + ChatClear + ChatDelete Tasks
 
 `VideoPlay`: videoId/place/saveToGallery/startDownload. `ChatClear`/`ChatDelete`: forAll/lastEventTime. Подробно: `notes/topics/273-tasks-video-chat-ops.md`.
+
+---
+
+## Дополнения 274
+
+### 274. FileDownloadCmd + MsgSharePreview + ChatPinSetVisibility
+
+`FileDownloadCmd`: fileId/fileName/chatId/messageId. `MsgSharePreview`: messageId/text. `ChatPinSetVisibility`: chatServerId/show. Подробно: `notes/topics/274-tasks-file-share-pin.md`.
