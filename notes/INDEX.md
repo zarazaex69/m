@@ -178,3 +178,6 @@ status: living
 - [[topics/69-remote-settings-calls-sdk]] — RemoteSettings: android.dump.bitrate (bitrate dump), p2prelay.config, rating.limits #calls #server-control
 - [[topics/70-keyword-spotter-in-calls]] — KWS active during calls, server-controlled turnOffInMs, NativeDoubleArrayConsumer #kws #calls #surveillance
 - [[topics/71-call-onelog-events]] — CALL OneLog: 12+ operations (FINISH_CALL, ADMIN_CALL_SETTINGS_TO_USER, camera/mic/screenshare state) #calls #telemetry #surveillance
+- [[topics/72-video-message-onelog]] — VIDEO_MESSAGE OneLog: start_recording/delete/hands_free/error with source_id #video-messages #telemetry
+- [[topics/73-permission-onelog-daily]] — PERMISSION OneLog: DailyAnalyticsWorker sends 7 permissions daily #permissions #surveillance
+- [[topics/74-background-mode-onelog]] — BACKGROUND_MODE OneLog: system_curtain_shown/hidden, work_in_background_permission #background #telemetry
