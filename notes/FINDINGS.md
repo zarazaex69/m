@@ -3310,3 +3310,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 407. ShareData
 
 9 типов: TEXT/IMAGES/VIDEOS/FILES/VCARD/MESSAGES/CONTACT/STICKER_SET. Поля: text/images/videos/files/vcard/ids. Подробно: `notes/topics/407-share-data.md`.
+
+---
+
+## Дополнения 408
+
+### 408. PmsKey debug/logging/transcription
+
+`enable-audio-messages-transcription`/`enable-video-messages-transcription` — транскрипция сообщений. `log-sensitive`/`log-messages-meta`/`log-chat-meta`. `calls-fakeboss-incoming-call-enabled`. `battery-slice-interval`. Подробно: `notes/topics/408-pmskey-debug-logging-transcription.md`.

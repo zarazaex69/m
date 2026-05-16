@@ -515,3 +515,4 @@ status: living
 - [[topics/405-install-referrer]] — InstallReferrer: installReferrer/installBeginTimestamp/referrerClickTimestamp, attribution to MyTracker #install-referrer #attribution #tracking #surveillance
 - [[topics/406-mytracker-user-lifecycle]] — MyTrackerUserLifecycle: trackLoginEvent/trackRegistrationEvent/trackInviteEvent + MultipleInstallReceiver(INSTALL_REFERRER) #mytracker #user-lifecycle #login-tracking #surveillance
 - [[topics/407-share-data]] — ShareData: 9 types (TEXT/IMAGES/VIDEOS/FILES/VCARD/MESSAGES/CONTACT/STICKER_SET), vcard field #share #data-types #vcard #contact
+- [[topics/408-pmskey-debug-logging-transcription]] — PmsKey: enable-audio/video-messages-transcription, log-sensitive/messages-meta/chat-meta, calls-fakeboss-incoming-call-enabled, battery-slice-interval #pmskey #server-control #debug #logging #transcription #surveillance
