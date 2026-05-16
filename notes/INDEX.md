@@ -279,3 +279,4 @@ status: living
 - [[topics/169-negotiation-audio-error-stat]] — NegotiationErrorStat(SDP on error) + AudioErrorStat(audio_error with 3 fields) #calls #errors #stats
 - [[topics/170-ice-candidate-error-stats]] — IceCandidateGatheringFailedStat(local_address/remote_url/transport) + IceCandidateAddFailedStat #calls #ice #errors
 - [[topics/171-ice-restart-peer-connection-stat]] — IceRestartStat(ice_restart) + PeerConnectionChangedStat(connection_state_changed/p2p_relay) #calls #ice #peer-connection
+- [[topics/172-conversation-started-signaling-stat]] — ConversationStartedStat(call_start: callType/warmupStatus) + ConversationConnectedToSignalingStat(signaling_connected: time_ms) #calls #stats
