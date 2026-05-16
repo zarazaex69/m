@@ -605,3 +605,4 @@ status: living
 - [[topics/495-server-host-selector]] — r58 ServerHostSelector: api.oneme.ru/api-test.oneme.ru/api-tg.oneme.ru/api-test2.oneme.ru + Custom, dev_tools SharedPreferences #api-servers #dev-tools #server-switch #surveillance #server-control
 - [[topics/496-api-methods-full]] — tp.b() API methods: auth.anonymLogin/batch.executeV2/log.externalLog/vchat.getAnonymTokenByLink/vchat.getLogUploadUrl #api-methods #telemetry #surveillance #vchat #auth #log-upload
 - [[topics/497-vchat-get-log-upload-url]] — vchat.getLogUploadUrl: {conversationId, webrtcPlatform, type, anonymToken} → URL for call log upload #log-upload #vchat #calls #surveillance #server-control
+- [[topics/498-auth-anonym-login]] — auth.anonymLogin: {deviceId, verification_supported=true, gen_token=true, session_data={auth_token,version=3,device_id}} #auth #anonymous-login #device-id #session-data #surveillance #server-control

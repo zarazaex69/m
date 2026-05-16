@@ -4030,3 +4030,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 497. vchat.getLogUploadUrl
 
 `{conversationId, webrtcPlatform, type, anonymToken}` → URL для загрузки логов звонка. Подробно: `notes/topics/497-vchat-get-log-upload-url.md`.
+
+---
+
+## Дополнения 498
+
+### 498. auth.anonymLogin
+
+`{deviceId, verification_supported=true, gen_token=true, session_data={auth_token, version=3, device_id}}`. Подробно: `notes/topics/498-auth-anonym-login.md`.
