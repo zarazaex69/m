@@ -2712,3 +2712,11 @@ Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezon
 ### 332. MyTracker ActivityLifecycle
 
 `onActivityStarted(timePoint)`/`onActivityStopped(timePoint)`. Основа для подсчёта времени сессии. Подробно: `notes/topics/332-mytracker-activity-lifecycle.md`.
+
+---
+
+## Дополнения 333
+
+### 333. MyTracker Install Referrer
+
+`installReferrer`/`installBeginTimestamp`/`referrerClickTimestamp`/`installer`. Google + Huawei. Подробно: `notes/topics/333-mytracker-install-referrer.md`.
