@@ -504,3 +504,55 @@ MyTracker SDK (VK) использует 5 сенсоров устройства 
 - `notes/topics/34-yandex-maps-integration.md`
 - `notes/topics/35-mytracker-antifraud-sensors.md`
 - `notes/topics/36-channels-feature-gated.md`
+
+---
+
+## Дополнения 37-48
+
+### 37. WebApp privilege configuration — webapp-exc bypass user-touch check
+
+`webapp-exc` (#214) — server-pushed список chat-id мини-апок, которые могут вызывать JS-bridge методы **без подтверждения пользовательским касанием**. Из `e2h.java`: «Боты-исключения из правила проверки пользовательского касания перед выполнением методов бриджа». Default `[0]`, тестовый бот `1496626`, продовый `4810464`. Дополнительно: `webapp-phone-hash` (#295) — server-pushed хеш номера телефона для мини-апок; `webapp-push-open` (#268) — открытие мини-апки прямо из push. Подробно: `notes/topics/37-webapp-privilege-configuration.md`.
+
+### 38. Deeplink routes — 8 внутренних роутов
+
+Роутер `ps0.A(...)` регистрирует 8 роутов: `:auth`, `:external_callback`, `:complaint`, `:settings`, `:chats`, `:profile`, `:join`, `:share`. Все три схемы (`https://max.ru/`, `http://max.ru/`, `max://max.ru/`) ведут в один роутер. Внешние приложения через deeplink могут открыть профиль, чат, форму жалобы, форму отправки с предзаполненным текстом, IdP-flow. Подробно: `notes/topics/38-deeplink-routes-full-map.md`.
+
+### 39. libffmpg.so — FFmpeg n4.4.3, GPLv3 в проприетарном продукте
+
+`libffmpg.so` — кастомный VK-build FFmpeg n4.4.3 (ноябрь 2022, 3.5 года старый). Собран с `--enable-gpl --enable-version3` (строка `libavcodec license: GPL version 3 or later`). GPLv3-компонент в проприетарном приложении без видимой attribution-страницы. Поверхность атаки: все codecs FFmpeg, которые клиент пускает на присланные медиа (thumbnail-генерация, seek-предпросмотр). Подробно: `notes/topics/39-libffmpg-version-license.md`.
+
+### 40. Multi-account (two-account-mvp) — server-gated
+
+PmsKey `two-account-mvp` (#195) — server-gated включение второго аккаунта. Два аккаунта = два WS-сессии одновременно. Переключение в рамках одного процесса через `hr9.java` («Swap user account from X to Y»). Общий FCM-token для обоих аккаунтов. Подробно: `notes/topics/40-multi-account-server-gated.md`.
+
+### 41. Server-side client diagnostic struct — proxy/isVpn/location/app-update
+
+`defpackage/ksg.java` парсит серверную структуру с полями: `proxy` (URL прокси), `proxy-domains` (список доменов для прокси), `isVpn` (серверная детекция VPN), `lang`, `callsSeed`, `reg-country-code`, `app-update-type` (0/1/2 = none/optional/force), `location` (server-detected country code по IP). Сервер знает страну пользователя по IP и может задать proxy-routing для конкретных доменов. Подробно: `notes/topics/41-server-side-client-diagnostic-struct.md`.
+
+### 42. Voice messages — server-controlled OPUS encoder
+
+PmsKey `opus-recorder` (#308), `opus-recorder-bitrate` (#309), `opus-recorder-sample-rate` (#310) — сервер задаёт encoder (OPUS vs MediaRecorder/AAC), bitrate и sample rate голосовых сообщений. `audio-transcription-locales` (#12) — whitelist языков для транскрипции. Полный server-controlled voice pipeline: запись → параметры → транскрипция. Подробно: `notes/topics/42-voice-messages-opus-server-controlled.md`.
+
+### 43. libjingle_peerconnection_so.so — кастомный WebRTC-форк VK/OK
+
+4 нестандартных feature flag: `WebRTC-VK-OpusMaxPlcDurationMs`, `WebRTC-OK-StunCustomAttr` (нестандартный STUN-атрибут — идентификатор клиента в UDP-трафике), `WebRTC-OK-TurnChannelDataMark`, `WebRTC-OK-FrameDropper-Alt`. 14 `CallsSDK-*` флагов, включая `CallsSdk-LogAudioCapture` и `Calls-SDK-LogDCTraffic`. Opus 1.5 с AI BWE и DRED. Подробно: `notes/topics/43-libjingle-webrtc-custom-build.md`.
+
+### 44. Informer banners, FakeBoss, LiveStreams
+
+`informer_banner` — Room-таблица с server-pushed баннерами (поля: `id`, `title`, `description`, `url`, `priority`, `repeat`, `show_count`). Баннеры с `url` — server-pushed deeplink'и в UI. Телеметрия каждого взаимодействия. `FakeBoss` — server-gated фича «защита от мошенников-начальников»; при включении сервер узнаёт `contactServerId` и `phoneNumber` «начальника» пользователя. `LiveStream` — Protobuf-объект с server-pushed URL-prefix стриминг-сервера. Подробно: `notes/topics/44-informer-banners-fakeboss-livestreams.md`.
+
+### 45. Calls SDK — 30+ server-controlled PmsKey
+
+`calls-sdk-*` (12 ключей) и `calls-android-*` (20 ключей) управляют каждым аспектом звонкового стека. Ключевые: `calls-sdk-log-audio` (#131) — server-gated аудио-логирование; `calls-android-signaling-ip` (#119) — server-pushed IP сигналинг-сервера; `calls-sdk-wt-enabled` (#102) — переключение на WebTransport/QUIC; `calls-sdk-disable-pipeline` (#130) — отключить весь APM. Подробно: `notes/topics/45-calls-sdk-pmskey-cluster.md`.
+
+### 46. Server-controlled logging flags
+
+`log-full`, `log-sensitive`, `log-messages-meta`, `log-chat-meta` — server-gated PmsKey. При `log-full=true` и `log-sensitive=false` в logcat попадают контакты и токен аутентификации (из `ul9.java` LOGIN.Response handler). `allowLogSensitiveData` — дополнительный локальный dev-флаг в SharedPreferences. Подробно: `notes/topics/46-server-controlled-logging-flags.md`.
+
+### 47. Стикеры — server-controlled pipeline
+
+9 PmsKey управляют стикерами: размеры, лимиты, `stickers-botid` (#272) — ID бота-создателя, `welcome-sticker-ids` (#81) — стикеры для новых пользователей. `STICKER_SUGGEST(194)` — контекст набираемого текста/emoji уходит на сервер для получения предложений. Подробно: `notes/topics/47-stickers-server-pipeline.md`.
+
+### 48. Поиск — WS-опкоды и server-controlled лимиты
+
+6 WS-опкодов: `CONTACT_SEARCH(37)`, `PUBLIC_SEARCH(60)`, `CHAT_SEARCH(68)`, `MSG_SEARCH_TOUCH(72)` (аналитика клика по результату), `MSG_SEARCH(73)`, `CHAT_SEARCH_COMMON_PARTICIPANTS(198)`. `pub-search-limit` (#291) — server-controlled лимит результатов. `MSG_SEARCH_TOUCH` — сервер знает не только что искали, но и что выбрали. `CHAT_SEARCH_COMMON_PARTICIPANTS` — потенциальный инструмент деанонимизации участников чатов. Подробно: `notes/topics/48-search-opcodes-server-controlled.md`.
