@@ -1076,3 +1076,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 127. Calls SDK stats/ICE PmsKey
 
 `calls-sdk-incall-stat` (#109, default=false) — «Отправлять статистику во время звонка» (real-time). `calls-android-direct-ice-restart` (#110, default=false) — «Явный ICE рестарт». `calls-android-no-ice-restart` (#111, default=false) — «Не делать ICE рестарт». `calls-sdk-opus-adapt` (#135, default=false) — «Адаптивная complexity опус». Подробно: `notes/topics/127-calls-sdk-stats-ice-pmskey.md`.
+
+---
+
+## Дополнения 128
+
+### 128. H265 codec и unknown-contact PmsKey
+
+`calls-sdk-h265-prioritized` (#125, default=false) — «Включить поддержку и приоритизировать H265». `calls-android-h265-s` (#116) — «Деградация кодека H265 (%)». `enable-unknown-contact-bottom-sheet` (#107) — 3 режима UI для незнакомых звонящих (0=не показывать/1=Добавить+Заблокировать/2=Всё в порядке+Заблокировать). Подробно: `notes/topics/128-h265-unknown-contact-pmskey.md`.
