@@ -884,3 +884,15 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 101. anr-config + watchdog-config
 
 `anr-config` (#85) — JSON `{"enabled": bool, "timeout": {"low": ms, "avg": ms, "high": ms}}`. Сервер контролирует ANR-детектор: включён ли и при каком таймауте срабатывает (три уровня по классу устройства). `watchdog-config` (#305) — аналогичный конфиг для watchdog-а. Подробно: `notes/topics/101-anr-watchdog-config.md`.
+
+---
+
+## Дополнения 102-103
+
+### 102. conn-timeouts
+
+`conn-timeouts` (#84) — JSON-объект с таймаутами для разных типов соединений (EnumMap, default 10000ms). Сервер контролирует, как долго клиент ждёт ответа. Подробно: `notes/topics/102-conn-timeouts.md`.
+
+### 103. media-order
+
+`media-order` (#174) — 4 режима: `0`=медиа снизу, `1`=медиа сверху, `2`=медиа сверху только в каналах, `3`=**порядок управляется с бека**. При `3` — сервер динамически контролирует layout сообщений. Подробно: `notes/topics/103-media-order.md`.
