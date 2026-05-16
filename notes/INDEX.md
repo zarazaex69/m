@@ -392,3 +392,4 @@ status: living
 - [[topics/282-tasks-chat-mark-complain]] — ChatMark(chatId/messageId/mark/setAsUnread/isReadReaction) + ChatComplain(chatId/complaint) Tasks #protocol #tasks #chat-mark #read-status #surveillance
 - [[topics/283-tasks-location-reaction-photo]] — LocationStop(chatId/messageId) + MsgCancelReaction(chatId/messageId) + ChangeChatPhoto(chatId/file/crop) Tasks #protocol #tasks #location-stop #cancel-reaction
 - [[topics/284-tasks-external-video-congrats]] — ExternalVideoSend(chatId/messageId/externalUrl) + CongratsStatus(userId/holidayId/status) Tasks #protocol #tasks #external-video #congrats
+- [[topics/285-tasks-chat-hide-group-present]] — ChatHide(chatId) + ChatGroupMark(chatId/flagType/enabled) + ConfirmPresent(presentId/accept/asPrivate) Tasks #protocol #tasks #chat-hide #present

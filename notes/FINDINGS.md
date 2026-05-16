@@ -2328,3 +2328,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 284. ExternalVideoSend + CongratsStatus Tasks
 
 `ExternalVideoSend`: chatId/messageId/externalUrl. `CongratsStatus`: userId/holidayId/status. Подробно: `notes/topics/284-tasks-external-video-congrats.md`.
+
+---
+
+## Дополнения 285
+
+### 285. ChatHide + ChatGroupMark + ConfirmPresent
+
+`ChatHide`: chatId. `ChatGroupMark`: chatId/flagType/enabled. `ConfirmPresent`: presentId/accept/asPrivate. Подробно: `notes/topics/285-tasks-chat-hide-group-present.md`.
