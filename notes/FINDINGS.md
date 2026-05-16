@@ -836,3 +836,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 95. Calls stats — 40 метрик после каждого звонка
 
 `w32.java` — 40 WebRTC-метрик: CPU (загрузка, score, ядра), Memory (max/avg MB), BatteryLevelChange, AudioLevel (уровень аудио — сервер знает когда пользователь говорит), аудио-качество (jitter/loss/concealment), видео-качество (frames/freezes/bitrate). Полный технический профиль каждого звонка. Подробно: `notes/topics/95-calls-stats-40-metrics.md`.
+
+---
+
+## Дополнения 96
+
+### 96. vchat.* API — 14 методов звонкового API
+
+`vchat.clientStats` — HTTP API для 40 метрик звонка. `vchat.getLogUploadUrl` — сервер выдаёт URL для загрузки логов звонка. `vchat.clientSupportedCodecs` — клиент сообщает поддерживаемые кодеки. `vchat.getExternalIdsByOkIds/getOkIdsByExternalIds` — маппинг OK ID ↔ внешние ID. Статистика через OneLog-инфраструктуру. Подробно: `notes/topics/96-vchat-api-methods.md`.
