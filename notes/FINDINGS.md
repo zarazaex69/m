@@ -2032,3 +2032,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 247. UserSettings — полный список
 
 26+ ключей: `audio.transcription.enabled`, `app.family.protection.status`, `app.privacy.phone.number.privacy`, `app.privacy.inactive.ttl`, `app.privacy.safe_mode`, `app.privacy.search_by_phone`, `app.notification.*`. Подробно: `notes/topics/247-user-settings-full.md`.
+
+---
+
+## Дополнения 248
+
+### 248. Task Types — 46 типов
+
+`TYPE_LOCATION_REQUEST`/`TYPE_LOCATION_STOP`, `TYPE_STAT_CRIT_EVENT`, `TYPE_SUSPEND_BOT`, `TYPE_WARM_CHAT_HISTORY`, `TYPE_CHAT_MARK_BATCH`/`TYPE_CHAT_DELETE_BATCH`. Подробно: `notes/topics/248-task-types.md`.
