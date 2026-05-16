@@ -972,3 +972,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 113. invalidate-db-force — серверная инвалидация БД
 
 `invalidate-db-force` (#141) — сервер может принудительно инвалидировать (удалить) локальную БД клиента через версионирование (`configVer > curVer`). Это означает, что **сервер может удалить всю локальную историю сообщений**. `invalidate-db-msg-exception` (#142) — инвалидация при ошибке обработки сообщений. Подробно: `notes/topics/113-invalidate-db-force.md`.
+
+---
+
+## Дополнения 114
+
+### 114. views-count-enabled
+
+`views-count-enabled` (#303) — «Включить просмотры в каналах» (server-gated). При включении сервер знает, какие посты в каналах просматривал пользователь. Подробно: `notes/topics/114-views-count-enabled.md`.
