@@ -1800,3 +1800,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 218. FCM + stat_events DB схемы
 
 `fcm_notifications_analytics`: 5 временных меток push lifecycle (sent_time/fcm_sent_time/received_time/created_time/time). `stat_events`: BLOB-буфер статистики. `fcm_notifications`: text/sender/url/bmd. Подробно: `notes/topics/218-fcm-stat-db-schemas.md`.
+
+---
+
+## Дополнения 219
+
+### 219. battery + organizations DB
+
+`battery`: sliceTime/utime/stime/batteryCapacity/instantAmperage — детальная статистика энергопотребления. `organizations`: id/name/parentId/folderTemplateId/updateTime. Подробно: `notes/topics/219-battery-organizations-db.md`.

@@ -326,3 +326,4 @@ status: living
 - [[topics/216-local-db-tables]] — Local DB: 35+ tables (webapp_biometry/fcm_notifications_history/stat_events/battery/presence/tasks) #database #schema #local-storage
 - [[topics/217-webapp-biometry]] — WebApp Biometry: webapp_biometry(user_id/bot_id/token/access_granted) + 8 JS-bridge methods (AuthRequest/UpdateToken) #webapp #biometry #jsbridge
 - [[topics/218-fcm-stat-db-schemas]] — FCM+stat_events DB: fcm_notifications_analytics(5 push timestamps)/stat_events(BLOB buffer)/fcm_notifications(text/url/bmd) #database #fcm #push #analytics
+- [[topics/219-battery-organizations-db]] — battery(sliceTime/utime/stime/batteryCapacity/instantAmperage) + organizations(parentId/folderTemplateId) DB #database #battery #organizations
