@@ -481,3 +481,4 @@ status: living
 - [[topics/371-media-projection-service]] — MediaProjectionService: startForeground(12) screen capture foreground service in calls #screen-capture #media-projection #foreground-service #calls
 - [[topics/372-notification-service-boot-receiver]] — NotificationTamService: directReply/pushId/eventKey + BootCompletedReceiver: BOOT_COMPLETED → BackgroundWake #notifications #service #direct-reply #push
 - [[topics/373-onelog-telemetry]] — OneLog: log.externalLog, collector/operation/uid/network/type/count/datum/group/custom, application=packageName:versionCode:versionName #onelog #telemetry #logging #surveillance
+- [[topics/374-compression-lz4-zstd]] — LZ4 + Zstd native decompression — both client-side only, server compresses #compression #lz4 #zstd #native
