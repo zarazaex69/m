@@ -456,3 +456,4 @@ status: living
 - [[topics/346-fused-location-provider]] — Fused Location: latitude/longitude/altitude/accuracy/bearing/speed → sj9(LocationData) #surveillance #location #gps #fused-location
 - [[topics/347-firebase-messaging-service]] — Firebase Messaging: RECEIVE/NEW_TOKEN + google.message_id/google.product_id #telemetry #firebase #fcm #push
 - [[topics/348-firebase-cct-transport]] — Firebase CctTransportBackend: POST+gzip+X-Goog-Api-Key+datatransport/3.1.9 (dynamic URL) #telemetry #firebase #cct-transport #google-api-key
+- [[topics/349-firebase-installations-api]] — Firebase Installations: https://firebaseinstallations.googleapis.com/v1/ (FID) #telemetry #firebase #installations #googleapis

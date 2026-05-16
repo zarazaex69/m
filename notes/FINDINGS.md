@@ -2840,3 +2840,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 348. Firebase CctTransportBackend
 
 POST+gzip+`X-Goog-Api-Key`+`datatransport/3.1.9`. URL задаётся динамически. Подробно: `notes/topics/348-firebase-cct-transport.md`.
+
+---
+
+## Дополнения 349
+
+### 349. Firebase Installations API
+
+`https://firebaseinstallations.googleapis.com/v1/<path>`. FID — уникальный ID установки. Подробно: `notes/topics/349-firebase-installations-api.md`.
