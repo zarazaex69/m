@@ -2816,3 +2816,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 345. EXIF GPS метаданные
 
 `GPSLatitude`/`GPSLongitude`/`GPSAltitude`/`GPSTimeStamp` + `CameraOwnerName`/`BodySerialNumber`/`LensSerialNumber`. Подробно: `notes/topics/345-exif-gps-metadata.md`.
+
+---
+
+## Дополнения 346
+
+### 346. Fused Location Provider
+
+`latitude`/`longitude`/`altitude`/`accuracy`/`bearing`/`speed` → sj9(LocationData). Google Play Services. Подробно: `notes/topics/346-fused-location-provider.md`.

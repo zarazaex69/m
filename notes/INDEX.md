@@ -453,3 +453,4 @@ status: living
 - [[topics/343-rtd-server-flags]] — rtd SharedPreferences: 40+ flags (userLogReportChatId/isMytrackerEnabled/statSessionBackgroundThreshold/retryTranscriptionAttempt) #pmskey #server-control #rtd #mytracker
 - [[topics/344-pmskey-debug-special]] — PmsKey debug/special: user-debug-report/fake-chats/fake-in-app-review/blocked-users/anr-config/watchdog-config #pmskey #server-control #debug #surveillance
 - [[topics/345-exif-gps-metadata]] — EXIF GPS: GPSLatitude/GPSLongitude/GPSAltitude/GPSTimeStamp + CameraOwnerName/BodySerialNumber/LensSerialNumber #surveillance #exif #gps #photo-metadata #location
+- [[topics/346-fused-location-provider]] — Fused Location: latitude/longitude/altitude/accuracy/bearing/speed → sj9(LocationData) #surveillance #location #gps #fused-location
