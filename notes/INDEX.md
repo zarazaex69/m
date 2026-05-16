@@ -502,3 +502,4 @@ status: living
 - [[topics/392-conversation-participant]] — ConversationParticipant: capabilities/networkStatus/isTalking/deAnonymize, getAcceptedCallClientType/Platform #calls-participant #surveillance #deanon #network-status
 - [[topics/393-rate-manager]] — RateManager: RateHint(reason)/RateCallData(questions from server)/RateManagerConfig(RTT/loss/candidateType thresholds) #calls-rate #quality #surveillance
 - [[topics/394-audio-sdk-kws-mic-proximity]] — Audio SDK: KeywordSpotterManager(filePath/turnOffInMs), MicrophoneManager(registerAudioSampleCallback), ProximityTracker #audio #kws #microphone #surveillance
+- [[topics/395-keyword-spotter-impl]] — KeywordSpotterManagerImpl: android.wordspotter.config(turn_off_in_ms), setKeywordSpotterParams→nativeKWS→bad_call_detected_by_audio_spotter #kws #wordspotter #server-control #surveillance

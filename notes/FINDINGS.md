@@ -3206,3 +3206,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 394. Audio SDK
 
 `KeywordSpotterManager`: `setKeywordSpotterParams(isEnabled, filePath)`, `KeywordSpotterConfig(turnOffInMs)`. `MicrophoneManager`: `registerAudioSampleCallback(delay, callback)` — сырые аудио-сэмплы. Подробно: `notes/topics/394-audio-sdk-kws-mic-proximity.md`.
+
+---
+
+## Дополнения 395
+
+### 395. KeywordSpotterManagerImpl
+
+`android.wordspotter.config` → `{turn_off_in_ms}`. `setKeywordSpotterParams(isEnabled, filePath)` → нативный KWS → `onKeyword(confidence)` → `bad_call_detected_by_audio_spotter` на сервер. Подробно: `notes/topics/395-keyword-spotter-impl.md`.
