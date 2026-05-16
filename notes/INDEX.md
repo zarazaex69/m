@@ -270,3 +270,4 @@ status: living
 - [[topics/161-change-simulcast]] — change-simulcast: simulcast layers (rid/width/height/fps/bitrateKbps) for CAMERA #calls #simulcast #video
 - [[topics/162-perf-stat-display-layout]] — report-perf-stat(framesReceived/framesDecoded) + update-display-layout(server knows UI layout: size/fit/screenshare) #calls #signaling #surveillance
 - [[topics/163-conversation-stats]] — ConversationStats: 18+ components (kwsStat/mlDownloadStat/iceCandidatePairChangedStat/serverTopologyRequestedStat) #calls #stats #telemetry
+- [[topics/164-signaling-transport-stat]] — SignalingTransportStat: WS signaling stats (connect/disconnect/ping/pong/errors/timeouts) #calls #signaling #stats
