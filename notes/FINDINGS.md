@@ -2440,3 +2440,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 298. AUDIO_PLAY + SEND_VOTE WS
 
 `AUDIO_PLAY`: opus/mp3/m4a/callName/callerId/messagesReactions. `SEND_VOTE`: trackId/chat/state. Подробно: `notes/topics/298-audio-play-send-vote-ws.md`.
+
+---
+
+## Дополнения 299
+
+### 299. VOTERS_LIST_BY_ANSWER + ORG_INFO + CHAT_LIVESTREAM_INFO WS
+
+`VOTERS_LIST_BY_ANSWER`: voteCount/voters/marker. `ORG_INFO`: organizations/email/user/hash. `CHAT_LIVESTREAM_INFO`: liveStreams. Подробно: `notes/topics/299-voters-org-livestream-ws.md`.
