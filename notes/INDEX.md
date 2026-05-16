@@ -467,3 +467,4 @@ status: living
 - [[topics/357-host-reachability-full]] — HostReachability: gstatic.com/mtalk.googl.com/calls.okcdn.ru/gosuslugi.ru/pushtrs.push.hicloud.com (int-encoded) #network #host-reachability #gosuslugi #huawei #calls
 - [[topics/358-api-ok-ru-uri]] — api.ok.ru URI: https://api.ok.ru + ok://api/api/<method> scheme (calls SDK uses OK.ru API) #api #ok-ru #calls-sdk #uri-scheme
 - [[topics/359-z8f-decoded-strings]] — z8f decoded: IP detection (api.ipify.org/checkip.amazonaws.com/ifconfig.me/ip.mail.ru/yandex.net) + trace-flow.ru #network #ip-detection #obfuscated-strings #surveillance
+- [[topics/360-z8f-decoded-additional]] — z8f decoded additional: DPS files(dps_config.bin/dps_dont_report.bin/dps_log_entries.bin) + HostReachability JSON(appVersion/clientTs/deviceId/hosts/ip/operator/uid/vpn) #network #dps #host-reachability
