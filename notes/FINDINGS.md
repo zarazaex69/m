@@ -2728,3 +2728,11 @@ Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezon
 ### 334. MyTracker Event Types
 
 `session`(3L/11)/`launch`(2L/13)/`referrer`(1L/12)/`install_referrer`(5L/17)/`custom`(33L/41). Подробно: `notes/topics/334-mytracker-event-types.md`.
+
+---
+
+## Дополнения 335
+
+### 335. MyTracker ExternalProtoWriters
+
+`REMOTE_CONFIG_STRING`(1)/`LOCATION_INFO`(2)/`NETWORK_INFO`(3)/`CELL_AND_WIFI_INFO`(4). Подробно: `notes/topics/335-mytracker-external-proto.md`.
