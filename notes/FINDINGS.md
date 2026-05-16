@@ -1656,3 +1656,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 200. vchat API — полный список
 
 11 методов: `vchat.startConversation`/`joinConversation`/`joinConversationByLink`/`hangupConversation`/`getConversationParams`/`createJoinLink`/`removeJoinLink`/`clientSupportedCodecs`/`getExternalIdsByOkIds`/`getOkIdByExternalId`/`getOkIdsByExternalIds`. Подробно: `notes/topics/200-vchat-api-full-list.md`.
+
+---
+
+## Дополнения 201
+
+### 201. Calls SDK — архитектурная сводка (ИТОГ)
+
+24 менеджера, 24 сигналинг-команды, 18+ stat-структур. Ключевые индикаторы: нет E2E, ASR on-device+server-side, KWS «не слышу», `requestMediaDump` (удалённый дамп аудио+видео в prod), `onParticipantsDeAnonymized`, `onMicrophoneForciblyMuted`, device fingerprint (ISP+geo) в каждом запросе, `ClientCapabilities` hex-encoded, WebRTC field trials с сервера. Подробно: `notes/topics/201-calls-sdk-architecture-summary.md`.

@@ -308,3 +308,4 @@ status: living
 - [[topics/198-session-stereo-rate-manager]] — SessionRoomsManager(breakout/assignParticipants) + StereoRoomManager(promote/handsQueue) + RateManager #calls #rooms #stereo
 - [[topics/199-calls-audio-screen-video-render]] — CallsAudioManager(onMutedForever/proximity) + ScreenCaptureManager(setAudioCaptureEnabled=system audio) + VideoRenderManager #calls #audio #screen-capture
 - [[topics/200-vchat-api-full-list]] — vchat API: 11 methods (clientSupportedCodecs/getConversationParams/createJoinLink/removeJoinLink/ID mapping) #calls #api #vchat
+- [[topics/201-calls-sdk-architecture-summary]] — Calls SDK architecture summary: 24 managers, 24 signaling commands, 18+ stat structs, 10 key indicators (no E2E/ASR/KWS/requestMediaDump/deAnonymize) #calls #architecture #summary
