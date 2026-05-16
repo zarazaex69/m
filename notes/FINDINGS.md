@@ -1260,3 +1260,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 150. applyBitrateDumpGatheringConfig
 
 При `android.dump.bitrate.isEnabled=true` — создаётся файл `target_bitrate_dump_<timestamp>` для каждого звонка. `ev1.O = new av1(context)` — bitrate dump активирован. Подробно: `notes/topics/150-apply-bitrate-dump-config.md`.
+
+---
+
+## Дополнения 151
+
+### 151. ConversationImpl callbacks
+
+`onCustomData(JSONObject)` — произвольные JSON-данные через WebRTC DataChannel. `onCallParticipantFingerprint(long)` — DTLS fingerprint tracking (детект MITM). `onRateCall(JSONObject)` — server-initiated rating dialog. `onMeInWaitingRoomChanged(bool)` — waiting room status. Подробно: `notes/topics/151-conversation-impl-callbacks.md`.
