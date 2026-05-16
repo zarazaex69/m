@@ -1632,3 +1632,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 197. MLFeaturesManager + ConversationFeatureManager
 
 `MLFeaturesManagerImpl` — оркестратор `KwsFeatureDelegate`+`NSFeatureDelegate` с загрузкой моделей через `DownloadService`+`RemoteSettings`. `ConversationFeatureManager` — серверный контроль фич: `enableFeatureForAll`/`enableFeatureForRoles(roles)`. Подробно: `notes/topics/197-ml-features-conversation-feature-manager.md`.
+
+---
+
+## Дополнения 198
+
+### 198. SessionRoomsManager + StereoRoomManager + RateManager
+
+`SessionRoomsManager` — breakout rooms: `assignParticipantsToRooms` (принудительное распределение). `StereoRoomManager` — сцена/аудитория: `promoteParticipant`/`unpromoteParticipant`/`grantAdmin`/`getHandsQueue`. `RateManager` — `getShouldRateConversation()` на основе серверных `RateHint`. Подробно: `notes/topics/198-session-stereo-rate-manager.md`.
