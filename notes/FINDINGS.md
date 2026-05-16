@@ -1768,3 +1768,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 214. WS Session Config — расширенные поля
 
 `proxy`/`proxy-domains`/`isVpn`/`location`(код страны по гео)/`reg-country-code`(код страны регистрации)/`lang`/`callsSeed`/`app-update-type`. Сервер знает VPN, прокси и страну. Подробно: `notes/topics/214-ws-session-config-extended.md`.
+
+---
+
+## Дополнения 215
+
+### 215. Схема БД сообщений
+
+35+ полей: `ttl` (самоудаление), `live_until` (живая геолокация), `delayed_attrs_time_to_fire` (отложенная отправка), `channel_views`/`channel_forwards`, `msg_link_*` (forward chain). Подробно: `notes/topics/215-messages-db-schema.md`.
