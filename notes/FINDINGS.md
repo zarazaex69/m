@@ -2096,3 +2096,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 255. Protos.java — дополнительные схемы
 
 `BotsInfo`: hasBots/suspendedBot. `ChannelInfo`: admins[]/membersCount/signAdmin. `SelfProfile`: restrictions(Map<Integer,RestrictionsInfo>). `RestrictionsInfo`: expiration. Подробно: `notes/topics/255-protos-additional.md`.
+
+---
+
+## Дополнения 256
+
+### 256. Protos.Chat — 40+ полей
+
+`messagesTtlSec`/`lastSearchClickTime`/`pendingJoinRequestsCount`/`invitedBy`/`admins[]`/`owner`/`restrictions`/`chatFoldersIds[]`/`draft`/`liveStreamUpdateTime`. Подробно: `notes/topics/256-protos-chat-schema.md`.
