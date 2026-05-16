@@ -3654,3 +3654,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 450. FakeInAppReviewBottomSheet
 
 Собственный диалог оценки приложения (не Google Play In-App Review). Оценки собираются напрямую MAX. Подробно: `notes/topics/450-fake-inapp-review.md`.
+
+---
+
+## Дополнения 451
+
+### 451. ForceUpdateScreen
+
+"Ваша версия MAX устарела" / "Обновить". Killswitch — полная блокировка приложения. Подробно: `notes/topics/451-force-update-screen.md`.
