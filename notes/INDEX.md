@@ -198,3 +198,4 @@ status: living
 - [[topics/89-video-transcoding-config]] — video-transcoding-class (server-controlled quality: low/average/high) + one-video-uploader-config #video #server-control
 - [[topics/90-media-upload-opcodes]] — media upload WS opcodes + speedy-upload (fake progress), file-upload-unsupported-types (content filter) #media #upload #server-control
 - [[topics/91-additional-ws-opcodes]] — additional WS opcodes: DEBUG (server debug cmd), LOG (logs to server), LINK_INFO (server sees pasted links), DRAFT_SAVE #ws #surveillance
+- [[topics/92-webapp-complaints-folders-polls-ws]] — WEB_APP_INIT_DATA (miniapp launch), VOTERS_LIST_BY_ANSWER (non-anonymous voting), AUDIO_PLAY (voice listen tracking) #ws #webapp #polls
