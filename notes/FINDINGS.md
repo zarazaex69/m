@@ -3174,3 +3174,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 390. ClientCapabilities
 
 15 битов, hex-encoded. Default: SCREEN_TRACK_PRODUCER/VIDEO_TRACKS/WAITING_HALL. Передаётся при каждом `startConversation`/`joinConversation`. Подробно: `notes/topics/390-client-capabilities.md`.
+
+---
+
+## Дополнения 391
+
+### 391. ConversationEventsListener
+
+40+ callbacks. `onParticipantsDeAnonymized`/`onMicrophoneForciblyMuted`/`onMigratedToServerTopology`/`onOpponentFingerprintChanged`/`onCustomData(JSONObject)`. Подробно: `notes/topics/391-conversation-events-listener.md`.

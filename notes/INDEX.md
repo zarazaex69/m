@@ -498,3 +498,4 @@ status: living
 - [[topics/388-ok-api-service-internal]] — OkApiServiceInternal: 13 API methods, sendSupportedCodecsStatistics, getExternalIdsByOkIds (deanon), requestUploadUrl #calls-api #vchat #batch #surveillance
 - [[topics/389-vchat-api-requests]] — vchat API: startConversation(capabilities/hex), joinConversation(p2pForbidden), clientSupportedCodecs(fingerprinting), hangup(reason) #calls-api #vchat #capabilities #fingerprinting
 - [[topics/390-client-capabilities]] — ClientCapabilities: 15 bits hex-encoded, SCREEN_TRACK_PRODUCER/ADMIN_MUTE_NOTIFY/USE_P2P_RELAY, sent on every call #capabilities #calls #fingerprinting #surveillance
+- [[topics/391-conversation-events-listener]] — ConversationEventsListener: 40+ callbacks, onParticipantsDeAnonymized/onMicrophoneForciblyMuted/onCustomData(JSON)/onOpponentFingerprintChanged #calls-events #surveillance #fingerprint #deanon
