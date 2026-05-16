@@ -2720,3 +2720,11 @@ Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezon
 ### 333. MyTracker Install Referrer
 
 `installReferrer`/`installBeginTimestamp`/`referrerClickTimestamp`/`installer`. Google + Huawei. Подробно: `notes/topics/333-mytracker-install-referrer.md`.
+
+---
+
+## Дополнения 334
+
+### 334. MyTracker Event Types
+
+`session`(3L/11)/`launch`(2L/13)/`referrer`(1L/12)/`install_referrer`(5L/17)/`custom`(33L/41). Подробно: `notes/topics/334-mytracker-event-types.md`.

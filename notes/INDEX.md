@@ -441,3 +441,4 @@ status: living
 - [[topics/331-mytracker-user-lifecycle]] — MyTrackerUserLifecycle: trackLoginEvent(userId)/trackRegistrationEvent(userId)/trackInviteEvent() #telemetry #mytracker #user-lifecycle #login #registration
 - [[topics/332-mytracker-activity-lifecycle]] — MyTracker ActivityLifecycle: onActivityStarted/Stopped(timePoint) for session tracking #telemetry #mytracker #activity-lifecycle #session
 - [[topics/333-mytracker-install-referrer]] — MyTracker Install Referrer: installReferrer/installBeginTimestamp/referrerClickTimestamp/installer (Google+Huawei) #telemetry #mytracker #install-referrer #attribution
+- [[topics/334-mytracker-event-types]] — MyTracker event types: session(3L/11)/launch(2L/13)/referrer(1L/12)/install_referrer(5L/17)/custom(33L/41) #telemetry #mytracker #event-types #session
