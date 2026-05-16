@@ -672,3 +672,27 @@ KWS активен во время звонков. `android.wordspotter.config` 
 ### 71. CALL OneLog события — детальная телеметрия звонков
 
 12+ операций: `INCOMING_CALL_RECEIVED`, `INCOMING_CALL_INIT`, `CALL_RECEIVED_ACCEPT`, `CALL_REMOTE_RINGING`, `START_CALL`, `FINISH_CALL` (с duration/error/is_group), `GROUP_CALL_JOIN`/`GROUP_CALL_JOIN_FAILED`, `SHARE_CALL_LINK`, `ADMIN_CALL_SETTINGS`, `ADMIN_CALL_SETTINGS_TO_USER` (с user_id2), `UNKNOWN_CALLER_ALERT`. Атрибуты: `call_id`, `user_id2`, `camera`, `microphone`, `screenshare`, `recording`, `con_state`. Сервер получает полный лог всех звонков с метаданными. Подробно: `notes/topics/71-call-onelog-events.md`.
+
+---
+
+## Дополнения 72-76
+
+### 72. VIDEO_MESSAGE OneLog
+
+4 операции: `video_message_start_recording`, `video_message_delete`, `video_message_hands_free_mode_on`, `video_message_error`. Атрибуты: `source_id` (chat_id), `message_id`, `local_message_id`. Сервер знает каждое начало записи видеосообщения с chat_id. Подробно: `notes/topics/72-video-message-onelog.md`.
+
+### 73. PERMISSION OneLog — ежедневный отчёт
+
+`DailyAnalyticsWorker` ежедневно отправляет статус 7 разрешений: push, contacts, fsi, gallery (allowed/partial/denied), camera, microphone, geo. `permission_changed_state` — real-time при изменении. Сервер ведёт исторический профиль разрешений. Подробно: `notes/topics/73-permission-onelog-daily.md`.
+
+### 74. BACKGROUND_MODE OneLog
+
+7 операций: `system_curtain_shown/hidden` (открытие notification shade), `work_in_background_permission`, `snack_shown/hidden/click_on`, `carpet_mode_on`. Сервер знает, когда пользователь открывает notification shade и взаимодействует с предложением фонового режима. Подробно: `notes/topics/74-background-mode-onelog.md`.
+
+### 75. SETTINGS + POWER_SAVING OneLog
+
+`MINIAPP_BIOMETRY` с `webappId` — сервер знает, для каких мини-апок включена биометрия. `THEME`/`BACKGROUND`/`TEXT_SIZE` — настройки внешнего вида. `POWER_SAVING`: `show_shade/click_shade_button/close_shade`. Таблица `webapp_biometry` в Room DB. Подробно: `notes/topics/75-settings-power-saving-onelog.md`.
+
+### 76. CONTACT_OR_BLOCK OneLog
+
+`showed` и `clicked` (clickType: `to_contacts`/`block`/`close`) — сервер знает каждое решение пользователя добавить в контакты или заблокировать через infobar UI. В сочетании с синхронизацией контактов — полная картина социального графа. Подробно: `notes/topics/76-contact-or-block-onelog.md`.
