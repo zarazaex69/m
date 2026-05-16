@@ -585,3 +585,4 @@ status: living
 - [[topics/475-host-reachability-analytics]] — HOST_REACHABILITY.GET_HOST_REACHABILITY: {hosts, operator, connection_type, ip, vpn} after every reachability check #host-reachability #telemetry #surveillance #network #vpn #operator
 - [[topics/476-push-inbound-call-analytics]] — PUSH.InboundCall: {trid,eKey,suid,ttime,dtime,fcmdtime,p_op=show,chat_id,call_id,show_source} #push #inbound-call #telemetry #surveillance #fcm #call-analytics
 - [[topics/477-settings-analytics]] — SETTINGS analytics: MINIAPP_BIOMETRY{paramValue,webappId}/BACKGROUND/THEME/TEXT_SIZE #settings #telemetry #surveillance #biometry #theme #background #text-size
+- [[topics/478-presence-analytics]] — PRESENCE.EVENT_MESSAGE_COUNTER: 8 counters online/offline contact/stranger opened/closed #presence #telemetry #surveillance #online-status #contact-tracking

@@ -3870,3 +3870,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 477. SETTINGS Analytics
 
 `MINIAPP_BIOMETRY {paramValue, webappId}`. `BACKGROUND`. `THEME`. `TEXT_SIZE`. Подробно: `notes/topics/477-settings-analytics.md`.
+
+---
+
+## Дополнения 478
+
+### 478. PRESENCE Analytics
+
+8 счётчиков: online/offline contact/stranger opened/closed. `presenceofflinelog` PmsKey. Подробно: `notes/topics/478-presence-analytics.md`.
