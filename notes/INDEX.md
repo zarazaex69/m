@@ -214,3 +214,4 @@ status: living
 - [[topics/105-chat-history-warm]] — chat-history-warm-opts (server-controlled chat history preloading) #performance #server-control
 - [[topics/106-perf-registrar-net-stat-config]] — perf-registrar-config (maxAttempts/rawPersistInterval/TTL) + net-stat-config (loggableOpcodes) #telemetry #server-control
 - [[topics/107-opcode-stat-session-stats]] — opcode-stat-config + session.opcode_stats (opcodeStats/anrDetected/caughtExceptionCount/phonebookSize) #telemetry #surveillance
+- [[topics/108-fresco-executor-thread-pool]] — fresco-executor + system-thread-pool-queue (server-gated performance hacks) #threading #server-control
