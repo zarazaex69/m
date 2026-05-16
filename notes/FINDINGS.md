@@ -1448,3 +1448,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 174. ConversationPreparedStat
 
 `call_warmup` — время прогрева WebRTC сессии (мс). Подробно: `notes/topics/174-conversation-prepared-stat.md`.
+
+---
+
+## Дополнения 175
+
+### 175. ConversationEndReason — 17 причин завершения
+
+`banned`, `killed`/`killed_without_delete` (принудительное завершение сервером), `obsolete_client` (устаревший клиент), `another_device` (multi-device), `socket_closed`, `timeout`, `hangup`, `missed`, `rejected`, `busy`, `error`, `failed`, `canceled`, `removed`, `initially_closed`, `call_timeout`. Подробно: `notes/topics/175-conversation-end-reason.md`.
