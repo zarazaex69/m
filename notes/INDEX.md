@@ -632,3 +632,4 @@ status: living
 - [[topics/522-user-log-report-debug]] — userLogReportChatId + debug-mode + user-debug-report: server-controlled debug fields #rtd #user-log-report #debug #surveillance #server-control
 - [[topics/523-invite-friends]] — InviteFriendsToMaxBottomSheet: clicked_to_invite(main,trigger_max), app.already.invited.friends=true, invite text from server #invite-friends #analytics #surveillance #server-control
 - [[topics/524-invite-by-qr]] — InviteByQrBottomSheet: clicked_to_invite(plus|main, invite_friends) #invite-by-qr #analytics #surveillance
+- [[topics/525-integrity-logs-viewer]] — IntegrityLogsViewerScreen: integrity logs viewer in DevMenu (production), .dex/.so pattern #integrity-logs #devmenu #debug #surveillance

@@ -4246,3 +4246,11 @@ RTD флаг для фейковых чатов в `PickerChatsListWidget`. По
 ### 524. InviteByQrBottomSheet
 
 `clicked_to_invite(plus|main, invite_friends)`. Подробно: `notes/topics/524-invite-by-qr.md`.
+
+---
+
+## Дополнения 525
+
+### 525. IntegrityLogsViewerScreen
+
+Просмотр логов целостности `.dex`/`.so` файлов в DevMenu (production). Паттерн `\b([\w\-\.]+\.(dex|so))\b`. Подробно: `notes/topics/525-integrity-logs-viewer.md`.
