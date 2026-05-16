@@ -437,3 +437,4 @@ status: living
 - [[topics/327-mytracker-endpoints]] — MyTracker endpoints: tracker-api.vk-analytics.ru/v3/ + ip4. + ts./mobile/v1 + mlapi. + beta-ml. #telemetry #mytracker #endpoints #vk-analytics
 - [[topics/328-mytracker-init]] — MyTracker init: initTracker('34982109644049932883') + setCustomUserId(userId) + setKidMode(false) #telemetry #mytracker #init #tracker-id #user-id
 - [[topics/329-mytracker-advertising-ids]] — MyTracker: Google GAID + Huawei OAID + android_id + mac #telemetry #mytracker #advertising-id #gaid #huawei #surveillance
+- [[topics/330-mytracker-device-params]] — MyTracker DeviceParams: Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen + timezone + freeSpace + currentModeType #telemetry #mytracker #device-params #surveillance

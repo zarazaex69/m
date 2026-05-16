@@ -2688,3 +2688,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 329. MyTracker — рекламные идентификаторы
 
 Google GAID + Huawei OAID + android_id + mac. Подробно: `notes/topics/329-mytracker-advertising-ids.md`.
+
+---
+
+## Дополнения 330
+
+### 330. MyTracker DeviceParamsDataProvider
+
+Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezone + freeSpace + currentModeType + hasSystemFeature(touchscreen). Подробно: `notes/topics/330-mytracker-device-params.md`.
