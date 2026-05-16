@@ -3158,3 +3158,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 388. OkApiServiceInternal
 
 13 методов. `sendSupportedCodecsStatistics`. `getExternalIdsByOkIds`/`getOkIdsByExternalIds` (деанонимизация). `requestUploadUrl`. `hangupConversation(reason)`. Подробно: `notes/topics/388-ok-api-service-internal.md`.
+
+---
+
+## Дополнения 389
+
+### 389. vchat API запросы
+
+`vchat.startConversation`: capabilities(hex)/turnServers/waitForAdmin. `vchat.joinConversation` → `{endpoint, wtEndpoint, p2pForbidden}`. `vchat.clientSupportedCodecs` → fingerprinting. `vchat.hangupConversation(reason)`. Подробно: `notes/topics/389-vchat-api-requests.md`.

@@ -496,3 +496,4 @@ status: living
 - [[topics/386-shortcut-badger]] — ShortcutBadger: badge count on launcher icon, 13 launchers (Samsung/Huawei/Xiaomi/OPPO/Vivo/...) #badge #notification-count #launcher
 - [[topics/387-final-summary]] — ИТОГОВЫЙ СВОДНЫЙ АНАЛИЗ: 386 тем, все ключевые находки по 12 категориям #summary #comprehensive #backdoor #surveillance #telemetry
 - [[topics/388-ok-api-service-internal]] — OkApiServiceInternal: 13 API methods, sendSupportedCodecsStatistics, getExternalIdsByOkIds (deanon), requestUploadUrl #calls-api #vchat #batch #surveillance
+- [[topics/389-vchat-api-requests]] — vchat API: startConversation(capabilities/hex), joinConversation(p2pForbidden), clientSupportedCodecs(fingerprinting), hangup(reason) #calls-api #vchat #capabilities #fingerprinting
