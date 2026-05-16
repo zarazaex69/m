@@ -3614,3 +3614,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 445. CallRateBottomSheet + StartRecordBottomSheet + VpnPanelWidget
 
 `CallRateBottomSheet(call_id, is_group_call, is_video_call, sdk_reasons)`. `StartRecordBottomSheet`: имя записи (max 250 символов). `VpnPanelWidget`. Подробно: `notes/topics/445-call-rate-record-vpn.md`.
+
+---
+
+## Дополнения 446
+
+### 446. CallServiceImpl
+
+`ConnectionService` + `WakeLock("max:calls_prx")` + уведомления(incomingCalls/activeCalls). Команды: start/restart/restart_for_screen_sharing. Подробно: `notes/topics/446-call-service-impl.md`.

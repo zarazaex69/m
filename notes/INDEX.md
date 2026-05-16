@@ -553,3 +553,4 @@ status: living
 - [[topics/443-calls-sdk-initializer]] — CallsSdkInitializer: calculateMeta(SHA-256 of .so files) + initializeSessionSeed(seed, deviceId) native #calls-sdk #initialization #sha256 #native #integrity
 - [[topics/444-call-admin-settings]] — CallAdminSettingsScreen: ADMIN_CALL_SETTINGS{screen/camera/microphone/screenshare/recording/waiting} + CallDebugMenuScreen in production #calls #admin-settings #debug-menu #surveillance
 - [[topics/445-call-rate-record-vpn]] — CallRateBottomSheet(call_id/is_group_call/sdk_reasons) + StartRecordBottomSheet(name max 250) + VpnPanelWidget #calls #rate-call #record #vpn-panel #surveillance
+- [[topics/446-call-service-impl]] — CallServiceImpl: ConnectionService, WakeLock(max:calls_prx), incomingCalls/activeCalls notifications, onTaskRemoved #calls #connection-service #telecom #foreground-service #surveillance
