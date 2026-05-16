@@ -559,3 +559,4 @@ status: living
 - [[topics/449-file-download-warning]] — FileDownloadWarningBottomSheet: chat_id/message_id/attach_id/file_id/file_name/file_url/file_size #file-download #warning #messages #surveillance
 - [[topics/450-fake-inapp-review]] — FakeInAppReviewBottomSheet: own rating dialog (NOT Google Play In-App Review), ratings collected directly by MAX #in-app-review #rating #fake #google-play #surveillance
 - [[topics/451-force-update-screen]] — ForceUpdateScreen: "Ваша версия MAX устарела" / "Обновить", killswitch full app block #force-update #killswitch #server-control #surveillance
+- [[topics/452-account-initializer]] — AccountInitializer: 13 parallel tasks, SslIntegrity+DPS(HIGH)+BackgroundWakeFeatureInit, getUserId()+android_id #initialization #startup #account #dps #ssl-integrity #surveillance

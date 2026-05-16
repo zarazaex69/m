@@ -3662,3 +3662,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 451. ForceUpdateScreen
 
 "Ваша версия MAX устарела" / "Обновить". Killswitch — полная блокировка приложения. Подробно: `notes/topics/451-force-update-screen.md`.
+
+---
+
+## Дополнения 452
+
+### 452. AccountInitializer
+
+13 параллельных задач. `SslIntegrity` + `DPS(HIGH)` + `BackgroundWakeFeatureInit`. `getUserId()` + `android_id`. Подробно: `notes/topics/452-account-initializer.md`.
