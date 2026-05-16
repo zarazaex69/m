@@ -1284,3 +1284,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 153. Signaling commands — 24 команды
 
 `mute-participant` (заглушить участника), `request-asr` (онлайн-транскрипция с start=bool), `enable-feature-for-roles` (feature gating по ролям), `report-network-stat` (timestamp+bitrate), `report-perf-stat`, `change-simulcast`, `update-display-layout`, `switch-room`, `start-url-sharing`/`stop-url-sharing`, `record-stop`, `get-hand-queue`. Подробно: `notes/topics/153-signaling-commands.md`.
+
+---
+
+## Дополнения 154
+
+### 154. ConversationFeature — фичи звонков с role-based access
+
+`ck1` enum: `ADD_PARTICIPANT`, `RECORD` (запись звонка), `MOVIE_SHARE` (watch together), `ASR_RECORD` (**запись для ASR/транскрипции** — отдельная фича). `enableFeatureForRoles(feature, roles)` — role-based access через `enable-feature-for-roles` сигналинг. Подробно: `notes/topics/154-conversation-features-roles.md`.
