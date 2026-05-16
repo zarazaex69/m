@@ -3982,3 +3982,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 491. DailyAnalyticsWorker
 
 `PERMISSION.permission_status` ежедневно: push/contacts/fsi/gallery/camera/microphone/geo. Подробно: `notes/topics/491-daily-analytics-worker.md`.
+
+---
+
+## Дополнения 492
+
+### 492. geolocation_send_click
+
+`{source_id, source_type}`. Открытие в Яндекс.Картах (`yandexmaps://`). Подробно: `notes/topics/492-geolocation-send-click.md`.
