@@ -3702,3 +3702,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 456. SSL certificate pinning
 
 SHA-256 fingerprint. `InvalidSslIntegrityException`/`InvalidSslSessionException`. `SslIntegrity` задача при запуске. Подробно: `notes/topics/456-ssl-certificate-pinning.md`.
+
+---
+
+## Дополнения 457
+
+### 457. Root + Network detection
+
+`r04.G()`: root detection (su/Superuser.apk/test-keys). `r04.z()`: network type (NONE/WIFI/ETHERNET/BLUETOOTH/VPN/CELLULAR). Подробно: `notes/topics/457-root-network-detection.md`.

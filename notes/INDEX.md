@@ -564,3 +564,4 @@ status: living
 - [[topics/454-proc-files]] — /proc files: /proc/self/stat(PID/comm/utime/stime), /proc/self + /data/data/ru.oneme.app monitoring #proc-files #cpu-stats #battery #surveillance #telemetry
 - [[topics/455-dps-http-client-kyk]] — kyk DPS HTTP client: TrafficStats.setThreadStatsTag, {snapshots:[{id,...}]}, timeoutMs/dontReportUntil #traffic-stats #network #apptracer #dps #surveillance #telemetry
 - [[topics/456-ssl-certificate-pinning]] — SSL certificate pinning: SHA-256 fingerprint, InvalidSslIntegrityException/InvalidSslSessionException, SslIntegrity task at startup #ssl #certificate-pinning #tls #security #okhttp
+- [[topics/457-root-network-detection]] — r04.G() root detection (su/Superuser.apk/test-keys) + r04.z() network type (NONE/WIFI/ETHERNET/BLUETOOTH/VPN/CELLULAR) #root-detection #network-type #emulator-detection #surveillance #security
