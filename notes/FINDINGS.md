@@ -876,3 +876,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 100. call-chat-members-load-config
 
 `ChatMembersLoadConfig` с полями: `newLoadingContactsLogicEnabled` (bool), `maxLoadCount` (int — сервер контролирует, сколько участников группового звонка видит пользователь), `minInCall` (int). Подробно: `notes/topics/100-call-chat-members-load-config.md`.
+
+---
+
+## Дополнения 101
+
+### 101. anr-config + watchdog-config
+
+`anr-config` (#85) — JSON `{"enabled": bool, "timeout": {"low": ms, "avg": ms, "high": ms}}`. Сервер контролирует ANR-детектор: включён ли и при каком таймауте срабатывает (три уровня по классу устройства). `watchdog-config` (#305) — аналогичный конфиг для watchdog-а. Подробно: `notes/topics/101-anr-watchdog-config.md`.
