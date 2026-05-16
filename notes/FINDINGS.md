@@ -4238,3 +4238,11 @@ RTD флаг для фейковых чатов в `PickerChatsListWidget`. По
 ### 523. InviteFriendsToMaxBottomSheet
 
 `clicked_to_invite(main, trigger_max)` → `app.already.invited.friends=true`. Текст с сервера. Подробно: `notes/topics/523-invite-friends.md`.
+
+---
+
+## Дополнения 524
+
+### 524. InviteByQrBottomSheet
+
+`clicked_to_invite(plus|main, invite_friends)`. Подробно: `notes/topics/524-invite-by-qr.md`.
