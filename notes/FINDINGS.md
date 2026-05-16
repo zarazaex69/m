@@ -2824,3 +2824,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 346. Fused Location Provider
 
 `latitude`/`longitude`/`altitude`/`accuracy`/`bearing`/`speed` → sj9(LocationData). Google Play Services. Подробно: `notes/topics/346-fused-location-provider.md`.
+
+---
+
+## Дополнения 347
+
+### 347. Firebase Messaging Service
+
+`RECEIVE`/`NEW_TOKEN`. Поля: `google.message_id`/`google.product_id`/`error`. Подробно: `notes/topics/347-firebase-messaging-service.md`.
