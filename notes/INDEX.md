@@ -296,3 +296,4 @@ status: living
 - [[topics/186-contact-call-manager]] — ContactCallManager: iAmAnonymous/iWasInitiallyAnonymous (anonymous participants via anonymToken) #calls #anonymous
 - [[topics/187-network-connection-manager]] — NetworkConnectionManager: getTopology(P2P/server)/registerBadConnectionCallback/addNetworkConnectivityListener #calls #network #topology
 - [[topics/188-camera-manager]] — CameraManager: getNumberOfCameras/isCameraEnabled/isCapturingFromFrontCamera/setCameraEnabled/switchCamera #calls #camera
+- [[topics/189-media-connection-manager]] — MediaConnectionManager: onMediaConnected(isFirstConnection)/onMediaDisconnected #calls #media-connection
