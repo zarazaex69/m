@@ -648,3 +648,19 @@ PmsKey `opus-recorder` (#308), `opus-recorder-bitrate` (#309), `opus-recorder-sa
 ### 67. yag SharedPreferences — per-account состояние
 
 60+ полей: `currentProxyList`/`pushProxyList` (прокси-серверы), `okToken` (токен аутентификации), `deviceId`, `installationMarket` (откуда установлено). Три debug-флага в production: `isDebugHostRotationEnabled`, `isDebugUaDnsEmulationEnabled`, `isIceCandidateEmulationEnabled`. Подробно: `notes/topics/67-yag-shared-prefs-per-account.md`.
+
+---
+
+## Дополнения 68-70
+
+### 68. cis-enabled + multi-lang
+
+`cis-enabled` (#81) — server-gated «UI улучшения для СНГ стран» (из `pl5.java`). Сервер знает страну пользователя и включает специфический UI. `multi-lang` — server-gated мультиязычность. Подробно: `notes/topics/68-cis-enabled-multilang.md`.
+
+### 69. RemoteSettings calls SDK — server-pushed конфиги звонков
+
+`android.dump.bitrate` — server-gated запись bitrate dump в файл `target_bitrate_dump_<timestamp>` во время звонков. `android.rating.limits` — пороги качества звонка. `android.p2prelay.config` — конфиг P2P relay. `android.wordspotter.config` — конфиг KWS (см. topic 70). Все управляются через `RemoteSettings` интерфейс. Подробно: `notes/topics/69-remote-settings-calls-sdk.md`.
+
+### 70. KeywordSpotter в звонках — server-controlled turnOffInMs
+
+KWS активен во время звонков. `android.wordspotter.config` задаёт `turnOffInMs` — через сколько выключить KWS. При `null` — KWS работает всё время звонка. `NativeDoubleArrayConsumer.Consumer` — callback из нативного KWS-pipeline в Java. `ConversationKwsStat` — статистика срабатываний KWS отправляется на сервер. Модель версии `ws_0` загружается по ключу `android.mlfeatures.ws_0`. Подробно: `notes/topics/70-keyword-spotter-in-calls.md`.
