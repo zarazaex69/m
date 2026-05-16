@@ -1352,3 +1352,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 162. report-perf-stat + update-display-layout
 
 `report-perf-stat`: `{framesReceived, framesDecoded}`. `update-display-layout`: `{layouts: {participantId: "ss"|"sz=WxH:fit=mode"}, snapshot: bool}` — **сервер знает UI layout клиента** (размер, режим отображения каждого участника). Подробно: `notes/topics/162-perf-stat-display-layout.md`.
+
+---
+
+## Дополнения 163
+
+### 163. ConversationStats — 18+ компонентов статистики
+
+`kwsStat` (KWS), `mlDownloadStat` (ML-модели), `iceCandidatePairChangedStat` (ICE routing), `serverTopologyRequestedStat`, `peerConnectionStateChangedStat`, `negotiationErrorStat`, `audioErrorStat`, `acceptCallStat`, `p2pRelayRequestedStat`. Всё отправляется через `vchat.clientStats`. Подробно: `notes/topics/163-conversation-stats.md`.
