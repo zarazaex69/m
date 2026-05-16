@@ -1472,3 +1472,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 177. NetworkStat
 
 `rttMs`/`audioLoss`/`videoLoss`/`activeCandidateType` (host/srflx/relay). Используется для генерации `RateHint` при превышении порогов. Подробно: `notes/topics/177-network-stat.md`.
+
+---
+
+## Дополнения 178
+
+### 178. Conversation.CallType + Conversation.State
+
+`CallType`: Incoming/Outgoing/Join. `State`: None(0)/Preparing(1)/Starting(2)/Connecting(3)/Connected(4)/Finished(5). Подробно: `notes/topics/178-call-type.md`.
