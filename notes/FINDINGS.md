@@ -3254,3 +3254,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 400. ChatManager + ContactCallManager
 
 `InboundMessage(senderId, text, isDirect)`. `OutboundMessage(participantId, text)`. `ContactCallManager`: getIAmAnonymous/getIWasInitiallyAnonymous. Подробно: `notes/topics/400-chat-manager-contacts.md`.
+
+---
+
+## Дополнения 401
+
+### 401. MediaDumpManager
+
+`requestMediaDump(duration, audio, video)` → signaling `collect-debug-dump {audio, video, duration}`. 6 источников аудио. **В production сборке**. Подробно: `notes/topics/401-media-dump-manager.md`.
