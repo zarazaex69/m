@@ -924,3 +924,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 107. opcode-stat-config + session.opcode_stats
 
 `opcode-stat-config` (#216) — конфиг сбора статистики WS-опкодов. `session.opcode_stats` — per-session статистика: `opcodeStats`, `anrDetected`, `caughtExceptionCount`, `phonebookSize`, `frescoStats`, `appClockDump`. Сервер знает о нестабильности клиента (ANR, исключения). Подробно: `notes/topics/107-opcode-stat-session-stats.md`.
+
+---
+
+## Дополнения 108
+
+### 108. fresco-executor + system-thread-pool-queue
+
+`fresco-executor` (#122) — «Enable Fresco executor-hack» (server-gated). `system-thread-pool-queue` (#286) — «Disable LinkedTransferQueue34» (server-gated). Оба — performance-хаки для конкретных устройств/версий Android. Подробно: `notes/topics/108-fresco-executor-thread-pool.md`.
