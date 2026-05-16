@@ -612,3 +612,23 @@ PmsKey `opus-recorder` (#308), `opus-recorder-bitrate` (#309), `opus-recorder-sa
 ### 60. UserSettings — полная карта 26+ server-pushed полей
 
 `sgj.java` — модель UserSettings, приходящая с сервера при каждом подключении. Ключевые поля: `hiddenOnline`, `safeMode`/`safeModeNoPin` (server-pushed ограничение функциональности), `searchByPhone` (приватность номера), `audioTranscriptionEnabled` (второй канал управления транскрипцией), `contentLevelAccess`, `familyProtection`, `phoneNumberPrivacy`, `inactiveTtl`. Все 26+ полей server-pushed, не только user-controlled. Подробно: `notes/topics/60-user-settings-full-map.md`.
+
+---
+
+## Дополнения 61-64
+
+### 61. LeakCanary в production + gostLicenseCheckEnabled + isDisableWebAppSsl
+
+`ri9.leakCanaryEnabledStateFlow` — LeakCanary (библиотека heap dump) включён в production APK и активируется через SharedPreferences. Heap dump содержит все объекты в памяти включая токены и сообщения. `gostLicenseCheckEnabled` — локальный флаг GOST-проверки. `gostEnvironmentCheckFlags` — server-pushed битовая маска GOST-проверок. `areMockCommentsEnabled` — debug-флаг в production. `isDisableWebAppSsl` — dev-флаг отключения SSL для мини-апок. Подробно: `notes/topics/61-leakcanary-gost-debug-flags.md`.
+
+### 62. white-list-links + show-warning-links — серверный контроль ссылок
+
+`white-list-links` (#314) — server-pushed список «доверенных» доменов. При клике на ссылку клиент проверяет hostname против этого списка. Сервер контролирует, какие внешние ресурсы открываются без предупреждения. `show-warning-links` — server-gated включение предупреждений о внешних ссылках. Подробно: `notes/topics/62-white-list-links-content-control.md`.
+
+### 63. Жалобы — server-controlled список причин
+
+`available-complaints` (#13) — server-pushed список причин жалобы (enum-строки). Клиент показывает только те причины, которые разрешены сервером. `server-side-complains-enabled` (#266) — переключение на серверный flow жалоб. `complainReasonsSync` — периодическая синхронизация причин. Сервер может убрать «политический контент» из списка причин жалоб. Подробно: `notes/topics/63-complaints-server-controlled.md`.
+
+### 64. calls-endpoint — server-pushed URL звонкового сервера
+
+`calls-endpoint` — server-pushed строка с URL(ами) звонкового сервера. В сочетании с `calls-android-signaling-ip` (#119) — полный server-control над маршрутизацией звонкового трафика. Сервер может перенаправить все звонки на произвольный endpoint без обновления клиента. Подробно: `notes/topics/64-calls-endpoint-server-redirect.md`.
