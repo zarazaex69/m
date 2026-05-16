@@ -293,3 +293,4 @@ status: living
 - [[topics/183-media-mute-participant-states]] — MediaMuteManager(updateMediaOptionsForAll/ForParticipant) + ParticipantStatesManager(participantId/isOn/timestamp) #calls #mute #participants
 - [[topics/184-asr-manager]] — AsrManager: on-device ASR recording to file (fileName/sessionRoomId), separate from AsrOnlineManager #calls #asr #recording
 - [[topics/185-feedback-manager]] — FeedbackManager: emoji reactions in calls (sendFeedback: key/source, setTimeout) #calls #feedback #reactions
+- [[topics/186-contact-call-manager]] — ContactCallManager: iAmAnonymous/iWasInitiallyAnonymous (anonymous participants via anonymToken) #calls #anonymous
