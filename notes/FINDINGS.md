@@ -1848,3 +1848,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 224. yag SharedPreferences — 60+ полей
 
 `okToken`/`okTokenRefreshTs`, `pushToken`/`pushDeviceType`, `currentProxyList`/`pushProxyList`/`lastSuccessProxy`, `firstLoginTime`/`lastLoginTime`, `isDebugHostRotationEnabled`/`isDebugUaDnsEmulationEnabled`/`isIceCandidateEmulationEnabled` (debug-флаги в prod). Подробно: `notes/topics/224-yag-shared-prefs-full.md`.
+
+---
+
+## Дополнения 225
+
+### 225. auth.anonymLogin
+
+`device_id`/`version=2`/`client_version=android_8`/`client_type=SDK_ANDROID`. Анонимная авторизация для calls SDK — анонимность относительная, device_id передаётся. Подробно: `notes/topics/225-auth-anonym-login.md`.
