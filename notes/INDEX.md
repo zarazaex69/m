@@ -295,3 +295,4 @@ status: living
 - [[topics/185-feedback-manager]] — FeedbackManager: emoji reactions in calls (sendFeedback: key/source, setTimeout) #calls #feedback #reactions
 - [[topics/186-contact-call-manager]] — ContactCallManager: iAmAnonymous/iWasInitiallyAnonymous (anonymous participants via anonymToken) #calls #anonymous
 - [[topics/187-network-connection-manager]] — NetworkConnectionManager: getTopology(P2P/server)/registerBadConnectionCallback/addNetworkConnectivityListener #calls #network #topology
+- [[topics/188-camera-manager]] — CameraManager: getNumberOfCameras/isCameraEnabled/isCapturingFromFrontCamera/setCameraEnabled/switchCamera #calls #camera
