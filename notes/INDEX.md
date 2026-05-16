@@ -506,3 +506,4 @@ status: living
 - [[topics/396-noise-suppression-impl]] — NoiseSuppressionManagerImpl: serversideBasic/serversideAnn (audio to server), clientsideAnn(filePath from server) #noise-suppression #ns #audio #server-control #surveillance
 - [[topics/397-video-sdk-screen-camera]] — Video SDK: ScreenCapture(setAudioCaptureEnabled), CameraManager, DisplayLayoutSender(server knows video layout) #video #screen-capture #camera #surveillance
 - [[topics/398-media-mute-manager]] — MediaMuteManager: updateMediaOptionsForParticipant/All (force mute), requestToEnableMediaForParticipant/All #media-mute #calls #admin #force-mute #surveillance
+- [[topics/399-asr-manager-record]] — AsrManager: asr-start{fileName}/asr-stop, AsrInfo(initiator,movieId), separate from AsrOnlineManager #asr #asr-record #calls #surveillance

@@ -3238,3 +3238,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 398. MediaMuteManager
 
 `updateMediaOptionsForParticipant`/`updateMediaOptionsForAll` — принудительное изменение медиа-опций. `requestToEnableMediaForParticipant`/`requestToEnableMediaForAll`. Подробно: `notes/topics/398-media-mute-manager.md`.
+
+---
+
+## Дополнения 399
+
+### 399. AsrManager
+
+`asr-start {fileName}`/`asr-stop`. `AsrInfo(initiator, movieId)`. Отдельно от серверного `AsrOnlineManager`. Подробно: `notes/topics/399-asr-manager-record.md`.
