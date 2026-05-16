@@ -277,3 +277,4 @@ status: living
 - [[topics/168-server-topology-stat]] — ServerTopologyRequestedStat: client_requested_server_topology (media through VK/OK servers) #calls #topology #stats
 - [[topics/169-negotiation-audio-error-stat]] — NegotiationErrorStat(SDP on error) + AudioErrorStat(audio_error with 3 fields) #calls #errors #stats
 - [[topics/169-negotiation-audio-error-stat]] — NegotiationErrorStat(SDP on error) + AudioErrorStat(audio_error with 3 fields) #calls #errors #stats
+- [[topics/170-ice-candidate-error-stats]] — IceCandidateGatheringFailedStat(local_address/remote_url/transport) + IceCandidateAddFailedStat #calls #ice #errors
