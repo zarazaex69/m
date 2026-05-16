@@ -2000,3 +2000,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 243. chat_folder DB
 
 14 полей: filters/filterSubjects/widgets/templateId/sourceId. Подробно: `notes/topics/243-chat-folder-db.md`.
+
+---
+
+## Дополнения 244
+
+### 244. log-sensitive / log-full — серверное управление логированием
+
+`log-sensitive=true` в ответе LOGIN — **сервер включает логирование токена авторизации** в открытом виде. `log-full=true` — полное логирование контактов. PmsKey `logsensitive`. Подробно: `notes/topics/244-log-sensitive-server-flag.md`.

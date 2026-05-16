@@ -351,3 +351,4 @@ status: living
 - [[topics/241-tasks-recent-db-schemas]] — tasks(id/type/status/fails_count/data BLOB protobuf) + recent(recent_type/sticker_id/emoji/gif BLOB) DB schemas #database #tasks #recent
 - [[topics/242-notifications-tracker-db]] — notifications_tracker_messages: chat_id/message_id/time/fcm/drop_reason (tracks why notifications dropped) #database #notifications #tracking
 - [[topics/243-chat-folder-db]] — chat_folder DB: 14 fields (filters/filterSubjects/widgets/templateId/sourceId) #database #chat-folder #filters
+- [[topics/244-log-sensitive-server-flag]] — log-sensitive/log-full in LOGIN response: server enables auth token logging + full contacts logging #server-control #logging #sensitive-data #surveillance
