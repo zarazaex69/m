@@ -1560,3 +1560,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 188. CameraManager
 
 `getNumberOfCameras`/`isCameraEnabled`/`isCapturingFromFrontCamera`/`setCameraEnabled`/`switchCamera`. Подробно: `notes/topics/188-camera-manager.md`.
+
+---
+
+## Дополнения 189
+
+### 189. MediaConnectionManager
+
+`onMediaConnected(ConnectedInfo: isFirstConnection)` / `onMediaDisconnected`. `isFirstConnection` — первое ли подключение или переподключение. Подробно: `notes/topics/189-media-connection-manager.md`.
