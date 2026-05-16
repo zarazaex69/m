@@ -3446,3 +3446,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 424. WebAppNfcService
 
 `HostApduService`. `processCommandApdu(apdu)` → данные от мини-приложения. Логирует все APDU в hex. Эмулирует NFC-карту через HCE. Подробно: `notes/topics/424-webapp-nfc-service.md`.
+
+---
+
+## Дополнения 425
+
+### 425. WebApp UI Control
+
+`ClosingBehavior(needConfirmation)`. `BackButton(isVisible)`. `OpenLink(url)`. `OpenMaxLink(url)`. `ChangeScreenBrightness(maxBrightness)`. Подробно: `notes/topics/425-webapp-ui-control.md`.
