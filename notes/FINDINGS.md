@@ -1832,3 +1832,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 222. Deep link схемы
 
 `max://`, `https://max.ru`, `yandexmaps://`, `yandexnavi://`, `dgis://`, `petalmaps://` (Huawei). Поддержка Petal Maps — ориентация на российский рынок без Google. Подробно: `notes/topics/222-deeplink-schemes.md`.
+
+---
+
+## Дополнения 223
+
+### 223. Device performance telemetry
+
+`bucket`(App Standby Bucket — насколько активно используется), `memory`/`large_memory`, `exit_reason`(`getHistoricalProcessExitReasons` — причина завершения: ANR/OOM/crash/kill), `img_cache`/`img_err`. Подробно: `notes/topics/223-device-performance-telemetry.md`.
