@@ -392,3 +392,50 @@ URL `https://sdk-api.apptracer.ru` захардкожен в Java. Endpoints: `/
 - `notes/topics/23-camera-mic-screen-entry-points.md`
 - `findings/raw/ws_opcodes.txt` — полный список 159 WS-опкодов
 - `findings/native/decomp_tracer/` — rzghidra-декомпиляция libtracernative + skeptic README
+
+
+---
+
+## Дополнения (темы 24-28)
+
+### 24. HostReachabilityChecker — server-controlled probe + IP/operator/VPN reporting
+
+`defpackage/uq5.java` + `f58.java` — фоновая задача `HostReachabilityChecker`. Список хостов задаётся сервером через PmsKey `host-reachability` (#227). На каждый хост клиент: (1) DNS-резолв, (2) `InetAddress.isReachable()`, (3) прямой `new Socket()` connect. Результаты + `operator` (TelephonyManager NetworkOperator/Name) + `connection_type` + `ip` + `vpn`-флаг → событие OneLog `HOST_REACHABILITY/GET_HOST_REACHABILITY`. Это подтверждает прессовские наблюдения «MAX обращается к Telegram/WhatsApp/AWS/Google». Список конкретных хостов — серверный, в коде не зашит. Подробно: `notes/topics/24-host-reachability-probe.md`.
+
+### 25. Resources audit — встроенная функция записи звонка
+
+В `assets/`: 8 SVG-паттернов фонов (включая 23 февраля, 8 марта, новогодний 2026), 18 GLSL-шейдеров для медиа, 540+ файлов libphonenumber. ML-моделей `.tflite` в APK **нет** (качаются с сервера, см. topic 16). В `res/raw/`: звуки звонка плюс **`call_record_start.m4a` / `call_record_stop.m4a`** — встроенные звуковые маркеры записи. Strings.xml содержит группу `call_screen_record_*`: «Запись пришлём в избранное», «Администратор остановил запись экрана» — **запись звонка/экрана это штатная клиентская фича**. Запускается через `MediaProjectionManager.createScreenCaptureIntent()` из `CallScreen` (см. topic 23), записывается локально, заливается в чат «Избранное» инициатора (без E2E — на сервер). Также найдены `fake_boss_*` строки + PmsKey `calls-fakeboss-incoming-call-enabled` — сервер может помечать профили как «принадлежит организации». Подробно: `notes/topics/25-resources-audit.md`.
+
+### 26. Upstream — только bot SDK публично
+
+`github.com/max-messenger` содержит 5 публичных репозиториев — **все bot-SDK** (TS/Go/Python + UI компоненты). **Исходного кода клиента в публичном виде нет**. Python-SDK `max-botapi-python` форкнут с третьестороннего `love-apples/maxapi`. Java-SDK (упоминавшийся в источниках 2025 года) публично не висит. Реверс самого клиента остаётся black-box reverse engineering из APK. Подробно: `notes/topics/26-upstream-public-repos.md`.
+
+### 27. Hardcoded keys audit — без backdoor-ключей
+
+Все хардкоженные значения — публичная Firebase/Google/MyTracker конфигурация: `gcm_defaultSenderId=659634599081`, `project_id=max-messenger-app`, два Google Maps API key (один — Maps Geo, второй — Firebase shared), MyTracker app id `34982109644049932883`. Captive private RSA/EC keys, JWT-секреты, HMAC-секреты, captive PEM/DER сертификаты в APK **не найдены**. Это значит — нет очевидных «backdoor-ключей» в смысле shared secret для отдельного канала. Подробно: `notes/topics/27-hardcoded-keys-audit.md`.
+
+### 28. `vk::enh::decrypt` — статический ключ для obfuscation
+
+В `libEnhancementLibShared.so` экспортирован `vk::enh::decrypt(std::vector<unsigned char>)`. Декомпиляция показывает, что функция передаёт **два захардкоженных 16-байтовых блока из `.rodata`** (по адресам 0x83513 и 0x83523) во внутренний крипто-контекст и обрабатывает входной buffer. По формату ключ+IV (16+16) похоже на AES-128. Это light-obfuscation для каких-то внутренних блобов (вероятно зашифрованные TFLite-модели или checksums). Не secret в security-смысле — кто угодно с APK может расшифровать; backdoor-индикатором не является, но архитектурно собирается с `vk::enh::dll::Dll::open` + downloadable models в путь «расшифровать blob → подгрузить как .so» (прямой улики использования такого пути в этой сборке нет). Подробно: `notes/topics/28-vk-enh-decrypt-key.md`.
+
+---
+
+## Полная сводка после 28 тем
+
+К 14 исходным разделам и 9 дополнениям (15-23) добавились ещё 5:
+
+1. **HostReachabilityChecker (24)** — это и есть тот самый код, который пресса (март 2026) обозначила как «MAX проверяет блокировки и собирает IP/оператора». Архитектурно — обычный фоновый job, серверно-управляемый список хостов, отчёт через OneLog. Подтверждается полностью.
+2. **Built-in call recording (25)** — отдельная штатная фича в звонке («Запись пришлём в избранное»), не «случайное» использование MediaProjection. Записи без E2E хранятся на серверах MAX.
+3. **Закрытость исходников (26)** — публично только bot SDK; полный код клиента — закрытый, реверсу подлежит только из APK.
+4. **Нет backdoor-ключей в Java (27)** — все хардкоженные значения публичные. Это закрывает один из распространённых страхов «зашитый ключ для бэкдор-канала».
+5. **Light obfuscation в native (28)** — статический ключ есть, но для интернала (модели/конфиги), не для канала. В сочетании с `dll::open`-обвязкой архитектурно поддерживает «runtime extension», прямой улики в этой версии нет.
+
+---
+
+Дополнительные файлы:
+
+- `notes/topics/24-host-reachability-probe.md`
+- `notes/topics/25-resources-audit.md`
+- `notes/topics/26-upstream-public-repos.md`
+- `notes/topics/27-hardcoded-keys-audit.md`
+- `notes/topics/28-vk-enh-decrypt-key.md`
