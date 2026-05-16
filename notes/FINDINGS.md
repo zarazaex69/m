@@ -3510,3 +3510,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 432. DB uploads + video
 
 `uploads(upload_url/upload_progress/total_bytes/photo_token/thumbhash_base64)`. `draft_uploads(video_quality/start_trim/end_trim/mute)`. `video_conversions`. Подробно: `notes/topics/432-db-uploads-video.md`.
+
+---
+
+## Дополнения 433
+
+### 433. DevMenu детали
+
+`ServerHostBottomSheet` ("Адрес сервера") + `ServerPortBottomSheet`. `FeatureToggles` (источник "SERVER"). `LogsViewer`. `TestCrash`. **В production сборке**. Подробно: `notes/topics/433-devmenu-details.md`.
