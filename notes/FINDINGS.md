@@ -4158,3 +4158,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 513. wh8 Media ContentObserver
 
 `MediaStore.Images.EXTERNAL/INTERNAL` + `MediaStore.Video.EXTERNAL`. `onChange` → обновление галереи. Подробно: `notes/topics/513-media-content-observer.md`.
+
+---
+
+## Дополнения 514
+
+### 514. a40 Contacts ContentObserver
+
+`ContactsContract.Contacts.CONTENT_URI` → `checkUpdates(updatePhones/deletedPhones/newPhones)`. Подробно: `notes/topics/514-contacts-content-observer.md`.
