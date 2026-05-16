@@ -3494,3 +3494,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 430. DB presence + phones + messages
 
 `presence(contactServerId, seen, status)`. `phones(phone, phone_key, server_phone, email, first_name, last_name)`. `messages.text` — в открытом виде в SQLite. Подробно: `notes/topics/430-db-presence-phones-messages.md`.
+
+---
+
+## Дополнения 431
+
+### 431. DB organizations + informer_banner + tasks
+
+`informer_banner(url/priority/click_time/show_time/close_time)`. `notifications_tracker_messages(fcm/drop_reason)`. `tasks(type/status/fails_count/data)`. Подробно: `notes/topics/431-db-organizations-informer-tasks.md`.
