@@ -1496,3 +1496,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 180. RecordManager — запись и стриминг звонков
 
 `startRecord(StartParams)`: `isStream` (стриминг), `movieId`, `albumId`, `sessionRoomId`, `name`, `description`, `groupId`, `privacy`. Интеграция с видео-платформой VK/OK. `stopRecord`. Подробно: `notes/topics/180-record-manager.md`.
+
+---
+
+## Дополнения 181
+
+### 181. NoiseSuppressionManager
+
+4 режима: `serversideBasic`, `serversideAnn`, `clientsidePlatform`, `clientsideAnn`. `filePath` — ML-модель шумоподавления. Fallback параметры при проблемах с производительностью. Подробно: `notes/topics/181-noise-suppression-manager.md`.
