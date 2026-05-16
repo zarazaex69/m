@@ -200,3 +200,4 @@ status: living
 - [[topics/91-additional-ws-opcodes]] — additional WS opcodes: DEBUG (server debug cmd), LOG (logs to server), LINK_INFO (server sees pasted links), DRAFT_SAVE #ws #surveillance
 - [[topics/92-webapp-complaints-folders-polls-ws]] — WEB_APP_INIT_DATA (miniapp launch), VOTERS_LIST_BY_ANSWER (non-anonymous voting), AUDIO_PLAY (voice listen tracking) #ws #webapp #polls
 - [[topics/93-client-conv-id-send-queue]] — client-conv-id (P2P conversation ID), send-queue-size (server-controlled queue limit) #messaging #server-control
+- [[topics/94-battery-memory-monitoring]] — battery-slice-interval (server-controlled battery monitoring) + memory-slice-interval + battery_level_change in call stats #battery #telemetry
