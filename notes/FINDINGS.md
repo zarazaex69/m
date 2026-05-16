@@ -3910,3 +3910,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 482. CONTACT_OR_BLOCK + sticker
 
 `CONTACT_OR_BLOCK.clicked {screen, clickType: to_contacts|block}`. `sticker.send_sticker {screen: first_message}`. Подробно: `notes/topics/482-contact-block-sticker-analytics.md`.
+
+---
+
+## Дополнения 483
+
+### 483. CHANNEL_RECSYS_FOLDER
+
+`channel_folder_open {channels_shown: [...]}`. `channel_folder_delete`. Рекомендательная система каналов. Подробно: `notes/topics/483-channel-recsys-analytics.md`.
