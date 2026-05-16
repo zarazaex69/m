@@ -212,3 +212,4 @@ status: living
 - [[topics/103-media-order]] — media-order: 4 modes (0-3), mode 3 = server-controlled media placement in messages #media #ui #server-control
 - [[topics/104-bad-network-video-msg-config]] — bad-networ-indicator-config (RTT/loss algorithm) + video-msg-config #calls #network #server-control
 - [[topics/105-chat-history-warm]] — chat-history-warm-opts (server-controlled chat history preloading) #performance #server-control
+- [[topics/106-perf-registrar-net-stat-config]] — perf-registrar-config (maxAttempts/rawPersistInterval/TTL) + net-stat-config (loggableOpcodes) #telemetry #server-control
