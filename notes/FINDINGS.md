@@ -1108,3 +1108,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 131. Calls VTV2/LLA/NIDM PmsKey
 
 `calls-android-vtv2` (#112, default=false) — «Использовать видеотрансформер v2». `calls-android-lla` (#113, default=false) — «Использовать LL audio» (Low Latency). `calls-android-nidm` (#114, default=false) — «Разрешить маппинг только собственного ID». Подробно: `notes/topics/131-calls-vtv2-lla-nidm.md`.
+
+---
+
+## Дополнения 132
+
+### 132. Calls fast-join/NS/new-pms PmsKey
+
+`calls-android-fast-join` (#120, default=false) — «Быстрое присоединение через клиентский бекенд». `calls-android-ns` (#121, default=false) — «Включить шумодав» (WebRTC NS). `calls-android-new-pms` (#123, default=false) — «Новый механизм получения звонковых настроек». Подробно: `notes/topics/132-calls-fastjoin-ns-newpms.md`.
