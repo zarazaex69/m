@@ -980,3 +980,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 114. views-count-enabled
 
 `views-count-enabled` (#303) — «Включить просмотры в каналах» (server-gated). При включении сервер знает, какие посты в каналах просматривал пользователь. Подробно: `notes/topics/114-views-count-enabled.md`.
+
+---
+
+## Дополнения 115
+
+### 115. quotes-enabled + media-playlist-enabled
+
+`quotes-enabled` (#247) — «Отображение и отправка markdown quote элемента» (default=false). `media-playlist-enabled` (#175) — медиа-плейлист (default=false). Оба server-gated. Подробно: `notes/topics/115-quotes-media-playlist.md`.
