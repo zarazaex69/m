@@ -1792,3 +1792,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 217. WebApp Biometry — биометрия в мини-приложениях
 
 `webapp_biometry`: user_id/bot_id/**token**/access_requested/access_granted. 8 JS-bridge методов: `WebAppBiometryAuthRequest`/`WebAppBiometryUpdateTokenRequest`/`WebAppBiometryAccessRequest`. Токен хранится в БД. Подробно: `notes/topics/217-webapp-biometry.md`.
+
+---
+
+## Дополнения 218
+
+### 218. FCM + stat_events DB схемы
+
+`fcm_notifications_analytics`: 5 временных меток push lifecycle (sent_time/fcm_sent_time/received_time/created_time/time). `stat_events`: BLOB-буфер статистики. `fcm_notifications`: text/sender/url/bmd. Подробно: `notes/topics/218-fcm-stat-db-schemas.md`.
