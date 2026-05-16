@@ -3190,3 +3190,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 392. ConversationParticipant
 
 `capabilities`/`networkStatus`/`isTalking`/`deAnonymize`. `getAcceptedCallClientType()`/`getAcceptedCallPlatform()`. Подробно: `notes/topics/392-conversation-participant.md`.
+
+---
+
+## Дополнения 393
+
+### 393. RateManager
+
+`RateHint(reason)` по RTT/loss/candidateType. `RateCallData(maxRate, questions)` с сервера. Конфиг: `android.rating.limits`. Подробно: `notes/topics/393-rate-manager.md`.
