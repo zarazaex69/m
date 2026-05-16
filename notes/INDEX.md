@@ -227,3 +227,4 @@ status: living
 - [[topics/118-media-ux-pmskey]] — media UX PmsKey: speedy-voice-messages/open-video-from-start/new-media-upload-ui/video-fast-seek #media #ux #server-control
 - [[topics/119-folders-pmskey]] — folders PmsKey: folders-max-count(30)/enable-filters-for-folders/channels-suggests-folder #folders #server-control
 - [[topics/120-multiselect-messages-meta]] — multi-select-bars-redesign + log-messages-meta (meta info on click) #ui #server-control
+- [[topics/121-notifications-bots-bugfix-pmskey]] — cancel-stale-notifications + new-intent-fix (server-gated bugfixes) + bots-channel-adding #notifications #bots #server-control
