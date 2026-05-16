@@ -956,3 +956,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 111. invite-friends-sheet-frequency
 
 `invite-friends-sheet-frequency` (#143) — server-pushed массив интервалов в днях для показа листа «пригласить друзей». Сервер контролирует growth-механизм. `alreadyInvitedFriends` в `yag.java` — сервер знает, приглашал ли пользователь кого-то. Подробно: `notes/topics/111-invite-friends-frequency.md`.
+
+---
+
+## Дополнения 112
+
+### 112. user-debug-report + userLogReportChatId
+
+`user-debug-report` (#292) — server-pushed режим debug-репортирования. `userLogReportChatId` — **ID чата, в который отправляются логи пользователя** (сервер может направить логи в конкретный чат через WS). `debug-mode` (#3) — server-pushed режим отладки. Подробно: `notes/topics/112-user-debug-report-chat.md`.
