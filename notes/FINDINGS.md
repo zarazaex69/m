@@ -3718,3 +3718,11 @@ SHA-256 fingerprint. `InvalidSslIntegrityException`/`InvalidSslSessionException`
 ### 458. f58 Network operator collection
 
 `connection_type`/`vpn` + `getNetworkOperator():getNetworkOperatorName()` в каждом запросе к API. Подробно: `notes/topics/458-network-operator-collection.md`.
+
+---
+
+## Дополнения 459
+
+### 459. yk2 Device data
+
+`Build.FINGERPRINT` + `mcc_mnc(getSimOperator())` + `tz-offset` + `sdk-version` + `net-type`/`mobile-subtype` + `application_build`. Подробно: `notes/topics/459-device-data-yk2.md`.

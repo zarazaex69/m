@@ -566,3 +566,4 @@ status: living
 - [[topics/456-ssl-certificate-pinning]] — SSL certificate pinning: SHA-256 fingerprint, InvalidSslIntegrityException/InvalidSslSessionException, SslIntegrity task at startup #ssl #certificate-pinning #tls #security #okhttp
 - [[topics/457-root-network-detection]] — r04.G() root detection (su/Superuser.apk/test-keys) + r04.z() network type (NONE/WIFI/ETHERNET/BLUETOOTH/VPN/CELLULAR) #root-detection #network-type #emulator-detection #surveillance #security
 - [[topics/458-network-operator-collection]] — f58: connection_type/vpn + getNetworkOperator():getNetworkOperatorName() in every API request #network-operator #telephony #vpn-detection #connection-type #surveillance #telemetry
+- [[topics/459-device-data-yk2]] — yk2: Build.FINGERPRINT + mcc_mnc(getSimOperator()) + tz-offset + sdk-version + net-type/mobile-subtype #sim-operator #mcc-mnc #fingerprint #timezone #network-type #surveillance #telemetry
