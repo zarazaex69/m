@@ -1536,3 +1536,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 185. FeedbackManager — emoji-реакции в звонках
 
 `sendFeedback(key, source)` + `setTimeout(millis)`. Сервер знает, кто и когда отправил реакцию. Подробно: `notes/topics/185-feedback-manager.md`.
+
+---
+
+## Дополнения 186
+
+### 186. ContactCallManager — анонимность в звонках
+
+`iAmAnonymous`/`iWasInitiallyAnonymous`. Анонимные участники через `anonymToken`. Статус анонимности может меняться во время звонка. Подробно: `notes/topics/186-contact-call-manager.md`.
