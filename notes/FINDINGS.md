@@ -3342,3 +3342,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 411. UserSettings (sgj) полный
 
 27 полей. Ключевые: `hiddenOnline`/`phoneNumberPrivacy`/`safeMode`/`safeModeNoPin`/`audioTranscriptionEnabled`/`contentLevelAccess`/`familyProtection`. Подробно: `notes/topics/411-user-settings-full.md`.
+
+---
+
+## Дополнения 412
+
+### 412. Protos.Location
+
+`latitude`/`longitude`/`altitude`/`accuracy`/`bearing`/`livePeriod`/`deviceId`. `Protos.LocationInfo`: +`speed`/`time`. Подробно: `notes/topics/412-protos-location.md`.

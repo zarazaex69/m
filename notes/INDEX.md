@@ -519,3 +519,4 @@ status: living
 - [[topics/409-audio-video-transcription]] — Audio/Video message transcription: Protos.Audio/Video.transcription, audio.transcription.enabled=true by default #transcription #audio-messages #video-messages #asr #surveillance
 - [[topics/410-user-settings-map]] — UserSettings: audioTranscriptionEnabled/hiddenOnline/dontDustirbUntil/safeMode/inactiveTTL, synced with server #user-settings #transcription #server-control #surveillance
 - [[topics/411-user-settings-full]] — UserSettings(sgj): 27 fields, hiddenOnline/phoneNumberPrivacy/safeMode/safeModeNoPin/audioTranscriptionEnabled/contentLevelAccess/familyProtection #user-settings #server-control #surveillance #safe-mode #family-protection
+- [[topics/412-protos-location]] — Protos.Location: latitude/longitude/altitude/accuracy/bearing/livePeriod/deviceId + Protos.LocationInfo(speed) #location #gps #geolocation #surveillance #live-location
