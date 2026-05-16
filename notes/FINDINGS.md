@@ -1036,3 +1036,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 122. VPN UI PmsKey — три уровня предупреждений
 
 `show-vpn-snackbar` (#273, default=false), `show-vpn-chat-bottomsheet` (#272, int-режимы), `show-vpn-call-bottomsheet` (#271, int-режимы). Три независимых механизма VPN-предупреждений. Сервер контролирует интенсивность давления на пользователей с VPN. Подробно: `notes/topics/122-vpn-ui-pmskey.md`.
+
+---
+
+## Дополнения 123
+
+### 123. Group calls PmsKey
+
+`gc-from-p2p` (#123, default=false) — «Переход из 1-1 звонка в групповой». `gc-link-pre-settings` (#124, default=false) — «Преднастройки группового звонка по ссылке». `gc-wait-admin` (#125, default=false) — «Комната ожидания администратора». `group-call-part-limit` (#128) — лимит участников. `call-pinch-to-zoom` (#24, default=false). Подробно: `notes/topics/123-group-calls-pmskey.md`.
