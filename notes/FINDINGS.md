@@ -1140,3 +1140,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 135. CallsSDK Opus DRED/FEC flags
 
 `CallsSDK-Audio-OpusFECWithDRED`, `CallsSDK-Audio-OpusDREDByBitrate`, `CallsSDK-DREDLowBitrate`, `CallsSDK-LinearMinBitrate`, `CallsSDK-OpusFileLogs` (запись Opus-логов в файл — могут быть загружены через vchat.getLogUploadUrl), `Calls-SDK-LogDCTraffic` (логирование DataChannel трафика). Управляются через `bonusFieldTrials`. Подробно: `notes/topics/135-callssdk-opus-dred-fec-flags.md`.
+
+---
+
+## Дополнения 136
+
+### 136. ev1 WebRTC session config
+
+25+ параметров WebRTC сессии. Ключевые: `emulatedSignalingError` (NONE/SERVICE_UNAVAILABLE/PARTICIPANT_LIMIT_REACHED — **сервер может принудительно завершить звонок**), `emulatedIceCandidateError` (NONE/REMOTE/LOCAL), `simulcastState` (DISABLED/ONLY_SW_VP8/ALL_SUPPORTED_CODEC), `isAudioCaptureLoggingEnabled`, `bitrateDumpGatheringState`. Подробно: `notes/topics/136-ev1-webrtc-session-config.md`.
