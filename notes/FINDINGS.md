@@ -3454,3 +3454,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 425. WebApp UI Control
 
 `ClosingBehavior(needConfirmation)`. `BackButton(isVisible)`. `OpenLink(url)`. `OpenMaxLink(url)`. `ChangeScreenBrightness(maxBrightness)`. Подробно: `notes/topics/425-webapp-ui-control.md`.
+
+---
+
+## Дополнения 426
+
+### 426. webapp_biometry DB
+
+`(id, user_id, bot_id, token, access_requested, access_granted)`. Биометрический токен хранится локально, привязан к user_id + bot_id. Подробно: `notes/topics/426-webapp-biometry-db.md`.
