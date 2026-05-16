@@ -253,3 +253,4 @@ status: living
 - [[topics/144-hangup-join-api]] — vchat.hangupConversation(reason enum) + vchat.joinConversationByLink(peerId/anonymToken/capabilities) #calls #api
 - [[topics/145-ok-external-ids-mapping]] — vchat.getOkIdsByExternalIds + vchat.getExternalIdsByOkIds: bidirectional ID mapping between MAX and VK/OK services #calls #identity #api
 - [[topics/146-log-upload-device-fingerprint]] — vchat.getLogUploadUrl + och.java: device model/osVersion/ispAsOrg/locCc/locReg in every call API request #calls #surveillance #fingerprint
+- [[topics/147-call-native-analytics-request]] — CallNativeAnalyticsApiRequest: platform=ANDROID/appVersion/sdkVersion=0.1.13 + 40 metrics #calls #analytics #telemetry
