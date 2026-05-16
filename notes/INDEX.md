@@ -314,3 +314,4 @@ status: living
 - [[topics/204-opus-file-writer]] — Opus FileWriter: nativeAudioStartRecord(path/sampleRate/channels)/nativeAudioWriteFrame (used in ASR+MediaDump) #calls #opus #audio-recording #native
 - [[topics/205-tasks-proto]] — Tasks.proto: 60+ background task types (LocationRequest/CritLog/SuspendBot/UpdateFireTimeProtoTask/SyncChatHistory) #protocol #tasks #protobuf
 - [[topics/206-protos-schemas]] — Protos.java: 50+ protobuf nano schemas (Location/ttl/livePeriod, VideoConversation/previewParticipantIds, LogEvent) #protocol #protobuf #messages
+- [[topics/207-critlog-events]] — CritLog: 30+ event types (AUDIO_TRANSCRIPTION/DANGEROUS_FILE_ACTIONS/MINIAPP_BIOMETRY/GET_INSTALL_REFERRER) #telemetry #critlog #surveillance

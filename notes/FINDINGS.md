@@ -1704,3 +1704,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 206. Protos.java — 50+ protobuf nano схем
 
 `Location`: `latitude`/`longitude`/`altitude`/`accuracy`/`bearing`/`speed`/`livePeriod`/`startTime`/`endTime`/`ttl`/`zoom`/`corrupted`. `VideoConversation`: `conversationId`/`joinLink`/`previewParticipantIds`/`approxParticipantCount`/`type(BY_LINK/FROM_CHAT)`. `LogEvent`: `event`/`params(bytes)`/`sessionId`. Подробно: `notes/topics/206-protos-schemas.md`.
+
+---
+
+## Дополнения 207
+
+### 207. CritLog — 30+ типов критических событий
+
+`AUDIO_TRANSCRIPTION`(message_id/media_id/duration/waiting_time), `DANGEROUS_FILE_ACTIONS`/`DANGEROUS_URL_ACTIONS`, `MINIAPP_BIOMETRY`, `GET_INSTALL_REFERRER`, `ADMIN_CALL_SETTINGS_TO_USER`, `WEBAPP_ACTION`/`WEBAPP_BRIDGE`, `PERMISSION`, `PUSH`, `REGISTRATION`. Подробно: `notes/topics/207-critlog-events.md`.
