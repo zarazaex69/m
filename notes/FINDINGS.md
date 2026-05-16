@@ -3766,3 +3766,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 464. WatchdogConfig
 
 `stuckThreshold`/`hangThreshold`/`saveStacktrace` с сервера. `keepBackgroundSocket` PmsKey. Подробно: `notes/topics/464-watchdog-config.md`.
+
+---
+
+## Дополнения 465
+
+### 465. DevNullServerConfig
+
+8 флагов: `isOpcodeStatEnabled`/`isMemoryStatEnabled`/`isBatteryStatEnabled`/`isChatHistoryStatEnabled`/`isUploadHangCheckEnabled`. Подробно: `notes/topics/465-devnull-server-config.md`.
