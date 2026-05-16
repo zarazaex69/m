@@ -1336,3 +1336,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 160. update-media-modifiers
 
 `mediaModifiers: {denoise: bool, denoiseAnn: bool}`. Сервер может принудительно изменить настройки шумоподавления участника во время звонка. `denoiseAnn` — нейросетевое шумоподавление. Подробно: `notes/topics/160-update-media-modifiers.md`.
+
+---
+
+## Дополнения 161
+
+### 161. change-simulcast
+
+`mediaSource=CAMERA`, `layers[{rid, width, height, fps, bitrateKbps}]`. Сервер может изменить качество видео-потоков во время звонка. Подробно: `notes/topics/161-change-simulcast.md`.
