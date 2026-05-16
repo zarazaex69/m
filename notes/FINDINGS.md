@@ -3710,3 +3710,11 @@ SHA-256 fingerprint. `InvalidSslIntegrityException`/`InvalidSslSessionException`
 ### 457. Root + Network detection
 
 `r04.G()`: root detection (su/Superuser.apk/test-keys). `r04.z()`: network type (NONE/WIFI/ETHERNET/BLUETOOTH/VPN/CELLULAR). Подробно: `notes/topics/457-root-network-detection.md`.
+
+---
+
+## Дополнения 458
+
+### 458. f58 Network operator collection
+
+`connection_type`/`vpn` + `getNetworkOperator():getNetworkOperatorName()` в каждом запросе к API. Подробно: `notes/topics/458-network-operator-collection.md`.
