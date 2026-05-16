@@ -1384,3 +1384,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 166. AcceptCallStat
 
 `call_accepted_incoming` с `isCaller`/`isMe`/`isConcurrent`. Сервер знает: кто принял звонок, на каком устройстве, был ли параллельный звонок. Подробно: `notes/topics/166-accept-call-stat.md`.
+
+---
+
+## Дополнения 167
+
+### 167. P2PRelayRequestedStat
+
+`client_requested_p2p_relay` с `trigger`/`threshold`/`violationsCount`. Сервер знает, когда и почему клиент переключился на relay (в отличие от `p2p_forbidden` — когда сервер запрещает P2P). Подробно: `notes/topics/167-p2p-relay-requested-stat.md`.
