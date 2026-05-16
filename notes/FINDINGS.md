@@ -696,3 +696,19 @@ KWS активен во время звонков. `android.wordspotter.config` 
 ### 76. CONTACT_OR_BLOCK OneLog
 
 `showed` и `clicked` (clickType: `to_contacts`/`block`/`close`) — сервер знает каждое решение пользователя добавить в контакты или заблокировать через infobar UI. В сочетании с синхронизацией контактов — полная картина социального графа. Подробно: `notes/topics/76-contact-or-block-onelog.md`.
+
+---
+
+## Дополнения 77-79
+
+### 77. SHARE_TO_MAX + INVITE_MAX_BANNER OneLog
+
+`SHARE_TO_MAX` — при share intent из внешних приложений сервер получает `chatsInfo` — список всех чатов, в которые был отправлен контент, с типами (DIALOG/PRIVATE_CHANNEL/PUBLIC_CHAT/etc) и ID. `INVITE_MAX_BANNER` — `show`/`click_link` с `session_id`, `screen`, `entryPoint`, `linkType`. Подробно: `notes/topics/77-share-to-max-invite-onelog.md`.
+
+### 78. PUSH OneLog — 12+ операций
+
+`show` (с `chat_id`), `drop` (с причиной), `delivered`, `open_chat`/`open_url` (с `trid`, `eKey`), `m_as_read` (отметка из notification shade), `n_q_rep` (быстрый ответ), `n_canceled`. Сервер получает полный лог взаимодействия с push-уведомлениями. Подробно: `notes/topics/78-push-onelog-events.md`.
+
+### 79. Дополнительные OneLog категории
+
+`AUDIO_TRANSCRIPTION.transcription_result` — `message_id`, `media_id`, `duration`, `waiting_time`, `source_id` (chat_id). `AUTH_QR.LOG` — полный лог QR-аутентификации (6 шагов). `CHANNEL_RECSYS_FOLDER` — взаимодействие с рекомендательными папками. `CONTACT_RENAME_BANNER` — переименование контактов. `PRESENCE.EVENT_MESSAGE_COUNTER`. Подробно: `notes/topics/79-additional-onelog-categories.md`.
