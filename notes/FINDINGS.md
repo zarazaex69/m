@@ -1896,3 +1896,11 @@ ASR: `c_enh_asr_predict`/`calcConfidence`/`fillPunct`. KWS: `BCResNetKWS::score`
 ### 230. libEnhancementLibShared — build paths
 
 Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. Зависимости: TFLite + Kaldi. `webrtc4` — 4-я версия кастомного WebRTC VK. `one-ann-audio-processing` — внутреннее название модуля. Подробно: `notes/topics/230-lib-enhancement-build-info.md`.
+
+---
+
+## Дополнения 231
+
+### 231. MyTrackerParams — пользовательские параметры
+
+`age`/`gender`/`email`/`phone`/`okId`/`vkId`/`vkConnectId`/`icqId`. MyTracker связывает пользователя MAX с аккаунтами OK.ru/VK/ICQ. Подробно: `notes/topics/231-mytracker-params.md`.
