@@ -1928,3 +1928,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 234. ri9 SharedPreferences — 50+ полей
 
 `phoneNumber`/`locationCountryCode`/`gostLicenseCheckEnabled`/`allowLogSensitiveData` (разрешить логирование чувствительных данных)/`isDisableWebAppSsl`/`leakCanaryEnabledStateFlow`/`tenorAnonId` (Tenor GIF). Подробно: `notes/topics/234-ri9-shared-prefs.md`.
+
+---
+
+## Дополнения 235
+
+### 235. qp6 дополнительные PmsKey
+
+`gostEnvironmentCheckFlags`, `isWebRtcLoggingEnabled`/`isCallsAudioLoggingEnabled` (сервер включает детальное логирование), `isLogVisibleMessagesMetaEnabled`/`isLogChatMetaEnabled` (логирование метаданных сообщений), `liveStreamsEnabled`/`liveStreamsUrlPrefix`, `callsTrafficMarkers`, `batterySliceIntervalMs`, `useWebAppPhoneHash`. Подробно: `notes/topics/235-qp6-additional-pmskeys.md`.
