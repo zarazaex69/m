@@ -756,3 +756,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 85. NOTIF_* WS-опкоды — 25 server-to-client push
 
 `NOTIF_CONFIG(134)` — real-time PmsKey update без перезапуска. `NOTIF_LOCATION_REQUEST(148)` — второй канал запроса геолокации (помимо FCM). `NOTIF_DRAFT(152)/NOTIF_DRAFT_DISCARD(153)` — черновики синхронизируются с сервером в реальном времени. `NOTIF_BANNERS(292)` — server-pushed баннеры по WS. `NOTIF_TRANSCRIPTION(293)` — результат транскрипции. Подробно: `notes/topics/85-notif-ws-opcodes.md`.
+
+---
+
+## Дополнения 86
+
+### 86. NeuroAvatars — AI-генерация аватаров
+
+Модуль `one.me.login.neuroavatars`: `NeuroAvatarsScreen`, `RegistrationNeuroAvatarsScreen`, `NeuroAvatarPickerBottomSheet`. При регистрации и в настройках пользователю предлагается нейро-аватар. Фотография пользователя вероятно отправляется на серверы MAX для AI-обработки. Подробно: `notes/topics/86-neuroavatars-ai.md`.
