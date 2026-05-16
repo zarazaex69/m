@@ -152,3 +152,9 @@ status: living
 25-resources ──→ 23-camera-mic (call recording UX)
 27-keys + 28-decrypt ──→ 09-native-libs
 ```
+
+### Дополнительные фичи (server-gated)
+
+- [[topics/49-polls-server-gated]] — опросы: render-polls/polls-in-p2p/p2g/channels/poll-ttl, GET_POLL_UPDATES #polls #server-control
+- [[topics/50-reactions-scheduled-messages]] — реакции (per-chat settings, MSG_GET_DETAILED_REACTIONS) + отложенные сообщения #reactions #server-control
+- [[topics/51-organizations-money-transfer]] — org-profile/official-org (верификация), money-transfer-botid, comments-enabled #organizations #money
