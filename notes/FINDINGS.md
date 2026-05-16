@@ -3534,3 +3534,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 435. WebRTC Experiments (ev1)
 
 30+ флагов. `isAudioCaptureLoggingEnabled`/`bitrateDumpGatheringState`/`isBackendRenderVmojiEnabled`/`isCorruptWsEndpointEnabled`. Подробно: `notes/topics/435-webrtc-experiments.md`.
+
+---
+
+## Дополнения 436
+
+### 436. WebAppContactData
+
+`WebAppContactData(displayName, avatarUrl, abbreviationModel)`. Мини-приложение получает данные профиля пользователя. Подробно: `notes/topics/436-webapp-contact-data.md`.
