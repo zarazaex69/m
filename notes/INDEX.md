@@ -252,3 +252,4 @@ status: living
 - [[topics/143-start-conversation-api]] — vchat.startConversation: hex-capabilities/protocolVersion(6=VOIP_MULTIPLE_DEVICES)/domainId/onlyAdminCanShareMovie #calls #api
 - [[topics/144-hangup-join-api]] — vchat.hangupConversation(reason enum) + vchat.joinConversationByLink(peerId/anonymToken/capabilities) #calls #api
 - [[topics/145-ok-external-ids-mapping]] — vchat.getOkIdsByExternalIds + vchat.getExternalIdsByOkIds: bidirectional ID mapping between MAX and VK/OK services #calls #identity #api
+- [[topics/146-log-upload-device-fingerprint]] — vchat.getLogUploadUrl + och.java: device model/osVersion/ispAsOrg/locCc/locReg in every call API request #calls #surveillance #fingerprint
