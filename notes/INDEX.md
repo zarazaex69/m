@@ -303,3 +303,4 @@ status: living
 - [[topics/193-call-info]] — CallInfo: endpoint/wsIps/wtEndpoint/wtIps/STUN/TURN/isP2PForbidden/deviceIndex (server controls all call routing) #calls #call-info #server-control
 - [[topics/194-start-conversation-delegate]] — StartConversationDelegate.Params: conversationId/calleeIds/chatId/isVideo/internalParams #calls #start-call
 - [[topics/195-conversation-factory]] — ConversationFactory: 6 call types (startCall/createConf/answerCall/joinCall/joinAnonByLink/joinByLink), ConversationBuilder 18+ params #calls #factory
+- [[topics/196-debug-media-dump-manager]] — DebugManager+MediaDumpManager: requestMediaDump(remote audio+video), 6 audio intercept points, enableFullAudioDump in prod #calls #debug #dump #dev-in-prod

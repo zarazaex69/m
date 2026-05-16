@@ -1616,3 +1616,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 195. ConversationFactory — 6 типов звонков
 
 `startCall`/`createConf`/`answerCall`/`joinCall`/`joinAnonByLink`/`joinByLink`. `ConversationBuilder` — 18+ параметров. Каждый звонок инициализируется с `RemoteSettings`/`experiments`/`fieldTrials`. Подробно: `notes/topics/195-conversation-factory.md`.
+
+---
+
+## Дополнения 196
+
+### 196. DebugManager + MediaDumpManager — дамп медиа в production
+
+`requestMediaDump(durationSec, audio, video)` — **удалённый** запрос дампа аудио+видео. 6 точек перехвата аудио-pipeline: `IN_ENTER_PROCESSING`/`IN_AFTER_NS`/`IN_AFTER_ANIMOJI`/`IN_EXIT_PROCESSING`/`OUT_ENTER_PROCESSING`/`OUT_EXIT_PROCESSING`. `enableFullAudioDump(path)` — полный дамп в файл. Всё в production-сборке. Подробно: `notes/topics/196-debug-media-dump-manager.md`.
