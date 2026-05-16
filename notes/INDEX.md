@@ -218,3 +218,4 @@ status: living
 - [[topics/109-presence-pmskey-full]] — presence PmsKey full map: presence-external/presence-stat/presence-ttl=300s #presence #server-control
 - [[topics/110-audio-playback-pmskey]] — audio playback PmsKey: audio-play-opus/audio-download(default=false)/audio-prefetch #audio #server-control
 - [[topics/111-invite-friends-frequency]] — invite-friends-sheet-frequency: server-controlled invite schedule (array of days) #growth #server-control
+- [[topics/112-user-debug-report-chat]] — user-debug-report + userLogReportChatId (server directs user logs to specific chat) + debug-mode #debug #surveillance
