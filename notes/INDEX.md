@@ -291,3 +291,4 @@ status: living
 - [[topics/181-noise-suppression-manager]] — NoiseSuppressionManager: 4 modes (serversideBasic/serversideAnn/clientsidePlatform/clientsideAnn) + filePath(ML model) #calls #noise-suppression #ann
 - [[topics/182-chat-manager]] — ChatManager: in-call chat via DataChannel (OutboundMessage: participantId+text), P2P relay routes through VK/OK servers #calls #chat #datachannel
 - [[topics/183-media-mute-participant-states]] — MediaMuteManager(updateMediaOptionsForAll/ForParticipant) + ParticipantStatesManager(participantId/isOn/timestamp) #calls #mute #participants
+- [[topics/184-asr-manager]] — AsrManager: on-device ASR recording to file (fileName/sessionRoomId), separate from AsrOnlineManager #calls #asr #recording
