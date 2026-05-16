@@ -796,3 +796,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 90. Media upload WS-опкоды + speedy-upload
 
 `PHOTO_UPLOAD(80)`, `STICKER_UPLOAD(81)`, `VIDEO_UPLOAD(82)`, `FILE_UPLOAD(87)`. `speedy-upload` (#275) — «Фейк прогресс для загрузки видео» (server-gated). `file-upload-unsupported-types` (#36) — server-controlled content-фильтрация типов файлов. `file-upload-max-size` (#35) — server-controlled лимит размера. Подробно: `notes/topics/90-media-upload-opcodes.md`.
+
+---
+
+## Дополнения 91
+
+### 91. Дополнительные WS-опкоды
+
+`DEBUG(2)` — debug-команда от сервера. `LOG(5)` — клиент отправляет логи на сервер по WS (второй канал помимо apptracer). `LINK_INFO(89)` — при вставке ссылки клиент запрашивает preview у сервера — сервер видит все ссылки, которые пользователь вставляет в сообщения до отправки. `DRAFT_SAVE(176)` — черновики сохраняются на сервере. `SESSIONS_INFO(96)/SESSIONS_CLOSE(97)` — управление активными сессиями. Подробно: `notes/topics/91-additional-ws-opcodes.md`.
