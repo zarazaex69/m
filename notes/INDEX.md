@@ -205,3 +205,4 @@ status: living
 - [[topics/96-vchat-api-methods]] — vchat.* API: 14 methods (clientStats/getLogUploadUrl/clientSupportedCodecs) #calls #api #telemetry
 - [[topics/97-api-oneme-ru-endpoints]] — api.oneme.ru endpoints: production + test servers (api-tg.oneme.ru unknown) in dev menu #api #network
 - [[topics/98-mytracker-api-details]] — MyTracker API: tracker-api.vk-analytics.ru paths (v3/mobile/v1/mlapi/beta-ml), mt_deeplink attribution #mytracker #telemetry
+- [[topics/99-mytracker-preinstall-oem]] — MyTracker PreInstall: OEM preinstall detection via vendor app resources + ro.mytracker.preinstall.path #mytracker #oem #attribution
