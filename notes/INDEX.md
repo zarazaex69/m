@@ -320,3 +320,4 @@ status: living
 - [[topics/210-search-response-telemetry]] — SEARCH_RESPONSE: inputQuery(search terms sent to server) + counters(RECENTS/ALL_CONTACTS/LOCAL_SEARCH) #telemetry #search #surveillance
 - [[topics/211-presence-message-click-telemetry]] — PRESENCE/EVENT_MESSAGE_COUNTER(8 chat-open counters) + MESSAGE_CLICKABLE_ELEMENT_ACTIONS(7 click types with messageId) #telemetry #presence #surveillance
 - [[topics/212-channel-recsys-telemetry]] — CHANNEL_RECSYS_FOLDER: channel_folder_click/follow/delete + channel_id/channel_position (recsys training data) #telemetry #channels #recommendation
+- [[topics/213-video-audio-stats-telemetry]] — VIDEO_STATS(action_play/first_bytes/content_error + vid/vsid/cdn_host/quality/connection_type) + AUDIO_STATS #telemetry #video #media-stats
