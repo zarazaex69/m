@@ -1608,3 +1608,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 194. StartConversationDelegate.Params
 
 `conversationId`/`calleeIds` (список вызываемых)/`chatId`/`isVideo`/`internalParams`. Подробно: `notes/topics/194-start-conversation-delegate.md`.
+
+---
+
+## Дополнения 195
+
+### 195. ConversationFactory — 6 типов звонков
+
+`startCall`/`createConf`/`answerCall`/`joinCall`/`joinAnonByLink`/`joinByLink`. `ConversationBuilder` — 18+ параметров. Каждый звонок инициализируется с `RemoteSettings`/`experiments`/`fieldTrials`. Подробно: `notes/topics/195-conversation-factory.md`.
