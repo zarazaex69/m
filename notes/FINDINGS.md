@@ -1408,3 +1408,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 169. NegotiationErrorStat + AudioErrorStat
 
 `NegotiationErrorStat` — SDP при ошибке WebRTC negotiation (полный SDP с кодеками/ICE). `AudioErrorStat` — `audio_error` с тремя полями (тип:код:описание). Подробно: `notes/topics/169-negotiation-audio-error-stat.md`.
+
+---
+
+## Дополнения 170
+
+### 170. IceCandidateGatheringFailedStat + IceCandidateAddFailedStat
+
+`IceCandidateGatheringFailedStat`: `local_address`/`remote_url`/`transport` при ошибке сбора ICE. `IceCandidateAddFailedStat`: `ice_candidate_add_failed` с `remote_url`. Подробно: `notes/topics/170-ice-candidate-error-stats.md`.
