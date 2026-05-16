@@ -331,3 +331,4 @@ status: living
 - [[topics/221-network-security-config]] — network_security_config.xml: cleartext HTTP explicitly allowed for 6 RU operator domains (Megafon/MTS/Tele2/T2/Beeline) #tls #cleartext #mobile-id #operators
 - [[topics/222-deeplink-schemes]] — Deep link schemes: max:// yandexmaps:// yandexnavi:// dgis:// petalmaps://(Huawei) https://max.ru #deeplinks #maps #huawei
 - [[topics/223-device-performance-telemetry]] — Device performance telemetry: bucket(AppStandbyBucket)/memory/exit_reason(getHistoricalProcessExitReasons)/img_cache #telemetry #device-info #surveillance
+- [[topics/224-yag-shared-prefs-full]] — yag SharedPreferences: 60+ fields (okToken/pushToken/currentProxyList/pushProxyList/firstLoginTime/isDebugHostRotationEnabled/isIceCandidateEmulationEnabled) #shared-prefs #account #session

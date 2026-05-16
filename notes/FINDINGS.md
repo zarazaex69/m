@@ -1840,3 +1840,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 223. Device performance telemetry
 
 `bucket`(App Standby Bucket — насколько активно используется), `memory`/`large_memory`, `exit_reason`(`getHistoricalProcessExitReasons` — причина завершения: ANR/OOM/crash/kill), `img_cache`/`img_err`. Подробно: `notes/topics/223-device-performance-telemetry.md`.
+
+---
+
+## Дополнения 224
+
+### 224. yag SharedPreferences — 60+ полей
+
+`okToken`/`okTokenRefreshTs`, `pushToken`/`pushDeviceType`, `currentProxyList`/`pushProxyList`/`lastSuccessProxy`, `firstLoginTime`/`lastLoginTime`, `isDebugHostRotationEnabled`/`isDebugUaDnsEmulationEnabled`/`isIceCandidateEmulationEnabled` (debug-флаги в prod). Подробно: `notes/topics/224-yag-shared-prefs-full.md`.
