@@ -1236,3 +1236,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 147. CallNativeAnalyticsApiRequest
 
 `platform=ANDROID`, `appVersion` (версия MAX), `sdkType=ANDROID`, `sdkVersion=0.1.13`, `version=1` + 40 метрик звонка. Отправляется через `vchat.clientStats`. Подробно: `notes/topics/147-call-native-analytics-request.md`.
+
+---
+
+## Дополнения 148
+
+### 148. CallExternalAnalyticsApiRequest
+
+Внешняя аналитика звонков с `application`, `collector`, `platform`. Два независимых канала аналитики: нативный (`vchat.clientStats` с sdkVersion) и внешний (с collector). Подробно: `notes/topics/148-call-external-analytics.md`.
