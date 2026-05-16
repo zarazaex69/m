@@ -3726,3 +3726,11 @@ SHA-256 fingerprint. `InvalidSslIntegrityException`/`InvalidSslSessionException`
 ### 459. yk2 Device data
 
 `Build.FINGERPRINT` + `mcc_mnc(getSimOperator())` + `tz-offset` + `sdk-version` + `net-type`/`mobile-subtype` + `application_build`. Подробно: `notes/topics/459-device-data-yk2.md`.
+
+---
+
+## Дополнения 460
+
+### 460. yag SharedPreferences
+
+50+ ключей. Ключевые: `device.id`/`user.fcmToken`/`user.okToken`/`server.timeDelta`/`app.first.login.time`/`user.callSession`. Подробно: `notes/topics/460-yag-shared-prefs.md`.

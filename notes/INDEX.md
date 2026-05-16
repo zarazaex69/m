@@ -567,3 +567,4 @@ status: living
 - [[topics/457-root-network-detection]] — r04.G() root detection (su/Superuser.apk/test-keys) + r04.z() network type (NONE/WIFI/ETHERNET/BLUETOOTH/VPN/CELLULAR) #root-detection #network-type #emulator-detection #surveillance #security
 - [[topics/458-network-operator-collection]] — f58: connection_type/vpn + getNetworkOperator():getNetworkOperatorName() in every API request #network-operator #telephony #vpn-detection #connection-type #surveillance #telemetry
 - [[topics/459-device-data-yk2]] — yk2: Build.FINGERPRINT + mcc_mnc(getSimOperator()) + tz-offset + sdk-version + net-type/mobile-subtype #sim-operator #mcc-mnc #fingerprint #timezone #network-type #surveillance #telemetry
+- [[topics/460-yag-shared-prefs]] — yag SharedPreferences: 50+ keys, device.id/user.fcmToken/user.okToken/server.timeDelta/app.first.login.time/user.callSession #shared-prefs #user-prefs #device-id #fcm-token #proxy #server-time #surveillance
