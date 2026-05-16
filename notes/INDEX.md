@@ -290,3 +290,4 @@ status: living
 - [[topics/180-record-manager]] — RecordManager: startRecord(isStream/movieId/albumId/privacy) + stopRecord, VK/OK video platform integration #calls #recording #stream
 - [[topics/181-noise-suppression-manager]] — NoiseSuppressionManager: 4 modes (serversideBasic/serversideAnn/clientsidePlatform/clientsideAnn) + filePath(ML model) #calls #noise-suppression #ann
 - [[topics/182-chat-manager]] — ChatManager: in-call chat via DataChannel (OutboundMessage: participantId+text), P2P relay routes through VK/OK servers #calls #chat #datachannel
+- [[topics/183-media-mute-participant-states]] — MediaMuteManager(updateMediaOptionsForAll/ForParticipant) + ParticipantStatesManager(participantId/isOn/timestamp) #calls #mute #participants
