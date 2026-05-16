@@ -664,3 +664,11 @@ PmsKey `opus-recorder` (#308), `opus-recorder-bitrate` (#309), `opus-recorder-sa
 ### 70. KeywordSpotter в звонках — server-controlled turnOffInMs
 
 KWS активен во время звонков. `android.wordspotter.config` задаёт `turnOffInMs` — через сколько выключить KWS. При `null` — KWS работает всё время звонка. `NativeDoubleArrayConsumer.Consumer` — callback из нативного KWS-pipeline в Java. `ConversationKwsStat` — статистика срабатываний KWS отправляется на сервер. Модель версии `ws_0` загружается по ключу `android.mlfeatures.ws_0`. Подробно: `notes/topics/70-keyword-spotter-in-calls.md`.
+
+---
+
+## Дополнения 71
+
+### 71. CALL OneLog события — детальная телеметрия звонков
+
+12+ операций: `INCOMING_CALL_RECEIVED`, `INCOMING_CALL_INIT`, `CALL_RECEIVED_ACCEPT`, `CALL_REMOTE_RINGING`, `START_CALL`, `FINISH_CALL` (с duration/error/is_group), `GROUP_CALL_JOIN`/`GROUP_CALL_JOIN_FAILED`, `SHARE_CALL_LINK`, `ADMIN_CALL_SETTINGS`, `ADMIN_CALL_SETTINGS_TO_USER` (с user_id2), `UNKNOWN_CALLER_ALERT`. Атрибуты: `call_id`, `user_id2`, `camera`, `microphone`, `screenshare`, `recording`, `con_state`. Сервер получает полный лог всех звонков с метаданными. Подробно: `notes/topics/71-call-onelog-events.md`.
