@@ -3798,3 +3798,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 468. startup_report
 
 `crash`/`exit_reason`/`bucket(UsageStatsManager)`/`memory`/`class(PerfClass)`/`isIgnoringBatteryOptimizations`/`isBackgroundRestricted`. Подробно: `notes/topics/468-startup-report.md`.
+
+---
+
+## Дополнения 469
+
+### 469. Upload Hang Checker
+
+`OneVideoUploadOperation` с hang checker. `upload_hang` включается через DevNullServerConfig. Подробно: `notes/topics/469-upload-hang-checker.md`.
