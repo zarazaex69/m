@@ -514,3 +514,4 @@ status: living
 - [[topics/404-advertising-id-client]] — AdvertisingIdClient: GAID collection, isLimitAdTrackingEnabled, logs limit_ad_tracking/ad_id_size/time_spent #gaid #advertising-id #tracking #surveillance
 - [[topics/405-install-referrer]] — InstallReferrer: installReferrer/installBeginTimestamp/referrerClickTimestamp, attribution to MyTracker #install-referrer #attribution #tracking #surveillance
 - [[topics/406-mytracker-user-lifecycle]] — MyTrackerUserLifecycle: trackLoginEvent/trackRegistrationEvent/trackInviteEvent + MultipleInstallReceiver(INSTALL_REFERRER) #mytracker #user-lifecycle #login-tracking #surveillance
+- [[topics/407-share-data]] — ShareData: 9 types (TEXT/IMAGES/VIDEOS/FILES/VCARD/MESSAGES/CONTACT/STICKER_SET), vcard field #share #data-types #vcard #contact

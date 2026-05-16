@@ -3302,3 +3302,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 406. MyTrackerUserLifecycle
 
 `trackLoginEvent(userId, type)` / `trackRegistrationEvent(userId, type)` / `trackInviteEvent()`. `MultipleInstallReceiver`: перехват `INSTALL_REFERRER`. Подробно: `notes/topics/406-mytracker-user-lifecycle.md`.
+
+---
+
+## Дополнения 407
+
+### 407. ShareData
+
+9 типов: TEXT/IMAGES/VIDEOS/FILES/VCARD/MESSAGES/CONTACT/STICKER_SET. Поля: text/images/videos/files/vcard/ids. Подробно: `notes/topics/407-share-data.md`.
