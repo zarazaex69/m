@@ -1132,3 +1132,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 134. WebRTC Field Trials
 
 8 hardcoded field trials: `WebRTC-Bwe-LossBasedBweV2`, `CallsSDK-Audio-OpusNOLACE`, `WebRTC-AdjustOpusBandwidth`, `CallsSDK-DREDLowBitrate`, `WebRTC-Audio-StableTargetAdaptation`, `CallsSDK-Audio-OpusAdapterMinBitrate:16000`, `WebRTC-Audio-AdaptivePtime`, `CallsSDK-DisableSharedSocket`. Условные (server-controlled): `EarlyStartPlayout`, `EarlyStartRecording`, `AudioProcessingOffOnMute`. Сервер может передать произвольные field trials через `str2`/`strN`. Подробно: `notes/topics/134-webrtc-field-trials.md`.
+
+---
+
+## Дополнения 135
+
+### 135. CallsSDK Opus DRED/FEC flags
+
+`CallsSDK-Audio-OpusFECWithDRED`, `CallsSDK-Audio-OpusDREDByBitrate`, `CallsSDK-DREDLowBitrate`, `CallsSDK-LinearMinBitrate`, `CallsSDK-OpusFileLogs` (запись Opus-логов в файл — могут быть загружены через vchat.getLogUploadUrl), `Calls-SDK-LogDCTraffic` (логирование DataChannel трафика). Управляются через `bonusFieldTrials`. Подробно: `notes/topics/135-callssdk-opus-dred-fec-flags.md`.
