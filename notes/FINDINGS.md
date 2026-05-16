@@ -1432,3 +1432,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 172. ConversationStartedStat + ConversationConnectedToSignalingStat
 
 `call_start` с `callType`/`warmupStatus` (labels). `signaling_connected` с временем до подключения (мс). Оба — SingleShotStat. Подробно: `notes/topics/172-conversation-started-signaling-stat.md`.
+
+---
+
+## Дополнения 173
+
+### 173. CallFinishStat + CallInitStat
+
+`call_finish`: `reason` (ConversationEndReason), `rate_reasons` (автоматические причины плохого качества), `errorText`. `call_init`: `source` (callType + isAnon). Подробно: `notes/topics/173-call-finish-init-stat.md`.
