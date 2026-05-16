@@ -4278,3 +4278,11 @@ RTD флаг для фейковых чатов в `PickerChatsListWidget`. По
 ### 528. DevMenuInfoScreen + ThreadsStateViewerScreen
 
 `DevMenuInfoScreen`: PerfClass/Density. `ThreadsStateViewerScreen`: потоки. `MemoryDebuggerScreen`: заглушка. Подробно: `notes/topics/528-devmenu-info-threads.md`.
+
+---
+
+## Дополнения 529
+
+### 529. SettingsDevicesScreen — сессии с location
+
+Структура сессии: `id`/`client`/`info`/**`location`**/`current`. Опкоды: 96 (список сессий) / 97 (завершить) / 98 (код: SMS/CALL) / 99 (регистрация: profile+phone). Подробно: `notes/topics/529-sessions-devices-opcodes.md`.

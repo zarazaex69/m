@@ -636,3 +636,4 @@ status: living
 - [[topics/526-json-bottom-sheet]] — JsonBottomSheet: JSON editor in DevMenu (production), button_id/initial_json/descriptions #json-editor #devmenu #debug #server-control
 - [[topics/527-devmenu-feature-toggles]] — DevMenuFeatureTogglesPageScreen: Boolean/Long/Integer/String/JSON/PmsKey editors, SERVER source, DevMenu in production #devmenu #feature-toggles #server-control #debug
 - [[topics/528-devmenu-info-threads]] — DevMenuInfoScreen (PerfClass/Density) + ThreadsStateViewerScreen + MemoryDebuggerScreen (stub) #devmenu #device-info #debug #surveillance
+- [[topics/529-sessions-devices-opcodes]] — SettingsDevicesScreen: sessions with location field, opcodes 96(sessions)/97(terminate)/98(SMS/CALL code)/99(registration) #sessions #devices #ws-opcodes #surveillance #auth
