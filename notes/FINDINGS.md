@@ -2104,3 +2104,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 256. Protos.Chat — 40+ полей
 
 `messagesTtlSec`/`lastSearchClickTime`/`pendingJoinRequestsCount`/`invitedBy`/`admins[]`/`owner`/`restrictions`/`chatFoldersIds[]`/`draft`/`liveStreamUpdateTime`. Подробно: `notes/topics/256-protos-chat-schema.md`.
+
+---
+
+## Дополнения 257
+
+### 257. Protos.Attach — 17 типов вложений
+
+17 типов: PHOTO/VIDEO/AUDIO/STICKER/SHARE/APP/CALL/MUSIC/FILE/CONTACT/PRESENT/INLINE_KEYBOARD/LOCATION/DAILY_MEDIA/WIDGET/POLL. Поля: `sensitive`/`sensitiveContentUnlocked`/`isProcessingOnServer`/`processingOnServerStatus`. Подробно: `notes/topics/257-protos-attach-schema.md`.
