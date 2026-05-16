@@ -2472,3 +2472,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 302. NOTIF_BANNERS WS
 
 `showTime`/`banners`/`updateTime` — все обязательные. Сервер управляет расписанием показа баннеров. Подробно: `notes/topics/302-notif-banners-ws.md`.
+
+---
+
+## Дополнения 303
+
+### 303. UpdateMessageEvent
+
+`chatId`/`messageId`/`reactionsChanged`. Используется в NOTIF_MSG_REACTIONS_CHANGED и NOTIF_MSG_YOU_REACTED. Подробно: `notes/topics/303-update-message-event.md`.

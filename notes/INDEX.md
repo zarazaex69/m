@@ -410,3 +410,4 @@ status: living
 - [[topics/300-link-info-auth-qr-ws]] — LINK_INFO(stickerSet/startPayload/chat/user/group/message/videoConference/banners) + AUTH_QR_APPROVE(tokenAttrs) WS #protocol #ws #link-info #auth-qr
 - [[topics/301-folders-polls-profile-ws]] — FOLDERS_GET(allFilterExcludeFolders/folderSync/folders/foldersOrder) + GET_POLL_UPDATES(polls) + NOTIF_PROFILE(profile) WS #protocol #ws #folders #polls
 - [[topics/302-notif-banners-ws]] — NOTIF_BANNERS WS: showTime/banners/updateTime (all required, server controls banner schedule) #protocol #ws #banners #server-control
+- [[topics/303-update-message-event]] — UpdateMessageEvent: chatId/messageId/reactionsChanged (NOTIF_MSG_REACTIONS_CHANGED/NOTIF_MSG_YOU_REACTED) #protocol #ws #reactions
