@@ -596,3 +596,4 @@ status: living
 - [[topics/486-click-events]] — CLICK events: open_broadcast_button_click{channel_id,hashed_broadcast_link}/profile_button_click{max_for_business}/video_speed_change{speed,sourceType} #click-events #telemetry #surveillance #broadcast #video-speed #business
 - [[topics/487-power-saving-analytics]] — POWER_SAVING events: show_shade{reason:settings}/click_shade_button/close_shade, battery optimization UI analytics #power-saving #telemetry #surveillance #battery-optimization #notifications
 - [[topics/488-background-mode-analytics]] — BACKGROUND_MODE events: carpet_mode_on/snack_shown/snack_click_on/system_curtain_shown/work_in_background_permission{status} #background-mode #telemetry #surveillance #foreground #permission #snack
+- [[topics/489-call-admin-settings-analytics]] — CALL.ADMIN_CALL_SETTINGS_TO_USER: {call_id, screen, user_id2}, admin changes settings for specific user #call-admin #telemetry #surveillance #call-analytics

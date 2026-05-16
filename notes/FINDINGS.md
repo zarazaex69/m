@@ -3958,3 +3958,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 488. BACKGROUND_MODE events
 
 7 событий: `carpet_mode_on`/`snack_shown`/`snack_click_on`/`system_curtain_shown`/`work_in_background_permission{status: allowed|denied}`. Подробно: `notes/topics/488-background-mode-analytics.md`.
+
+---
+
+## Дополнения 489
+
+### 489. CALL.ADMIN_CALL_SETTINGS_TO_USER
+
+`{call_id, screen, user_id2}`. Изменение настроек конкретного пользователя в звонке. Подробно: `notes/topics/489-call-admin-settings-analytics.md`.
