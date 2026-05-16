@@ -1424,3 +1424,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 171. IceRestartStat + PeerConnectionChangedStat
 
 `IceRestartStat`: `ice_restart` (без параметров). `PeerConnectionChangedStat`: `connection_state_changed` с `connection_state` (new/connecting/connected/disconnected/failed/closed) и `p2p_relay` (bool). Подробно: `notes/topics/171-ice-restart-peer-connection-stat.md`.
+
+---
+
+## Дополнения 172
+
+### 172. ConversationStartedStat + ConversationConnectedToSignalingStat
+
+`call_start` с `callType`/`warmupStatus` (labels). `signaling_connected` с временем до подключения (мс). Оба — SingleShotStat. Подробно: `notes/topics/172-conversation-started-signaling-stat.md`.
