@@ -1728,3 +1728,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 209. GET_INSTALL_REFERRER — источник установки
 
 `getInstallerPackageName()` → нормализация → CritLog `ACTION`/`GET_INSTALL_REFERRER`. Поля: `value` (имя пакета установщика), `is_update_version`. Отправляется один раз при первом запуске новой версии. Подробно: `notes/topics/209-install-referrer.md`.
+
+---
+
+## Дополнения 210
+
+### 210. SEARCH_RESPONSE — телеметрия поиска
+
+`inputQuery` — **поисковый запрос отправляется на сервер**. `counters`: RECENTS/ALL_CONTACTS/LOCAL_SEARCH. Подробно: `notes/topics/210-search-response-telemetry.md`.
