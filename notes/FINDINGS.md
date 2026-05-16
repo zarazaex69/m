@@ -1880,3 +1880,11 @@ POST+gzip. Параметры: `collector`/`application`(ru.oneme.app:26153:26.1
 ### 228. libtracernative.so — экспорты Apptracer
 
 24 экспорта: `tracer_aurora_collect_minidump_from_cachedir` (**Aurora OS** — российская ОС), `tracer_supports_arbitrary_dump`, `tracer_set_api_endpoint`, `tracer_disable_upload`, `tracer_upload`/`tracer_upload_async`/`tracer_upload_crashes`. Подробно: `notes/topics/228-libtracernative-exports.md`.
+
+---
+
+## Дополнения 229
+
+### 229. libEnhancementLibShared.so — нативные компоненты
+
+ASR: `c_enh_asr_predict`/`calcConfidence`/`fillPunct`. KWS: `BCResNetKWS::score`/`extractFeatures`/`computeProbs`. Denoise: `c_enh_denoise_accept_pcm`/`finalize`. **`SpeakerRecognitionEngine`+`SpeakerRecognitionVerifier`** — идентификация личности по голосу. Подробно: `notes/topics/229-lib-enhancement-exports.md`.
