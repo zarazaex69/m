@@ -2512,3 +2512,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 307. InboundCall PUSH телеметрия
 
 `p_op`/`chat_id`/`call_id`/`show_source`/`ttime`/`dtime`(задержка доставки)/`fcmdtime`(задержка FCM). Подробно: `notes/topics/307-inbound-call-push-telemetry.md`.
+
+---
+
+## Дополнения 308
+
+### 308. nm4 — парсер контактов и presence
+
+`phonebook_id`/`contact_id`/`phone`/`phone_key`/`server_phone`/`email`/`first_name`/`last_name`/`avatar_path` + presence(`seen`/`status`). Подробно: `notes/topics/308-nm4-contact-presence-parser.md`.
