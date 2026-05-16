@@ -3758,3 +3758,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 463. qp6 RTD (полный список PmsKey)
 
 50+ PmsKey. Критические: `enableaudiomessagestranscription`/`callssdklogaudio`/`logmessagesmeta`/`logchatmeta`/`callsfakebossincomingcallenabled`/`batterysliceinterval`. Подробно: `notes/topics/463-qp6-rtd-pmskey-full.md`.
+
+---
+
+## Дополнения 464
+
+### 464. WatchdogConfig
+
+`stuckThreshold`/`hangThreshold`/`saveStacktrace` с сервера. `keepBackgroundSocket` PmsKey. Подробно: `notes/topics/464-watchdog-config.md`.
