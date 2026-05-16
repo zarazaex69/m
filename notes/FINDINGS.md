@@ -3926,3 +3926,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 484. AUTH_QR.LOG
 
 Все шаги QR-авторизации: `qr_login_button_click`/`permission_decision`/`qr_scan_failed`/`qr_scan_succeeded`. Подробно: `notes/topics/484-auth-qr-analytics.md`.
+
+---
+
+## Дополнения 485
+
+### 485. CONTACT_RENAME_BANNER + CONTEXT_MENU
+
+`CONTACT_RENAME_BANNER.save {user2Id}`. `CONTEXT_MENU.folder_context_menu_readall`. Подробно: `notes/topics/485-contact-rename-context-menu.md`.

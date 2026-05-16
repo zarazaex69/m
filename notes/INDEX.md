@@ -592,3 +592,4 @@ status: living
 - [[topics/482-contact-block-sticker-analytics]] — CONTACT_OR_BLOCK(clicked/showed) + sticker.send_sticker: block/add_to_contacts actions logged #contact-block #telemetry #surveillance #contact-analytics
 - [[topics/483-channel-recsys-analytics]] — CHANNEL_RECSYS_FOLDER: channel_folder_open{channels_shown}/channel_folder_delete, recommendation system analytics #channel-recsys #telemetry #surveillance #channel-folder #recommendation
 - [[topics/484-auth-qr-analytics]] — AUTH_QR.LOG: all QR auth steps logged: qr_login_button_click/permission_decision/qr_scan_failed/qr_scan_succeeded #auth-qr #telemetry #surveillance #qr-auth #permission
+- [[topics/485-contact-rename-context-menu]] — CONTACT_RENAME_BANNER(save{user2Id}/show) + CONTEXT_MENU.folder_context_menu_readall #contact-rename #telemetry #surveillance #contact-analytics
