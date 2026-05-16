@@ -263,3 +263,4 @@ status: living
 - [[topics/154-conversation-features-roles]] — ConversationFeature: ADD_PARTICIPANT/RECORD/MOVIE_SHARE/ASR_RECORD with role-based access #calls #features #asr #recording
 - [[topics/155-call-roles]] — kv1 call roles: CREATOR/ADMIN/SPEAKER for role-based feature access #calls #roles
 - [[topics/156-microphone-manager]] — MicrophoneManager: registerAudioSampleCallback (KWS/ASR/energy all access mic audio) #calls #microphone #surveillance
+- [[topics/157-watch-together-url-sharing]] — WatchTogether (add-movie: movieId/gain/moveToAdminOnHangup) + URL Sharing (start-url-sharing/stop-url-sharing) #calls #watch-together
