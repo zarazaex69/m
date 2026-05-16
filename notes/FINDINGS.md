@@ -1164,3 +1164,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 138. settings.get API
 
 `GetSettings.METHOD_NAME = "settings.get"` — HTTP API для получения 6 RemoteSettings ключей звонкового SDK одним запросом. `RemoteSettingsShared` кэширует и периодически обновляет. Отдельный канал от WS-протокола и PmsKey. Подробно: `notes/topics/138-settings-get-api.md`.
+
+---
+
+## Дополнения 139
+
+### 139. ApiProtocol constants
+
+`p2p_forbidden` — сервер может запретить P2P для конкретного звонка (все медиа через relay). `stun_server`/`turn_server` — server-controlled ICE серверы. `wt_endpoint` — WebTransport endpoint. `onlyAdminCanRecord`/`onlyAdminCanShareMovie` — права в звонке. Подробно: `notes/topics/139-api-protocol-constants.md`.
