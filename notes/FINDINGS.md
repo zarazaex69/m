@@ -3694,3 +3694,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 455. kyk (DPS HTTP клиент)
 
 `TrafficStats.setThreadStatsTag`. `{snapshots: [{id, ...}]}`. Параметры: `timeoutMs`/`dontReportUntil`. Подробно: `notes/topics/455-dps-http-client-kyk.md`.
+
+---
+
+## Дополнения 456
+
+### 456. SSL certificate pinning
+
+SHA-256 fingerprint. `InvalidSslIntegrityException`/`InvalidSslSessionException`. `SslIntegrity` задача при запуске. Подробно: `notes/topics/456-ssl-certificate-pinning.md`.
