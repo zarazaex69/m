@@ -3270,3 +3270,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 402. DebugManager
 
 `enableFullAudioDump(path)`, `registerStatListener(period)`, `setVideoSettingsOverride(maxDimension)`. **В production сборке**. Подробно: `notes/topics/402-debug-manager.md`.
+
+---
+
+## Дополнения 403
+
+### 403. ConversationFeatureManager
+
+4 фичи: ADD_PARTICIPANT/RECORD/MOVIE_SHARE/ASR_RECORD. `enableFeatureForRoles(feature, roles)` через signaling. Подробно: `notes/topics/403-conversation-feature-manager.md`.

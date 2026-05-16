@@ -510,3 +510,4 @@ status: living
 - [[topics/400-chat-manager-contacts]] — ChatManager(InboundMessage/OutboundMessage/isDirect) + ContactCallManager(getIAmAnonymous/getIWasInitiallyAnonymous) #calls-chat #messages #surveillance
 - [[topics/401-media-dump-manager]] — MediaDumpManager: requestMediaDump(collect-debug-dump via signaling), 6 audio sources, IN PRODUCTION BUILD #media-dump #debug #audio-dump #surveillance #server-control
 - [[topics/402-debug-manager]] — DebugManager: enableFullAudioDump/registerStatListener/setVideoSettingsOverride, IN PRODUCTION BUILD #debug #calls #audio-dump #surveillance
+- [[topics/403-conversation-feature-manager]] — ConversationFeatureManager: 4 features (ADD_PARTICIPANT/RECORD/MOVIE_SHARE/ASR_RECORD), enableFeatureForRoles via signaling #calls-feature #roles #surveillance #server-control
