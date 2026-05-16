@@ -2584,3 +2584,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 316. BatterySnapshot
 
 `slice`/`cpuTicks`(u/s/cu/cs)/`batteryPercent`/`mobileNet`(rx/tx/idle)/`wifiNet`(rx/tx/idle)/`processes`. Подробно: `notes/topics/316-battery-snapshot.md`.
+
+---
+
+## Дополнения 317
+
+### 317. EnrichedBatterySnapshot
+
+`snapshot`(BatterySnapshot)/`seqId`/`visibility`(FG/BG). Подробно: `notes/topics/317-enriched-battery-snapshot.md`.

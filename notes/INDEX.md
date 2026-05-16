@@ -424,3 +424,4 @@ status: living
 - [[topics/314-folder-chats-uploads-marks-db]] — folder_and_chats(chatId/folderId) + message_uploads(path/video_quality/trim) + notifications_read_marks(chat_id/mark) DB #database #folder-chats #uploads #notifications
 - [[topics/315-comments-complain-reasons-db]] — comments(28 fields + parent_chat_server_id/parent_message_server_id) + complain_reasons(type_id/complain_reasons BLOB) DB #database #comments #complain-reasons
 - [[topics/316-battery-snapshot]] — BatterySnapshot: slice/cpuTicks(u/s/cu/cs)/batteryPercent/mobileNet(rx/tx)/wifiNet(rx/tx)/processes #database #battery #cpu #network-stats #surveillance
+- [[topics/317-enriched-battery-snapshot]] — EnrichedBatterySnapshot: snapshot(BatterySnapshot)/seqId/visibility(FG/BG) #database #battery #visibility #foreground-background
