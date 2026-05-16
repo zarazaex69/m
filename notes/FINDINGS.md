@@ -1600,3 +1600,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 193. CallInfo — полная информация о звонке
 
 `endpoint`/`wsIps`/`wtEndpoint`/`wtIps`/`turnServer`/`stunServer`/`isP2PForbidden`/`deviceIndex`. Сервер полностью контролирует маршрутизацию медиа-трафика. Подробно: `notes/topics/193-call-info.md`.
+
+---
+
+## Дополнения 194
+
+### 194. StartConversationDelegate.Params
+
+`conversationId`/`calleeIds` (список вызываемых)/`chatId`/`isVideo`/`internalParams`. Подробно: `notes/topics/194-start-conversation-delegate.md`.
