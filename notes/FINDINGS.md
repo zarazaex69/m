@@ -2936,3 +2936,11 @@ IP-определение: `api.ipify.org`/`checkip.amazonaws.com`/`ifconfig.me`
 ### 360. z8f.a — дополнительные строки
 
 DPS: `dps_config.bin`/`dps_dont_report.bin`/`dps_log_entries.bin`. HostReachability JSON: appVersion/clientTs/connectionType/deviceId/hosts/ip/operator/status/uid/vpn. Подробно: `notes/topics/360-z8f-decoded-additional.md`.
+
+---
+
+## Дополнения 361
+
+### 361. HostReachability bzk конфигурация
+
+`reportHosts=[trace-flow.ru]` + `selfIpDomains=[yandex/ifconfig.me/ipify/aws/mail.ru]` + `timeout=10000` + `maxSnapshots=50`. Подробно: `notes/topics/361-host-reachability-bzk-config.md`.
