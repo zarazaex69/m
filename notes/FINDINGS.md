@@ -1124,3 +1124,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 133. Calls early-offer/gen-peerid PmsKey
 
 `calls-android-early-set-offer` (#136, default=false) — «Разрешить раннюю обработку оффера входящего звонка». `calls-android-gen-peerid` (#137, default=false) — «Генерировать peer-id на клиенте». `calls-android-update-endpoint-params` (#132, default=false) — «Параметры webSocket-а заменять, а не дублировать». Подробно: `notes/topics/133-calls-early-offer-genpeerid.md`.
+
+---
+
+## Дополнения 134
+
+### 134. WebRTC Field Trials
+
+8 hardcoded field trials: `WebRTC-Bwe-LossBasedBweV2`, `CallsSDK-Audio-OpusNOLACE`, `WebRTC-AdjustOpusBandwidth`, `CallsSDK-DREDLowBitrate`, `WebRTC-Audio-StableTargetAdaptation`, `CallsSDK-Audio-OpusAdapterMinBitrate:16000`, `WebRTC-Audio-AdaptivePtime`, `CallsSDK-DisableSharedSocket`. Условные (server-controlled): `EarlyStartPlayout`, `EarlyStartRecording`, `AudioProcessingOffOnMute`. Сервер может передать произвольные field trials через `str2`/`strN`. Подробно: `notes/topics/134-webrtc-field-trials.md`.
