@@ -343,3 +343,4 @@ status: living
 - [[topics/233-digital-id-url-params]] — DigitalID URL: &digitalId=<id>&oid=<userId>&photo=<base64> (user photo in GET param) #digital-id #identity #surveillance
 - [[topics/234-ri9-shared-prefs]] — ri9 SharedPreferences: phoneNumber/locationCountryCode/gostLicenseCheckEnabled/allowLogSensitiveData/isDisableWebAppSsl/tenorAnonId #shared-prefs #session #debug #gost
 - [[topics/235-qp6-additional-pmskeys]] — qp6 additional PmsKeys: gostEnvironmentCheckFlags/isWebRtcLoggingEnabled/isLogVisibleMessagesMetaEnabled/liveStreamsEnabled/callsTrafficMarkers #pmskey #server-control #gost #live-streams
+- [[topics/236-webapp-phone-hash]] — WebApp Phone Hash: mini-apps get phone+hash+authDate via JS-bridge (server-controlled via useWebAppPhoneHash PmsKey) #webapp #phone-hash #jsbridge #surveillance

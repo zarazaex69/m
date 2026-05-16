@@ -1936,3 +1936,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 235. qp6 дополнительные PmsKey
 
 `gostEnvironmentCheckFlags`, `isWebRtcLoggingEnabled`/`isCallsAudioLoggingEnabled` (сервер включает детальное логирование), `isLogVisibleMessagesMetaEnabled`/`isLogChatMetaEnabled` (логирование метаданных сообщений), `liveStreamsEnabled`/`liveStreamsUrlPrefix`, `callsTrafficMarkers`, `batterySliceIntervalMs`, `useWebAppPhoneHash`. Подробно: `notes/topics/235-qp6-additional-pmskeys.md`.
+
+---
+
+## Дополнения 236
+
+### 236. WebApp Phone Hash
+
+Мини-приложения получают `phone`+`hash`+`authDate` через JS-bridge. Серверный флаг `useWebAppPhoneHash` управляет передачей. Подробно: `notes/topics/236-webapp-phone-hash.md`.
