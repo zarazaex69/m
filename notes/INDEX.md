@@ -37,6 +37,7 @@ status: living
 - [[topics/06-contacts]] — ContentObserver + двусторонняя синхронизация контактов #contacts
 - [[topics/07-nfc-hce-webapp]] — мини-апа эмулирует NFC-карту через JS-bridge #nfc
 - [[topics/08-background-wake]] — фоновое присутствие, wake на boot #background
+- [[topics/24-host-reachability-probe]] — server-controlled probe хостов (Telegram/WhatsApp/AWS/Google) + отчёт IP/operator/VPN #host-probe #anti-vpn
 
 ### Native-стек
 
