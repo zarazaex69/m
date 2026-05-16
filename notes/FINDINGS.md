@@ -3566,3 +3566,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 439. QR Auth
 
 `SettingsDevicesScreen` + `QrAuthHintBottomSheet` + `:qr-scanner?mode=2`. `AuthQrUseCase`/`GetQrCodeUseCase`. Подробно: `notes/topics/439-qr-auth.md`.
+
+---
+
+## Дополнения 440
+
+### 440. VpnConnectedWarningBottomSheet
+
+"Отключите VPN" / "Чтобы пользоваться MAX". Серверно-управляемое предупреждение. Подробно: `notes/topics/440-vpn-warning-bottomsheet.md`.
