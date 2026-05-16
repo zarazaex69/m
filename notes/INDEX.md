@@ -67,6 +67,15 @@ status: living
 - [[topics/09-native-libs]] — 16 .so, FFmpeg n4.4.3, VK enhancement DSP #native-libs
 - [[topics/15-on-device-asr-kws-diarization]] — ASR / KWS / Diarization в `libEnhancementLibShared.so` #asr #kws #ml
 - [[topics/28-vk-enh-decrypt-key]] — статический 16+16 ключ для obfuscation моделей #crypto #ml
+- [[topics/39-libffmpg-version-license]] — FFmpeg n4.4.3 (3.5y old), GPLv3 в проприетарном продукте #ffmpeg #license
+- [[topics/43-libjingle-webrtc-custom-build]] — кастомный WebRTC-форк VK/OK (WebRTC-VK/OK flags, StunCustomAttr) #webrtc #calls
+
+### Серверный контроль (медиа и звонки)
+
+- [[topics/42-voice-messages-opus-server-controlled]] — голосовухи: OPUS encoder/bitrate/sample-rate server-tunable #voice-messages #server-control
+- [[topics/45-calls-sdk-pmskey-cluster]] — 30+ PmsKey для звонков (log-audio, signaling-ip, wt-enabled) #calls #server-control
+- [[topics/46-server-controlled-logging-flags]] — log-full/log-sensitive/log-messages-meta — server-gated verbose logging #logging #surveillance
+- [[topics/44-informer-banners-fakeboss-livestreams]] — informer banners (server-pushed URL), FakeBoss, LiveStreams #server-control #banners
 
 ### Аудит
 
