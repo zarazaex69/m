@@ -264,3 +264,4 @@ status: living
 - [[topics/155-call-roles]] — kv1 call roles: CREATOR/ADMIN/SPEAKER for role-based feature access #calls #roles
 - [[topics/156-microphone-manager]] — MicrophoneManager: registerAudioSampleCallback (KWS/ASR/energy all access mic audio) #calls #microphone #surveillance
 - [[topics/157-watch-together-url-sharing]] — WatchTogether (add-movie: movieId/gain/moveToAdminOnHangup) + URL Sharing (start-url-sharing/stop-url-sharing) #calls #watch-together
+- [[topics/158-change-media-settings]] — change-media-settings: handleForceChangeMediaSettings (server/admin force-disables camera/mic/screen_capture) #calls #force-mute #server-control
