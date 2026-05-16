@@ -620,3 +620,4 @@ status: living
 - [[topics/510-contacts-sync]] — ndi Contacts Sync: ContactsContract, sync1=userId, tt_contact_mimetype, add/remove/sync operations #contacts #sync #content-provider #surveillance #server-control
 - [[topics/511-string-resources-urls]] — j5f String Resources: app_host=max.ru, app_scheme=max, google_api_key=AIzaSyABuDYeeDXIOrKTXLkUj30Ii143ofPe63Q #app-host #url-scheme #deeplinks #surveillance #server-control
 - [[topics/512-contacts-account-type]] — Contacts Account Type: ru.ok.tamtam + MIME vnd.android.cursor.item/vnd.ru.ok.tamtam.android.profile #contacts #account-type #mimetype #surveillance
+- [[topics/513-media-content-observer]] — wh8 Media ContentObserver: MediaStore.Images.EXTERNAL/INTERNAL + MediaStore.Video.EXTERNAL, onChange → gallery update #media-observer #content-observer #gallery #surveillance

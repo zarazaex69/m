@@ -4150,3 +4150,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 512. Contacts Account Type
 
 `tt_contact_account_type = ru.ok.tamtam`. `tt_contact_mimetype = vnd.android.cursor.item/vnd.ru.ok.tamtam.android.profile`. Подробно: `notes/topics/512-contacts-account-type.md`.
+
+---
+
+## Дополнения 513
+
+### 513. wh8 Media ContentObserver
+
+`MediaStore.Images.EXTERNAL/INTERNAL` + `MediaStore.Video.EXTERNAL`. `onChange` → обновление галереи. Подробно: `notes/topics/513-media-content-observer.md`.
