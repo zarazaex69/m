@@ -2640,3 +2640,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 323. Apptracer — все endpoints
 
 `api/crash/trackSession`(device_id/sessions/drops) + `api/perf/upload`(samples) + `api/sample/initUpload`+`api/sample/upload`. Подробно: `notes/topics/323-apptracer-all-endpoints.md`.
+
+---
+
+## Дополнения 324
+
+### 324. DiskUsageWorker
+
+`int_data`(applicationInfo.dataDir)/`ext_data`(externalFilesDir)/`total_size`. Рекурсивный список файлов (до 20). Подробно: `notes/topics/324-disk-usage-worker.md`.
