@@ -1020,3 +1020,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 120. Multi-select и messages meta
 
 `multi-select-bars-redesign` (#193, default=false) — «Мультиселект с действиями в боттом баре». `chats-multi-select` (#78, default=false). `log-messages-meta` (#155, default=false) — «Сбор meta info видимых сообщений по клику». Подробно: `notes/topics/120-multiselect-messages-meta.md`.
+
+---
+
+## Дополнения 121
+
+### 121. Notifications и bots PmsKey
+
+`cancel-stale-notifications` (#64, default=false) — «Отмена устаревших нотификаций в notifyAllChats» (server-gated bugfix). `new-intent-fix` (#202, default=false) — «onNewIntent NPE fix» (server-gated bugfix). `bots-channel-adding` (#19, default=false) — добавление ботов в каналы. `bot-start-param` (#18), `bot-complaint-enabled` (#17). Подробно: `notes/topics/121-notifications-bots-bugfix-pmskey.md`.
