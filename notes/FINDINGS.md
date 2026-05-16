@@ -3278,3 +3278,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 403. ConversationFeatureManager
 
 4 фичи: ADD_PARTICIPANT/RECORD/MOVIE_SHARE/ASR_RECORD. `enableFeatureForRoles(feature, roles)` через signaling. Подробно: `notes/topics/403-conversation-feature-manager.md`.
+
+---
+
+## Дополнения 404
+
+### 404. AdvertisingIdClient
+
+`getAdvertisingIdInfo(ctx)` → `Info(id=GAID, isLimitAdTrackingEnabled)`. Логирует `limit_ad_tracking`/`ad_id_size`/`time_spent`. Подробно: `notes/topics/404-advertising-id-client.md`.

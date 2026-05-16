@@ -511,3 +511,4 @@ status: living
 - [[topics/401-media-dump-manager]] — MediaDumpManager: requestMediaDump(collect-debug-dump via signaling), 6 audio sources, IN PRODUCTION BUILD #media-dump #debug #audio-dump #surveillance #server-control
 - [[topics/402-debug-manager]] — DebugManager: enableFullAudioDump/registerStatListener/setVideoSettingsOverride, IN PRODUCTION BUILD #debug #calls #audio-dump #surveillance
 - [[topics/403-conversation-feature-manager]] — ConversationFeatureManager: 4 features (ADD_PARTICIPANT/RECORD/MOVIE_SHARE/ASR_RECORD), enableFeatureForRoles via signaling #calls-feature #roles #surveillance #server-control
+- [[topics/404-advertising-id-client]] — AdvertisingIdClient: GAID collection, isLimitAdTrackingEnabled, logs limit_ad_tracking/ad_id_size/time_spent #gaid #advertising-id #tracking #surveillance
