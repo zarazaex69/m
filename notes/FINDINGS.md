@@ -3398,3 +3398,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 418. MyTracker AppsDataProvider
 
 Список не-системных приложений (packageName + firstInstallTime). Хэш `appsHash` — отправляется при изменении. Подробно: `notes/topics/418-mytracker-installed-packages.md`.
+
+---
+
+## Дополнения 419
+
+### 419. WebApp JS-события (34)
+
+Критические: `WebAppBiometryRequestAuth`/`WebAppNfcEmulateNfcTag`/`WebAppSecureStorageSaveKey`/`WebAppVerifyMobileId`/`WebAppSetupScreenCaptureBehavior`/`WebAppUrlInterceptor`. Подробно: `notes/topics/419-webapp-js-events.md`.
