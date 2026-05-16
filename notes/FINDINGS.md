@@ -3526,3 +3526,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 434. change-media-settings
 
 `{isVideoEnabled, isAudioEnabled, isScreenSharingEnabled, isAnimojiEnabled, isFastScreenSharingEnabled, isAudioSharingEnabled}`. Подробно: `notes/topics/434-change-media-settings.md`.
+
+---
+
+## Дополнения 435
+
+### 435. WebRTC Experiments (ev1)
+
+30+ флагов. `isAudioCaptureLoggingEnabled`/`bitrateDumpGatheringState`/`isBackendRenderVmojiEnabled`/`isCorruptWsEndpointEnabled`. Подробно: `notes/topics/435-webrtc-experiments.md`.
