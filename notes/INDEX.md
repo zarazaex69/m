@@ -249,3 +249,4 @@ status: living
 - [[topics/140-conversation-params]] — vchat.getConversationParams: ispAsNo/ispAsOrg/locCc/locReg(server knows ISP+geo)/isP2PForbidden/stunTurnServers/wsIps #calls #api #surveillance
 - [[topics/141-rate-call-data]] — RateCallData: server-pushed questions and scale for call rating dialog #calls #quality-rating #server-control
 - [[topics/142-conversation-params-compact]] — ConversationParams compact: LZ4+Base64 JSON with TURN credentials(trne/trnu/trnp)/STUN/WS/WebTransport endpoints #calls #stun #turn
+- [[topics/143-start-conversation-api]] — vchat.startConversation: hex-capabilities/protocolVersion(6=VOIP_MULTIPLE_DEVICES)/domainId/onlyAdminCanShareMovie #calls #api
