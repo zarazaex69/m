@@ -1976,3 +1976,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 240. metrics DB — distributed tracing
 
 `traceId`/`metricName`/`spanAndPropertiesDump`(BLOB)/`attempt`/`isMarkedAsFailed`. Distributed tracing с retry. Подробно: `notes/topics/240-metrics-db-schema.md`.
+
+---
+
+## Дополнения 241
+
+### 241. tasks + recent DB схемы
+
+`tasks`: id/type/status/fails_count/data(BLOB protobuf)/created_time. `recent`: recent_type/sticker_id/emoji/gif(BLOB)/gif_id. Подробно: `notes/topics/241-tasks-recent-db-schemas.md`.

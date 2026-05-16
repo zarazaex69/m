@@ -348,3 +348,4 @@ status: living
 - [[topics/238-chats-uploads-db-schemas]] — chats(id/server_id/data BLOB/favourite_index/cid) + uploads(15 fields incl thumbhash_base64) DB schemas #database #chats #uploads
 - [[topics/239-informer-banner-db]] — informer_banner DB: 14 fields (click_time/show_time/close_time/show_count — full interaction lifecycle) #database #informer-banner #tracking
 - [[topics/240-metrics-db-schema]] — metrics DB: traceId/metricName/spanAndPropertiesDump(BLOB)/attempt (distributed tracing with retry) #database #metrics #tracing #performance
+- [[topics/241-tasks-recent-db-schemas]] — tasks(id/type/status/fails_count/data BLOB protobuf) + recent(recent_type/sticker_id/emoji/gif BLOB) DB schemas #database #tasks #recent
