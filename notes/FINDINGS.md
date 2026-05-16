@@ -2048,3 +2048,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 249. MsgSend + ChatPersonalConfig + ChatGroupMark
 
 `MsgSend`: chatId/messageId/userId/traceId/lastKnownDraftTime/notify. `ChatPersonalConfig`: hideNonContactBar. `ChatGroupMark`: flagType/enabled. Подробно: `notes/topics/249-msg-send-chat-tasks.md`.
+
+---
+
+## Дополнения 250
+
+### 250. Config + Complain Tasks
+
+`Config`: `isPushToken`/`isUserSettings`/`userSettings(Map<String,String>)`/`syncChatIds`. `Complain`: `ids[]`/`reasonId`/`typeId`/`details`. Подробно: `notes/topics/250-config-complain-tasks.md`.

@@ -357,3 +357,4 @@ status: living
 - [[topics/247-user-settings-full]] — UserSettings: 26+ keys (audio.transcription.enabled/app.family.protection.status/app.privacy.phone.number.privacy/app.privacy.inactive.ttl) #user-settings #privacy #transcription #family-protection
 - [[topics/248-task-types]] — Task Types: 46 types (TYPE_LOCATION_REQUEST/STOP/TYPE_STAT_CRIT_EVENT/TYPE_SUSPEND_BOT/TYPE_WARM_CHAT_HISTORY) #protocol #tasks #types
 - [[topics/249-msg-send-chat-tasks]] — MsgSend(chatId/messageId/userId/traceId/lastKnownDraftTime) + ChatPersonalConfig(hideNonContactBar) + ChatGroupMark(flagType) #protocol #messages #tasks
+- [[topics/250-config-complain-tasks]] — Config(isPushToken/isUserSettings/userSettings Map/syncChatIds) + Complain(ids/reasonId/typeId/details) Tasks #protocol #config #complain #tasks
