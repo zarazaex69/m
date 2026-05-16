@@ -1392,3 +1392,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 167. P2PRelayRequestedStat
 
 `client_requested_p2p_relay` с `trigger`/`threshold`/`violationsCount`. Сервер знает, когда и почему клиент переключился на relay (в отличие от `p2p_forbidden` — когда сервер запрещает P2P). Подробно: `notes/topics/167-p2p-relay-requested-stat.md`.
+
+---
+
+## Дополнения 168
+
+### 168. ServerTopologyRequestedStat
+
+`client_requested_server_topology` — сервер знает, когда клиент переключился на серверную топологию (медиа через серверы VK/OK). Подробно: `notes/topics/168-server-topology-stat.md`.
