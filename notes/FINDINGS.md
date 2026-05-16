@@ -1188,3 +1188,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 141. RateCallData — server-pushed вопросы для оценки звонка
 
 `maxRateForQuestion` (шкала) + `questions[index, title]` — сервер полностью контролирует содержимое диалога оценки звонка. Приходит через `vchat.getConversationParams`. Подробно: `notes/topics/141-rate-call-data.md`.
+
+---
+
+## Дополнения 142
+
+### 142. ConversationParams compact format
+
+`<size>:<base64(LZ4(JSON))>` — компактный формат для push/URL. Ключи: `tkn`, `srcp`, `trne`/`trnu`/`trnp` (**TURN credentials** — username и password для каждого звонка), `stne` (STUN), `wse`/`wsip` (WS), `wte`/`wtip` (WebTransport). Подробно: `notes/topics/142-conversation-params-compact.md`.
