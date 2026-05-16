@@ -2448,3 +2448,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 299. VOTERS_LIST_BY_ANSWER + ORG_INFO + CHAT_LIVESTREAM_INFO WS
 
 `VOTERS_LIST_BY_ANSWER`: voteCount/voters/marker. `ORG_INFO`: organizations/email/user/hash. `CHAT_LIVESTREAM_INFO`: liveStreams. Подробно: `notes/topics/299-voters-org-livestream-ws.md`.
+
+---
+
+## Дополнения 300
+
+### 300. LINK_INFO + AUTH_QR_APPROVE WS
+
+`LINK_INFO`: stickerSet/startPayload/chat/user/group/message/videoConference/banners. `AUTH_QR_APPROVE`: tokenAttrs. Подробно: `notes/topics/300-link-info-auth-qr-ws.md`.
