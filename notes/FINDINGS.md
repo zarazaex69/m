@@ -2296,3 +2296,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 280. MsgSendCallback + MsgDeleteRange Tasks
 
 `MsgSendCallback`: messageId/callbackId/**payload**/buttonType/buttonPosition(row/column). `MsgDeleteRange`: chatId/startTime/endTime. Подробно: `notes/topics/280-tasks-callback-delete-range.md`.
+
+---
+
+## Дополнения 281
+
+### 281. Assets Tasks + SuspendBot
+
+`AssetsAdd/Remove/ListModify/Move`: управление ассетами (стикеры/GIF). `SuspendBot`: botId/chatId/suspend. Подробно: `notes/topics/281-tasks-assets-suspend-bot.md`.

@@ -388,3 +388,4 @@ status: living
 - [[topics/278-tasks-photo-file-upload]] — PhotoUpload(file/chatId/crop/profile) + FileUpload(file/originalFile/fileName/fileId/lastUpdatedFile) Tasks #protocol #tasks #file-upload #photo-upload
 - [[topics/279-tasks-file-download-prepare]] — FileDownload(fileId/fileName/url/place/notCopyVideoToGallery) + PrepareFileUpload(uri/fileName) Tasks #protocol #tasks #file-download #prepare-upload
 - [[topics/280-tasks-callback-delete-range]] — MsgSendCallback(callbackId/payload/buttonPosition row/col) + MsgDeleteRange(chatId/startTime/endTime) Tasks #protocol #tasks #bot #inline-keyboard #surveillance
+- [[topics/281-tasks-assets-suspend-bot]] — Assets(Add/Remove/ListModify/Move) + SuspendBot(botId/chatId/suspend) Tasks #protocol #tasks #assets #bots
