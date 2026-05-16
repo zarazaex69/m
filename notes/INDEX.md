@@ -242,3 +242,4 @@ status: living
 - [[topics/133-calls-early-offer-genpeerid]] — calls-android-early-set-offer/calls-android-gen-peerid(клиентская генерация peer-id)/calls-android-update-endpoint-params #calls #webrtc #server-control
 - [[topics/134-webrtc-field-trials]] — WebRTC field trials: 8 hardcoded + server-controlled (EarlyStartPlayout/EarlyStartRecording) + arbitrary server field trials #webrtc #calls #server-control
 - [[topics/135-callssdk-opus-dred-fec-flags]] — CallsSDK Opus DRED/FEC: OpusFECWithDRED/OpusDREDByBitrate/OpusFileLogs(write to file)/LogDCTraffic #calls #opus #dred
+- [[topics/136-ev1-webrtc-session-config]] — ev1 WebRTC session config: emulatedSignalingError(server force-terminates call)/emulatedIceCandidateError/simulcastState #calls #webrtc #server-control
