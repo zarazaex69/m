@@ -2680,3 +2680,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 328. MyTracker инициализация
 
 `initTracker("34982109644049932883", app)` + `setCustomUserId(userId)` + `setKidMode(false)`. Tracker ID MAX: `34982109644049932883`. Подробно: `notes/topics/328-mytracker-init.md`.
+
+---
+
+## Дополнения 329
+
+### 329. MyTracker — рекламные идентификаторы
+
+Google GAID + Huawei OAID + android_id + mac. Подробно: `notes/topics/329-mytracker-advertising-ids.md`.
