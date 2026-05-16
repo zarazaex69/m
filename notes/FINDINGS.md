@@ -3966,3 +3966,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 489. CALL.ADMIN_CALL_SETTINGS_TO_USER
 
 `{call_id, screen, user_id2}`. Изменение настроек конкретного пользователя в звонке. Подробно: `notes/topics/489-call-admin-settings-analytics.md`.
+
+---
+
+## Дополнения 490
+
+### 490. Push Notification Analytics
+
+`show`/`drop`/`open_chats`/`open_chat`/`open_url`. Все push-уведомления логируются с `trid`/`eKey`/`ttime`/`dtime`/`fcmdtime`/`suid`. Подробно: `notes/topics/490-push-notification-analytics.md`.
