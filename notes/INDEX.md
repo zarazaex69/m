@@ -210,3 +210,5 @@ status: living
 - [[topics/101-anr-watchdog-config]] — anr-config (server-controlled ANR detector: enabled/timeout.low/avg/high) + watchdog-config #anr #server-control
 - [[topics/102-conn-timeouts]] — conn-timeouts: server-controlled connection timeouts (JSON map by connection type) #network #server-control
 - [[topics/103-media-order]] — media-order: 4 modes (0-3), mode 3 = server-controlled media placement in messages #media #ui #server-control
+- [[topics/104-bad-network-video-msg-config]] — bad-networ-indicator-config (RTT/loss algorithm) + video-msg-config #calls #network #server-control
+- [[topics/105-chat-history-warm]] — chat-history-warm-opts (server-controlled chat history preloading) #performance #server-control
