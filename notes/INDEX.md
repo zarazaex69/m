@@ -223,3 +223,5 @@ status: living
 - [[topics/114-views-count-enabled]] — views-count-enabled: server-gated post view tracking in channels #channels #surveillance #server-control
 - [[topics/115-quotes-media-playlist]] — quotes-enabled (markdown quotes, default=false) + media-playlist-enabled (default=false) #messaging #server-control
 - [[topics/116-join-requests]] — join-requests: server-gated join requests for closed chats/channels #groups #server-control
+- [[topics/117-call-ui-pmskey]] — call UI PmsKey: horizontal-call-mode/hide-incoming-call-notif/ringtone-player-focus #calls #ui #server-control
+- [[topics/118-media-ux-pmskey]] — media UX PmsKey: speedy-voice-messages/open-video-from-start/new-media-upload-ui/video-fast-seek #media #ux #server-control
