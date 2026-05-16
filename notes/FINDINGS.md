@@ -2792,3 +2792,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 342. PmsKey — новые флаги
 
 `mytracker-enabled`/`tracer-non-fatal-crashed-enabled`/`wm-*`(WorkManager)/`calc-audio-wave`/`battery-slice-interval`/`ymap`/`views-count-enabled`. Подробно: `notes/topics/342-pmskey-additional-new.md`.
+
+---
+
+## Дополнения 343
+
+### 343. rtd SharedPreferences — 40+ флагов
+
+`userLogReportChatId`/`isMytrackerEnabled`/`statSessionBackgroundThreshold`/`retryTranscriptionAttempt`/`vpnChatBottomsheetEnabled`/`vpnCallBottomsheetEnabled`. Подробно: `notes/topics/343-rtd-server-flags.md`.
