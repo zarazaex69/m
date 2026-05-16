@@ -4166,3 +4166,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 514. a40 Contacts ContentObserver
 
 `ContactsContract.Contacts.CONTENT_URI` → `checkUpdates(updatePhones/deletedPhones/newPhones)`. Подробно: `notes/topics/514-contacts-content-observer.md`.
+
+---
+
+## Дополнения 515
+
+### 515. kfd Phonebook Sync Controller
+
+`onPhonebookUpdated` → `syncInternal` → `onSyncSuccess(contacts, phones, requested)`. Цикл защита: >= 10 попыток. Подробно: `notes/topics/515-phonebook-sync-controller.md`.

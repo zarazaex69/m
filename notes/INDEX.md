@@ -622,3 +622,4 @@ status: living
 - [[topics/512-contacts-account-type]] — Contacts Account Type: ru.ok.tamtam + MIME vnd.android.cursor.item/vnd.ru.ok.tamtam.android.profile #contacts #account-type #mimetype #surveillance
 - [[topics/513-media-content-observer]] — wh8 Media ContentObserver: MediaStore.Images.EXTERNAL/INTERNAL + MediaStore.Video.EXTERNAL, onChange → gallery update #media-observer #content-observer #gallery #surveillance
 - [[topics/514-contacts-content-observer]] — a40 Contacts ContentObserver: ContactsContract.Contacts.CONTENT_URI → checkUpdates(updatePhones/deletedPhones/newPhones) #contacts #content-observer #phonebook #surveillance #server-control
+- [[topics/515-phonebook-sync-controller]] — kfd Phonebook Sync Controller: onPhonebookUpdated/syncInternal/onSyncSuccess(contacts,phones,requested), cycle protection >= 10 #contacts #phonebook #sync #surveillance #server-control
