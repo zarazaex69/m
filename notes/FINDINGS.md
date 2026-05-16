@@ -3222,3 +3222,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 396. NoiseSuppressionManagerImpl
 
 `serversideBasic`/`serversideAnn` — NS на сервере (аудио передаётся на сервер). `clientsideAnn(filePath)` — нейросетевое NS на устройстве. Подробно: `notes/topics/396-noise-suppression-impl.md`.
+
+---
+
+## Дополнения 397
+
+### 397. Video SDK
+
+`ScreenCaptureManager`: setScreenCaptureEnabled/setAudioCaptureEnabled. `CameraManager`: setCameraEnabled/switchCamera. `DisplayLayoutSender.sendDisplayLayouts(items)` — сервер знает расположение видео-окон. Подробно: `notes/topics/397-video-sdk-screen-camera.md`.
