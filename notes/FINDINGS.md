@@ -3286,3 +3286,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 404. AdvertisingIdClient
 
 `getAdvertisingIdInfo(ctx)` → `Info(id=GAID, isLimitAdTrackingEnabled)`. Логирует `limit_ad_tracking`/`ad_id_size`/`time_spent`. Подробно: `notes/topics/404-advertising-id-client.md`.
+
+---
+
+## Дополнения 405
+
+### 405. InstallReferrer
+
+`installReferrer`/`installBeginTimestamp`/`referrerClickTimestamp`. Передаётся в MyTracker для атрибуции. Подробно: `notes/topics/405-install-referrer.md`.
