@@ -1872,3 +1872,11 @@ POST+gzip. Параметры: `collector`/`application`(ru.oneme.app:26153:26.1
 ### 227. DNS over HTTPS — обнаружение API endpoint
 
 `https://dns.google.com/resolve?name=api._endpoint.ok.ru.&type=16` — TXT-запись DNS для динамического обнаружения API endpoint. Обход DNS-блокировок через Google DNS. Подробно: `notes/topics/227-dns-over-https-endpoint-discovery.md`.
+
+---
+
+## Дополнения 228
+
+### 228. libtracernative.so — экспорты Apptracer
+
+24 экспорта: `tracer_aurora_collect_minidump_from_cachedir` (**Aurora OS** — российская ОС), `tracer_supports_arbitrary_dump`, `tracer_set_api_endpoint`, `tracer_disable_upload`, `tracer_upload`/`tracer_upload_async`/`tracer_upload_crashes`. Подробно: `notes/topics/228-libtracernative-exports.md`.
