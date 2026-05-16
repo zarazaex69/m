@@ -1204,3 +1204,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 143. vchat.startConversation
 
 Клиент отправляет: `isVideo`, `turnServers`, `conversationId`, `createJoinLink`, `waitForAdmin`, `capabilities` (hex-encoded возможности клиента), `protocolVersion=6` (для VOIP_MULTIPLE_DEVICES), `domainId`, `payload`, `onlyAdminCanShareMovie`. Сервер знает полные возможности клиента при каждом звонке. Подробно: `notes/topics/143-start-conversation-api.md`.
+
+---
+
+## Дополнения 144
+
+### 144. vchat.hangupConversation + vchat.joinConversationByLink
+
+`vchat.hangupConversation`: `conversationId`, `reason` (enum — причина завершения), `anonymToken`. `vchat.joinConversationByLink`: `joinLink`, `isVideo`, `peerId` (long), `anonymToken` (без аккаунта MAX), `capabilities` (hex), `protocolVersion=6`. Подробно: `notes/topics/144-hangup-join-api.md`.
