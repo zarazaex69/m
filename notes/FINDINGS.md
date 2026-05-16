@@ -3638,3 +3638,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 448. WarningLinkBottomSheet
 
 "Перейти по ссылке?" + URL + "Перейти"/"Отменить". Аналитика переходов. Подробно: `notes/topics/448-warning-link-bottomsheet.md`.
+
+---
+
+## Дополнения 449
+
+### 449. FileDownloadWarningBottomSheet
+
+`(chat_id, message_id, attach_id, file_id, file_name, file_url, file_size)`. Предупреждение при скачивании потенциально опасного файла. Подробно: `notes/topics/449-file-download-warning.md`.
