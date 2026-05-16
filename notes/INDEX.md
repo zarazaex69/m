@@ -283,3 +283,4 @@ status: living
 - [[topics/173-call-finish-init-stat]] — CallFinishStat(call_finish: reason/rate_reasons/errorText) + CallInitStat(call_init: source=callType+isAnon) #calls #stats #end-reason
 - [[topics/174-conversation-prepared-stat]] — ConversationPreparedStat: call_warmup (WebRTC warmup time in ms) #calls #stats #warmup
 - [[topics/175-conversation-end-reason]] — ConversationEndReason: 17 reasons (banned/killed/obsolete_client/another_device/socket_closed) #calls #end-reason
+- [[topics/176-rate-hints]] — RateHint: rtt_<ms>/audioloss_<loss>/videoloss_<loss>/candidate_type, server-controlled thresholds #calls #quality #rate-hints
