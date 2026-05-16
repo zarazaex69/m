@@ -2392,3 +2392,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 292. NOTIF_MSG_DELETE + NOTIF_FOLDERS WS
 
 `NOTIF_MSG_DELETE`: chat_id/messageIds[]/messages/chat/ttl. `NOTIF_FOLDERS`: folders/banners/showTime/updateTime. Подробно: `notes/topics/292-notif-msg-delete-folders-ws.md`.
+
+---
+
+## Дополнения 293
+
+### 293. NOTIF_MSG_DELAYED + BOT_INFO + COMPLAIN_REASONS_GET WS
+
+`NOTIF_MSG_DELAYED`: messageIds[]/chat_id/lastDelayedUpdateTime/updateTypeId. `BOT_INFO`: commands/contact/startMessage. `COMPLAIN_REASONS_GET`: complainSync/complains. Подробно: `notes/topics/293-notif-delayed-bot-complain-ws.md`.
