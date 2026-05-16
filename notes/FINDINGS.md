@@ -3518,3 +3518,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 433. DevMenu детали
 
 `ServerHostBottomSheet` ("Адрес сервера") + `ServerPortBottomSheet`. `FeatureToggles` (источник "SERVER"). `LogsViewer`. `TestCrash`. **В production сборке**. Подробно: `notes/topics/433-devmenu-details.md`.
+
+---
+
+## Дополнения 434
+
+### 434. change-media-settings
+
+`{isVideoEnabled, isAudioEnabled, isScreenSharingEnabled, isAnimojiEnabled, isFastScreenSharingEnabled, isAudioSharingEnabled}`. Подробно: `notes/topics/434-change-media-settings.md`.
