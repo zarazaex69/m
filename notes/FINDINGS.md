@@ -2664,3 +2664,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 326. NativeBridge — JNI мост
 
 `nativeInstallBridge(qb5.Z)` — устанавливает JNI мост. `NativeBridge`: log(msg)/setKey(key, value). Подробно: `notes/topics/326-native-bridge-tracer.md`.
+
+---
+
+## Дополнения 327
+
+### 327. MyTracker — endpoints
+
+`tracker-api.vk-analytics.ru/v3/`(main) + `ip4.`(IPv4) + `ts./mobile/v1`(timestamp) + `mlapi.`(ML) + `beta-ml.`(Beta ML). Подробно: `notes/topics/327-mytracker-endpoints.md`.

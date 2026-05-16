@@ -434,3 +434,4 @@ status: living
 - [[topics/324-disk-usage-worker]] — DiskUsageWorker: int_data(applicationInfo.dataDir)/ext_data(externalFilesDir)/total_size (recursive file list) #telemetry #apptracer #disk-usage #surveillance
 - [[topics/325-apptracer-sdk-components]] — Apptracer SDK: CrashReport+HeapDump+PerformanceMetrics+DiskUsage+SamplingProfiler+NativeBridge+SampleUpload #telemetry #apptracer #heap-dump #cpu-profiler #surveillance
 - [[topics/326-native-bridge-tracer]] — NativeBridge: nativeInstallBridge(qb5.Z) JNI bridge to libtracernative (log/setKey callbacks) #telemetry #apptracer #native-bridge #jni
+- [[topics/327-mytracker-endpoints]] — MyTracker endpoints: tracker-api.vk-analytics.ru/v3/ + ip4. + ts./mobile/v1 + mlapi. + beta-ml. #telemetry #mytracker #endpoints #vk-analytics
