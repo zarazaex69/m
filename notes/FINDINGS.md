@@ -2592,3 +2592,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 317. EnrichedBatterySnapshot
 
 `snapshot`(BatterySnapshot)/`seqId`/`visibility`(FG/BG). Подробно: `notes/topics/317-enriched-battery-snapshot.md`.
+
+---
+
+## Дополнения 318
+
+### 318. /proc filesystem reads
+
+`/proc/self/stat`(CPU ticks)/`/proc/self/statm`(память)/`/proc/<pid>/cmdline`(имя процесса)/`/proc/self/fd/`(файловые дескрипторы). Подробно: `notes/topics/318-proc-filesystem-reads.md`.
