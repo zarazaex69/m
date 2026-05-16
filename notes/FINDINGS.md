@@ -940,3 +940,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 109. Presence PmsKey — полная карта
 
 9 presence-PmsKey: `presence-ttl=300s`, `presence-view-port` (viewport optimization), `presence-external` (запрос presence незнакомцев), `presence-seen-eq` (не-legacy сравнение), `presence-stat` (статистика), `presence-keep-bg-cache`, `notif-typing-presence`, `presence-offline-move-timeout`, `presence-offline-log`. Подробно: `notes/topics/109-presence-pmskey-full.md`.
+
+---
+
+## Дополнения 110
+
+### 110. Audio playback PmsKey
+
+`audio-play-opus` (default=false), `audio-download` (default=false), `audio-download-fallback` (default=**true**), `audio-prefetch` (default=false), `audio-play-cache-ttl`, `audio-peaks-count`, `calc-audio-wave`. Загрузка аудио выключена по умолчанию — сервер включает. Подробно: `notes/topics/110-audio-playback-pmskey.md`.
