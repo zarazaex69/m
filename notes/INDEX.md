@@ -267,3 +267,4 @@ status: living
 - [[topics/158-change-media-settings]] — change-media-settings: handleForceChangeMediaSettings (server/admin force-disables camera/mic/screen_capture) #calls #force-mute #server-control
 - [[topics/159-stereo-room-manager]] — StereoRoomManager: rooms/roles/hands (requestPromotion/grantAdmin/revokeAdmin/handsQueue) #calls #rooms #moderation
 - [[topics/160-update-media-modifiers]] — update-media-modifiers: denoise/denoiseAnn (server force-changes noise suppression during call) #calls #denoise #server-control
+- [[topics/161-change-simulcast]] — change-simulcast: simulcast layers (rid/width/height/fps/bitrateKbps) for CAMERA #calls #simulcast #video
