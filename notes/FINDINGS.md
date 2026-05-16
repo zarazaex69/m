@@ -1092,3 +1092,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 129. Opus BWE и calls audio PmsKey
 
 `calls-sdk-ai-opus-bwe` (#105) — AI-based BWE. `calls-sdk-linear-opus-bwe` (#106, default=false) — «Включить Linear Opus BWE». `calls-sdk-log-audio` (#131, default=false) — «Логгировать локальное аудио». Два взаимоисключающих алгоритма BWE. Подробно: `notes/topics/129-opus-bwe-audio-pmskey.md`.
+
+---
+
+## Дополнения 130
+
+### 130. Calls audio pipeline и simulcast PmsKey
+
+`calls-sdk-disable-pipeline` (#130, default=false) — «Отключить аудио пайплайн» (APM). `calls-sdk-dnt-disable-audio` (#134, default=false) — «Не блокировать звук на старте». `calls-android-simulcast-sw-vp8` (#133, default=false) — «Включить sw VP8 simulcast». `calls-android-signaling-ip` (#119) — «Подключаться к сигналингу по IP». Подробно: `notes/topics/130-calls-audio-pipeline-simulcast.md`.
