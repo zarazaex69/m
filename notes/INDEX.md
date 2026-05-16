@@ -589,3 +589,4 @@ status: living
 - [[topics/479-action-events]] — ACTION events: ACTION_CACHE_CLEARED/FCM_ON_DELETED_MESSAGES/GET_INSTALL_REFERRER{value:referrer} #action-events #telemetry #surveillance #cache #fcm #install-referrer
 - [[topics/480-app-review-analytics]] — APP_REVIEW.app_review: {session_id, screen_from, trigger, mark}, rating sent directly to MAX server #app-review #rating #telemetry #surveillance #fake-review
 - [[topics/481-search-analytics]] — SHOW.SEARCH_RESPONSE: {counters:{RECENTS,ALL_CONTACTS,LOCAL_SEARCH}, inputQuery}, search query sent to server #search #telemetry #surveillance #contacts #search-analytics
+- [[topics/482-contact-block-sticker-analytics]] — CONTACT_OR_BLOCK(clicked/showed) + sticker.send_sticker: block/add_to_contacts actions logged #contact-block #telemetry #surveillance #contact-analytics

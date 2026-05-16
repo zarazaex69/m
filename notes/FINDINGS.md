@@ -3902,3 +3902,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 481. SHOW.SEARCH_RESPONSE
 
 `{counters: {RECENTS, ALL_CONTACTS, LOCAL_SEARCH}, inputQuery}`. Поисковый запрос отправляется на сервер. Подробно: `notes/topics/481-search-analytics.md`.
+
+---
+
+## Дополнения 482
+
+### 482. CONTACT_OR_BLOCK + sticker
+
+`CONTACT_OR_BLOCK.clicked {screen, clickType: to_contacts|block}`. `sticker.send_sticker {screen: first_message}`. Подробно: `notes/topics/482-contact-block-sticker-analytics.md`.
