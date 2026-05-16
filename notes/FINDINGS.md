@@ -1400,3 +1400,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 168. ServerTopologyRequestedStat
 
 `client_requested_server_topology` — сервер знает, когда клиент переключился на серверную топологию (медиа через серверы VK/OK). Подробно: `notes/topics/168-server-topology-stat.md`.
+
+---
+
+## Дополнения 169
+
+### 169. NegotiationErrorStat + AudioErrorStat
+
+`NegotiationErrorStat` — SDP при ошибке WebRTC negotiation (полный SDP с кодеками/ICE). `AudioErrorStat` — `audio_error` с тремя полями (тип:код:описание). Подробно: `notes/topics/169-negotiation-audio-error-stat.md`.
