@@ -294,3 +294,4 @@ status: living
 - [[topics/184-asr-manager]] — AsrManager: on-device ASR recording to file (fileName/sessionRoomId), separate from AsrOnlineManager #calls #asr #recording
 - [[topics/185-feedback-manager]] — FeedbackManager: emoji reactions in calls (sendFeedback: key/source, setTimeout) #calls #feedback #reactions
 - [[topics/186-contact-call-manager]] — ContactCallManager: iAmAnonymous/iWasInitiallyAnonymous (anonymous participants via anonymToken) #calls #anonymous
+- [[topics/187-network-connection-manager]] — NetworkConnectionManager: getTopology(P2P/server)/registerBadConnectionCallback/addNetworkConnectivityListener #calls #network #topology
