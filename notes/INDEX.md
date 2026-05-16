@@ -207,3 +207,4 @@ status: living
 - [[topics/98-mytracker-api-details]] — MyTracker API: tracker-api.vk-analytics.ru paths (v3/mobile/v1/mlapi/beta-ml), mt_deeplink attribution #mytracker #telemetry
 - [[topics/99-mytracker-preinstall-oem]] — MyTracker PreInstall: OEM preinstall detection via vendor app resources + ro.mytracker.preinstall.path #mytracker #oem #attribution
 - [[topics/100-call-chat-members-load-config]] — call-chat-members-load-config: maxLoadCount/minInCall/newLoadingContactsLogicEnabled #calls #server-control
+- [[topics/101-anr-watchdog-config]] — anr-config (server-controlled ANR detector: enabled/timeout.low/avg/high) + watchdog-config #anr #server-control
