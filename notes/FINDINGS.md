@@ -3582,3 +3582,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 441. NeuroAvatarsScreen
 
 Выбор/съёмка фото → генерация нейро-аватара на сервере. Используется при регистрации и редактировании профиля. Подробно: `notes/topics/441-neuro-avatars.md`.
+
+---
+
+## Дополнения 442
+
+### 442. BackgroundListenService
+
+`startForeground(9001)`, "MAX работает в фоне". `system_curtain_shown/hidden`. `BackgroundWakeBootReceiver`: перезапуск при обновлении. Подробно: `notes/topics/442-background-listen-service.md`.

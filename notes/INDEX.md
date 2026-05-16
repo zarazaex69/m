@@ -549,3 +549,4 @@ status: living
 - [[topics/439-qr-auth]] — QR Auth: SettingsDevicesScreen + QrAuthHintBottomSheet + :qr-scanner?mode=2, AuthQrUseCase/GetQrCodeUseCase #qr-auth #devices #session #security #settings
 - [[topics/440-vpn-warning-bottomsheet]] — VpnConnectedWarningBottomSheet: "Отключите VPN" / "Чтобы пользоваться MAX" #vpn #warning #surveillance #server-control
 - [[topics/441-neuro-avatars]] — NeuroAvatarsScreen: AI avatar generation from photo at registration, photo sent to server #neuro-avatars #ai #registration #login #surveillance
+- [[topics/442-background-listen-service]] — BackgroundListenService: startForeground(9001) 'MAX работает в фоне', system_curtain_shown/hidden, BackgroundWakeBootReceiver #background-wake #foreground-service #boot-receiver #surveillance
