@@ -3422,3 +3422,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 421. WebAppRequestPhone
 
 `WebAppRequestPhoneResponse(requestId, phone, hash, authDate)`. Мини-приложение получает номер телефона с хэшем для верификации. Подробно: `notes/topics/421-webapp-request-phone.md`.
+
+---
+
+## Дополнения 422
+
+### 422. WebApp ScreenCapture + CodeReader
+
+`WebAppSetupScreenCaptureBehavior(isEnabled)` → `FLAG_SECURE`. `WebAppOpenCodeReader` → `response(requestId, value)`. Подробно: `notes/topics/422-webapp-screen-capture-qr.md`.
