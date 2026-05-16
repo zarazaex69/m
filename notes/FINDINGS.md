@@ -1292,3 +1292,15 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 154. ConversationFeature — фичи звонков с role-based access
 
 `ck1` enum: `ADD_PARTICIPANT`, `RECORD` (запись звонка), `MOVIE_SHARE` (watch together), `ASR_RECORD` (**запись для ASR/транскрипции** — отдельная фича). `enableFeatureForRoles(feature, roles)` — role-based access через `enable-feature-for-roles` сигналинг. Подробно: `notes/topics/154-conversation-features-roles.md`.
+
+---
+
+## Дополнения 155-156
+
+### 155. kv1 call roles
+
+`CREATOR` (0), `ADMIN` (1), `SPEAKER` (2). Используются для role-based access к фичам звонка. Подробно: `notes/topics/155-call-roles.md`.
+
+### 156. MicrophoneManager
+
+`registerAudioSampleCallback(delay, callback)` — несколько компонентов одновременно получают аудио-семплы: KWS (topic 70), ASR online (topic 152), energy calculator. `setMicEnabled(bool)` — включение/выключение микрофона. Подробно: `notes/topics/156-microphone-manager.md`.
