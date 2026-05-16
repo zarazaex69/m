@@ -2960,3 +2960,11 @@ DPS: `dps_config.bin`/`dps_dont_report.bin`/`dps_log_entries.bin`. HostReachabil
 ### 363. Google Maps API Key
 
 `com.google.android.geo.API_KEY=AIzaSyDJbuC3fODS_aR7jcOkoP6qWIsQen9XARI`. Подробно: `notes/topics/363-google-maps-api-key.md`.
+
+---
+
+## Дополнения 364
+
+### 364. AndroidManifest meta-data
+
+7 Apptracer инициализаторов + `com.google.android.geo.API_KEY` + `com.facebook.soloader.enabled=false` + `STAMP_TYPE_DISTRIBUTION_APK`. Подробно: `notes/topics/364-manifest-metadata-full.md`.
