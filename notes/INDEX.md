@@ -610,3 +610,4 @@ status: living
 - [[topics/500-mytracker-urls]] — TrackerConfig MyTracker URLs: tracker-api.vk-analytics.ru v3/ip4/ts/mlapi/beta-ml #mytracker #tracker-urls #vk-analytics #surveillance #telemetry
 - [[topics/501-attribution-handler]] — AttributionHandler: referrer → tracker-api.vk-analytics.ru/?{referrer} → mt param → deeplink → attribution SharedPreferences #mytracker #attribution #referrer #deeplink #surveillance #telemetry
 - [[topics/502-mytracker-activity-handler]] — MyTrackerActivityHandler: onActivityStarted/Stopped + timespentSwitchToBackground/Foreground + trackLaunch + sensorHandlerStart #mytracker #timespent #activity-tracking #foreground-background #surveillance #telemetry
+- [[topics/503-sensor-listener]] — ioe SensorListener: TYPE_PROXIMITY(8) + TYPE_LIGHT(5), proximity < min(maxRange,3.0), light < maxRange #sensors #proximity #light #surveillance #antifraud

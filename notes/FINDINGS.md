@@ -4070,3 +4070,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 502. MyTrackerActivityHandler
 
 `onActivityStarted/Stopped` + `timespentSwitchToBackground/Foreground` + `trackLaunch` + `sensorHandlerStart`. Подробно: `notes/topics/502-mytracker-activity-handler.md`.
+
+---
+
+## Дополнения 503
+
+### 503. ioe SensorListener
+
+`TYPE_PROXIMITY(8)` + `TYPE_LIGHT(5)`. Proximity: значение < min(maxRange, 3.0). Light: значение < maxRange. Подробно: `notes/topics/503-sensor-listener.md`.
