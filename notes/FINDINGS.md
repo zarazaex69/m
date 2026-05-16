@@ -2384,3 +2384,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 291. NOTIF_MARK + NOTIF_ATTACH WS
 
 `NOTIF_MARK`: chat_id/mark/unread/userId (read receipts — сервер уведомляет, кто прочитал). `NOTIF_ATTACH`: fileId/audioId/videoId/error. Подробно: `notes/topics/291-notif-mark-attach-ws.md`.
+
+---
+
+## Дополнения 292
+
+### 292. NOTIF_MSG_DELETE + NOTIF_FOLDERS WS
+
+`NOTIF_MSG_DELETE`: chat_id/messageIds[]/messages/chat/ttl. `NOTIF_FOLDERS`: folders/banners/showTime/updateTime. Подробно: `notes/topics/292-notif-msg-delete-folders-ws.md`.
