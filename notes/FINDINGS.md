@@ -2120,3 +2120,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 258. MessageElement + ReactionData + PendingUploadData
 
 `MessageElement`: 12 типов (USER_MENTION/GROUP_MENTION/STRONG/LINK/CODE/QUOTE/ANIMOJI) + entityId/from/length. `ReactionData`: reaction/type(EMOJI/STICKER). `PendingUploadData`: pendingMap. Подробно: `notes/topics/258-protos-message-elements.md`.
+
+---
+
+## Дополнения 259
+
+### 259. Protos.Call + CallHistoryState
+
+`Call`: callType(AUDIO/VIDEO)/hangupType(HANGUP/CANCELED/REJECTED/MISSED)/duration/contactIds[]. `CallHistoryState`: backwardMarker/forwardMarker/MissedMessagesItem.ids[]. Подробно: `notes/topics/259-protos-call-history.md`.
