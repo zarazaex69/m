@@ -584,3 +584,4 @@ status: living
 - [[topics/474-permission-tracking]] — Permission Tracking: PERMISSION.permission_changed_state{pType,pStatus}, 13 permission groups, CAMERA+RECORD_AUDIO+READ_PHONE_STATE #permissions #surveillance #telemetry #contacts #camera #microphone #location #storage #notification
 - [[topics/475-host-reachability-analytics]] — HOST_REACHABILITY.GET_HOST_REACHABILITY: {hosts, operator, connection_type, ip, vpn} after every reachability check #host-reachability #telemetry #surveillance #network #vpn #operator
 - [[topics/476-push-inbound-call-analytics]] — PUSH.InboundCall: {trid,eKey,suid,ttime,dtime,fcmdtime,p_op=show,chat_id,call_id,show_source} #push #inbound-call #telemetry #surveillance #fcm #call-analytics
+- [[topics/477-settings-analytics]] — SETTINGS analytics: MINIAPP_BIOMETRY{paramValue,webappId}/BACKGROUND/THEME/TEXT_SIZE #settings #telemetry #surveillance #biometry #theme #background #text-size

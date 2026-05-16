@@ -3862,3 +3862,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 476. PUSH.InboundCall Analytics
 
 `{trid, eKey, suid, ttime, dtime, fcmdtime, p_op="show", chat_id, call_id, show_source}`. Подробно: `notes/topics/476-push-inbound-call-analytics.md`.
+
+---
+
+## Дополнения 477
+
+### 477. SETTINGS Analytics
+
+`MINIAPP_BIOMETRY {paramValue, webappId}`. `BACKGROUND`. `THEME`. `TEXT_SIZE`. Подробно: `notes/topics/477-settings-analytics.md`.
