@@ -2344,3 +2344,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 286. WS Opcodes — дополнительные
 
 `SESSIONS_INFO`/`SESSIONS_CLOSE`, `PROFILE_DELETE`/`PROFILE_DELETE_TIME`, `WEB_APP_INIT_DATA`, `PHONE_BIND_REQUEST`/`CONFIRM`/`WEBAPP_SHARE`, `FOLDERS_GET/UPDATE/REORDER/DELETE/NOTIF_FOLDERS`, `NOTIF_MSG_REACTIONS_CHANGED`/`NOTIF_MSG_YOU_REACTED`. Подробно: `notes/topics/286-ws-opcodes-additional.md`.
+
+---
+
+## Дополнения 287
+
+### 287. WEB_APP_INIT_DATA
+
+`hash`/`user`/`query_id`/`url`/`trackId`/`email`/`chatReactionsSettings`/`organizations`. **Мини-приложение получает email, организации и UserSettings пользователя**. Подробно: `notes/topics/287-web-app-init-data.md`.
