@@ -32,9 +32,15 @@ related:
 
 `chunkFromPackage(store, asrRecvDataPackage)` — создаёт чанк из пакета данных ASR.
 
-## onAsrOnlineAvailableChanged
+## AsrOnlineCommandsExecutorImpl — детали
 
-`ConversationImpl.onAsrOnlineAvailableChanged()` — callback при изменении доступности ASR. Проверяет `pa1.X` — флаг доступности ASR в звонке.
+`enableAsrOnline(boolean)` — при включении:
+1. Если звонок в server topology — отправляет сигналинг-сообщение `"request-asr"` через `signalingProvider.getSignaling().i(dp7VarB)`.
+2. Иначе — устанавливает флаг в call объекте.
+
+`onMigratedToServerCallTopology()` — при миграции на серверную топологию — применяет текущий ASR-статус.
+
+**`"request-asr"`** — это сигналинг-сообщение, которое клиент отправляет серверу для запроса онлайн-транскрипции. Это означает, что онлайн-ASR работает через серверную инфраструктуру, а не только on-device.
 
 ## Что важно
 
