@@ -528,3 +528,4 @@ status: living
 - [[topics/418-mytracker-installed-packages]] — MyTracker AppsDataProvider: non-system apps (packageName+firstInstallTime), appsHash change detection #mytracker #installed-packages #apps-list #surveillance #fingerprint
 - [[topics/419-webapp-js-events]] — WebApp JS events (34): WebAppBiometryRequestAuth/WebAppNfcEmulateNfcTag/WebAppSecureStorageSaveKey/WebAppVerifyMobileId/WebAppUrlInterceptor #webapp #jsbridge #js-events #biometry #nfc #storage #surveillance
 - [[topics/420-webapp-storage-biometry]] — WebApp Storage(SecureStorage 128/4000B + DeviceStorage) + Biometry(RequestAuth/RequestAccess/UpdateToken) #webapp #secure-storage #device-storage #biometry #jsbridge #surveillance
+- [[topics/421-webapp-request-phone]] — WebAppRequestPhone: response(requestId, phone, hash, authDate), mini-app gets phone number with verification hash #webapp #phone-request #msisdn #jsbridge #surveillance

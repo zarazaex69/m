@@ -3414,3 +3414,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 420. WebApp Storage + Biometry
 
 `SecureStorage`(128/4000 байт) + `DeviceStorage`. `BiometryRequestAuth`/`BiometryRequestAccess`/`BiometryUpdateToken`. Подробно: `notes/topics/420-webapp-storage-biometry.md`.
+
+---
+
+## Дополнения 421
+
+### 421. WebAppRequestPhone
+
+`WebAppRequestPhoneResponse(requestId, phone, hash, authDate)`. Мини-приложение получает номер телефона с хэшем для верификации. Подробно: `notes/topics/421-webapp-request-phone.md`.
