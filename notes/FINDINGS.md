@@ -2224,3 +2224,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 271. MsgEdit + MsgReact Tasks
 
 `MsgEdit`: text/editAttaches/**oldText**/oldAttaches/oldElements/oldStatus — **сервер получает старое содержимое при редактировании**. `MsgReact`: reaction/reactionType. Подробно: `notes/topics/271-tasks-msg-edit-react.md`.
+
+---
+
+## Дополнения 272
+
+### 272. MsgDelete Task
+
+`messagesId[]`/`forMe`/`complaint` (удаление + жалоба в одной операции)/`notDeleteMessageFromDb`. Подробно: `notes/topics/272-tasks-msg-delete.md`.

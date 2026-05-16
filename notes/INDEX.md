@@ -379,3 +379,4 @@ status: living
 - [[topics/269-protos-sticker]] — Protos.Sticker: stickerId/setId/stickerType(STATIC/LIVE/POSTCARD/LOTTIE)/audio + AnimationProperties(fps/framesCount) #protocol #sticker #protos
 - [[topics/270-tasks-draft-msgview-assets]] — DraftSave(draft bytes) + MsgView(messageIds[]/registerView — server knows which messages viewed) + AssetsAdd + SyncChatHistory #protocol #tasks #draft #msg-view #surveillance
 - [[topics/271-tasks-msg-edit-react]] — MsgEdit(text/oldText/oldAttaches/oldElements — server gets old content) + MsgReact(reaction/reactionType) #protocol #tasks #msg-edit #surveillance
+- [[topics/272-tasks-msg-delete]] — MsgDelete: messagesId[]/forMe/complaint(delete+report in one op)/notDeleteMessageFromDb #protocol #tasks #msg-delete #surveillance
