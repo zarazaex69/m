@@ -167,3 +167,6 @@ status: living
 - [[topics/58-non-contact-sync]] — non-contact sync — server-controlled interaction graph beyond phonebook #contacts #surveillance
 - [[topics/59-keep-background-socket]] — keep-background-socket + ping-background-interval — persistent WS in background #network #background
 - [[topics/60-user-settings-full-map]] — UserSettings full map: 26+ server-pushed fields (safeMode, searchByPhone, audioTranscription) #user-settings #server-control
+- [[topics/61-leakcanary-gost-debug-flags]] — LeakCanary in production APK, gostLicenseCheckEnabled, isDisableWebAppSsl #debug #gost #security
+- [[topics/62-white-list-links-content-control]] — white-list-links (server-controlled trusted domains), show-warning-links #links #content-moderation
+- [[topics/63-complaints-server-controlled]] — available-complaints (server-controlled reasons), server-side-complains-enabled #complaints #moderation
