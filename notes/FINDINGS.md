@@ -2696,3 +2696,11 @@ Google GAID + Huawei OAID + android_id + mac. Подробно: `notes/topics/32
 ### 330. MyTracker DeviceParamsDataProvider
 
 Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezone + freeSpace + currentModeType + hasSystemFeature(touchscreen). Подробно: `notes/topics/330-mytracker-device-params.md`.
+
+---
+
+## Дополнения 331
+
+### 331. MyTrackerUserLifecycle
+
+`trackLoginEvent(userId, null)` + `trackRegistrationEvent(userId, null)` + `trackInviteEvent()`. Подробно: `notes/topics/331-mytracker-user-lifecycle.md`.
