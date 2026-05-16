@@ -158,3 +158,6 @@ status: living
 - [[topics/49-polls-server-gated]] — опросы: render-polls/polls-in-p2p/p2g/channels/poll-ttl, GET_POLL_UPDATES #polls #server-control
 - [[topics/50-reactions-scheduled-messages]] — реакции (per-chat settings, MSG_GET_DETAILED_REACTIONS) + отложенные сообщения #reactions #server-control
 - [[topics/51-organizations-money-transfer]] — org-profile/official-org (верификация), money-transfer-botid, comments-enabled #organizations #money
+- [[topics/52-network-session-tls-flags]] — net-ssl-session-validate (server can disable TLS), watchdog-config #network #tls #security
+- [[topics/53-ab-status-cfs-pmskey]] — ab-status (A/B group sent to server), cfs (P2P fast-start) #ab-testing #server-control
+- [[topics/54-ws-session-config-fingerprint]] — 21-field client fingerprint sent on every WS connect #ws #telemetry #surveillance
