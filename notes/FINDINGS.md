@@ -1824,3 +1824,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 221. network_security_config.xml — cleartext HTTP
 
 Явно разрешён cleartext HTTP для 6 доменов: `mobileid.megafon.ru`, `idgw.mobileid.mts.ru`, `hhe.mts.ru`, `he-mc.tele2.ru`, `he-mc.t2.ru`, `balance.beeline.ru`. Подтверждение [[01-mobile-id-cleartext]]. Подробно: `notes/topics/221-network-security-config.md`.
+
+---
+
+## Дополнения 222
+
+### 222. Deep link схемы
+
+`max://`, `https://max.ru`, `yandexmaps://`, `yandexnavi://`, `dgis://`, `petalmaps://` (Huawei). Поддержка Petal Maps — ориентация на российский рынок без Google. Подробно: `notes/topics/222-deeplink-schemes.md`.

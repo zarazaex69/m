@@ -329,3 +329,4 @@ status: living
 - [[topics/219-battery-organizations-db]] — battery(sliceTime/utime/stime/batteryCapacity/instantAmperage) + organizations(parentId/folderTemplateId) DB #database #battery #organizations
 - [[topics/220-quic-tls-disabled]] — QUIC TLS disabled: null X509TrustManager for WebTransport QUIC, app prints SECURITY WARNING but uses it anyway #tls #security #quic #mitm
 - [[topics/221-network-security-config]] — network_security_config.xml: cleartext HTTP explicitly allowed for 6 RU operator domains (Megafon/MTS/Tele2/T2/Beeline) #tls #cleartext #mobile-id #operators
+- [[topics/222-deeplink-schemes]] — Deep link schemes: max:// yandexmaps:// yandexnavi:// dgis:// petalmaps://(Huawei) https://max.ru #deeplinks #maps #huawei
