@@ -486,3 +486,4 @@ status: living
 - [[topics/376-asr-online-manager]] — AsrOnlineManager: server-side ASR, auto-enables on server topology, AsrOnlineChunk(participantId, text) #asr #asr-online #server-asr #calls #surveillance #speech-recognition
 - [[topics/377-record-manager]] — RecordManager: record-start/stop, privacy=PUBLIC default, isStream, movieId on server #record #calls #surveillance #stream
 - [[topics/378-p2prelay-sessionroom]] — P2PRelaySwitchTrigger (RTT threshold from server) + SessionRoomsManager (assignParticipants/moveParticipant/requestAttention) #p2prelay #sessionroom #calls #admin
+- [[topics/379-watch-together]] — WatchTogether: play/pause/resume/stop/setPosition, MovieState(participantId,position,isPlaying), WebTransport #watch-together #calls #video #surveillance
