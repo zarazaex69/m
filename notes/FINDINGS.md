@@ -860,3 +860,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 98. MyTracker API детали
 
 `tracker-api.vk-analytics.ru` с путями: `v3/`, `mobile/v1`, `mlapi` (антифрод ML), `beta-ml`. Attribution через `mt_deeplink` параметр. Поддерживает proxy-хост. ML-endpoints для сенсорного fingerprint (5 датчиков из topic 35). Подробно: `notes/topics/98-mytracker-api-details.md`.
+
+---
+
+## Дополнения 99
+
+### 99. MyTracker PreInstall — OEM preinstall detection
+
+`PreInstallHandler` читает ресурсы вендорного приложения через `PackageManager` и системные свойства `ro.mytracker.preinstall.path` / `ro.appsflyer.preinstall.path`. Определяет, было ли MAX предустановлено производителем. Referrer отправляется на `tracker-api.vk-analytics.ru`. Однократная проверка (`preinstallRead` flag). Подробно: `notes/topics/99-mytracker-preinstall-oem.md`.
