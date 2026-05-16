@@ -1592,3 +1592,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 192. ClientCapabilities — 15 битов возможностей
 
 Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING_HALL`(2), `BIT_SCREEN_TRACK_CONSUMER`(4), `BIT_ADMIN_MUTE_NOTIFY`(5), `BIT_WATCH_MOVIE`(6), `BIT_SESSION_ROOMS`(8), `BIT_VMOJI`(9), `BIT_AUDIENCE_MODE`(11), `BIT_ADD_PARTICIPANT`(15), `BIT_USE_P2P_RELAY`(16), `BIT_WAIT_FOR_ADMIN`(17). Подробно: `notes/topics/192-client-capabilities.md`.
+
+---
+
+## Дополнения 193
+
+### 193. CallInfo — полная информация о звонке
+
+`endpoint`/`wsIps`/`wtEndpoint`/`wtIps`/`turnServer`/`stunServer`/`isP2PForbidden`/`deviceIndex`. Сервер полностью контролирует маршрутизацию медиа-трафика. Подробно: `notes/topics/193-call-info.md`.
