@@ -896,3 +896,15 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 103. media-order
 
 `media-order` (#174) — 4 режима: `0`=медиа снизу, `1`=медиа сверху, `2`=медиа сверху только в каналах, `3`=**порядок управляется с бека**. При `3` — сервер динамически контролирует layout сообщений. Подробно: `notes/topics/103-media-order.md`.
+
+---
+
+## Дополнения 104-105
+
+### 104. bad-networ-indicator-config + video-msg-config
+
+`bad-networ-indicator-config` (#14) — JSON с алгоритмом детекции плохой сети: RTT и loss пороги/веса. Сервер контролирует, когда показывать индикатор плохой сети. `video-msg-config` (#297) — конфиг видеосообщений. Подробно: `notes/topics/104-bad-network-video-msg-config.md`.
+
+### 105. chat-history-warm-opts
+
+`chat-history-warm-opts` — int, default `-1` (=All). Сервер контролирует прогрев истории чатов при запуске. Связанные: `chat-history-warm-fail-interval`, `chat-history-notif-msg-strategy`, `chat-history-persist`, `chat-history-login-count`. Все отправляются в WS session config. Подробно: `notes/topics/105-chat-history-warm.md`.
