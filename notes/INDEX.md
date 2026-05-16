@@ -445,3 +445,4 @@ status: living
 - [[topics/335-mytracker-external-proto]] — MyTracker ExternalProtoWriters: REMOTE_CONFIG_STRING/LOCATION_INFO/NETWORK_INFO/CELL_AND_WIFI_INFO #telemetry #mytracker #location #network #cell-info #surveillance
 - [[topics/336-ilb-device-data]] — ilb.java device data: board/brand/cpuABI/cpuCount/networkOperatorName/installer #telemetry #device-info #cpu #network-operator #surveillance
 - [[topics/337-crash-report-device-info]] — Crash report device info: environment/buildUuid/sessionUuid/device_id/inBackground/connection/isRooted #telemetry #crash-report #device-info #rooted #surveillance
+- [[topics/338-root-detection-impl]] — Root detection: Build.PRODUCT(sdk)/Build.TAGS(test-keys)/Superuser.apk//system/xbin/su #security #root-detection #emulator #surveillance

@@ -2752,3 +2752,11 @@ Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezon
 ### 337. Crash Report Device Info
 
 `environment`/`buildUuid`/`sessionUuid`/`device_id`/`inBackground`/`connection`/`isRooted`. Подробно: `notes/topics/337-crash-report-device-info.md`.
+
+---
+
+## Дополнения 338
+
+### 338. Root Detection
+
+Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.apk + /system/xbin/su. Эмулятор не считается рутированным. Подробно: `notes/topics/338-root-detection-impl.md`.
