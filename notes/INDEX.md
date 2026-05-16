@@ -634,3 +634,4 @@ status: living
 - [[topics/524-invite-by-qr]] — InviteByQrBottomSheet: clicked_to_invite(plus|main, invite_friends) #invite-by-qr #analytics #surveillance
 - [[topics/525-integrity-logs-viewer]] — IntegrityLogsViewerScreen: integrity logs viewer in DevMenu (production), .dex/.so pattern #integrity-logs #devmenu #debug #surveillance
 - [[topics/526-json-bottom-sheet]] — JsonBottomSheet: JSON editor in DevMenu (production), button_id/initial_json/descriptions #json-editor #devmenu #debug #server-control
+- [[topics/527-devmenu-feature-toggles]] — DevMenuFeatureTogglesPageScreen: Boolean/Long/Integer/String/JSON/PmsKey editors, SERVER source, DevMenu in production #devmenu #feature-toggles #server-control #debug

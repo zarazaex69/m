@@ -4262,3 +4262,11 @@ RTD флаг для фейковых чатов в `PickerChatsListWidget`. По
 ### 526. JsonBottomSheet
 
 Редактор JSON в DevMenu (production). Параметры: `button_id`/`initial_json`/`descriptions`. Подробно: `notes/topics/526-json-bottom-sheet.md`.
+
+---
+
+## Дополнения 527
+
+### 527. DevMenuFeatureTogglesPageScreen
+
+Редакторы Boolean/Long/Integer/String/JSON/PmsKey. Источник `"SERVER"`. DevMenu в production. Подробно: `notes/topics/527-devmenu-feature-toggles.md`.
