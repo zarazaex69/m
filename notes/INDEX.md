@@ -484,3 +484,4 @@ status: living
 - [[topics/374-compression-lz4-zstd]] — LZ4 + Zstd native decompression — both client-side only, server compresses #compression #lz4 #zstd #native
 - [[topics/375-call-analytics-sender]] — CallAnalyticsSender: send(event)/setIdle/forceSend, DEFAULT_DISABLE_UPLOAD_IN_CALL=true, sdk_type/sdk_version #calls-analytics #telemetry #externcalls #surveillance
 - [[topics/376-asr-online-manager]] — AsrOnlineManager: server-side ASR, auto-enables on server topology, AsrOnlineChunk(participantId, text) #asr #asr-online #server-asr #calls #surveillance #speech-recognition
+- [[topics/377-record-manager]] — RecordManager: record-start/stop, privacy=PUBLIC default, isStream, movieId on server #record #calls #surveillance #stream
