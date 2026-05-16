@@ -2192,3 +2192,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 267. ChatSettings + ChatReactionsSettings
 
 `ChatSettings`: dontDisturbUntil/favoriteIndex/hideLiveLocationPanel/hideLiveLocationPanelBeforeTime/lastNotifMark. `ChatReactionsSettings`: count/included/isActive/isFull. Подробно: `notes/topics/267-protos-chat-settings-reactions.md`.
+
+---
+
+## Дополнения 268
+
+### 268. GroupChatInfo + GroupOptions
+
+`GroupChatInfo`: groupId/isAnswered/isImportant/isMember/isModerator/messagingPermissions(DISABLED/MEMBERS/ALL). `GroupOptions`: groupPremium. Подробно: `notes/topics/268-protos-group-chat-info.md`.

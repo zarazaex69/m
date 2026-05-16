@@ -375,3 +375,4 @@ status: living
 - [[topics/265-protos-poll-photo-file]] — Protos.Poll(AnswerStats.userId/timestamp + voterPreviewIds[]) + Photo(photoId/gif/thumbhashData) + File(fileId/size) #protocol #poll #photo #file #protos
 - [[topics/266-protos-chat-options]] — Protos.ChatOptions: 13 flags (onlyAdminCanCall/contentLevelChat/joinRequest/membersCanSeePrivateLink/signAdmin) #protocol #chat-options #protos #server-control
 - [[topics/267-protos-chat-settings-reactions]] — ChatSettings(dontDisturbUntil/hideLiveLocationPanel/lastNotifMark) + ChatReactionsSettings(count/included/isActive/isFull) #protocol #chat-settings #reactions #live-location
+- [[topics/268-protos-group-chat-info]] — GroupChatInfo(groupId/isImportant/isModerator/messagingPermissions DISABLED/MEMBERS/ALL) + GroupOptions(groupPremium) #protocol #group-chat #protos #permissions
