@@ -1344,3 +1344,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 161. change-simulcast
 
 `mediaSource=CAMERA`, `layers[{rid, width, height, fps, bitrateKbps}]`. Сервер может изменить качество видео-потоков во время звонка. Подробно: `notes/topics/161-change-simulcast.md`.
+
+---
+
+## Дополнения 162
+
+### 162. report-perf-stat + update-display-layout
+
+`report-perf-stat`: `{framesReceived, framesDecoded}`. `update-display-layout`: `{layouts: {participantId: "ss"|"sz=WxH:fit=mode"}, snapshot: bool}` — **сервер знает UI layout клиента** (размер, режим отображения каждого участника). Подробно: `notes/topics/162-perf-stat-display-layout.md`.
