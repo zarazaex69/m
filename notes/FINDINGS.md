@@ -1116,3 +1116,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 132. Calls fast-join/NS/new-pms PmsKey
 
 `calls-android-fast-join` (#120, default=false) — «Быстрое присоединение через клиентский бекенд». `calls-android-ns` (#121, default=false) — «Включить шумодав» (WebRTC NS). `calls-android-new-pms` (#123, default=false) — «Новый механизм получения звонковых настроек». Подробно: `notes/topics/132-calls-fastjoin-ns-newpms.md`.
+
+---
+
+## Дополнения 133
+
+### 133. Calls early-offer/gen-peerid PmsKey
+
+`calls-android-early-set-offer` (#136, default=false) — «Разрешить раннюю обработку оффера входящего звонка». `calls-android-gen-peerid` (#137, default=false) — «Генерировать peer-id на клиенте». `calls-android-update-endpoint-params` (#132, default=false) — «Параметры webSocket-а заменять, а не дублировать». Подробно: `notes/topics/133-calls-early-offer-genpeerid.md`.
