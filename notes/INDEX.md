@@ -298,3 +298,4 @@ status: living
 - [[topics/188-camera-manager]] — CameraManager: getNumberOfCameras/isCameraEnabled/isCapturingFromFrontCamera/setCameraEnabled/switchCamera #calls #camera
 - [[topics/189-media-connection-manager]] — MediaConnectionManager: onMediaConnected(isFirstConnection)/onMediaDisconnected #calls #media-connection
 - [[topics/190-conversation-events-listener]] — ConversationEventsListener: 30+ events (onMicrophoneForciblyMuted/onParticipantsDeAnonymized/onMigratedToServerTopology) #calls #events #surveillance
+- [[topics/191-conversation-participant]] — ConversationParticipant: 20+ fields (getAcceptedCallClientType/Platform/Capabilities/NetworkStatus/isTalking/isReported) #calls #participant #surveillance
