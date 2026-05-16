@@ -2056,3 +2056,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 250. Config + Complain Tasks
 
 `Config`: `isPushToken`/`isUserSettings`/`userSettings(Map<String,String>)`/`syncChatIds`. `Complain`: `ids[]`/`reasonId`/`typeId`/`details`. Подробно: `notes/topics/250-config-complain-tasks.md`.
+
+---
+
+## Дополнения 251
+
+### 251. ContactUpdate + ContactVerify Tasks
+
+`ContactUpdate`: contactId/action/newName/oldName/lastName/oldLastName. `ContactVerify`: contactId/confirm/localName. Подробно: `notes/topics/251-contact-tasks.md`.
