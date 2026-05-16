@@ -2216,3 +2216,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 270. DraftSave + MsgView + AssetsAdd + SyncChatHistory
 
 `MsgView`: chatId/messageIds[]/registerView/time — **сервер знает, какие сообщения просмотрены**. `DraftSave`: chatId/draft(bytes) — черновики синхронизируются с сервером. Подробно: `notes/topics/270-tasks-draft-msgview-assets.md`.
+
+---
+
+## Дополнения 271
+
+### 271. MsgEdit + MsgReact Tasks
+
+`MsgEdit`: text/editAttaches/**oldText**/oldAttaches/oldElements/oldStatus — **сервер получает старое содержимое при редактировании**. `MsgReact`: reaction/reactionType. Подробно: `notes/topics/271-tasks-msg-edit-react.md`.
