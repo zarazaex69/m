@@ -2848,3 +2848,11 @@ POST+gzip+`X-Goog-Api-Key`+`datatransport/3.1.9`. URL задаётся дина�
 ### 349. Firebase Installations API
 
 `https://firebaseinstallations.googleapis.com/v1/<path>`. FID — уникальный ID установки. Подробно: `notes/topics/349-firebase-installations-api.md`.
+
+---
+
+## Дополнения 350
+
+### 350. Firebase Installations — данные
+
+`fid`/`appId`/`authVersion(FIS_v2)`/`sdkVersion(a:18.0.0)`. Данные уходят в Google. Подробно: `notes/topics/350-firebase-installations-data.md`.
