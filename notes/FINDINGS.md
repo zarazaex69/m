@@ -2464,3 +2464,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 301. FOLDERS_GET + GET_POLL_UPDATES + NOTIF_PROFILE WS
 
 `FOLDERS_GET`: allFilterExcludeFolders/folderSync/folders/foldersOrder. `GET_POLL_UPDATES`: polls. `NOTIF_PROFILE`: profile. Подробно: `notes/topics/301-folders-polls-profile-ws.md`.
+
+---
+
+## Дополнения 302
+
+### 302. NOTIF_BANNERS WS
+
+`showTime`/`banners`/`updateTime` — все обязательные. Сервер управляет расписанием показа баннеров. Подробно: `notes/topics/302-notif-banners-ws.md`.

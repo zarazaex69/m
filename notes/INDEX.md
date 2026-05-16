@@ -409,3 +409,4 @@ status: living
 - [[topics/299-voters-org-livestream-ws]] — VOTERS_LIST_BY_ANSWER(voteCount/voters) + ORG_INFO(organizations/email/user) + CHAT_LIVESTREAM_INFO(liveStreams) WS #protocol #ws #polls #org-info #livestream
 - [[topics/300-link-info-auth-qr-ws]] — LINK_INFO(stickerSet/startPayload/chat/user/group/message/videoConference/banners) + AUTH_QR_APPROVE(tokenAttrs) WS #protocol #ws #link-info #auth-qr
 - [[topics/301-folders-polls-profile-ws]] — FOLDERS_GET(allFilterExcludeFolders/folderSync/folders/foldersOrder) + GET_POLL_UPDATES(polls) + NOTIF_PROFILE(profile) WS #protocol #ws #folders #polls
+- [[topics/302-notif-banners-ws]] — NOTIF_BANNERS WS: showTime/banners/updateTime (all required, server controls banner schedule) #protocol #ws #banners #server-control
