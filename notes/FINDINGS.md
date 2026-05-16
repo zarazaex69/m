@@ -4182,3 +4182,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 516. Юридические ссылки
 
 FAQ: `https://help.max.ru`. Privacy Policy: `https://legal.max.ru/pp`. User Agreement: `https://legal.max.ru/ps`. Подробно: `notes/topics/516-legal-links.md`.
+
+---
+
+## Дополнения 517
+
+### 517. kf4 CallAudioController
+
+Bluetooth audio routing. `requestBluetoothAudio(device)` / `setAudioRoute(EARPIECE/BLUETOOTH/WIRED_HEADSET/SPEAKER)`. Подробно: `notes/topics/517-call-audio-controller.md`.
