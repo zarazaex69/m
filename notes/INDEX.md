@@ -208,3 +208,5 @@ status: living
 - [[topics/99-mytracker-preinstall-oem]] — MyTracker PreInstall: OEM preinstall detection via vendor app resources + ro.mytracker.preinstall.path #mytracker #oem #attribution
 - [[topics/100-call-chat-members-load-config]] — call-chat-members-load-config: maxLoadCount/minInCall/newLoadingContactsLogicEnabled #calls #server-control
 - [[topics/101-anr-watchdog-config]] — anr-config (server-controlled ANR detector: enabled/timeout.low/avg/high) + watchdog-config #anr #server-control
+- [[topics/102-conn-timeouts]] — conn-timeouts: server-controlled connection timeouts (JSON map by connection type) #network #server-control
+- [[topics/103-media-order]] — media-order: 4 modes (0-3), mode 3 = server-controlled media placement in messages #media #ui #server-control
