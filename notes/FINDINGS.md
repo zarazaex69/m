@@ -3470,3 +3470,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 427. Дополнительные таблицы БД
 
 `battery(sliceTime/utime/stime/batteryCapacity/instantAmperage)`. `metrics(traceId/metricName/spanAndPropertiesDump)`. `fcm_notifications_analytics`. `stat_events`. 38 таблиц всего. Подробно: `notes/topics/427-db-additional-tables.md`.
+
+---
+
+## Дополнения 428
+
+### 428. vw0 Battery+CPU collector
+
+`utime`/`stime`/`batteryCapacity`/`instantAmperage` + сетевой трафик (`mrx`/`mtx`/`wrx`/`wtx`). Интервал: `battery-slice-interval` (PmsKey). Подробно: `notes/topics/428-battery-cpu-collector.md`.

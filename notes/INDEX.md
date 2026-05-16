@@ -535,3 +535,4 @@ status: living
 - [[topics/425-webapp-ui-control]] — WebApp UI Control: ClosingBehavior(needConfirmation)/BackButton(isVisible)/OpenLink(url)/OpenMaxLink/ChangeScreenBrightness(maxBrightness) #webapp #jsbridge #ui-control #open-link #brightness
 - [[topics/426-webapp-biometry-db]] — webapp_biometry DB: (id,user_id,bot_id,token,access_requested,access_granted), biometric token stored locally #webapp #biometry #database #token #surveillance
 - [[topics/427-db-additional-tables]] — DB additional tables: battery(sliceTime/utime/stime/batteryCapacity/instantAmperage), metrics(traceId/spanAndPropertiesDump), fcm_notifications_analytics, stat_events #database #battery #metrics #fcm #analytics #surveillance
+- [[topics/428-battery-cpu-collector]] — vw0 battery+CPU collector: utime/stime/batteryCapacity/instantAmperage + network(mrx/mtx/wrx/wtx), interval=battery-slice-interval #battery #cpu #network-stats #surveillance #telemetry
