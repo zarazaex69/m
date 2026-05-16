@@ -1464,3 +1464,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 176. RateHint — автоматические причины плохого качества
 
 `rtt_<rttMs>`, `audioloss_<maxLoss>`, `videoloss_<maxLoss>`, candidate type. Пороги server-controlled через `android.rating.limits`. 4 триггера: RTT, loss (audio+video), directCandidateType, serverCandidateType. Подробно: `notes/topics/176-rate-hints.md`.
+
+---
+
+## Дополнения 177
+
+### 177. NetworkStat
+
+`rttMs`/`audioLoss`/`videoLoss`/`activeCandidateType` (host/srflx/relay). Используется для генерации `RateHint` при превышении порогов. Подробно: `notes/topics/177-network-stat.md`.
