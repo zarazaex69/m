@@ -492,3 +492,4 @@ status: living
 - [[topics/382-conversation-stats]] — ConversationStats: 18 components, bad_call_detected_by_audio_spotter(confidence), call_finish(reason,rate_reasons), ml_ready_to_use #calls-stat #analytics #telemetry #kws #surveillance
 - [[topics/383-externcalls-sdk-net]] — externcalls.sdk.net: DownloadService(HTTP+MD5), NetworkStat(rttMs,audioLoss,videoLoss,activeCandidateType), StatMonitor #calls-net #download #network-stat #rtt
 - [[topics/384-externcalls-sdk-config]] — externcalls.sdk.config: RemoteSettings(android.wordspotter.config/dump.bitrate/p2prelay), ConversationParams(isP2PForbidden/ispAsNo/locCc) #calls-config #remote-settings #server-control #surveillance
+- [[topics/385-mytracker-details]] — MyTracker: 10 modules, age/gender/email/phone/okId/vkId/icqId, AntiFraudConfig(all sensors), installedPackagesProvider #mytracker #telemetry #surveillance #anti-fraud #sensors #user-data

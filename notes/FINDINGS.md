@@ -3128,3 +3128,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 384. externcalls.sdk.config
 
 `RemoteSettings`: android.wordspotter.config/android.dump.bitrate/android.p2prelay.config. `ConversationParams`: isP2PForbidden/ispAsNo/ispAsOrg/locCc/locReg. Подробно: `notes/topics/384-externcalls-sdk-config.md`.
+
+---
+
+## Дополнения 385
+
+### 385. MyTracker детали
+
+10 модулей (RemoteConfig/Antifraud/MiniApps/...). `MyTrackerParams`: age/gender/email/phone/okId/vkId/vkConnectId/icqId. `AntiFraudConfig`: все датчики включены. `installedPackagesProvider`. Huawei HMS Install Referrer. Подробно: `notes/topics/385-mytracker-details.md`.
