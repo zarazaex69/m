@@ -2016,3 +2016,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 245. LOGIN WS ответ
 
 Поля: config/drafts/presence/contacts/messages/profile/updates/time/calls/chats + log-full/log-sensitive. `LOGIN.Response`: profile/token/chatMarker/videoChatHistory/resetAt/contactInfos/config. Подробно: `notes/topics/245-login-ws-response.md`.
+
+---
+
+## Дополнения 246
+
+### 246. WS Session Fingerprint — расширенные поля
+
+`enable-audio-messages-transcription`/`enable-video-messages-transcription` (сервер управляет транскрипцией), `calls-sdk-log-audio`, `ab-status`, `one-video-player`/`one-video-uploader-config`. Итого 40+ полей. Подробно: `notes/topics/246-ws-session-fingerprint-extended.md`.

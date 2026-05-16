@@ -353,3 +353,4 @@ status: living
 - [[topics/243-chat-folder-db]] — chat_folder DB: 14 fields (filters/filterSubjects/widgets/templateId/sourceId) #database #chat-folder #filters
 - [[topics/244-log-sensitive-server-flag]] — log-sensitive/log-full in LOGIN response: server enables auth token logging + full contacts logging #server-control #logging #sensitive-data #surveillance
 - [[topics/245-login-ws-response]] — LOGIN WS response: config/drafts/presence/contacts/messages/profile/updates/time/calls/chats + log-full/log-sensitive #protocol #login #ws #session-init
+- [[topics/246-ws-session-fingerprint-extended]] — WS session fingerprint extended: enable-audio/video-messages-transcription + calls-sdk-log-audio + 40+ total fields #protocol #ws #session-fingerprint #transcription
