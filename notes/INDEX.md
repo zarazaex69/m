@@ -56,6 +56,7 @@ status: living
 - [[topics/18-manifest-deep-dive]] — 55 пермов, 26 services, 16 receivers, 8 providers #manifest
 - [[topics/20-ws-protocol-opcodes]] — 159 опкодов TamTam/MAX-протокола #ws #protocol
 - [[topics/21-shared-prefs-map]] — карта SharedPreferences файлов #storage
+- [[topics/33-ws-msgpack-framing]] — MessagePack как сериализация WS-payload #ws #protocol
 
 ### Native-стек
 
@@ -68,6 +69,8 @@ status: living
 - [[topics/25-resources-audit]] — assets, raw-ресурсы, встроенная фича записи звонка #resources #call-recording
 - [[topics/26-upstream-public-repos]] — `github.com/max-messenger`: только bot SDK, без клиента #upstream
 - [[topics/27-hardcoded-keys-audit]] — Firebase / MyTracker / Google Maps; приватных ключей нет #secrets
+- [[topics/34-yandex-maps-integration]] — Yandex Maps endpoints и утечка координат #yandex #geolocation
+- [[topics/35-mytracker-antifraud-sensors]] — сенсорный fingerprint через MyTracker #antifraud #fingerprinting
 
 ## Источники (raw)
 
