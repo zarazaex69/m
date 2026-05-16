@@ -2320,3 +2320,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 283. LocationStop + MsgCancelReaction + ChangeChatPhoto
 
 `LocationStop`: chatId/messageId. `MsgCancelReaction`: chatId/messageId. `ChangeChatPhoto`: chatId/file/lastModified/crop. Подробно: `notes/topics/283-tasks-location-reaction-photo.md`.
+
+---
+
+## Дополнения 284
+
+### 284. ExternalVideoSend + CongratsStatus Tasks
+
+`ExternalVideoSend`: chatId/messageId/externalUrl. `CongratsStatus`: userId/holidayId/status. Подробно: `notes/topics/284-tasks-external-video-congrats.md`.
