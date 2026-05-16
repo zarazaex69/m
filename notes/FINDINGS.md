@@ -3806,3 +3806,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 469. Upload Hang Checker
 
 `OneVideoUploadOperation` с hang checker. `upload_hang` включается через DevNullServerConfig. Подробно: `notes/topics/469-upload-hang-checker.md`.
+
+---
+
+## Дополнения 470
+
+### 470. km5 Telemetry Sender
+
+`value1..16` + `valueStr1..6`. `ok9.h("DEV", eventType, data)`. Bloom filter дедупликация. Подробно: `notes/topics/470-km5-telemetry-sender.md`.
