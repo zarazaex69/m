@@ -397,3 +397,4 @@ status: living
 - [[topics/287-web-app-init-data]] — WEB_APP_INIT_DATA: hash/user/query_id/url/trackId/email/chatReactionsSettings/organizations (mini-app gets email+orgs+UserSettings) #webapp #init-data #ws #surveillance
 - [[topics/288-ok-token-ws]] — OK_TOKEN WS: token_refresh_ts/token_lifetime_ts (server updates auth token via WS) #protocol #ws #ok-token #auth
 - [[topics/289-phone-webapp-share-ws]] — PHONE_WEBAPP_SHARE WS: phone/hash/contact (phone number sent to mini-app via WS) #webapp #phone-share #ws #surveillance
+- [[topics/290-notif-message-ws]] — NOTIF_MESSAGE WS: chat_id/message/chat/mark/unread/ttl/url/prevMessageId/invisible #protocol #ws #notif-message

@@ -2368,3 +2368,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 289. PHONE_WEBAPP_SHARE WS
 
 `phone`/`hash`/`contact`. Номер телефона передаётся мини-приложению через WS. Подробно: `notes/topics/289-phone-webapp-share-ws.md`.
+
+---
+
+## Дополнения 290
+
+### 290. NOTIF_MESSAGE WS
+
+`chat_id`/`message`/`chat`/`mark`/`unread`/`ttl`/`url`/`prevMessageId`/`invisible`. Подробно: `notes/topics/290-notif-message-ws.md`.
