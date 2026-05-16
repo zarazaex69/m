@@ -584,3 +584,31 @@ PmsKey `opus-recorder` (#308), `opus-recorder-bitrate` (#309), `opus-recorder-sa
 ### 54. WS session config fingerprint — 21 поле при каждом подключении
 
 `ubi.java` формирует 21-поле диагностический fingerprint, отправляемый серверу при каждом WS-подключении: `net-ssl-session-validate`, `ab-status`, `calls-sdk-log-audio`, `db-tr-ex-count`, `db-query-ex-count`, `enable-audio-messages-transcription`, `enable-video-messages-transcription` и др. Сервер получает полный snapshot конфигурации клиента при каждом подключении. Подробно: `notes/topics/54-ws-session-config-fingerprint.md`.
+
+---
+
+## Дополнения 55-60
+
+### 55. 2FA, Stories, ilm, blocked-users
+
+2FA-flow в `one.me.settings.twofa.creation` с `creation_2fa_track_id_key` — tracking ID для аналитики каждого шага настройки 2FA. `story` PmsKey — server-gated Stories (default=false). `ilm` (default=true) — «Отключить инвалидацию последних сообщений при смене локали». `blocked-users` — «Уведомление о заблокированных пользователях». Подробно: `notes/topics/55-2fa-stories-misc-pmskey.md`.
+
+### 56. perf-events — server-configurable performance telemetry
+
+`perf-events` — JSON-конфиг событий производительности для сбора. `nei.java` отправляет POST на `https://sdk-api.apptracer.ru/api/perf/upload?crashToken=<token>` с payload `{samples: [{name, value, unit, attributes}]}`. Сервер контролирует, какие именно метрики собираются. Ответ сервера — `PERFORMANCE_METRICS` JSON. Подробно: `notes/topics/56-perf-events-apptracer-upload.md`.
+
+### 57. devnull, net-stat-config, opcode-stat-config
+
+`devnull` — `DevNullServerConfig(events=...)` — server-pushed blacklist событий аналитики для игнорирования. `net-stat-config` — конфиг сетевой статистики. `opcode-stat-config` — конфиг статистики WS-опкодов. Все три позволяют серверу точно управлять тем, что клиент собирает. Подробно: `notes/topics/57-devnull-telemetry-filter.md`.
+
+### 58. Non-contact sync — граф взаимодействий за пределами телефонной книги
+
+`myb.java` — воркер синхронизации не-контактов (пользователей, с которыми было взаимодействие, но которых нет в телефонной книге). Батчи по `non-contact-max-chunk-size` (default 10). PmsKey: `non-contact-sync-time`, `non-contact-max-chunk-size`, `non-contact-collection-interval`. Сервер получает полный граф общения пользователя, включая людей вне телефонной книги. Подробно: `notes/topics/58-non-contact-sync.md`.
+
+### 59. keep-background-socket + ping-background-interval
+
+`keep-background-socket` — server-controlled постоянное WS-соединение в фоне. `ping-background-interval` — интервал ping-пакетов когда приложение не интерактивно. `jn0.java` — обработчик изменения PmsKey. `hod.java` — планировщик ping. Сервер может держать MAX постоянно подключённым и пингующим, обеспечивая постоянный канал и presence-сигнал. Подробно: `notes/topics/59-keep-background-socket.md`.
+
+### 60. UserSettings — полная карта 26+ server-pushed полей
+
+`sgj.java` — модель UserSettings, приходящая с сервера при каждом подключении. Ключевые поля: `hiddenOnline`, `safeMode`/`safeModeNoPin` (server-pushed ограничение функциональности), `searchByPhone` (приватность номера), `audioTranscriptionEnabled` (второй канал управления транскрипцией), `contentLevelAccess`, `familyProtection`, `phoneNumberPrivacy`, `inactiveTtl`. Все 26+ полей server-pushed, не только user-controlled. Подробно: `notes/topics/60-user-settings-full-map.md`.
