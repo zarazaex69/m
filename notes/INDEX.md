@@ -418,3 +418,4 @@ status: living
 - [[topics/308-nm4-contact-presence-parser]] — nm4 contact/presence parser: phonebook_id/phone/phone_key/server_phone/email/first_name/last_name + presence(seen/status) #protocol #contacts #presence #surveillance
 - [[topics/309-nm4-additional-schemas]] — nm4 additional: chat(id/server_id/data) + video upload(quality/trim) + FCM notification(text/sender/push_id/bmd) #protocol #database #parser #fcm
 - [[topics/310-presence-db-schema]] — presence DB: contactServerId/seen(last online time)/status #database #presence #last-seen #surveillance
+- [[topics/311-contacts-phones-db]] — contacts(id/server_id/data BLOB) + phones(phonebook_id/phone/phone_key/server_phone/email/first_name/last_name) DB schemas #database #contacts #phones #surveillance

@@ -2536,3 +2536,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 310. presence DB
 
 `contactServerId`/`seen`(время последнего визита)/`status`. Локальный кэш статусов присутствия. Подробно: `notes/topics/310-presence-db-schema.md`.
+
+---
+
+## Дополнения 311
+
+### 311. contacts + phones DB
+
+`contacts`: id/server_id/data(BLOB protobuf). `phones`: phonebook_id/contact_id/phone/phone_key/server_phone/email/first_name/last_name/avatar_path. Подробно: `notes/topics/311-contacts-phones-db.md`.
