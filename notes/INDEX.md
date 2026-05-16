@@ -347,3 +347,4 @@ status: living
 - [[topics/237-calls-signaling-timeouts]] — CallsSignalingTimeouts: enabled/connectTimeout(5s)/initialReconnectDelay(2s)/reconnectDelayScaleFactor/maxReconnectDelay (server-controlled) #calls #signaling #timeouts
 - [[topics/238-chats-uploads-db-schemas]] — chats(id/server_id/data BLOB/favourite_index/cid) + uploads(15 fields incl thumbhash_base64) DB schemas #database #chats #uploads
 - [[topics/239-informer-banner-db]] — informer_banner DB: 14 fields (click_time/show_time/close_time/show_count — full interaction lifecycle) #database #informer-banner #tracking
+- [[topics/240-metrics-db-schema]] — metrics DB: traceId/metricName/spanAndPropertiesDump(BLOB)/attempt (distributed tracing with retry) #database #metrics #tracing #performance

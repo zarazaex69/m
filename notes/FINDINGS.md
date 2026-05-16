@@ -1968,3 +1968,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 239. informer_banner DB
 
 14 полей: click_time/show_time/close_time/show_count — полный lifecycle взаимодействия с баннером. Подробно: `notes/topics/239-informer-banner-db.md`.
+
+---
+
+## Дополнения 240
+
+### 240. metrics DB — distributed tracing
+
+`traceId`/`metricName`/`spanAndPropertiesDump`(BLOB)/`attempt`/`isMarkedAsFailed`. Distributed tracing с retry. Подробно: `notes/topics/240-metrics-db-schema.md`.
