@@ -287,3 +287,4 @@ status: living
 - [[topics/177-network-stat]] — NetworkStat: rttMs/audioLoss/videoLoss/activeCandidateType(host/srflx/relay) #calls #network #stats
 - [[topics/178-call-type]] — Conversation.CallType(Incoming/Outgoing/Join) + Conversation.State(None/Preparing/Starting/Connecting/Connected/Finished) #calls #state
 - [[topics/179-conversation-interface]] — Conversation interface: 30+ managers (AsrManager/AsrOnlineManager/KWS/Camera/Microphone/NoiseSuppressionManager/RecordManager/DebugManager) #calls #interface
+- [[topics/180-record-manager]] — RecordManager: startRecord(isStream/movieId/albumId/privacy) + stopRecord, VK/OK video platform integration #calls #recording #stream
