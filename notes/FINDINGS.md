@@ -2736,3 +2736,11 @@ Build.DEVICE/MANUFACTURER/MODEL/VERSION + screen(width/height/density) + timezon
 ### 335. MyTracker ExternalProtoWriters
 
 `REMOTE_CONFIG_STRING`(1)/`LOCATION_INFO`(2)/`NETWORK_INFO`(3)/`CELL_AND_WIFI_INFO`(4). Подробно: `notes/topics/335-mytracker-external-proto.md`.
+
+---
+
+## Дополнения 336
+
+### 336. ilb.java — расширенные данные устройства
+
+`board`/`brand`/`cpuABI`(Build.SUPPORTED_ABIS)/`cpuCount`/`networkOperatorName`/`installer`. Подробно: `notes/topics/336-ilb-device-data.md`.
