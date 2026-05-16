@@ -591,3 +591,4 @@ status: living
 - [[topics/481-search-analytics]] — SHOW.SEARCH_RESPONSE: {counters:{RECENTS,ALL_CONTACTS,LOCAL_SEARCH}, inputQuery}, search query sent to server #search #telemetry #surveillance #contacts #search-analytics
 - [[topics/482-contact-block-sticker-analytics]] — CONTACT_OR_BLOCK(clicked/showed) + sticker.send_sticker: block/add_to_contacts actions logged #contact-block #telemetry #surveillance #contact-analytics
 - [[topics/483-channel-recsys-analytics]] — CHANNEL_RECSYS_FOLDER: channel_folder_open{channels_shown}/channel_folder_delete, recommendation system analytics #channel-recsys #telemetry #surveillance #channel-folder #recommendation
+- [[topics/484-auth-qr-analytics]] — AUTH_QR.LOG: all QR auth steps logged: qr_login_button_click/permission_decision/qr_scan_failed/qr_scan_succeeded #auth-qr #telemetry #surveillance #qr-auth #permission

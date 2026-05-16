@@ -3918,3 +3918,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 483. CHANNEL_RECSYS_FOLDER
 
 `channel_folder_open {channels_shown: [...]}`. `channel_folder_delete`. Рекомендательная система каналов. Подробно: `notes/topics/483-channel-recsys-analytics.md`.
+
+---
+
+## Дополнения 484
+
+### 484. AUTH_QR.LOG
+
+Все шаги QR-авторизации: `qr_login_button_click`/`permission_decision`/`qr_scan_failed`/`qr_scan_succeeded`. Подробно: `notes/topics/484-auth-qr-analytics.md`.
