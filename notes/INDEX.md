@@ -216,3 +216,4 @@ status: living
 - [[topics/107-opcode-stat-session-stats]] — opcode-stat-config + session.opcode_stats (opcodeStats/anrDetected/caughtExceptionCount/phonebookSize) #telemetry #surveillance
 - [[topics/108-fresco-executor-thread-pool]] — fresco-executor + system-thread-pool-queue (server-gated performance hacks) #threading #server-control
 - [[topics/109-presence-pmskey-full]] — presence PmsKey full map: presence-external/presence-stat/presence-ttl=300s #presence #server-control
+- [[topics/110-audio-playback-pmskey]] — audio playback PmsKey: audio-play-opus/audio-download(default=false)/audio-prefetch #audio #server-control
