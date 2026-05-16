@@ -384,3 +384,4 @@ status: living
 - [[topics/274-tasks-file-share-pin]] — FileDownloadCmd(fileId/fileName) + MsgSharePreview(messageId/text) + ChatPinSetVisibility(show) Tasks #protocol #tasks #file-download #share-preview
 - [[topics/275-tasks-batch-ops]] — ChatMarkBatch(chatIds[]/maxMark) + DeleteChatsBatch(chatIds[]) + ChatsList(chatsSync/marker) + DraftDiscard Tasks #protocol #tasks #batch-ops
 - [[topics/276-tasks-fire-time-photo]] — UpdateFireTimeProtoTask(chatId/messageId/fireTime/notifySender) + ChangeProfileOrChatPhoto(file/lastModified/crop) Tasks #protocol #tasks #scheduled-messages #photo
+- [[topics/277-tasks-video-warm-history]] — VideoConvert(srcPath/dstPath/startPosition/endPosition/quality) + VideoUpload(file/audio) + WarmChatHistory(chatIds[]) Tasks #protocol #tasks #video #warm-history

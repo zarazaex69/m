@@ -2264,3 +2264,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 276. UpdateFireTimeProtoTask + ChangeProfileOrChatPhoto
 
 `UpdateFireTimeProtoTask`: chatId/messageId/fireTime/notifySender (отложенные сообщения). `ChangeProfileOrChatPhoto`: chatId/file/lastModified/crop. Подробно: `notes/topics/276-tasks-fire-time-photo.md`.
+
+---
+
+## Дополнения 277
+
+### 277. VideoConvert + VideoUpload + WarmChatHistory
+
+`VideoConvert`: srcPath/dstPath/startPosition/endPosition/quality. `VideoUpload`: file/audio. `WarmChatHistory`: chatIds[]. Подробно: `notes/topics/277-tasks-video-warm-history.md`.
