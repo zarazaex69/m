@@ -3478,3 +3478,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 428. vw0 Battery+CPU collector
 
 `utime`/`stime`/`batteryCapacity`/`instantAmperage` + сетевой трафик (`mrx`/`mtx`/`wrx`/`wtx`). Интервал: `battery-slice-interval` (PmsKey). Подробно: `notes/topics/428-battery-cpu-collector.md`.
+
+---
+
+## Дополнения 429
+
+### 429. fcm_notifications DB
+
+`fcm_notifications`: chat_id/message_id/type/sender/text/push_id/event_key. `fcm_notifications_analytics`: push_id/analytics_status/fcm_sent_time/received_time/content_length. Подробно: `notes/topics/429-fcm-notifications-db.md`.

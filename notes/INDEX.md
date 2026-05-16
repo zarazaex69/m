@@ -536,3 +536,4 @@ status: living
 - [[topics/426-webapp-biometry-db]] — webapp_biometry DB: (id,user_id,bot_id,token,access_requested,access_granted), biometric token stored locally #webapp #biometry #database #token #surveillance
 - [[topics/427-db-additional-tables]] — DB additional tables: battery(sliceTime/utime/stime/batteryCapacity/instantAmperage), metrics(traceId/spanAndPropertiesDump), fcm_notifications_analytics, stat_events #database #battery #metrics #fcm #analytics #surveillance
 - [[topics/428-battery-cpu-collector]] — vw0 battery+CPU collector: utime/stime/batteryCapacity/instantAmperage + network(mrx/mtx/wrx/wtx), interval=battery-slice-interval #battery #cpu #network-stats #surveillance #telemetry
+- [[topics/429-fcm-notifications-db]] — fcm_notifications DB: text/sender/push_id/event_key + fcm_notifications_analytics(fcm_sent_time/received_time/analytics_status) #database #fcm #notifications #analytics #push #surveillance
