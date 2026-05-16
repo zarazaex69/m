@@ -788,3 +788,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 89. video-transcoding-class + one-video-uploader-config
 
 `video-transcoding-class` (#302) — JSON-массив `[1,2,3]` (low/average/high), default `[2,3]`. Сервер контролирует доступные классы качества видео. `one-video-uploader-config` — JSON `{"audio": 0|1|2, "video": 0|1|2}` — режим загрузчика видео. Подробно: `notes/topics/89-video-transcoding-config.md`.
+
+---
+
+## Дополнения 90
+
+### 90. Media upload WS-опкоды + speedy-upload
+
+`PHOTO_UPLOAD(80)`, `STICKER_UPLOAD(81)`, `VIDEO_UPLOAD(82)`, `FILE_UPLOAD(87)`. `speedy-upload` (#275) — «Фейк прогресс для загрузки видео» (server-gated). `file-upload-unsupported-types` (#36) — server-controlled content-фильтрация типов файлов. `file-upload-max-size` (#35) — server-controlled лимит размера. Подробно: `notes/topics/90-media-upload-opcodes.md`.
