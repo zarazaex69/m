@@ -1456,3 +1456,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 175. ConversationEndReason — 17 причин завершения
 
 `banned`, `killed`/`killed_without_delete` (принудительное завершение сервером), `obsolete_client` (устаревший клиент), `another_device` (multi-device), `socket_closed`, `timeout`, `hangup`, `missed`, `rejected`, `busy`, `error`, `failed`, `canceled`, `removed`, `initially_closed`, `call_timeout`. Подробно: `notes/topics/175-conversation-end-reason.md`.
+
+---
+
+## Дополнения 176
+
+### 176. RateHint — автоматические причины плохого качества
+
+`rtt_<rttMs>`, `audioloss_<maxLoss>`, `videoloss_<maxLoss>`, candidate type. Пороги server-controlled через `android.rating.limits`. 4 триггера: RTT, loss (audio+video), directCandidateType, serverCandidateType. Подробно: `notes/topics/176-rate-hints.md`.
