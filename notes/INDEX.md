@@ -324,3 +324,4 @@ status: living
 - [[topics/214-ws-session-config-extended]] — WS session config extended: proxy/proxy-domains/isVpn/location(geo country)/reg-country-code/callsSeed #server-control #vpn #proxy #network
 - [[topics/215-messages-db-schema]] — messages DB schema: 35+ fields (ttl/live_until/delayed_attrs_time_to_fire/channel_views/msg_link chain) #database #messages #schema
 - [[topics/216-local-db-tables]] — Local DB: 35+ tables (webapp_biometry/fcm_notifications_history/stat_events/battery/presence/tasks) #database #schema #local-storage
+- [[topics/217-webapp-biometry]] — WebApp Biometry: webapp_biometry(user_id/bot_id/token/access_granted) + 8 JS-bridge methods (AuthRequest/UpdateToken) #webapp #biometry #jsbridge

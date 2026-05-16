@@ -1784,3 +1784,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 216. Локальная БД — 35+ таблиц
 
 `webapp_biometry` (биометрия мини-приложений), `fcm_notifications_history`, `stat_events`, `battery`, `presence`, `tasks`, `organizations`, `complain_reasons`. Подробно: `notes/topics/216-local-db-tables.md`.
+
+---
+
+## Дополнения 217
+
+### 217. WebApp Biometry — биометрия в мини-приложениях
+
+`webapp_biometry`: user_id/bot_id/**token**/access_requested/access_granted. 8 JS-bridge методов: `WebAppBiometryAuthRequest`/`WebAppBiometryUpdateTokenRequest`/`WebAppBiometryAccessRequest`. Токен хранится в БД. Подробно: `notes/topics/217-webapp-biometry.md`.
