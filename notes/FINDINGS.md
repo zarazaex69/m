@@ -1712,3 +1712,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 207. CritLog — 30+ типов критических событий
 
 `AUDIO_TRANSCRIPTION`(message_id/media_id/duration/waiting_time), `DANGEROUS_FILE_ACTIONS`/`DANGEROUS_URL_ACTIONS`, `MINIAPP_BIOMETRY`, `GET_INSTALL_REFERRER`, `ADMIN_CALL_SETTINGS_TO_USER`, `WEBAPP_ACTION`/`WEBAPP_BRIDGE`, `PERMISSION`, `PUSH`, `REGISTRATION`. Подробно: `notes/topics/207-critlog-events.md`.
+
+---
+
+## Дополнения 208
+
+### 208. WebApp телеметрия — WEBAPP_ACTION + WEBAPP_BRIDGE
+
+`WEBAPP_ACTION`: OPEN/CLOSE/REFRESH/MINIAPP_TAKE_PHOTO + botId/webAppName/entryPoint/sourceType. `WEBAPP_BRIDGE`: **каждый JS-bridge вызов** логируется с sessionId/botId/webAppName/success/method/code. Подробно: `notes/topics/208-webapp-telemetry.md`.

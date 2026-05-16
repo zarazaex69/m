@@ -315,3 +315,4 @@ status: living
 - [[topics/205-tasks-proto]] — Tasks.proto: 60+ background task types (LocationRequest/CritLog/SuspendBot/UpdateFireTimeProtoTask/SyncChatHistory) #protocol #tasks #protobuf
 - [[topics/206-protos-schemas]] — Protos.java: 50+ protobuf nano schemas (Location/ttl/livePeriod, VideoConversation/previewParticipantIds, LogEvent) #protocol #protobuf #messages
 - [[topics/207-critlog-events]] — CritLog: 30+ event types (AUDIO_TRANSCRIPTION/DANGEROUS_FILE_ACTIONS/MINIAPP_BIOMETRY/GET_INSTALL_REFERRER) #telemetry #critlog #surveillance
+- [[topics/208-webapp-telemetry]] — WebApp telemetry: WEBAPP_ACTION(OPEN/CLOSE/MINIAPP_TAKE_PHOTO) + WEBAPP_BRIDGE(every JS call: botId/method/code) #webapp #telemetry #surveillance
