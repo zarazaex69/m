@@ -3182,3 +3182,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 391. ConversationEventsListener
 
 40+ callbacks. `onParticipantsDeAnonymized`/`onMicrophoneForciblyMuted`/`onMigratedToServerTopology`/`onOpponentFingerprintChanged`/`onCustomData(JSONObject)`. Подробно: `notes/topics/391-conversation-events-listener.md`.
+
+---
+
+## Дополнения 392
+
+### 392. ConversationParticipant
+
+`capabilities`/`networkStatus`/`isTalking`/`deAnonymize`. `getAcceptedCallClientType()`/`getAcceptedCallPlatform()`. Подробно: `notes/topics/392-conversation-participant.md`.
