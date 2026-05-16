@@ -257,3 +257,4 @@ status: living
 - [[topics/148-call-external-analytics]] — CallExternalAnalyticsApiRequest: external analytics with application/collector/platform (two independent analytics channels) #calls #analytics
 - [[topics/149-upload-config-calls-analytics]] — UploadConfig: DEFAULT_DISABLE_UPLOAD_IN_CALL=true/DEFAULT_MAX_EVENT_COUNT=800/DEFAULT_MAX_FILE_SIZE_KB=15 #calls #analytics #upload
 - [[topics/150-apply-bitrate-dump-config]] — applyBitrateDumpGatheringConfig: server-controlled bitrate dump file per call (android.dump.bitrate.isEnabled) #calls #bitrate-dump #server-control
+- [[topics/151-conversation-impl-callbacks]] — ConversationImpl: onCustomData(arbitrary JSON via DataChannel)/onCallParticipantFingerprint(DTLS tracking)/onRateCall(server-initiated) #calls #webrtc #datachannel
