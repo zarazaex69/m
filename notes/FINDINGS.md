@@ -3486,3 +3486,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 429. fcm_notifications DB
 
 `fcm_notifications`: chat_id/message_id/type/sender/text/push_id/event_key. `fcm_notifications_analytics`: push_id/analytics_status/fcm_sent_time/received_time/content_length. Подробно: `notes/topics/429-fcm-notifications-db.md`.
+
+---
+
+## Дополнения 430
+
+### 430. DB presence + phones + messages
+
+`presence(contactServerId, seen, status)`. `phones(phone, phone_key, server_phone, email, first_name, last_name)`. `messages.text` — в открытом виде в SQLite. Подробно: `notes/topics/430-db-presence-phones-messages.md`.
