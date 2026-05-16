@@ -3000,3 +3000,11 @@ GIF/WebP анимации + 5 потоков (FrescoIoBoundExecutor/FrescoDecode
 ### 368. WebAppHttpClient.WebAppHasVpnException
 
 VPN обнаружен в WebApp HTTP клиенте. Мини-приложения блокируются при VPN. Подробно: `notes/topics/368-webapp-vpn-exception.md`.
+
+---
+
+## Дополнения 369
+
+### 369. DownloadFileFromWebAppWorker
+
+`fileName`/`fileUrl`. ForegroundWorker для загрузки файлов из мини-приложений. Подробно: `notes/topics/369-download-file-from-webapp.md`.
