@@ -780,3 +780,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 88. Call Rate — оценка качества звонков
 
 `CallRateBottomSheet` с `callId`, `isGroupCall`, `isVideoCall`, `sdkReasons` (технические причины плохого качества от WebRTC SDK). Сервер получает оценку + технические причины. Условия показа server-controlled через `call-rate` PmsKey и `android.rating.limits`. Подробно: `notes/topics/88-call-rate-quality-rating.md`.
+
+---
+
+## Дополнения 89
+
+### 89. video-transcoding-class + one-video-uploader-config
+
+`video-transcoding-class` (#302) — JSON-массив `[1,2,3]` (low/average/high), default `[2,3]`. Сервер контролирует доступные классы качества видео. `one-video-uploader-config` — JSON `{"audio": 0|1|2, "video": 0|1|2}` — режим загрузчика видео. Подробно: `notes/topics/89-video-transcoding-config.md`.
