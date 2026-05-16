@@ -2304,3 +2304,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 281. Assets Tasks + SuspendBot
 
 `AssetsAdd/Remove/ListModify/Move`: управление ассетами (стикеры/GIF). `SuspendBot`: botId/chatId/suspend. Подробно: `notes/topics/281-tasks-assets-suspend-bot.md`.
+
+---
+
+## Дополнения 282
+
+### 282. ChatMark + ChatComplain Tasks
+
+`ChatMark`: chatId/messageId/mark/setAsUnread/isReadReaction (сервер знает, до какого сообщения прочитан чат). `ChatComplain`: chatId/complaint. Подробно: `notes/topics/282-tasks-chat-mark-complain.md`.
