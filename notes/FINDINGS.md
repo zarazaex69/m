@@ -3790,3 +3790,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 467. Типы событий телеметрии
 
 12 типов: STARTUP_REPORT/AB_EVENT/OPCODE/CHAT_HISTORY_WARM/CHAT_LIST/WEB_APP/UPLOAD_HANG/UPLOAD_ERROR/MEMORY/BATTERY/TRANSCODE/BAD_PUSHES. Подробно: `notes/topics/467-telemetry-event-types.md`.
+
+---
+
+## Дополнения 468
+
+### 468. startup_report
+
+`crash`/`exit_reason`/`bucket(UsageStatsManager)`/`memory`/`class(PerfClass)`/`isIgnoringBatteryOptimizations`/`isBackgroundRestricted`. Подробно: `notes/topics/468-startup-report.md`.
