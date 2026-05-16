@@ -633,3 +633,4 @@ status: living
 - [[topics/523-invite-friends]] — InviteFriendsToMaxBottomSheet: clicked_to_invite(main,trigger_max), app.already.invited.friends=true, invite text from server #invite-friends #analytics #surveillance #server-control
 - [[topics/524-invite-by-qr]] — InviteByQrBottomSheet: clicked_to_invite(plus|main, invite_friends) #invite-by-qr #analytics #surveillance
 - [[topics/525-integrity-logs-viewer]] — IntegrityLogsViewerScreen: integrity logs viewer in DevMenu (production), .dex/.so pattern #integrity-logs #devmenu #debug #surveillance
+- [[topics/526-json-bottom-sheet]] — JsonBottomSheet: JSON editor in DevMenu (production), button_id/initial_json/descriptions #json-editor #devmenu #debug #server-control

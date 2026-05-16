@@ -4254,3 +4254,11 @@ RTD флаг для фейковых чатов в `PickerChatsListWidget`. По
 ### 525. IntegrityLogsViewerScreen
 
 Просмотр логов целостности `.dex`/`.so` файлов в DevMenu (production). Паттерн `\b([\w\-\.]+\.(dex|so))\b`. Подробно: `notes/topics/525-integrity-logs-viewer.md`.
+
+---
+
+## Дополнения 526
+
+### 526. JsonBottomSheet
+
+Редактор JSON в DevMenu (production). Параметры: `button_id`/`initial_json`/`descriptions`. Подробно: `notes/topics/526-json-bottom-sheet.md`.
