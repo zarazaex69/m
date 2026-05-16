@@ -568,3 +568,4 @@ status: living
 - [[topics/458-network-operator-collection]] — f58: connection_type/vpn + getNetworkOperator():getNetworkOperatorName() in every API request #network-operator #telephony #vpn-detection #connection-type #surveillance #telemetry
 - [[topics/459-device-data-yk2]] — yk2: Build.FINGERPRINT + mcc_mnc(getSimOperator()) + tz-offset + sdk-version + net-type/mobile-subtype #sim-operator #mcc-mnc #fingerprint #timezone #network-type #surveillance #telemetry
 - [[topics/460-yag-shared-prefs]] — yag SharedPreferences: 50+ keys, device.id/user.fcmToken/user.okToken/server.timeDelta/app.first.login.time/user.callSession #shared-prefs #user-prefs #device-id #fcm-token #proxy #server-time #surveillance
+- [[topics/461-login-response-proxy]] — isg LOGIN response: proxy/proxydomains from server, LOGIN request: deviceId/pushDeviceType/buildNumber/timezone #proxy #pmskey #login-response #server-control #surveillance

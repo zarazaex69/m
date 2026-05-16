@@ -3734,3 +3734,11 @@ SHA-256 fingerprint. `InvalidSslIntegrityException`/`InvalidSslSessionException`
 ### 460. yag SharedPreferences
 
 50+ ключей. Ключевые: `device.id`/`user.fcmToken`/`user.okToken`/`server.timeDelta`/`app.first.login.time`/`user.callSession`. Подробно: `notes/topics/460-yag-shared-prefs.md`.
+
+---
+
+## Дополнения 461
+
+### 461. isg LOGIN response
+
+LOGIN ответ → proxy/proxydomains/lang. LOGIN запрос → deviceId/pushDeviceType/buildNumber/timezone. Подробно: `notes/topics/461-login-response-proxy.md`.
