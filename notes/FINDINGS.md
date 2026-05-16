@@ -2288,3 +2288,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 279. FileDownload + PrepareFileUpload Tasks
 
 `FileDownload`: fileId/fileName/url/place/notCopyVideoToGallery. `PrepareFileUpload`: uri/fileName/messageId. Подробно: `notes/topics/279-tasks-file-download-prepare.md`.
+
+---
+
+## Дополнения 280
+
+### 280. MsgSendCallback + MsgDeleteRange Tasks
+
+`MsgSendCallback`: messageId/callbackId/**payload**/buttonType/buttonPosition(row/column). `MsgDeleteRange`: chatId/startTime/endTime. Подробно: `notes/topics/280-tasks-callback-delete-range.md`.

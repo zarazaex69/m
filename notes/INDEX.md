@@ -387,3 +387,4 @@ status: living
 - [[topics/277-tasks-video-warm-history]] — VideoConvert(srcPath/dstPath/startPosition/endPosition/quality) + VideoUpload(file/audio) + WarmChatHistory(chatIds[]) Tasks #protocol #tasks #video #warm-history
 - [[topics/278-tasks-photo-file-upload]] — PhotoUpload(file/chatId/crop/profile) + FileUpload(file/originalFile/fileName/fileId/lastUpdatedFile) Tasks #protocol #tasks #file-upload #photo-upload
 - [[topics/279-tasks-file-download-prepare]] — FileDownload(fileId/fileName/url/place/notCopyVideoToGallery) + PrepareFileUpload(uri/fileName) Tasks #protocol #tasks #file-download #prepare-upload
+- [[topics/280-tasks-callback-delete-range]] — MsgSendCallback(callbackId/payload/buttonPosition row/col) + MsgDeleteRange(chatId/startTime/endTime) Tasks #protocol #tasks #bot #inline-keyboard #surveillance
