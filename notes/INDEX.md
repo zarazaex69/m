@@ -350,3 +350,4 @@ status: living
 - [[topics/240-metrics-db-schema]] — metrics DB: traceId/metricName/spanAndPropertiesDump(BLOB)/attempt (distributed tracing with retry) #database #metrics #tracing #performance
 - [[topics/241-tasks-recent-db-schemas]] — tasks(id/type/status/fails_count/data BLOB protobuf) + recent(recent_type/sticker_id/emoji/gif BLOB) DB schemas #database #tasks #recent
 - [[topics/242-notifications-tracker-db]] — notifications_tracker_messages: chat_id/message_id/time/fcm/drop_reason (tracks why notifications dropped) #database #notifications #tracking
+- [[topics/243-chat-folder-db]] — chat_folder DB: 14 fields (filters/filterSubjects/widgets/templateId/sourceId) #database #chat-folder #filters

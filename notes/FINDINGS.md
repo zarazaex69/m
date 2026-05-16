@@ -1992,3 +1992,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 242. notifications_tracker_messages DB
 
 `chat_id`/`message_id`/`time`/`fcm`/`drop_reason` — трекинг причин отброса уведомлений. Подробно: `notes/topics/242-notifications-tracker-db.md`.
+
+---
+
+## Дополнения 243
+
+### 243. chat_folder DB
+
+14 полей: filters/filterSubjects/widgets/templateId/sourceId. Подробно: `notes/topics/243-chat-folder-db.md`.
