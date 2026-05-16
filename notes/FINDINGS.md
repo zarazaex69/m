@@ -2648,3 +2648,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 324. DiskUsageWorker
 
 `int_data`(applicationInfo.dataDir)/`ext_data`(externalFilesDir)/`total_size`. Рекурсивный список файлов (до 20). Подробно: `notes/topics/324-disk-usage-worker.md`.
+
+---
+
+## Дополнения 325
+
+### 325. Apptracer SDK — компоненты
+
+`CrashReport`+`HeapDump`+`PerformanceMetrics`+`DiskUsage`+`SamplingProfiler`+`NativeBridge`+`SampleUpload`. Подробно: `notes/topics/325-apptracer-sdk-components.md`.

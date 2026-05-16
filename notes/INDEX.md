@@ -432,3 +432,4 @@ status: living
 - [[topics/322-apptracer-sample-upload]] — Apptracer sample/initUpload: sdk-api.apptracer.ru/api/sample/initUpload?sampleToken (arbitrary files: heap dumps/CPU profiles) #telemetry #apptracer #sample-upload #surveillance
 - [[topics/323-apptracer-all-endpoints]] — Apptracer all endpoints: api/crash/trackSession(device_id/sessions/drops) + api/perf/upload + api/sample/initUpload+upload #telemetry #apptracer #endpoints #surveillance
 - [[topics/324-disk-usage-worker]] — DiskUsageWorker: int_data(applicationInfo.dataDir)/ext_data(externalFilesDir)/total_size (recursive file list) #telemetry #apptracer #disk-usage #surveillance
+- [[topics/325-apptracer-sdk-components]] — Apptracer SDK: CrashReport+HeapDump+PerformanceMetrics+DiskUsage+SamplingProfiler+NativeBridge+SampleUpload #telemetry #apptracer #heap-dump #cpu-profiler #surveillance
