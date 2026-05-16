@@ -3326,3 +3326,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 409. Транскрипция аудио/видео сообщений
 
 `Protos.Audio.transcription`/`Protos.Video.transcription`. `audio.transcription.enabled = true` по умолчанию. PmsKey: `enable-audio-messages-transcription`/`enable-video-messages-transcription`. Подробно: `notes/topics/409-audio-video-transcription.md`.
+
+---
+
+## Дополнения 410
+
+### 410. UserSettings
+
+`audioTranscriptionEnabled`/`hiddenOnline`/`dontDustirbUntil`/`safeMode`/`inactiveTTL`. Синхронизируется с сервером. Подробно: `notes/topics/410-user-settings-map.md`.
