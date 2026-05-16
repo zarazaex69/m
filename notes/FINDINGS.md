@@ -1528,3 +1528,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 184. AsrManager — on-device ASR запись
 
 `startRecord(fileName, sessionRoomId)` — ASR-запись в файл. Отдельно от `AsrOnlineManager` (real-time). `ASR_RECORD` фича с role-based access. Подробно: `notes/topics/184-asr-manager.md`.
+
+---
+
+## Дополнения 185
+
+### 185. FeedbackManager — emoji-реакции в звонках
+
+`sendFeedback(key, source)` + `setTimeout(millis)`. Сервер знает, кто и когда отправил реакцию. Подробно: `notes/topics/185-feedback-manager.md`.
