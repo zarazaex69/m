@@ -1212,3 +1212,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 144. vchat.hangupConversation + vchat.joinConversationByLink
 
 `vchat.hangupConversation`: `conversationId`, `reason` (enum — причина завершения), `anonymToken`. `vchat.joinConversationByLink`: `joinLink`, `isVideo`, `peerId` (long), `anonymToken` (без аккаунта MAX), `capabilities` (hex), `protocolVersion=6`. Подробно: `notes/topics/144-hangup-join-api.md`.
+
+---
+
+## Дополнения 145
+
+### 145. vchat.getOkIdsByExternalIds + vchat.getExternalIdsByOkIds
+
+Двусторонний маппинг: external_id ↔ ok_id. Позволяет связывать пользователей MAX с аккаунтами в других сервисах VK/OK. Используется для идентификации участников звонков из разных сервисов. Подробно: `notes/topics/145-ok-external-ids-mapping.md`.
