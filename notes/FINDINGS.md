@@ -632,3 +632,19 @@ PmsKey `opus-recorder` (#308), `opus-recorder-bitrate` (#309), `opus-recorder-sa
 ### 64. calls-endpoint — server-pushed URL звонкового сервера
 
 `calls-endpoint` — server-pushed строка с URL(ами) звонкового сервера. В сочетании с `calls-android-signaling-ip` (#119) — полный server-control над маршрутизацией звонкового трафика. Сервер может перенаправить все звонки на произвольный endpoint без обновления клиента. Подробно: `notes/topics/64-calls-endpoint-server-redirect.md`.
+
+---
+
+## Дополнения 65-67
+
+### 65. In-App Review — server-controlled triggers + FakeInAppReviewBottomSheet
+
+`in-app-review-triggers` — server-pushed битовая маска условий показа запроса оценки. `FakeInAppReviewBottomSheet` — production-ready компонент, имитирующий Google Play In-App Review UI. При `fake-in-app-review=true` пользователь видит поддельный диалог оценки, оценки уходят на серверы MAX, а не в Google Play. Подробно: `notes/topics/65-in-app-review-fake.md`.
+
+### 66. utm-tag-for-trigger-link-share — автоматический UTM-трекинг
+
+При включённом PmsKey клиент автоматически добавляет `utm_source=trigger` ко всем ссылкам, которыми пользователь делится из MAX. Внешние сайты видят этот маркер. Дополнительно: `client=613` hardcoded в URL-параметрах для ссылок на профили. Подробно: `notes/topics/66-utm-tag-link-tracking.md`.
+
+### 67. yag SharedPreferences — per-account состояние
+
+60+ полей: `currentProxyList`/`pushProxyList` (прокси-серверы), `okToken` (токен аутентификации), `deviceId`, `installationMarket` (откуда установлено). Три debug-флага в production: `isDebugHostRotationEnabled`, `isDebugUaDnsEmulationEnabled`, `isIceCandidateEmulationEnabled`. Подробно: `notes/topics/67-yag-shared-prefs-per-account.md`.
