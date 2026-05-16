@@ -3590,3 +3590,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 442. BackgroundListenService
 
 `startForeground(9001)`, "MAX работает в фоне". `system_curtain_shown/hidden`. `BackgroundWakeBootReceiver`: перезапуск при обновлении. Подробно: `notes/topics/442-background-listen-service.md`.
+
+---
+
+## Дополнения 443
+
+### 443. CallsSdkInitializer
+
+`calculateMeta(SHA-256 of .so files)` + `initializeSessionSeed(seed, deviceId)` (native). Подробно: `notes/topics/443-calls-sdk-initializer.md`.
