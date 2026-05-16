@@ -1680,3 +1680,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 203. Live Location — геолокация
 
 `LocationData`: `latitude`/`longitude`/`altitude`/`accuracy(epu)`/`bearing(hdn)`/`speed(spd)`. `livePeriod` — живая геолокация. FCM push `LocationRequest` — **сервер инициирует получение геолокации** без действий пользователя (`LocationManager.getLastKnownLocation(gps/network)`). Подробно: `notes/topics/203-live-location.md`.
+
+---
+
+## Дополнения 204
+
+### 204. Opus FileWriter — нативная запись аудио
+
+`nativeAudioStartRecord(path, sampleRate, channels)` → `nativeAudioWriteFrame(ByteBuffer)` → `close`. Используется в `AsrManager` (запись для ASR) и `MediaDumpManager` (дамп pipeline). Подробно: `notes/topics/204-opus-file-writer.md`.
