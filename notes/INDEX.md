@@ -191,3 +191,4 @@ status: living
 - [[topics/82-message-clickable-element-onelog]] — MESSAGE_CLICKABLE_ELEMENT_ACTIONS: server knows every link click/phone tap/copy (message_id, source_id) #onelog #surveillance
 - [[topics/83-ok9f-geolocation-search-inline]] — ok9.f() events: geolocation_send_click, search_click, inline_button_click #onelog #telemetry #location
 - [[topics/84-transcribe-media-ws-opcode]] — TRANSCRIBE_MEDIA(202): audio/video content sent to server for transcription #transcription #surveillance #ws
+- [[topics/85-notif-ws-opcodes]] — NOTIF_* WS opcodes: 25 server-to-client push (NOTIF_CONFIG/NOTIF_LOCATION_REQUEST/NOTIF_DRAFT/NOTIF_BANNERS) #ws #server-push
