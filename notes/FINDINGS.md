@@ -2280,3 +2280,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 278. PhotoUpload + FileUpload Tasks
 
 `PhotoUpload`: file/chatId/crop/profile. `FileUpload`: file/originalFile/fileName/fileId/attachType/lastUpdatedFile/lastUpdatedOriginalFile. Подробно: `notes/topics/278-tasks-photo-file-upload.md`.
+
+---
+
+## Дополнения 279
+
+### 279. FileDownload + PrepareFileUpload Tasks
+
+`FileDownload`: fileId/fileName/url/place/notCopyVideoToGallery. `PrepareFileUpload`: uri/fileName/messageId. Подробно: `notes/topics/279-tasks-file-download-prepare.md`.
