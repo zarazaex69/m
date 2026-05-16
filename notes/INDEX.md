@@ -171,3 +171,5 @@ status: living
 - [[topics/62-white-list-links-content-control]] — white-list-links (server-controlled trusted domains), show-warning-links #links #content-moderation
 - [[topics/63-complaints-server-controlled]] — available-complaints (server-controlled reasons), server-side-complains-enabled #complaints #moderation
 - [[topics/64-calls-endpoint-server-redirect]] — calls-endpoint (server-pushed call server URL, full routing control) #calls #server-control
+- [[topics/65-in-app-review-fake]] — in-app-review-triggers (server-controlled) + FakeInAppReviewBottomSheet #in-app-review #fake
+- [[topics/66-utm-tag-link-tracking]] — utm-tag-for-trigger-link-share (auto-append utm_source=trigger to shared links) #utm #tracking
