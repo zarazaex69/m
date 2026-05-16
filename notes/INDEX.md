@@ -86,7 +86,8 @@ status: living
 - [[topics/35-mytracker-antifraud-sensors]] — сенсорный fingerprint через MyTracker #antifraud #fingerprinting
 - [[topics/37-webapp-privilege-configuration]] — server-controlled allowlist привилегированных мини-апок #webapp #server-control
 - [[topics/38-deeplink-routes-full-map]] — 8 deeplink-роутов (`:auth`, `:share`, `:join`, `:profile`, `:chats`, ...) #deeplink #intent-surface
-- [[topics/39-libffmpg-version-license]] — FFmpeg n4.4.3 в `libffmpg.so`, GPLv3 в проприетарном продукте #ffmpeg #license #native-libs
+- [[topics/47-stickers-server-pipeline]] — stickers-botid, STICKER_SUGGEST, welcome-sticker-ids #stickers #server-control
+- [[topics/48-search-opcodes-server-controlled]] — PUBLIC_SEARCH/MSG_SEARCH_TOUCH/CHAT_SEARCH_COMMON_PARTICIPANTS + pub-search-limit #search #surveillance
 
 ## Источники (raw)
 
