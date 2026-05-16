@@ -161,3 +161,5 @@ status: living
 - [[topics/52-network-session-tls-flags]] — net-ssl-session-validate (server can disable TLS), watchdog-config #network #tls #security
 - [[topics/53-ab-status-cfs-pmskey]] — ab-status (A/B group sent to server), cfs (P2P fast-start) #ab-testing #server-control
 - [[topics/54-ws-session-config-fingerprint]] — 21-field client fingerprint sent on every WS connect #ws #telemetry #surveillance
+- [[topics/55-2fa-stories-misc-pmskey]] — 2FA flow (tracking), Stories (server-gated), ilm, blocked-users #2fa #stories
+- [[topics/56-perf-events-apptracer-upload]] — server-configurable perf metrics to apptracer /api/perf/upload #telemetry #apptracer
