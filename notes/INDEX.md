@@ -546,3 +546,4 @@ status: living
 - [[topics/436-webapp-contact-data]] — WebAppContactData: displayName/avatarUrl/abbreviationModel, mini-app gets user profile data #webapp #contact-data #jsbridge #surveillance
 - [[topics/437-twofa-screens]] — TwoFA: Settings/Creation/Onboarding/CheckPass/StartRestore/ProfileDeletion, twofa_settings_track_id_key #twofa #2fa #two-factor-auth #security #settings
 - [[topics/438-safe-mode]] — SafeMode: hide profile/calls from contacts only/chats with known only/content filter, safeMode/safeModeNoPin in UserSettings #safe-mode #privacy #content-filter #settings #surveillance
+- [[topics/439-qr-auth]] — QR Auth: SettingsDevicesScreen + QrAuthHintBottomSheet + :qr-scanner?mode=2, AuthQrUseCase/GetQrCodeUseCase #qr-auth #devices #session #security #settings

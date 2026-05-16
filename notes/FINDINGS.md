@@ -3558,3 +3558,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 438. SafeMode
 
 Скрытие профиля + звонки только от контактов + чаты только со знакомыми + фильтр контента. `safeMode`/`safeModeNoPin` в UserSettings. Подробно: `notes/topics/438-safe-mode.md`.
+
+---
+
+## Дополнения 439
+
+### 439. QR Auth
+
+`SettingsDevicesScreen` + `QrAuthHintBottomSheet` + `:qr-scanner?mode=2`. `AuthQrUseCase`/`GetQrCodeUseCase`. Подробно: `notes/topics/439-qr-auth.md`.
