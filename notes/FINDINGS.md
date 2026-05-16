@@ -4102,3 +4102,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 506. d6 App Init
 
 `getInstallerPackageName` → `ACTION.GET_INSTALL_REFERRER`. `MyTracker.setCustomUserId(userId)`. `setKidMode(false)`. Подробно: `notes/topics/506-app-init-installer-mytracker.md`.
+
+---
+
+## Дополнения 507
+
+### 507. uoa Memory Info Collector
+
+`Debug.MemoryInfo` + `ActivityManager.MemoryInfo` + `/proc/self/statm(RSS/shared)` + `lastTrimLevel` + `lowMemory/availMem/totalMem`. Подробно: `notes/topics/507-memory-info-collector.md`.
