@@ -1268,3 +1268,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 151. ConversationImpl callbacks
 
 `onCustomData(JSONObject)` — произвольные JSON-данные через WebRTC DataChannel. `onCallParticipantFingerprint(long)` — DTLS fingerprint tracking (детект MITM). `onRateCall(JSONObject)` — server-initiated rating dialog. `onMeInWaitingRoomChanged(bool)` — waiting room status. Подробно: `notes/topics/151-conversation-impl-callbacks.md`.
+
+---
+
+## Дополнения 152
+
+### 152. AsrOnlineManager — real-time транскрипция звонков
+
+`AsrOnlineManager` — real-time транскрипция речи участников звонков. `AsrOnlineChunk`: `participantId` + `text` (кто что сказал). `enableAsrOnline(bool)` — server-controlled. Три уровня аудио-анализа: KWS (topic 70) + on-device ASR (topic 15) + online ASR. Подробно: `notes/topics/152-asr-online-manager.md`.
