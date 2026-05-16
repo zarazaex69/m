@@ -243,3 +243,4 @@ status: living
 - [[topics/134-webrtc-field-trials]] — WebRTC field trials: 8 hardcoded + server-controlled (EarlyStartPlayout/EarlyStartRecording) + arbitrary server field trials #webrtc #calls #server-control
 - [[topics/135-callssdk-opus-dred-fec-flags]] — CallsSDK Opus DRED/FEC: OpusFECWithDRED/OpusDREDByBitrate/OpusFileLogs(write to file)/LogDCTraffic #calls #opus #dred
 - [[topics/136-ev1-webrtc-session-config]] — ev1 WebRTC session config: emulatedSignalingError(server force-terminates call)/emulatedIceCandidateError/simulcastState #calls #webrtc #server-control
+- [[topics/137-rating-limits-p2prelay-config]] — android.rating.limits (RateManagerConfig: RTT/loss/candidate type) + android.p2prelay.config (P2P relay switch) #calls #quality #server-control
