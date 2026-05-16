@@ -1480,3 +1480,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 178. Conversation.CallType + Conversation.State
 
 `CallType`: Incoming/Outgoing/Join. `State`: None(0)/Preparing(1)/Starting(2)/Connecting(3)/Connected(4)/Finished(5). Подробно: `notes/topics/178-call-type.md`.
+
+---
+
+## Дополнения 179
+
+### 179. Conversation interface — 30+ менеджеров
+
+`AsrManager`, `AsrOnlineManager`, `CameraManager`, `ChatManager`, `ConversationFeatureManager`, `KeywordSpotterManager`, `MicrophoneManager`, `NoiseSuppressionManager`, `RecordManager`, `StereoRoomManager`, `UrlSharingManager`, `WatchTogetherPlayer`, `DisplayLayoutSender`, `DebugManager` (в production!). Подробно: `notes/topics/179-conversation-interface.md`.
