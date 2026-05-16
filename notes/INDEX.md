@@ -570,3 +570,4 @@ status: living
 - [[topics/460-yag-shared-prefs]] — yag SharedPreferences: 50+ keys, device.id/user.fcmToken/user.okToken/server.timeDelta/app.first.login.time/user.callSession #shared-prefs #user-prefs #device-id #fcm-token #proxy #server-time #surveillance
 - [[topics/461-login-response-proxy]] — isg LOGIN response: proxy/proxydomains from server, LOGIN request: deviceId/pushDeviceType/buildNumber/timezone #proxy #pmskey #login-response #server-control #surveillance
 - [[topics/462-notif-config-logic]] — NotifConfigLogic: Step2(proxy/proxydomains) + Step3(debug-mode/user-debug-report/safeMode) + Step5(chats settings) #proxy #pmskey #notif-config #server-control #surveillance #debug
+- [[topics/463-qp6-rtd-pmskey-full]] — qp6 RTD: 50+ PmsKey, enableAudioTranscription/callssdklogaudio/logmessagesmeta/logchatmeta/callsfakeboss/batterysliceinterval #pmskey #server-control #rtd #calls #transcription #surveillance #debug

@@ -3750,3 +3750,11 @@ LOGIN ответ → proxy/proxydomains/lang. LOGIN запрос → deviceId/pu
 ### 462. NotifConfigLogic
 
 Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → Step5(chats settings). Подробно: `notes/topics/462-notif-config-logic.md`.
+
+---
+
+## Дополнения 463
+
+### 463. qp6 RTD (полный список PmsKey)
+
+50+ PmsKey. Критические: `enableaudiomessagestranscription`/`callssdklogaudio`/`logmessagesmeta`/`logchatmeta`/`callsfakebossincomingcallenabled`/`batterysliceinterval`. Подробно: `notes/topics/463-qp6-rtd-pmskey-full.md`.
