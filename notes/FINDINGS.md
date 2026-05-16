@@ -740,3 +740,11 @@ KWS активен во время звонков. `android.wordspotter.config` 
 ### 83. ok9.f() — geolocation_send_click, search_click, inline_button_click
 
 `geolocation_send_click` — сервер знает каждое нажатие кнопки отправки геолокации. `search_click` — клик на результат поиска. `inline_button_click` — нажатие inline-кнопок ботов. Подробно: `notes/topics/83-ok9f-geolocation-search-inline.md`.
+
+---
+
+## Дополнения 84
+
+### 84. TRANSCRIBE_MEDIA(202) — серверная транскрипция
+
+WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStatus` (byte). Содержимое голосовых/видеосообщений уходит на серверы MAX для транскрипции. Server-gated через `enable-audio-messages-transcription`/`enable-video-messages-transcription` PmsKey + `audio-transcription-locales` whitelist. Подробно: `notes/topics/84-transcribe-media-ws-opcode.md`.
