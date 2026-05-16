@@ -2312,3 +2312,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 282. ChatMark + ChatComplain Tasks
 
 `ChatMark`: chatId/messageId/mark/setAsUnread/isReadReaction (сервер знает, до какого сообщения прочитан чат). `ChatComplain`: chatId/complaint. Подробно: `notes/topics/282-tasks-chat-mark-complain.md`.
+
+---
+
+## Дополнения 283
+
+### 283. LocationStop + MsgCancelReaction + ChangeChatPhoto
+
+`LocationStop`: chatId/messageId. `MsgCancelReaction`: chatId/messageId. `ChangeChatPhoto`: chatId/file/lastModified/crop. Подробно: `notes/topics/283-tasks-location-reaction-photo.md`.
