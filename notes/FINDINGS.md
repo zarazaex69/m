@@ -2608,3 +2608,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 319. TrafficStats — сетевая статистика по UID
 
 `getUidRxBytes`/`getUidTxBytes`(uid) — входящий/исходящий трафик MAX по UID. Используется в BatterySnapshot. Подробно: `notes/topics/319-traffic-stats-uid.md`.
+
+---
+
+## Дополнения 320
+
+### 320. HealthStats API
+
+`SystemHealthManager.takeMyUidSnapshot()`: mobile(rx/tx/idle)/wifi(rx/tx/idle). Fallback на TrafficStats. Подробно: `notes/topics/320-health-stats-api.md`.

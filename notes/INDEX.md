@@ -427,3 +427,4 @@ status: living
 - [[topics/317-enriched-battery-snapshot]] — EnrichedBatterySnapshot: snapshot(BatterySnapshot)/seqId/visibility(FG/BG) #database #battery #visibility #foreground-background
 - [[topics/318-proc-filesystem-reads]] — /proc filesystem reads: /proc/self/stat(CPU)/statm(memory)/cmdline(process name)/fd/(file descriptors) #surveillance #proc-filesystem #cpu #memory
 - [[topics/319-traffic-stats-uid]] — TrafficStats.getUidRxBytes/TxBytes(uid) — app traffic by UID for BatterySnapshot #surveillance #network-stats #traffic-stats #uid
+- [[topics/320-health-stats-api]] — HealthStats.takeMyUidSnapshot(): mobile(rx/tx/idle)/wifi(rx/tx/idle) + fallback to TrafficStats #surveillance #health-stats #network-stats #uid
