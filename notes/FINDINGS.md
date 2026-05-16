@@ -3974,3 +3974,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 490. Push Notification Analytics
 
 `show`/`drop`/`open_chats`/`open_chat`/`open_url`. Все push-уведомления логируются с `trid`/`eKey`/`ttime`/`dtime`/`fcmdtime`/`suid`. Подробно: `notes/topics/490-push-notification-analytics.md`.
+
+---
+
+## Дополнения 491
+
+### 491. DailyAnalyticsWorker
+
+`PERMISSION.permission_status` ежедневно: push/contacts/fsi/gallery/camera/microphone/geo. Подробно: `notes/topics/491-daily-analytics-worker.md`.
