@@ -274,3 +274,4 @@ status: living
 - [[topics/165-ice-candidate-pair-stat]] — IceCandidatePairChangedStat: server gets local_address/remote_address(real IPs)/SDP/reason on every ICE pair change #calls #ice #surveillance
 - [[topics/166-accept-call-stat]] — AcceptCallStat: call_accepted_incoming with isCaller/isMe/isConcurrent flags #calls #stats
 - [[topics/167-p2p-relay-requested-stat]] — P2PRelayRequestedStat: client_requested_p2p_relay with trigger/threshold/violationsCount #calls #p2p-relay #stats
+- [[topics/168-server-topology-stat]] — ServerTopologyRequestedStat: client_requested_server_topology (media through VK/OK servers) #calls #topology #stats
