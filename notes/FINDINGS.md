@@ -2624,3 +2624,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 321. Apptracer perf/upload
 
 `https://sdk-api.apptracer.ru/api/perf/upload?crashToken=<token>` — загрузка BatterySnapshot (CPU/battery/network) на Apptracer. Подробно: `notes/topics/321-apptracer-perf-upload.md`.
+
+---
+
+## Дополнения 322
+
+### 322. Apptracer sample/initUpload
+
+`https://sdk-api.apptracer.ru/api/sample/initUpload?sampleToken=<token>` — загрузка произвольных файлов (heap dumps, CPU profiles) с feature/sampleSize/attr1/attr2/tag. Подробно: `notes/topics/322-apptracer-sample-upload.md`.
