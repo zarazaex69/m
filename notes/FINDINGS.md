@@ -1512,3 +1512,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 182. ChatManager — чат в звонке
 
 `sendMessage(OutboundMessage: participantId+text)` через WebRTC DataChannel. При P2P relay — трафик через серверы VK/OK. `Calls-SDK-LogDCTraffic` — логирование DataChannel трафика. Подробно: `notes/topics/182-chat-manager.md`.
+
+---
+
+## Дополнения 183
+
+### 183. MediaMuteManager + ParticipantStatesManager
+
+`updateMediaOptionsForAll`/`updateMediaOptionsForParticipant` — администратор меняет медиа-опции для всех/участника. `requestToEnableMediaForParticipant` — запрос включить камеру/микрофон. `ParticipantStateChange`: `participantId`/`isOn`/`timestamp`. Подробно: `notes/topics/183-media-mute-participant-states.md`.
