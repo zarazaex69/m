@@ -2168,3 +2168,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 264. Protos.Audio — аудио-сообщения
 
 `audioId`/`duration`/`startTime`/`transcriptionStatus`(UNKNOWN/PROCESSING/SUCCESS/FAILED/NOT_SUPPORTED/MEDIA_NOT_READY)/`wave`(waveform bytes). Подробно: `notes/topics/264-protos-audio-schema.md`.
+
+---
+
+## Дополнения 265
+
+### 265. Protos.Poll + Photo + File
+
+`Poll.AnswerStats`: userId/timestamp (кто и когда голосовал). `Poll.State.voterPreviewIds[]`. `Photo`: photoId/height/width/gif/thumbhashData. `File`: fileId/size. Подробно: `notes/topics/265-protos-poll-photo-file.md`.
