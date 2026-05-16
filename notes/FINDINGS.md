@@ -1328,3 +1328,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 159. StereoRoomManager — комнаты, роли и поднятые руки
 
 `requestPromotion`/`promoteParticipant` — механизм модерации вебинаров (поднять руку). `grantAdmin`/`revokeAdmin` — динамическое изменение прав. `handsQueue` — очередь поднятых рук. `switch-room` сигналинг — переключение между комнатами. Подробно: `notes/topics/159-stereo-room-manager.md`.
+
+---
+
+## Дополнения 160
+
+### 160. update-media-modifiers
+
+`mediaModifiers: {denoise: bool, denoiseAnn: bool}`. Сервер может принудительно изменить настройки шумоподавления участника во время звонка. `denoiseAnn` — нейросетевое шумоподавление. Подробно: `notes/topics/160-update-media-modifiers.md`.
