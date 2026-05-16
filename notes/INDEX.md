@@ -395,3 +395,4 @@ status: living
 - [[topics/285-tasks-chat-hide-group-present]] — ChatHide(chatId) + ChatGroupMark(chatId/flagType/enabled) + ConfirmPresent(presentId/accept/asPrivate) Tasks #protocol #tasks #chat-hide #present
 - [[topics/286-ws-opcodes-additional]] — WS opcodes additional: SESSIONS_INFO/CLOSE + PROFILE_DELETE/TIME + WEB_APP_INIT_DATA + FOLDERS_GET/UPDATE/DELETE + NOTIF_MSG_REACTIONS_CHANGED #protocol #ws #opcodes #sessions #profile-delete #folders
 - [[topics/287-web-app-init-data]] — WEB_APP_INIT_DATA: hash/user/query_id/url/trackId/email/chatReactionsSettings/organizations (mini-app gets email+orgs+UserSettings) #webapp #init-data #ws #surveillance
+- [[topics/288-ok-token-ws]] — OK_TOKEN WS: token_refresh_ts/token_lifetime_ts (server updates auth token via WS) #protocol #ws #ok-token #auth

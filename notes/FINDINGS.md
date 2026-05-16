@@ -2352,3 +2352,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 287. WEB_APP_INIT_DATA
 
 `hash`/`user`/`query_id`/`url`/`trackId`/`email`/`chatReactionsSettings`/`organizations`. **Мини-приложение получает email, организации и UserSettings пользователя**. Подробно: `notes/topics/287-web-app-init-data.md`.
+
+---
+
+## Дополнения 288
+
+### 288. OK_TOKEN WS
+
+`token_refresh_ts`/`token_lifetime_ts`. Сервер обновляет OK-токен авторизации через WS. Подробно: `notes/topics/288-ok-token-ws.md`.
