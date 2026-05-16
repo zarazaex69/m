@@ -1084,3 +1084,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 128. H265 codec и unknown-contact PmsKey
 
 `calls-sdk-h265-prioritized` (#125, default=false) — «Включить поддержку и приоритизировать H265». `calls-android-h265-s` (#116) — «Деградация кодека H265 (%)». `enable-unknown-contact-bottom-sheet` (#107) — 3 режима UI для незнакомых звонящих (0=не показывать/1=Добавить+Заблокировать/2=Всё в порядке+Заблокировать). Подробно: `notes/topics/128-h265-unknown-contact-pmskey.md`.
+
+---
+
+## Дополнения 129
+
+### 129. Opus BWE и calls audio PmsKey
+
+`calls-sdk-ai-opus-bwe` (#105) — AI-based BWE. `calls-sdk-linear-opus-bwe` (#106, default=false) — «Включить Linear Opus BWE». `calls-sdk-log-audio` (#131, default=false) — «Логгировать локальное аудио». Два взаимоисключающих алгоритма BWE. Подробно: `notes/topics/129-opus-bwe-audio-pmskey.md`.
