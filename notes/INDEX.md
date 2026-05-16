@@ -360,3 +360,4 @@ status: living
 - [[topics/250-config-complain-tasks]] — Config(isPushToken/isUserSettings/userSettings Map/syncChatIds) + Complain(ids/reasonId/typeId/details) Tasks #protocol #config #complain #tasks
 - [[topics/251-contact-tasks]] — ContactUpdate(contactId/action/newName/oldName/lastName) + ContactVerify(contactId/confirm/localName) Tasks #protocol #contacts #tasks
 - [[topics/252-profile-chat-create-tasks]] — Profile(firstName/lastName/description/link/photoId) + ChatCreate(chatType/subjectId/subjectType/startPayload) Tasks #protocol #profile #chat-create #tasks
+- [[topics/253-chat-update-members-tasks]] — ChatUpdate(description/photoToken/pinMessageId/theme) + ChatMembersUpdate(userIds/operation/chatMemberType/showHistory) Tasks #protocol #chat-update #tasks

@@ -2072,3 +2072,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 252. Profile + ChatCreate Tasks
 
 `Profile`: firstName/lastName/description/link/photoId/photoToken/avatarType/crop. `ChatCreate`: chatId/chatType/groupId/subjectId/subjectType/startPayload. Подробно: `notes/topics/252-profile-chat-create-tasks.md`.
+
+---
+
+## Дополнения 253
+
+### 253. ChatUpdate + ChatMembersUpdate Tasks
+
+`ChatUpdate`: description/photoToken/pinMessageId/notifyPin/theme. `ChatMembersUpdate`: userIds[]/operation/chatMemberType/showHistory. Подробно: `notes/topics/253-chat-update-members-tasks.md`.
