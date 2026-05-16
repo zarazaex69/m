@@ -4190,3 +4190,11 @@ FAQ: `https://help.max.ru`. Privacy Policy: `https://legal.max.ru/pp`. User Agre
 ### 517. kf4 CallAudioController
 
 Bluetooth audio routing. `requestBluetoothAudio(device)` / `setAudioRoute(EARPIECE/BLUETOOTH/WIRED_HEADSET/SPEAKER)`. Подробно: `notes/topics/517-call-audio-controller.md`.
+
+---
+
+## Дополнения 518
+
+### 518. CallsBluetoothManager
+
+SCO timeout=2500ms, max attempts=3. States: None/Unavailable/Available(Connected/Disconnected). Подробно: `notes/topics/518-calls-bluetooth-manager.md`.
