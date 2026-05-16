@@ -2992,3 +2992,11 @@ GIF/WebP анимации + 5 потоков (FrescoIoBoundExecutor/FrescoDecode
 ### 367. LinkInterceptorActivity — MyTracker deeplink
 
 `URI → MyTracker.handleDeeplink(intent)` — все deeplink-и проходят через MyTracker. Подробно: `notes/topics/367-link-interceptor-mytracker.md`.
+
+---
+
+## Дополнения 368
+
+### 368. WebAppHttpClient.WebAppHasVpnException
+
+VPN обнаружен в WebApp HTTP клиенте. Мини-приложения блокируются при VPN. Подробно: `notes/topics/368-webapp-vpn-exception.md`.
