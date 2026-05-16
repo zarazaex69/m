@@ -1068,3 +1068,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 126. Energy saving PmsKey
 
 `energy-saving-bottom-sheet` (#109, default=false) — «Включение шторки энергосбережения» — server-gated bottomsheet с предложением отключить режим экономии батареи. `energy-saving-request-interval` (#110, default=0) — интервал проверки. `call-permissions-interval` (#23, default=0) — интервал проверки разрешений для звонков. Подробно: `notes/topics/126-energy-saving-pmskey.md`.
+
+---
+
+## Дополнения 127
+
+### 127. Calls SDK stats/ICE PmsKey
+
+`calls-sdk-incall-stat` (#109, default=false) — «Отправлять статистику во время звонка» (real-time). `calls-android-direct-ice-restart` (#110, default=false) — «Явный ICE рестарт». `calls-android-no-ice-restart` (#111, default=false) — «Не делать ICE рестарт». `calls-sdk-opus-adapt` (#135, default=false) — «Адаптивная complexity опус». Подробно: `notes/topics/127-calls-sdk-stats-ice-pmskey.md`.
