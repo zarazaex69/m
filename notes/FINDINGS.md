@@ -828,3 +828,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 94. Battery и Memory мониторинг
 
 `battery-slice-interval` (#15, default 1 мин) — server-controlled интервал сбора срезов батареи. Room-таблица `battery` с `sliceTime`, `payload`. `battery_level_change` отправляется как часть статистики звонков. `memory-slice-interval` (#181) — аналогичный мониторинг памяти. Сервер имеет детальный профиль энергопотребления устройства. Подробно: `notes/topics/94-battery-memory-monitoring.md`.
+
+---
+
+## Дополнения 95
+
+### 95. Calls stats — 40 метрик после каждого звонка
+
+`w32.java` — 40 WebRTC-метрик: CPU (загрузка, score, ядра), Memory (max/avg MB), BatteryLevelChange, AudioLevel (уровень аудио — сервер знает когда пользователь говорит), аудио-качество (jitter/loss/concealment), видео-качество (frames/freezes/bitrate). Полный технический профиль каждого звонка. Подробно: `notes/topics/95-calls-stats-40-metrics.md`.
