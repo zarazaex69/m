@@ -820,3 +820,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 93. client-conv-id + send-queue-size
 
 `client-conv-id` (#82) — «Включить клиентское создание conversations id» (server-gated P2P conversation ID generation). `send-queue-size` (#265) — server-controlled лимит очереди отправки сообщений (default 30). Подробно: `notes/topics/93-client-conv-id-send-queue.md`.
+
+---
+
+## Дополнения 94
+
+### 94. Battery и Memory мониторинг
+
+`battery-slice-interval` (#15, default 1 мин) — server-controlled интервал сбора срезов батареи. Room-таблица `battery` с `sliceTime`, `payload`. `battery_level_change` отправляется как часть статистики звонков. `memory-slice-interval` (#181) — аналогичный мониторинг памяти. Сервер имеет детальный профиль энергопотребления устройства. Подробно: `notes/topics/94-battery-memory-monitoring.md`.
