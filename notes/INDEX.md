@@ -369,3 +369,4 @@ status: living
 - [[topics/259-protos-call-history]] — Protos.Call(callType/hangupType/duration/contactIds[]) + CallHistoryState(MissedMessagesItem.ids[]) #protocol #call #protos #call-history
 - [[topics/260-protos-contact-schema]] — Protos.Contact: serverPhone/gender/accountStatus/registrationTime/lastSearchClickTime/organizationIds[]/ContactName(CUSTOM/DEVICE/ONEME) #protocol #contact #protos #surveillance
 - [[topics/261-protos-control-message]] — Protos.Control: 12 event types (NEW/ADD/REMOVE/LEAVE/JOIN_BY_LINK/PIN/BOT_STARTED) + userId/userIds[]/showHistory #protocol #control-message #protos
+- [[topics/262-protos-present-gift]] — Protos.Present(presentId/senderId/receiverId/status) + ConfirmPresent(accept/asPrivate) — gifts/transfers #protocol #present #gift #protos

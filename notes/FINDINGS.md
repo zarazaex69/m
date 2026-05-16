@@ -2144,3 +2144,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 261. Protos.Control — системные сообщения
 
 12 типов: NEW/ADD/REMOVE/LEAVE/TITLE/ICON/HELLO/SYSTEM/JOIN_BY_LINK/PIN/BOT_STARTED. Поля: event/chatType/userId/userIds[]/pinnedMessageId/showHistory. Подробно: `notes/topics/261-protos-control-message.md`.
+
+---
+
+## Дополнения 262
+
+### 262. Protos.Present + ConfirmPresent — подарки
+
+`Present`: presentId/senderId/receiverId/status(NEW/RECEIVED/ACCEPTED/DECLINED/ACCEPTING). `ConfirmPresent`: accept/asPrivate. Подробно: `notes/topics/262-protos-present-gift.md`.
