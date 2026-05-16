@@ -2560,3 +2560,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 313. animoji + animoji_set + organizations DB
 
 `animoji`: id/emoji/lottie_url/lottie_play_url/set_id. `animoji_set`: name/icon_url/icon_lottie_url/animoji_ids. `organizations`: +iconUrl. Подробно: `notes/topics/313-animoji-organizations-db.md`.
+
+---
+
+## Дополнения 314
+
+### 314. folder_and_chats + message_uploads + notifications_read_marks DB
+
+`folder_and_chats`: chatId/folderId. `message_uploads`: path/upload_type/video_quality/trim. `notifications_read_marks`: chat_id/mark. Подробно: `notes/topics/314-folder-chats-uploads-marks-db.md`.

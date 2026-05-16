@@ -421,3 +421,4 @@ status: living
 - [[topics/311-contacts-phones-db]] — contacts(id/server_id/data BLOB) + phones(phonebook_id/phone/phone_key/server_phone/email/first_name/last_name) DB schemas #database #contacts #phones #surveillance
 - [[topics/312-stickers-profile-db]] — stickers(16 fields: url/mp4_url/lottie_url/audio/tags) + sticker_sets(name/author_id/link) + profile(BLOB) DB schemas #database #stickers #profile
 - [[topics/313-animoji-organizations-db]] — animoji(id/emoji/lottie_url/set_id) + animoji_set(name/icon_lottie_url/animoji_ids) + organizations(+iconUrl) DB schemas #database #animoji #organizations
+- [[topics/314-folder-chats-uploads-marks-db]] — folder_and_chats(chatId/folderId) + message_uploads(path/video_quality/trim) + notifications_read_marks(chat_id/mark) DB #database #folder-chats #uploads #notifications
