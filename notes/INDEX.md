@@ -319,3 +319,4 @@ status: living
 - [[topics/209-install-referrer]] — GET_INSTALL_REFERRER: getInstallerPackageName()+is_update_version via CritLog (server knows install source) #telemetry #install #attribution
 - [[topics/210-search-response-telemetry]] — SEARCH_RESPONSE: inputQuery(search terms sent to server) + counters(RECENTS/ALL_CONTACTS/LOCAL_SEARCH) #telemetry #search #surveillance
 - [[topics/211-presence-message-click-telemetry]] — PRESENCE/EVENT_MESSAGE_COUNTER(8 chat-open counters) + MESSAGE_CLICKABLE_ELEMENT_ACTIONS(7 click types with messageId) #telemetry #presence #surveillance
+- [[topics/212-channel-recsys-telemetry]] — CHANNEL_RECSYS_FOLDER: channel_folder_click/follow/delete + channel_id/channel_position (recsys training data) #telemetry #channels #recommendation

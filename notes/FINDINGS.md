@@ -1744,3 +1744,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 211. PRESENCE/EVENT_MESSAGE_COUNTER + MESSAGE_CLICKABLE_ELEMENT_ACTIONS
 
 `EVENT_MESSAGE_COUNTER`: 8 счётчиков (online/offline × contact/stranger × opened/closed). `MESSAGE_CLICKABLE_ELEMENT_ACTIONS`: clicked_copy/clicked_open_link/clicked_call/clicked_update_app + messageId/source_id. Подробно: `notes/topics/211-presence-message-click-telemetry.md`.
+
+---
+
+## Дополнения 212
+
+### 212. CHANNEL_RECSYS_FOLDER — рекомендательная система
+
+`channel_folder_open`/`channel_folder_click`/`channel_folder_follow`/`channel_folder_delete` + `channel_id`/`channel_position`. Данные для обучения рекомендательного алгоритма. Подробно: `notes/topics/212-channel-recsys-telemetry.md`.
