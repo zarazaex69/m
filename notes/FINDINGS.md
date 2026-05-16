@@ -1544,3 +1544,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 186. ContactCallManager — анонимность в звонках
 
 `iAmAnonymous`/`iWasInitiallyAnonymous`. Анонимные участники через `anonymToken`. Статус анонимности может меняться во время звонка. Подробно: `notes/topics/186-contact-call-manager.md`.
+
+---
+
+## Дополнения 187
+
+### 187. NetworkConnectionManager
+
+`getTopology()` (P2P/server), `registerBadConnectionCallback`, `addNetworkConnectivityListener`. Подробно: `notes/topics/187-network-connection-manager.md`.
