@@ -2200,3 +2200,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 268. GroupChatInfo + GroupOptions
 
 `GroupChatInfo`: groupId/isAnswered/isImportant/isMember/isModerator/messagingPermissions(DISABLED/MEMBERS/ALL). `GroupOptions`: groupPremium. Подробно: `notes/topics/268-protos-group-chat-info.md`.
+
+---
+
+## Дополнения 269
+
+### 269. Protos.Sticker
+
+`stickerId`/`setId`/`stickerType`(STATIC/LIVE/POSTCARD/LOTTIE)/`authorType`(SYSTEM/USER)/`audio`. `AnimationProperties`: duration/fps/framesCount/replayDelay. Подробно: `notes/topics/269-protos-sticker.md`.
