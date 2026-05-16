@@ -35,6 +35,10 @@ related:
 
 `ri9.areMockCommentsEnabled` — локальный bool. «Моки комментариев» — debug-фича для тестирования UI комментариев с фиктивными данными. Присутствует в production SharedPreferences.
 
+## isDisableWebAppSsl
+
+`ri9.isDisableWebAppSsl` — SharedPreferences bool. Отключает SSL для WebApp (мини-апок). Это dev-menu флаг (см. [[05-dev-menu-in-prod]]), который позволяет тестировать мини-апки по HTTP. Присутствует в production SharedPreferences.
+
 ## Сводка
 
-LeakCanary включён в production APK и может быть активирован через SharedPreferences — потенциально позволяет создавать heap dump с данными приложения. `gostLicenseCheckEnabled` — локальный флаг GOST-проверки. `gostEnvironmentCheckFlags` — server-pushed битовая маска GOST-проверок окружения. `areMockCommentsEnabled` — ещё один debug-флаг в production.
+LeakCanary включён в production APK и может быть активирован через SharedPreferences — потенциально позволяет создавать heap dump с данными приложения. `gostLicenseCheckEnabled` — локальный флаг GOST-проверки. `gostEnvironmentCheckFlags` — server-pushed битовая маска GOST-проверок окружения. `areMockCommentsEnabled` — ещё один debug-флаг в production. `isDisableWebAppSsl` — dev-флаг отключения SSL для мини-апок.
