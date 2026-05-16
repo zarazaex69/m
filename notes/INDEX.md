@@ -28,6 +28,7 @@ status: living
 - [[topics/05-dev-menu-in-prod]] — DevMenu в release #dev-menu
 - [[topics/12-force-update-killswitch]] — серверный killswitch + `download.max.ru` мимо Play #killswitch
 - [[topics/16-server-pushed-ml-models-in-calls]] — KWS/NS-модели качаются с сервера в рантайме #ml #server-control
+- [[topics/36-channels-feature-gated]] — каналы — server-gated rollout + CHAT_HIDE для тихой модерации #channels
 
 ### Телеметрия и аналитика
 
