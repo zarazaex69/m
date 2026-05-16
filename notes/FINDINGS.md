@@ -1312,3 +1312,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 157. WatchTogether + URL Sharing
 
 `add-movie` (movieId/gain/moveToAdminOnHangup), `update-movie`, `remove-movie`. `start-url-sharing`/`stop-url-sharing`. Сервер знает, какие видео и URL шарятся в звонках. Подробно: `notes/topics/157-watch-together-url-sharing.md`.
+
+---
+
+## Дополнения 158
+
+### 158. change-media-settings — принудительное изменение медиа
+
+`MediaSettings`: audio/video/screen_capture/animoji флаги. `handleForceChangeMediaSettings` — **принудительное** изменение медиа-настроек участника сервером/администратором (выключить камеру, микрофон, screen capture). Подробно: `notes/topics/158-change-media-settings.md`.
