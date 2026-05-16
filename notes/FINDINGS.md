@@ -3318,3 +3318,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 408. PmsKey debug/logging/transcription
 
 `enable-audio-messages-transcription`/`enable-video-messages-transcription` — транскрипция сообщений. `log-sensitive`/`log-messages-meta`/`log-chat-meta`. `calls-fakeboss-incoming-call-enabled`. `battery-slice-interval`. Подробно: `notes/topics/408-pmskey-debug-logging-transcription.md`.
+
+---
+
+## Дополнения 409
+
+### 409. Транскрипция аудио/видео сообщений
+
+`Protos.Audio.transcription`/`Protos.Video.transcription`. `audio.transcription.enabled = true` по умолчанию. PmsKey: `enable-audio-messages-transcription`/`enable-video-messages-transcription`. Подробно: `notes/topics/409-audio-video-transcription.md`.

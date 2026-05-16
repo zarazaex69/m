@@ -516,3 +516,4 @@ status: living
 - [[topics/406-mytracker-user-lifecycle]] — MyTrackerUserLifecycle: trackLoginEvent/trackRegistrationEvent/trackInviteEvent + MultipleInstallReceiver(INSTALL_REFERRER) #mytracker #user-lifecycle #login-tracking #surveillance
 - [[topics/407-share-data]] — ShareData: 9 types (TEXT/IMAGES/VIDEOS/FILES/VCARD/MESSAGES/CONTACT/STICKER_SET), vcard field #share #data-types #vcard #contact
 - [[topics/408-pmskey-debug-logging-transcription]] — PmsKey: enable-audio/video-messages-transcription, log-sensitive/messages-meta/chat-meta, calls-fakeboss-incoming-call-enabled, battery-slice-interval #pmskey #server-control #debug #logging #transcription #surveillance
+- [[topics/409-audio-video-transcription]] — Audio/Video message transcription: Protos.Audio/Video.transcription, audio.transcription.enabled=true by default #transcription #audio-messages #video-messages #asr #surveillance
