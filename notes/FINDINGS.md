@@ -2784,3 +2784,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 341. Apptracer Crash Types
 
 10 типов: CRASH/NON_FATAL/FATAL/ERROR/WARNING/NOTICE/INFO/DEBUG/MINIDUMP/ANR. Путь: getCacheDir/tracer/crashes. Подробно: `notes/topics/341-apptracer-crash-types.md`.
+
+---
+
+## Дополнения 342
+
+### 342. PmsKey — новые флаги
+
+`mytracker-enabled`/`tracer-non-fatal-crashed-enabled`/`wm-*`(WorkManager)/`calc-audio-wave`/`battery-slice-interval`/`ymap`/`views-count-enabled`. Подробно: `notes/topics/342-pmskey-additional-new.md`.

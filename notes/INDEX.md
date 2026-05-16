@@ -449,3 +449,4 @@ status: living
 - [[topics/339-minidump-crash-handler]] — Minidump: installMinidumpWriterImpl(getCacheDir/tracer/minidump) via libtracernative #telemetry #apptracer #minidump #crash #native
 - [[topics/340-crash-report-exit-info]] — CrashReportInitializer: ApplicationExitInfo(getReason/getProcessName/getTimestamp/getTraceInputStream ANR trace) #telemetry #apptracer #crash-report #anr
 - [[topics/341-apptracer-crash-types]] — Apptracer crash types: CRASH/NON_FATAL/FATAL/ERROR/WARNING/NOTICE/INFO/DEBUG/MINIDUMP/ANR (getCacheDir/tracer/crashes) #telemetry #apptracer #crash-types #anr #minidump
+- [[topics/342-pmskey-additional-new]] — PmsKey additional: mytracker-enabled/tracer-non-fatal-crashed-enabled/wm-*/calc-audio-wave/battery-slice-interval/ymap/views-count-enabled #pmskey #server-control #mytracker #tracer
