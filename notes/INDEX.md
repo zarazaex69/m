@@ -248,3 +248,4 @@ status: living
 - [[topics/139-api-protocol-constants]] — ApiProtocol: p2p_forbidden(server bans P2P)/stun_server/turn_server(server-controlled ICE)/wt_endpoint/onlyAdminCanRecord #calls #api #server-control
 - [[topics/140-conversation-params]] — vchat.getConversationParams: ispAsNo/ispAsOrg/locCc/locReg(server knows ISP+geo)/isP2PForbidden/stunTurnServers/wsIps #calls #api #surveillance
 - [[topics/141-rate-call-data]] — RateCallData: server-pushed questions and scale for call rating dialog #calls #quality-rating #server-control
+- [[topics/142-conversation-params-compact]] — ConversationParams compact: LZ4+Base64 JSON with TURN credentials(trne/trnu/trnp)/STUN/WS/WebTransport endpoints #calls #stun #turn
