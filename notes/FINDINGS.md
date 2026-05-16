@@ -1376,3 +1376,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 165. IceCandidatePairChangedStat
 
 При каждом изменении ICE pair: `local_address`/`remote_address` (**реальные IP-адреса участников**), `local.sdp`/`remote.sdp` (SDP с типом кандидата/IP/порт), `reason`, `lastDataReceivedMs`. Сервер получает полную историю маршрутизации медиа-трафика. Подробно: `notes/topics/165-ice-candidate-pair-stat.md`.
+
+---
+
+## Дополнения 166
+
+### 166. AcceptCallStat
+
+`call_accepted_incoming` с `isCaller`/`isMe`/`isConcurrent`. Сервер знает: кто принял звонок, на каком устройстве, был ли параллельный звонок. Подробно: `notes/topics/166-accept-call-stat.md`.
