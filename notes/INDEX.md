@@ -222,3 +222,4 @@ status: living
 - [[topics/113-invalidate-db-force]] — invalidate-db-force: server can force-delete local DB via version bump #database #destructive #server-control
 - [[topics/114-views-count-enabled]] — views-count-enabled: server-gated post view tracking in channels #channels #surveillance #server-control
 - [[topics/115-quotes-media-playlist]] — quotes-enabled (markdown quotes, default=false) + media-playlist-enabled (default=false) #messaging #server-control
+- [[topics/116-join-requests]] — join-requests: server-gated join requests for closed chats/channels #groups #server-control
