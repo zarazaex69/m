@@ -1060,3 +1060,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 125. P2P relay и WebTransport PmsKey
 
 `calls-use-p2p-relay` (#61, default=false) — «Использовать p2p relay» — сервер может перенаправить весь медиа-трафик звонков через relay-серверы. `calls-use-p2p-relay-caps` (#62, default=false) — учитывать capability. `calls-sdk-wt-enabled` (#102, default=false) — WebTransport. Подробно: `notes/topics/125-p2p-relay-webtransport.md`.
+
+---
+
+## Дополнения 126
+
+### 126. Energy saving PmsKey
+
+`energy-saving-bottom-sheet` (#109, default=false) — «Включение шторки энергосбережения» — server-gated bottomsheet с предложением отключить режим экономии батареи. `energy-saving-request-interval` (#110, default=0) — интервал проверки. `call-permissions-interval` (#23, default=0) — интервал проверки разрешений для звонков. Подробно: `notes/topics/126-energy-saving-pmskey.md`.
