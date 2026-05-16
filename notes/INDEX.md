@@ -539,3 +539,4 @@ status: living
 - [[topics/429-fcm-notifications-db]] — fcm_notifications DB: text/sender/push_id/event_key + fcm_notifications_analytics(fcm_sent_time/received_time/analytics_status) #database #fcm #notifications #analytics #push #surveillance
 - [[topics/430-db-presence-phones-messages]] — DB: presence(seen/status) + phones(phone/phone_key/server_phone/email/first_name) + messages(text in plaintext SQLite) #database #presence #phones #contacts #messages #surveillance
 - [[topics/431-db-organizations-informer-tasks]] — DB: organizations(parentId/folderTemplateId) + informer_banner(url/click_time/show_time) + notifications_tracker(drop_reason) + tasks(fails_count) #database #organizations #informer-banner #tasks #surveillance
+- [[topics/432-db-uploads-video]] — DB uploads(upload_url/thumbhash_base64/desired_uploader) + draft_uploads(video_quality/trim) + video_conversions #database #uploads #video #draft #surveillance

@@ -3502,3 +3502,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 431. DB organizations + informer_banner + tasks
 
 `informer_banner(url/priority/click_time/show_time/close_time)`. `notifications_tracker_messages(fcm/drop_reason)`. `tasks(type/status/fails_count/data)`. Подробно: `notes/topics/431-db-organizations-informer-tasks.md`.
+
+---
+
+## Дополнения 432
+
+### 432. DB uploads + video
+
+`uploads(upload_url/upload_progress/total_bytes/photo_token/thumbhash_base64)`. `draft_uploads(video_quality/start_trim/end_trim/mute)`. `video_conversions`. Подробно: `notes/topics/432-db-uploads-video.md`.
