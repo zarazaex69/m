@@ -3462,3 +3462,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 426. webapp_biometry DB
 
 `(id, user_id, bot_id, token, access_requested, access_granted)`. Биометрический токен хранится локально, привязан к user_id + bot_id. Подробно: `notes/topics/426-webapp-biometry-db.md`.
+
+---
+
+## Дополнения 427
+
+### 427. Дополнительные таблицы БД
+
+`battery(sliceTime/utime/stime/batteryCapacity/instantAmperage)`. `metrics(traceId/metricName/spanAndPropertiesDump)`. `fcm_notifications_analytics`. `stat_events`. 38 таблиц всего. Подробно: `notes/topics/427-db-additional-tables.md`.
