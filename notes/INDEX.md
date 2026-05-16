@@ -286,3 +286,4 @@ status: living
 - [[topics/176-rate-hints]] — RateHint: rtt_<ms>/audioloss_<loss>/videoloss_<loss>/candidate_type, server-controlled thresholds #calls #quality #rate-hints
 - [[topics/177-network-stat]] — NetworkStat: rttMs/audioLoss/videoLoss/activeCandidateType(host/srflx/relay) #calls #network #stats
 - [[topics/178-call-type]] — Conversation.CallType(Incoming/Outgoing/Join) + Conversation.State(None/Preparing/Starting/Connecting/Connected/Finished) #calls #state
+- [[topics/179-conversation-interface]] — Conversation interface: 30+ managers (AsrManager/AsrOnlineManager/KWS/Camera/Microphone/NoiseSuppressionManager/RecordManager/DebugManager) #calls #interface
