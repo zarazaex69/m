@@ -2064,3 +2064,11 @@ Build path: `/home/good/mainframer/webrtc4/src/.../one-ann-audio-processing`. З
 ### 251. ContactUpdate + ContactVerify Tasks
 
 `ContactUpdate`: contactId/action/newName/oldName/lastName/oldLastName. `ContactVerify`: contactId/confirm/localName. Подробно: `notes/topics/251-contact-tasks.md`.
+
+---
+
+## Дополнения 252
+
+### 252. Profile + ChatCreate Tasks
+
+`Profile`: firstName/lastName/description/link/photoId/photoToken/avatarType/crop. `ChatCreate`: chatId/chatType/groupId/subjectId/subjectType/startPayload. Подробно: `notes/topics/252-profile-chat-create-tasks.md`.

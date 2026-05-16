@@ -359,3 +359,4 @@ status: living
 - [[topics/249-msg-send-chat-tasks]] — MsgSend(chatId/messageId/userId/traceId/lastKnownDraftTime) + ChatPersonalConfig(hideNonContactBar) + ChatGroupMark(flagType) #protocol #messages #tasks
 - [[topics/250-config-complain-tasks]] — Config(isPushToken/isUserSettings/userSettings Map/syncChatIds) + Complain(ids/reasonId/typeId/details) Tasks #protocol #config #complain #tasks
 - [[topics/251-contact-tasks]] — ContactUpdate(contactId/action/newName/oldName/lastName) + ContactVerify(contactId/confirm/localName) Tasks #protocol #contacts #tasks
+- [[topics/252-profile-chat-create-tasks]] — Profile(firstName/lastName/description/link/photoId) + ChatCreate(chatType/subjectId/subjectType/startPayload) Tasks #protocol #profile #chat-create #tasks
