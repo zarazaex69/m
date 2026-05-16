@@ -401,3 +401,4 @@ status: living
 - [[topics/291-notif-mark-attach-ws]] — NOTIF_MARK(chat_id/mark/unread/userId — read receipts) + NOTIF_ATTACH(fileId/audioId/videoId/error) WS #protocol #ws #notif-mark #read-receipts
 - [[topics/292-notif-msg-delete-folders-ws]] — NOTIF_MSG_DELETE(chat_id/messageIds[]) + NOTIF_FOLDERS(folders/banners/showTime) WS #protocol #ws #notif-msg-delete #folders
 - [[topics/293-notif-delayed-bot-complain-ws]] — NOTIF_MSG_DELAYED(messageIds/lastDelayedUpdateTime) + BOT_INFO(commands/startMessage) + COMPLAIN_REASONS_GET(complains) WS #protocol #ws #bot #complain
+- [[topics/294-external-callback-phone-bind-ws]] — EXTERNAL_CALLBACK(botId/startParam) + PHONE_BIND_REQUEST(blockingDuration/codeLength) WS #protocol #ws #external-callback #phone-bind

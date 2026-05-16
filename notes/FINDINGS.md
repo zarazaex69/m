@@ -2400,3 +2400,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 293. NOTIF_MSG_DELAYED + BOT_INFO + COMPLAIN_REASONS_GET WS
 
 `NOTIF_MSG_DELAYED`: messageIds[]/chat_id/lastDelayedUpdateTime/updateTypeId. `BOT_INFO`: commands/contact/startMessage. `COMPLAIN_REASONS_GET`: complainSync/complains. Подробно: `notes/topics/293-notif-delayed-bot-complain-ws.md`.
+
+---
+
+## Дополнения 294
+
+### 294. EXTERNAL_CALLBACK + PHONE_BIND_REQUEST WS
+
+`EXTERNAL_CALLBACK`: botId/startParam/chats. `PHONE_BIND_REQUEST`: blockingDuration/trackId/codeLength. Подробно: `notes/topics/294-external-callback-phone-bind-ws.md`.
