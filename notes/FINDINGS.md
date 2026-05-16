@@ -1320,3 +1320,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 158. change-media-settings — принудительное изменение медиа
 
 `MediaSettings`: audio/video/screen_capture/animoji флаги. `handleForceChangeMediaSettings` — **принудительное** изменение медиа-настроек участника сервером/администратором (выключить камеру, микрофон, screen capture). Подробно: `notes/topics/158-change-media-settings.md`.
+
+---
+
+## Дополнения 159
+
+### 159. StereoRoomManager — комнаты, роли и поднятые руки
+
+`requestPromotion`/`promoteParticipant` — механизм модерации вебинаров (поднять руку). `grantAdmin`/`revokeAdmin` — динамическое изменение прав. `handsQueue` — очередь поднятых рук. `switch-room` сигналинг — переключение между комнатами. Подробно: `notes/topics/159-stereo-room-manager.md`.
