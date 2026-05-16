@@ -3774,3 +3774,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 465. DevNullServerConfig
 
 8 флагов: `isOpcodeStatEnabled`/`isMemoryStatEnabled`/`isBatteryStatEnabled`/`isChatHistoryStatEnabled`/`isUploadHangCheckEnabled`. Подробно: `notes/topics/465-devnull-server-config.md`.
+
+---
+
+## Дополнения 466
+
+### 466. Memory Statistics
+
+`Debug.MemoryInfo.getMemoryStat()` → java-heap/native-heap/code/stack/graphics/total-swap/total-pss. Подробно: `notes/topics/466-memory-stat.md`.

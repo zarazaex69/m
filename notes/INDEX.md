@@ -573,3 +573,4 @@ status: living
 - [[topics/463-qp6-rtd-pmskey-full]] — qp6 RTD: 50+ PmsKey, enableAudioTranscription/callssdklogaudio/logmessagesmeta/logchatmeta/callsfakeboss/batterysliceinterval #pmskey #server-control #rtd #calls #transcription #surveillance #debug
 - [[topics/464-watchdog-config]] — WatchdogConfig: stuckThreshold/hangThreshold/saveStacktrace from server + keepBackgroundSocket PmsKey #watchdog #server-control #surveillance #crash-detection #stack-trace
 - [[topics/465-devnull-server-config]] — DevNullServerConfig: isOpcodeStatEnabled/isMemoryStatEnabled/isBatteryStatEnabled/isChatHistoryStatEnabled/isUploadHangCheckEnabled #devnull-server-config #server-control #surveillance #telemetry #opcode-stat #memory-stat #battery-stat
+- [[topics/466-memory-stat]] — woa Memory Statistics: Debug.MemoryInfo java-heap/native-heap/code/stack/graphics/total-swap/total-pss #memory-stat #heap #surveillance #telemetry #server-control
