@@ -3334,3 +3334,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 410. UserSettings
 
 `audioTranscriptionEnabled`/`hiddenOnline`/`dontDustirbUntil`/`safeMode`/`inactiveTTL`. Синхронизируется с сервером. Подробно: `notes/topics/410-user-settings-map.md`.
+
+---
+
+## Дополнения 411
+
+### 411. UserSettings (sgj) полный
+
+27 полей. Ключевые: `hiddenOnline`/`phoneNumberPrivacy`/`safeMode`/`safeModeNoPin`/`audioTranscriptionEnabled`/`contentLevelAccess`/`familyProtection`. Подробно: `notes/topics/411-user-settings-full.md`.
