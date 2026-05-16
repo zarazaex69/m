@@ -3942,3 +3942,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 486. CLICK events
 
 `open_broadcast_button_click {channel_id, hashed_broadcast_link}`. `profile_button_click {max_for_business}`. `video_speed_change {speed, sourceType}`. Подробно: `notes/topics/486-click-events.md`.
+
+---
+
+## Дополнения 487
+
+### 487. POWER_SAVING events
+
+`show_shade {reason: settings}`. `click_shade_button`. `close_shade`. Шторка запроса `isIgnoringBatteryOptimizations`. Подробно: `notes/topics/487-power-saving-analytics.md`.
