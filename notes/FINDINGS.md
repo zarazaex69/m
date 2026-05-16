@@ -2336,3 +2336,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 285. ChatHide + ChatGroupMark + ConfirmPresent
 
 `ChatHide`: chatId. `ChatGroupMark`: chatId/flagType/enabled. `ConfirmPresent`: presentId/accept/asPrivate. Подробно: `notes/topics/285-tasks-chat-hide-group-present.md`.
+
+---
+
+## Дополнения 286
+
+### 286. WS Opcodes — дополнительные
+
+`SESSIONS_INFO`/`SESSIONS_CLOSE`, `PROFILE_DELETE`/`PROFILE_DELETE_TIME`, `WEB_APP_INIT_DATA`, `PHONE_BIND_REQUEST`/`CONFIRM`/`WEBAPP_SHARE`, `FOLDERS_GET/UPDATE/REORDER/DELETE/NOTIF_FOLDERS`, `NOTIF_MSG_REACTIONS_CHANGED`/`NOTIF_MSG_YOU_REACTED`. Подробно: `notes/topics/286-ws-opcodes-additional.md`.
