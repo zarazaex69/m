@@ -2416,3 +2416,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 295. NOTIF_CALL_START WS
 
 `conversation_id`/`rejectedParticipants`/`internalCallerParams`. Подробно: `notes/topics/295-notif-call-start-ws.md`.
+
+---
+
+## Дополнения 296
+
+### 296. WS Opcodes — финальный список (148-160)
+
+`AUTH_QR_APPROVE`(QR-авторизация), `VOTERS_LIST_BY_ANSWER`(кто как голосовал), `TRANSCRIBE_MEDIA`/`NOTIF_TRANSCRIPTION`, `MSG_DELIVERY`, `CHAT_SUGGEST`, `ORG_INFO`, `CHAT_LIVESTREAM_INFO`. Итого 160 опкодов. Подробно: `notes/topics/296-ws-opcodes-final.md`.
