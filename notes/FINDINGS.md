@@ -2808,3 +2808,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 344. PmsKey debug/special
 
 `user-debug-report`/`fake-chats`/`fake-in-app-review`/`blocked-users`/`anr-config`/`watchdog-config`/`debug-mode`/`min-log-level`. Подробно: `notes/topics/344-pmskey-debug-special.md`.
+
+---
+
+## Дополнения 345
+
+### 345. EXIF GPS метаданные
+
+`GPSLatitude`/`GPSLongitude`/`GPSAltitude`/`GPSTimeStamp` + `CameraOwnerName`/`BodySerialNumber`/`LensSerialNumber`. Подробно: `notes/topics/345-exif-gps-metadata.md`.
