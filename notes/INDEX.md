@@ -245,3 +245,4 @@ status: living
 - [[topics/136-ev1-webrtc-session-config]] — ev1 WebRTC session config: emulatedSignalingError(server force-terminates call)/emulatedIceCandidateError/simulcastState #calls #webrtc #server-control
 - [[topics/137-rating-limits-p2prelay-config]] — android.rating.limits (RateManagerConfig: RTT/loss/candidate type) + android.p2prelay.config (P2P relay switch) #calls #quality #server-control
 - [[topics/138-settings-get-api]] — settings.get API: HTTP endpoint for 6 RemoteSettings keys (separate from WS/PmsKey) #calls #api #server-control
+- [[topics/139-api-protocol-constants]] — ApiProtocol: p2p_forbidden(server bans P2P)/stun_server/turn_server(server-controlled ICE)/wt_endpoint/onlyAdminCanRecord #calls #api #server-control
