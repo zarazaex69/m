@@ -908,3 +908,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 105. chat-history-warm-opts
 
 `chat-history-warm-opts` — int, default `-1` (=All). Сервер контролирует прогрев истории чатов при запуске. Связанные: `chat-history-warm-fail-interval`, `chat-history-notif-msg-strategy`, `chat-history-persist`, `chat-history-login-count`. Все отправляются в WS session config. Подробно: `notes/topics/105-chat-history-warm.md`.
+
+---
+
+## Дополнения 106
+
+### 106. perf-registrar-config + net-stat-config
+
+`PerfRegistrarServerSettings`: `maxAttemptsForPersistentMetric=25`, `rawPersistInterval=15s`, TTL=3 дня. `NetStatConfig(loggableOpcodes={17,18})` — сервер задаёт, для каких WS-опкодов собирать сетевую статистику. Подробно: `notes/topics/106-perf-registrar-net-stat-config.md`.
