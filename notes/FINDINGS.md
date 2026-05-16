@@ -1044,3 +1044,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 123. Group calls PmsKey
 
 `gc-from-p2p` (#123, default=false) — «Переход из 1-1 звонка в групповой». `gc-link-pre-settings` (#124, default=false) — «Преднастройки группового звонка по ссылке». `gc-wait-admin` (#125, default=false) — «Комната ожидания администратора». `group-call-part-limit` (#128) — лимит участников. `call-pinch-to-zoom` (#24, default=false). Подробно: `notes/topics/123-group-calls-pmskey.md`.
+
+---
+
+## Дополнения 124
+
+### 124. Calls signaling PmsKey
+
+`outgoing-call-uri` (#223, default=`https://max.ru`) — URI для Android Telecom API. `calls-android-signaling-to` (#124) — JSON `{"use": bool, "cto": 5000, "ird": 2000, "rdsf": 1.0, "mrd": 2000}` — таймауты сигналинга. `early-call-start` (#101, default=false) — «Ранний старт входящего звонка». Подробно: `notes/topics/124-calls-signaling-pmskey.md`.
