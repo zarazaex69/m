@@ -601,3 +601,4 @@ status: living
 - [[topics/491-daily-analytics-worker]] — DailyAnalyticsWorker: PERMISSION.permission_status daily report: push/contacts/fsi/gallery/camera/microphone/geo #permission-status #daily-analytics #telemetry #surveillance #worker
 - [[topics/492-geolocation-send-click]] — geolocation_send_click: {source_id, source_type}, Yandex Maps fallback #geolocation #telemetry #surveillance #yandex-maps #location-share
 - [[topics/493-log-external-api]] — mcc log.externalLog API: {collector, application, platform, items}, gzip, priority=2 #log-external #telemetry #surveillance #onelog #collector #application #platform
+- [[topics/494-log-entry-structure]] — qk9 LogEntry: type/event/userId/sessionId/params/time, every event contains userId+sessionId+timestamp #log-entry #telemetry #surveillance #event-structure

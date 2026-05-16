@@ -3998,3 +3998,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 493. log.externalLog API
 
 `{collector, application, platform, items}`. Gzip сжатие. Подробно: `notes/topics/493-log-external-api.md`.
+
+---
+
+## Дополнения 494
+
+### 494. qk9 LogEntry
+
+`type/event/userId/sessionId/params/time`. Каждое событие содержит userId + sessionId + timestamp. Подробно: `notes/topics/494-log-entry-structure.md`.
