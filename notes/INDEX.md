@@ -472,3 +472,4 @@ status: living
 - [[topics/362-z8f-dps-metadata]] — z8f DPS metadata: ru.trace_flow.dps.API_KEY/CLIENT_VERSION/USER_ID + HostReachability config keys #network #dps #mytracker #metadata
 - [[topics/363-google-maps-api-key]] — Google Maps API key: com.google.android.geo.API_KEY=AIzaSyDJbuC3fODS_aR7jcOkoP6qWIsQen9XARI #config #google-maps #api-key #manifest
 - [[topics/364-manifest-metadata-full]] — AndroidManifest meta-data: 7 Apptracer initializers + Google Maps API key + Facebook SoLoader disabled + STAMP_TYPE_DISTRIBUTION_APK #config #manifest #apptracer #facebook
+- [[topics/365-facebook-fresco]] — Facebook Fresco: GIF/WebP animations + 5 threads + SoLoader + FrescoHttpDownloadException + stat.fresco #facebook #fresco #gif #webp #image-loading

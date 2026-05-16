@@ -2968,3 +2968,11 @@ DPS: `dps_config.bin`/`dps_dont_report.bin`/`dps_log_entries.bin`. HostReachabil
 ### 364. AndroidManifest meta-data
 
 7 Apptracer инициализаторов + `com.google.android.geo.API_KEY` + `com.facebook.soloader.enabled=false` + `STAMP_TYPE_DISTRIBUTION_APK`. Подробно: `notes/topics/364-manifest-metadata-full.md`.
+
+---
+
+## Дополнения 365
+
+### 365. Facebook Fresco
+
+GIF/WebP анимации + 5 потоков (FrescoIoBoundExecutor/FrescoDecodeExecutor/FrescoBackgroundExecutor/FrescoLightWeightBackgroundExecutor/FrescoAnimationWorker) + SoLoader + stat.fresco. Подробно: `notes/topics/365-facebook-fresco.md`.
