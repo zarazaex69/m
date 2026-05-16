@@ -3830,3 +3830,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 472. ok9.h типы событий
 
 19 типов. Критические: `AUDIO_TRANSCRIPTION.transcription_result`/`PERMISSION.permission_changed_state`/`HOST_REACHABILITY`/`PUSH.InboundCall`/`SETTINGS.MINIAPP_BIOMETRY`. Подробно: `notes/topics/472-log-controller-event-types.md`.
+
+---
+
+## Дополнения 473
+
+### 473. Audio Transcription Analytics
+
+`AUDIO_TRANSCRIPTION.transcription_result` → `{message_id, media_id, message_type, result_type, duration, waiting_time, source_id, source_type}`. Подробно: `notes/topics/473-audio-transcription-analytics.md`.

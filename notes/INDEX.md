@@ -580,3 +580,4 @@ status: living
 - [[topics/470-km5-telemetry-sender]] — km5 Telemetry Sender: value1..16 + valueStr1..6, ok9.h('DEV', eventType, data), bloom filter dedup #telemetry #km5 #event-sender #surveillance #server-control
 - [[topics/471-log-controller]] — ok9 LogController: ap(timestamp, userId, deviceId, type, event, params), retry 3x, LOG_DISCONNECTION_BLOCKER #log-controller #telemetry #surveillance #event-sender #critical-event
 - [[topics/472-log-controller-event-types]] — ok9.h event types: AUDIO_TRANSCRIPTION/PERMISSION/HOST_REACHABILITY/PUSH.InboundCall/SETTINGS.MINIAPP_BIOMETRY/PRESENCE #log-controller #event-types #telemetry #surveillance #audio-transcription #push #permission #background
+- [[topics/473-audio-transcription-analytics]] — tvi AUDIO_TRANSCRIPTION.transcription_result: message_id/media_id/message_type/result_type/duration/waiting_time/source_id/source_type #audio-transcription #telemetry #surveillance #message-transcription
