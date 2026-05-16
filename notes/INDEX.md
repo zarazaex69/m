@@ -181,3 +181,5 @@ status: living
 - [[topics/72-video-message-onelog]] — VIDEO_MESSAGE OneLog: start_recording/delete/hands_free/error with source_id #video-messages #telemetry
 - [[topics/73-permission-onelog-daily]] — PERMISSION OneLog: DailyAnalyticsWorker sends 7 permissions daily #permissions #surveillance
 - [[topics/74-background-mode-onelog]] — BACKGROUND_MODE OneLog: system_curtain_shown/hidden, work_in_background_permission #background #telemetry
+- [[topics/75-settings-power-saving-onelog]] — SETTINGS OneLog: MINIAPP_BIOMETRY (webappId), THEME/BACKGROUND/TEXT_SIZE + POWER_SAVING #settings #telemetry
+- [[topics/76-contact-or-block-onelog]] — CONTACT_OR_BLOCK OneLog: server knows every add/block decision #contacts #surveillance
