@@ -1504,3 +1504,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 181. NoiseSuppressionManager
 
 4 режима: `serversideBasic`, `serversideAnn`, `clientsidePlatform`, `clientsideAnn`. `filePath` — ML-модель шумоподавления. Fallback параметры при проблемах с производительностью. Подробно: `notes/topics/181-noise-suppression-manager.md`.
+
+---
+
+## Дополнения 182
+
+### 182. ChatManager — чат в звонке
+
+`sendMessage(OutboundMessage: participantId+text)` через WebRTC DataChannel. При P2P relay — трафик через серверы VK/OK. `Calls-SDK-LogDCTraffic` — логирование DataChannel трафика. Подробно: `notes/topics/182-chat-manager.md`.
