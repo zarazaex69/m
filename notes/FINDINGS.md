@@ -4214,3 +4214,11 @@ VPN(`hasTransport(4)`) / roaming(`isNetworkRoaming()`) / backgroundRestriction /
 ### 520. rtd дополнительные поля
 
 19 boolean + 18 строк/чисел. Ключевые: `isFakeChatsEnabled`/`isFullLogEnabled`/`callServers`/`moneyBotId`/`vpnChatBottomsheetEnabled`. Подробно: `notes/topics/520-rtd-additional-fields.md`.
+
+---
+
+## Дополнения 521
+
+### 521. isFakeChatsEnabled
+
+RTD флаг для фейковых чатов в `PickerChatsListWidget`. Подробно: `notes/topics/521-fake-chats-enabled.md`.
