@@ -852,3 +852,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 97. api.oneme.ru — основной API endpoint и тестовые серверы
 
 `api.oneme.ru:443` — production. Dev-меню содержит: `api-test.oneme.ru`, `api-tg.oneme.ru` (неизвестное назначение), `api-test2.oneme.ru`. Deeplink-обработчик принимает тестовые хосты. `api-tg.oneme.ru` — суффикс `tg` требует дополнительного анализа. Подробно: `notes/topics/97-api-oneme-ru-endpoints.md`.
+
+---
+
+## Дополнения 98
+
+### 98. MyTracker API детали
+
+`tracker-api.vk-analytics.ru` с путями: `v3/`, `mobile/v1`, `mlapi` (антифрод ML), `beta-ml`. Attribution через `mt_deeplink` параметр. Поддерживает proxy-хост. ML-endpoints для сенсорного fingerprint (5 датчиков из topic 35). Подробно: `notes/topics/98-mytracker-api-details.md`.
