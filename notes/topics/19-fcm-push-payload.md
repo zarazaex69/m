@@ -113,11 +113,32 @@ eeiVar5.d().a().f(false, !((oe4) r0.a.getValue()).c());
 ct4.E(fei.class.getName(), "onLocationRequestPush");
 ```
 
-`f(showNotif, useAlternativeChannel)` — метод `eqe.f(...)`. По имени и аргументам — это включение background-sync (типичная заглушка после ContextCompat.startForegroundService(...) в pre-fetch handler). Что именно делает — нужно отдельно проверить через `eqe.f(...)`. Но сам факт того, что **существует push-команда «LocationRequest» на стороне сервера**, документирован в коде клиента, и клиент на неё отзывается отдельной веткой обработки.
+`eqe.f(boolean callPush, boolean forceConnection)` (см. `defpackage/eqe.java:320`):
 
-PmsKey `send-location-enabled` (см. [[03-pms-server-flags]]) включает отправку геолокации. Совпадение того, что у сервера есть и push-команда `LocationRequest`, и feature-flag `send-location-enabled`, — выглядит как пара «команда / разрешение».
+```java
+public final void f(boolean z, boolean z2) {
+    log("onPush: callPush=" + z + ", forceConnection=" + z2);
+    f3e.a.G = System.currentTimeMillis();   // lastPushTime
+    if (z2) {
+        ((f3e) this.c.getValue()).a.A(true);                 // forceWsReconnect
+        iodVar.k = iodVar.b();
+        ((ucc) iodVar.d.getValue()).B(iodVar.k);
+        ((zgi) this.e.getValue()).a();                       // background sync trigger
+    }
+}
+```
 
-Что я **не подтвердил**: что в ответ на `LocationRequest` клиент действительно отправляет координаты. Чтобы это закрыть — нужно вычитать `eqe.f(...)` и связанную цепочку. Текущий статус: **подозрительно, требует подтверждения**.
+То есть `LocationRequest` push **не отправляет координаты сразу**. Он только:
+
+- ставит `lastPushTime`;
+- если WS не подключён — поднимает соединение с `api.oneme.ru` (`forceConnection`);
+- триггерит background sync.
+
+Дальше уже сервер MAX по WS-каналу запрашивает у клиента то, что хочет (включая, видимо, `send-location` если PmsKey `send-location-enabled` true). То есть **в самом push-е координаты не возвращаются**, но push используется как «разбуди клиент, чтобы он подключился к нам» — это паттерн silent push.
+
+PmsKey `send-location-enabled` (см. [[03-pms-server-flags]]) — отдельный feature-flag, после WS-handshake сервер может попросить координаты через WS-команду.
+
+Скептический статус: `LocationRequest` push — это **wake-trigger**, не direct location upload. Но в комбинации с PmsKey `send-location-enabled` сервер имеет полный путь «послать silent-push → дождаться WS → запросить координаты». Это не «зеро-клик трекинг», но достаточный.
 
 ### 6. `ConversationReadOnOtherDevice`
 
