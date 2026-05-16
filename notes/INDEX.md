@@ -617,3 +617,4 @@ status: living
 - [[topics/507-memory-info-collector]] — uoa Memory Info Collector: Debug.MemoryInfo + ActivityManager.MemoryInfo + /proc/self/statm(RSS/shared) + lastTrimLevel + lowMemory #memory-info #proc-statm #surveillance #telemetry #server-control
 - [[topics/508-connectivity-receiver]] — gr Connectivity BroadcastReceiver: CONNECTIVITY_CHANGE/BATTERY_CHANGED/TIMEZONE_CHANGED/AUDIO_BECOMING_NOISY #network-type #connectivity #surveillance #telemetry #broadcast-receiver
 - [[topics/509-file-path-manager]] — lv6 File Path Manager: externalCacheDir/filesDir/cacheDir/downloadsDir, FileProvider ru.oneme.app.provider, Downloads/MAX/ #file-paths #storage #surveillance #file-provider
+- [[topics/510-contacts-sync]] — ndi Contacts Sync: ContactsContract, sync1=userId, tt_contact_mimetype, add/remove/sync operations #contacts #sync #content-provider #surveillance #server-control

@@ -4126,3 +4126,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 509. lv6 File Path Manager
 
 `externalCacheDir`/`filesDir`/`cacheDir`/`downloadsDir`. FileProvider: `ru.oneme.app.provider`. Загрузки: `Downloads/MAX/`. Подробно: `notes/topics/509-file-path-manager.md`.
+
+---
+
+## Дополнения 510
+
+### 510. ndi Contacts Sync
+
+`ContactsContract`. `sync1` = userId MAX. `tt_contact_mimetype`. Операции: add/remove/sync. Подробно: `notes/topics/510-contacts-sync.md`.
