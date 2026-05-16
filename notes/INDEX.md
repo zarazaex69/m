@@ -193,3 +193,4 @@ status: living
 - [[topics/84-transcribe-media-ws-opcode]] — TRANSCRIBE_MEDIA(202): audio/video content sent to server for transcription #transcription #surveillance #ws
 - [[topics/85-notif-ws-opcodes]] — NOTIF_* WS opcodes: 25 server-to-client push (NOTIF_CONFIG/NOTIF_LOCATION_REQUEST/NOTIF_DRAFT/NOTIF_BANNERS) #ws #server-push
 - [[topics/86-neuroavatars-ai]] — NeuroAvatars: AI avatar generation at registration, photo likely sent to server #ai #biometrics #registration
+- [[topics/87-location-ws-opcodes]] — LOCATION WS: NOTIF_LOCATION_REQUEST (server requests geo), liveLocation stream, MAX+Yandex recipients #location #surveillance #ws
