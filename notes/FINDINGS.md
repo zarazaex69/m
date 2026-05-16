@@ -3198,3 +3198,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 393. RateManager
 
 `RateHint(reason)` по RTT/loss/candidateType. `RateCallData(maxRate, questions)` с сервера. Конфиг: `android.rating.limits`. Подробно: `notes/topics/393-rate-manager.md`.
+
+---
+
+## Дополнения 394
+
+### 394. Audio SDK
+
+`KeywordSpotterManager`: `setKeywordSpotterParams(isEnabled, filePath)`, `KeywordSpotterConfig(turnOffInMs)`. `MicrophoneManager`: `registerAudioSampleCallback(delay, callback)` — сырые аудио-сэмплы. Подробно: `notes/topics/394-audio-sdk-kws-mic-proximity.md`.
