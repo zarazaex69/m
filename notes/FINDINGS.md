@@ -1568,3 +1568,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 189. MediaConnectionManager
 
 `onMediaConnected(ConnectedInfo: isFirstConnection)` / `onMediaDisconnected`. `isFirstConnection` — первое ли подключение или переподключение. Подробно: `notes/topics/189-media-connection-manager.md`.
+
+---
+
+## Дополнения 190
+
+### 190. ConversationEventsListener — 30+ событий
+
+`onMicrophoneForciblyMuted` (принудительное заглушение), `onParticipantsDeAnonymized` (**деанонимизация участников**), `onMigratedToServerTopology`, `onCustomData` (DataChannel), `onConversationIdChanged`, `onRateCall`, `onRolesChanged`, `onWaitForAdminEnabled`. Подробно: `notes/topics/190-conversation-events-listener.md`.
