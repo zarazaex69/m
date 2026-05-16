@@ -2672,3 +2672,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 327. MyTracker — endpoints
 
 `tracker-api.vk-analytics.ru/v3/`(main) + `ip4.`(IPv4) + `ts./mobile/v1`(timestamp) + `mlapi.`(ML) + `beta-ml.`(Beta ML). Подробно: `notes/topics/327-mytracker-endpoints.md`.
+
+---
+
+## Дополнения 328
+
+### 328. MyTracker инициализация
+
+`initTracker("34982109644049932883", app)` + `setCustomUserId(userId)` + `setKidMode(false)`. Tracker ID MAX: `34982109644049932883`. Подробно: `notes/topics/328-mytracker-init.md`.
