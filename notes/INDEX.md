@@ -261,3 +261,5 @@ status: living
 - [[topics/152-asr-online-manager]] — AsrOnlineManager: real-time call transcription (AsrOnlineChunk: participantId+text), three audio analysis levels #calls #asr #surveillance
 - [[topics/153-signaling-commands]] — signaling commands: 24 commands (mute-participant/request-asr/enable-feature-for-roles/report-network-stat) #calls #signaling #server-control
 - [[topics/154-conversation-features-roles]] — ConversationFeature: ADD_PARTICIPANT/RECORD/MOVIE_SHARE/ASR_RECORD with role-based access #calls #features #asr #recording
+- [[topics/155-call-roles]] — kv1 call roles: CREATOR/ADMIN/SPEAKER for role-based feature access #calls #roles
+- [[topics/156-microphone-manager]] — MicrophoneManager: registerAudioSampleCallback (KWS/ASR/energy all access mic audio) #calls #microphone #surveillance
