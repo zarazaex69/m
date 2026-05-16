@@ -1648,3 +1648,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 199. CallsAudioManager + ScreenCaptureManager + VideoRenderManager
 
 `CallsAudioManager` — `onMutedForever`, proximity tracking при громкоговорителе, `State(IDLE/DIALING/RINGING/CONVERSATION)`. `ScreenCaptureManager` — `setAudioCaptureEnabled(true)` захватывает системный аудио при screenshare. `VideoRenderManager` — рендереры видео участников. Подробно: `notes/topics/199-calls-audio-screen-video-render.md`.
+
+---
+
+## Дополнения 200
+
+### 200. vchat API — полный список
+
+11 методов: `vchat.startConversation`/`joinConversation`/`joinConversationByLink`/`hangupConversation`/`getConversationParams`/`createJoinLink`/`removeJoinLink`/`clientSupportedCodecs`/`getExternalIdsByOkIds`/`getOkIdByExternalId`/`getOkIdsByExternalIds`. Подробно: `notes/topics/200-vchat-api-full-list.md`.

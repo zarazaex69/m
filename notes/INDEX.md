@@ -307,3 +307,4 @@ status: living
 - [[topics/197-ml-features-conversation-feature-manager]] — MLFeaturesManager(KWS+NS delegates+DownloadService) + ConversationFeatureManager(enableFeatureForAll/Roles) #calls #ml #kws #ns #server-control
 - [[topics/198-session-stereo-rate-manager]] — SessionRoomsManager(breakout/assignParticipants) + StereoRoomManager(promote/handsQueue) + RateManager #calls #rooms #stereo
 - [[topics/199-calls-audio-screen-video-render]] — CallsAudioManager(onMutedForever/proximity) + ScreenCaptureManager(setAudioCaptureEnabled=system audio) + VideoRenderManager #calls #audio #screen-capture
+- [[topics/200-vchat-api-full-list]] — vchat API: 11 methods (clientSupportedCodecs/getConversationParams/createJoinLink/removeJoinLink/ID mapping) #calls #api #vchat
