@@ -712,3 +712,15 @@ KWS активен во время звонков. `android.wordspotter.config` 
 ### 79. Дополнительные OneLog категории
 
 `AUDIO_TRANSCRIPTION.transcription_result` — `message_id`, `media_id`, `duration`, `waiting_time`, `source_id` (chat_id). `AUTH_QR.LOG` — полный лог QR-аутентификации (6 шагов). `CHANNEL_RECSYS_FOLDER` — взаимодействие с рекомендательными папками. `CONTACT_RENAME_BANNER` — переименование контактов. `PRESENCE.EVENT_MESSAGE_COUNTER`. Подробно: `notes/topics/79-additional-onelog-categories.md`.
+
+---
+
+## Дополнения 80-81
+
+### 80. ACTION/CLICK/SHOW OneLog
+
+`GET_INSTALL_REFERRER` — при первой установке сервер получает источник установки (referrer string, is_update_version). `FCM_ON_DELETED_MESSAGES` — FCM удалил сообщения. `ACTION_CACHE_CLEARED` — очищен кэш. `CLICK.profile_button_click` — нажатие на профиль с `source_meta`. `SHOW.SEARCH_RESPONSE` — показан результат поиска. Подробно: `notes/topics/80-action-click-show-onelog.md`.
+
+### 81. DANGEROUS_URL_ACTIONS, DANGEROUS_FILE_ACTIONS, REGISTRATION, INFORMER, BANNER
+
+`DANGEROUS_URL_ACTIONS` — сервер знает, когда пользователю показывалось предупреждение об опасной ссылке и перешёл ли он по ней (`go`/`close`). `DANGEROUS_FILE_ACTIONS` — показ предупреждения об опасном файле с `source_id` (chat_id), `download_file`/`not_download_file`. `REGISTRATION` — детальный лог регистрации. `INFORMER` — взаимодействие с informer-баннерами. Подробно: `notes/topics/81-dangerous-actions-registration-onelog.md`.
