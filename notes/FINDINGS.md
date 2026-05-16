@@ -2272,3 +2272,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 277. VideoConvert + VideoUpload + WarmChatHistory
 
 `VideoConvert`: srcPath/dstPath/startPosition/endPosition/quality. `VideoUpload`: file/audio. `WarmChatHistory`: chatIds[]. Подробно: `notes/topics/277-tasks-video-warm-history.md`.
+
+---
+
+## Дополнения 278
+
+### 278. PhotoUpload + FileUpload Tasks
+
+`PhotoUpload`: file/chatId/crop/profile. `FileUpload`: file/originalFile/fileName/fileId/attachType/lastUpdatedFile/lastUpdatedOriginalFile. Подробно: `notes/topics/278-tasks-photo-file-upload.md`.
