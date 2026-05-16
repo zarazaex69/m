@@ -4174,3 +4174,11 @@ SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно
 ### 515. kfd Phonebook Sync Controller
 
 `onPhonebookUpdated` → `syncInternal` → `onSyncSuccess(contacts, phones, requested)`. Цикл защита: >= 10 попыток. Подробно: `notes/topics/515-phonebook-sync-controller.md`.
+
+---
+
+## Дополнения 516
+
+### 516. Юридические ссылки
+
+FAQ: `https://help.max.ru`. Privacy Policy: `https://legal.max.ru/pp`. User Agreement: `https://legal.max.ru/ps`. Подробно: `notes/topics/516-legal-links.md`.
