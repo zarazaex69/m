@@ -1576,3 +1576,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 190. ConversationEventsListener — 30+ событий
 
 `onMicrophoneForciblyMuted` (принудительное заглушение), `onParticipantsDeAnonymized` (**деанонимизация участников**), `onMigratedToServerTopology`, `onCustomData` (DataChannel), `onConversationIdChanged`, `onRateCall`, `onRolesChanged`, `onWaitForAdminEnabled`. Подробно: `notes/topics/190-conversation-events-listener.md`.
+
+---
+
+## Дополнения 191
+
+### 191. ConversationParticipant — 20+ полей
+
+`getAcceptedCallClientType`/`getAcceptedCallPlatform` (платформа при входе), `getCapabilities` (возможности клиента), `getNetworkStatus`, `isTalking`, `isReported`, `isAdmin`/`isCreator`/`isPrimarySpeaker`, `getAudioOptionState`/`getVideoOptionState`/`getScreenshareOptionState`. Подробно: `notes/topics/191-conversation-participant.md`.
