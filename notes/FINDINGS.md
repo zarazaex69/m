@@ -3854,3 +3854,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 475. HOST_REACHABILITY Analytics
 
 `GET_HOST_REACHABILITY {hosts, operator, connection_type, ip, vpn}`. Отправляется после каждой проверки доступности хостов. Подробно: `notes/topics/475-host-reachability-analytics.md`.
+
+---
+
+## Дополнения 476
+
+### 476. PUSH.InboundCall Analytics
+
+`{trid, eKey, suid, ttime, dtime, fcmdtime, p_op="show", chat_id, call_id, show_source}`. Подробно: `notes/topics/476-push-inbound-call-analytics.md`.
