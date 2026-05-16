@@ -2184,3 +2184,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 266. Protos.ChatOptions — 13 флагов
 
 `onlyAdminCanCall`/`contentLevelChat`/`joinRequest`/`membersCanSeePrivateLink`/`signAdmin`/`aPlusChannel`/`official`/`serviceChat`. Подробно: `notes/topics/266-protos-chat-options.md`.
+
+---
+
+## Дополнения 267
+
+### 267. ChatSettings + ChatReactionsSettings
+
+`ChatSettings`: dontDisturbUntil/favoriteIndex/hideLiveLocationPanel/hideLiveLocationPanelBeforeTime/lastNotifMark. `ChatReactionsSettings`: count/included/isActive/isFull. Подробно: `notes/topics/267-protos-chat-settings-reactions.md`.
