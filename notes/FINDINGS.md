@@ -1360,3 +1360,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 163. ConversationStats — 18+ компонентов статистики
 
 `kwsStat` (KWS), `mlDownloadStat` (ML-модели), `iceCandidatePairChangedStat` (ICE routing), `serverTopologyRequestedStat`, `peerConnectionStateChangedStat`, `negotiationErrorStat`, `audioErrorStat`, `acceptCallStat`, `p2pRelayRequestedStat`. Всё отправляется через `vchat.clientStats`. Подробно: `notes/topics/163-conversation-stats.md`.
+
+---
+
+## Дополнения 164
+
+### 164. SignalingTransportStat
+
+Детальная статистика WS-сигналинга: `onConnect`/`onConnected`/`onRestart`/`onMessageReceived`(isPing)/`onCommandSent`/`onFailedByPings`/`onFailedByException`/`onTimeout`. `connectedAtLeastOnceInCall`, `startConnectTime`, `lastMessageReceived`, `firstFailTime`. Подробно: `notes/topics/164-signaling-transport-stat.md`.
