@@ -2160,3 +2160,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 263. Protos.Video + Quality
 
 `Video`: videoId/duration/live/startTime/transcriptionStatus/thumbhashData. `Quality`: bitrate/height/width/isOriginal. Подробно: `notes/topics/263-protos-video-schema.md`.
+
+---
+
+## Дополнения 264
+
+### 264. Protos.Audio — аудио-сообщения
+
+`audioId`/`duration`/`startTime`/`transcriptionStatus`(UNKNOWN/PROCESSING/SUCCESS/FAILED/NOT_SUPPORTED/MEDIA_NOT_READY)/`wave`(waveform bytes). Подробно: `notes/topics/264-protos-audio-schema.md`.
