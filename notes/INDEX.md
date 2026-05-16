@@ -527,3 +527,4 @@ status: living
 - [[topics/417-mytracker-gaid-oaid]] — MyTracker GAID+OAID: GoogleAdInfoDataProvider(GAID) + HuaweiAdInfoDataProvider(OAID), isLimitAdTrackingEnabled #mytracker #gaid #oaid #huawei #google #surveillance
 - [[topics/418-mytracker-installed-packages]] — MyTracker AppsDataProvider: non-system apps (packageName+firstInstallTime), appsHash change detection #mytracker #installed-packages #apps-list #surveillance #fingerprint
 - [[topics/419-webapp-js-events]] — WebApp JS events (34): WebAppBiometryRequestAuth/WebAppNfcEmulateNfcTag/WebAppSecureStorageSaveKey/WebAppVerifyMobileId/WebAppUrlInterceptor #webapp #jsbridge #js-events #biometry #nfc #storage #surveillance
+- [[topics/420-webapp-storage-biometry]] — WebApp Storage(SecureStorage 128/4000B + DeviceStorage) + Biometry(RequestAuth/RequestAccess/UpdateToken) #webapp #secure-storage #device-storage #biometry #jsbridge #surveillance

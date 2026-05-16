@@ -3406,3 +3406,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 419. WebApp JS-события (34)
 
 Критические: `WebAppBiometryRequestAuth`/`WebAppNfcEmulateNfcTag`/`WebAppSecureStorageSaveKey`/`WebAppVerifyMobileId`/`WebAppSetupScreenCaptureBehavior`/`WebAppUrlInterceptor`. Подробно: `notes/topics/419-webapp-js-events.md`.
+
+---
+
+## Дополнения 420
+
+### 420. WebApp Storage + Biometry
+
+`SecureStorage`(128/4000 байт) + `DeviceStorage`. `BiometryRequestAuth`/`BiometryRequestAccess`/`BiometryUpdateToken`. Подробно: `notes/topics/420-webapp-storage-biometry.md`.
