@@ -462,3 +462,4 @@ status: living
 - [[topics/352-apptracer-app-token]] — Apptracer app token: tracer_app_token=t6QnlHov0Gq1UBGYG9GPqZu0EiVMZ922FKvwyAEASa90 (crashToken for all Apptracer API) #telemetry #apptracer #token #crash-token
 - [[topics/353-strings-additional-config]] — strings.xml: tracer_mapping_uuid/legal.max.ru/pp+ps/tt_contact_mimetype #config #strings #legal #apptracer
 - [[topics/354-yandex-maps-config]] — y-map PmsKey: Yandex Maps config (tile/geocoder/static) + apikey from server + geocode-maps.yandex.ru endpoint #server-control #yandex-maps #api-key #geocoder
+- [[topics/355-deeplink-routes-full]] — Deeplink routes: :auth/:share-self-out/joincall/<id>/join/<id>/stickerset/<id>/c/<chatId>/<msgId>/:folder/:current #deeplinks #routing #max-ru
