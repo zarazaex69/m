@@ -459,3 +459,4 @@ status: living
 - [[topics/349-firebase-installations-api]] — Firebase Installations: https://firebaseinstallations.googleapis.com/v1/ (FID) #telemetry #firebase #installations #googleapis
 - [[topics/350-firebase-installations-data]] — Firebase Installations data: fid/appId/authVersion(FIS_v2)/sdkVersion(a:18.0.0) → Google #telemetry #firebase #fid #app-id #surveillance
 - [[topics/351-firebase-config-keys]] — Firebase config: google_api_key=AIzaSyABuDYeeDXIOrKTXLkUj30Ii143ofPe63Q + google_app_id=1:659634599081:android:... + project_id=max-messenger-app #telemetry #firebase #config #api-key
+- [[topics/352-apptracer-app-token]] — Apptracer app token: tracer_app_token=t6QnlHov0Gq1UBGYG9GPqZu0EiVMZ922FKvwyAEASa90 (crashToken for all Apptracer API) #telemetry #apptracer #token #crash-token
