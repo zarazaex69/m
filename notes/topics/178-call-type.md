@@ -1,16 +1,17 @@
 ---
-tags: [calls, call-type, stats]
+tags: [calls, call-type, state, stats]
 status: confirmed
 sources:
   - work/jadx_base/sources/ru/ok/android/externcalls/sdk/Conversation.java
 related:
   - "[[173-call-finish-init-stat]]"
   - "[[172-conversation-started-signaling-stat]]"
+  - "[[171-ice-restart-peer-connection-stat]]"
 ---
 
-# Conversation.CallType — типы звонков
+# Conversation.CallType и Conversation.State — типы и состояния звонков
 
-`Conversation.CallType` enum:
+## CallType
 
 | Тип | Что |
 |---|---|
@@ -18,6 +19,19 @@ related:
 | `Outgoing` | исходящий звонок |
 | `Join` | присоединение к существующему звонку |
 
-Используется в `call_init.source` и `call_start.labels`. Сервер знает тип каждого звонка.
+## State
 
-`Join` — присоединение по ссылке (см. [[144-hangup-join-api]]).
+| Состояние | order | Что |
+|---|---|---|
+| `None` | 0 | нет звонка |
+| `Preparing` | 1 | подготовка (warmup) |
+| `Starting` | 2 | запуск |
+| `Connecting` | 3 | подключение |
+| `Connected` | 4 | подключён |
+| `Finished` | 5 | завершён |
+
+`State` используется в `PeerConnectionChangedStat` (см. [[171-ice-restart-peer-connection-stat]]) — `connection_state_changed`.
+
+## Сводка
+
+`CallType`: Incoming/Outgoing/Join. `State`: None/Preparing/Starting/Connecting/Connected/Finished (с порядком 0-5).
