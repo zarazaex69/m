@@ -3120,3 +3120,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 383. externcalls.sdk.net
 
 `DownloadService`: HTTP + MD5 validation. `NetworkStat(rttMs, audioLoss, videoLoss, activeCandidateType)`. `StatMonitor.observeStat()` → поток NetworkStat. Подробно: `notes/topics/383-externcalls-sdk-net.md`.
+
+---
+
+## Дополнения 384
+
+### 384. externcalls.sdk.config
+
+`RemoteSettings`: android.wordspotter.config/android.dump.bitrate/android.p2prelay.config. `ConversationParams`: isP2PForbidden/ispAsNo/ispAsOrg/locCc/locReg. Подробно: `notes/topics/384-externcalls-sdk-config.md`.
