@@ -405,3 +405,4 @@ status: living
 - [[topics/295-notif-call-start-ws]] — NOTIF_CALL_START WS: conversation_id/rejectedParticipants/internalCallerParams #protocol #ws #notif-call-start #incoming-call
 - [[topics/296-ws-opcodes-final]] — WS opcodes final (148-160): AUTH_QR_APPROVE/VOTERS_LIST_BY_ANSWER/TRANSCRIBE_MEDIA/NOTIF_TRANSCRIPTION/MSG_DELIVERY/CHAT_SUGGEST/ORG_INFO/CHAT_LIVESTREAM_INFO #protocol #ws #opcodes #qr-auth #transcription #polls
 - [[topics/297-transcribe-media-ws]] — TRANSCRIBE_MEDIA(transcription/status) + NOTIF_TRANSCRIPTION(messageId/chat_id/transcription/mediaId) — server-side transcription #protocol #ws #transcription #surveillance
+- [[topics/298-audio-play-send-vote-ws]] — AUDIO_PLAY(opus/mp3/m4a/callName/callerId/messagesReactions) + SEND_VOTE(trackId/chat/state) WS #protocol #ws #audio-play #polls #send-vote

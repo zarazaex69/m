@@ -2432,3 +2432,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 297. TRANSCRIBE_MEDIA + NOTIF_TRANSCRIPTION WS
 
 `TRANSCRIBE_MEDIA`: transcription/transcriptionStatus. `NOTIF_TRANSCRIPTION`: messageId/chat_id/**transcription**/mediaId/transcriptionStatus. **Серверная транскрипция** — сервер получает аудио/видео и возвращает текст. Подробно: `notes/topics/297-transcribe-media-ws.md`.
+
+---
+
+## Дополнения 298
+
+### 298. AUDIO_PLAY + SEND_VOTE WS
+
+`AUDIO_PLAY`: opus/mp3/m4a/callName/callerId/messagesReactions. `SEND_VOTE`: trackId/chat/state. Подробно: `notes/topics/298-audio-play-send-vote-ws.md`.
