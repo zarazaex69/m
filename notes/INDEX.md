@@ -176,3 +176,4 @@ status: living
 - [[topics/67-yag-shared-prefs-per-account]] — yag SharedPrefs: proxy lists, okToken, deviceId, debug flags (host rotation, DNS emulation) #shared-prefs #proxy #debug
 - [[topics/68-cis-enabled-multilang]] — cis-enabled (CIS UI adaptations, server-gated) + multi-lang #localization #geo
 - [[topics/69-remote-settings-calls-sdk]] — RemoteSettings: android.dump.bitrate (bitrate dump), p2prelay.config, rating.limits #calls #server-control
+- [[topics/70-keyword-spotter-in-calls]] — KWS active during calls, server-controlled turnOffInMs, NativeDoubleArrayConsumer #kws #calls #surveillance
