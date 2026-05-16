@@ -3112,3 +3112,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 382. ConversationStats
 
 18 компонентов. `bad_call_detected_by_audio_spotter(confidence)` — KWS сработал. `call_finish(reason, rate_reasons)`. `call_start(callType, warmupStatus)`. `client_requested_server_topology`. `ml_ready_to_use(modelId, durationMs)`. Подробно: `notes/topics/382-conversation-stats.md`.
+
+---
+
+## Дополнения 383
+
+### 383. externcalls.sdk.net
+
+`DownloadService`: HTTP + MD5 validation. `NetworkStat(rttMs, audioLoss, videoLoss, activeCandidateType)`. `StatMonitor.observeStat()` → поток NetworkStat. Подробно: `notes/topics/383-externcalls-sdk-net.md`.
