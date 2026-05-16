@@ -606,3 +606,4 @@ status: living
 - [[topics/496-api-methods-full]] — tp.b() API methods: auth.anonymLogin/batch.executeV2/log.externalLog/vchat.getAnonymTokenByLink/vchat.getLogUploadUrl #api-methods #telemetry #surveillance #vchat #auth #log-upload
 - [[topics/497-vchat-get-log-upload-url]] — vchat.getLogUploadUrl: {conversationId, webrtcPlatform, type, anonymToken} → URL for call log upload #log-upload #vchat #calls #surveillance #server-control
 - [[topics/498-auth-anonym-login]] — auth.anonymLogin: {deviceId, verification_supported=true, gen_token=true, session_data={auth_token,version=3,device_id}} #auth #anonymous-login #device-id #session-data #surveillance #server-control
+- [[topics/499-tp-uri-builder]] — tp URI Builder: ok://api/api/{method}, base URL https://api.ok.ru #api-uri #ok-api #surveillance #server-control

@@ -4038,3 +4038,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 498. auth.anonymLogin
 
 `{deviceId, verification_supported=true, gen_token=true, session_data={auth_token, version=3, device_id}}`. Подробно: `notes/topics/498-auth-anonym-login.md`.
+
+---
+
+## Дополнения 499
+
+### 499. tp URI Builder
+
+`ok://api/api/{method}`. Базовый URL: `https://api.ok.ru`. Подробно: `notes/topics/499-tp-uri-builder.md`.
