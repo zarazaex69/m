@@ -4094,3 +4094,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 505. Google Play Signature
 
 SHA-256: `8P1sW0EP...` (production) / `GXWy8XF3...` (dev-keys). Подробно: `notes/topics/505-google-play-signature.md`.
+
+---
+
+## Дополнения 506
+
+### 506. d6 App Init
+
+`getInstallerPackageName` → `ACTION.GET_INSTALL_REFERRER`. `MyTracker.setCustomUserId(userId)`. `setKidMode(false)`. Подробно: `notes/topics/506-app-init-installer-mytracker.md`.

@@ -613,3 +613,4 @@ status: living
 - [[topics/503-sensor-listener]] — ioe SensorListener: TYPE_PROXIMITY(8) + TYPE_LIGHT(5), proximity < min(maxRange,3.0), light < maxRange #sensors #proximity #light #surveillance #antifraud
 - [[topics/504-network-country-iso]] — bhj.x() getNetworkCountryIso → country code, fallback Locale.getDefault().getCountry() #network-country-iso #telephony #locale #surveillance #telemetry
 - [[topics/505-google-play-signature]] — til Google Play Signature: SHA-256 8P1sW0EP(production)/GXWy8XF3(dev-keys) #google-play #signature-verification #sha256 #in-app-review #security
+- [[topics/506-app-init-installer-mytracker]] — d6 App Init: getInstallerPackageName→ACTION.GET_INSTALL_REFERRER, MyTracker.setCustomUserId(userId), setKidMode(false) #installer-package #mytracker #user-id #surveillance #telemetry #initialization
