@@ -2952,3 +2952,11 @@ DPS: `dps_config.bin`/`dps_dont_report.bin`/`dps_log_entries.bin`. HostReachabil
 ### 362. z8f DPS метаданные
 
 `ru.trace_flow.dps.API_KEY`/`CLIENT_VERSION`/`USER_ID`. HostReachability: reachabilityHosts/reportHosts/selfIpDetectionDomains/sampleRate/snapshotLifetimeMs/timeoutMs/maxSnapshots. Подробно: `notes/topics/362-z8f-dps-metadata.md`.
+
+---
+
+## Дополнения 363
+
+### 363. Google Maps API Key
+
+`com.google.android.geo.API_KEY=AIzaSyDJbuC3fODS_aR7jcOkoP6qWIsQen9XARI`. Подробно: `notes/topics/363-google-maps-api-key.md`.
