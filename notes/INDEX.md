@@ -520,3 +520,4 @@ status: living
 - [[topics/410-user-settings-map]] — UserSettings: audioTranscriptionEnabled/hiddenOnline/dontDustirbUntil/safeMode/inactiveTTL, synced with server #user-settings #transcription #server-control #surveillance
 - [[topics/411-user-settings-full]] — UserSettings(sgj): 27 fields, hiddenOnline/phoneNumberPrivacy/safeMode/safeModeNoPin/audioTranscriptionEnabled/contentLevelAccess/familyProtection #user-settings #server-control #surveillance #safe-mode #family-protection
 - [[topics/412-protos-location]] — Protos.Location: latitude/longitude/altitude/accuracy/bearing/livePeriod/deviceId + Protos.LocationInfo(speed) #location #gps #geolocation #surveillance #live-location
+- [[topics/413-conversation-interface]] — Conversation interface: 23 managers, sendData(JSON)/muteAll/grantRoles/removeParticipant(ban)/queryChatHistory #conversation #calls-sdk #interface #surveillance #admin
