@@ -916,3 +916,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 106. perf-registrar-config + net-stat-config
 
 `PerfRegistrarServerSettings`: `maxAttemptsForPersistentMetric=25`, `rawPersistInterval=15s`, TTL=3 дня. `NetStatConfig(loggableOpcodes={17,18})` — сервер задаёт, для каких WS-опкодов собирать сетевую статистику. Подробно: `notes/topics/106-perf-registrar-net-stat-config.md`.
+
+---
+
+## Дополнения 107
+
+### 107. opcode-stat-config + session.opcode_stats
+
+`opcode-stat-config` (#216) — конфиг сбора статистики WS-опкодов. `session.opcode_stats` — per-session статистика: `opcodeStats`, `anrDetected`, `caughtExceptionCount`, `phonebookSize`, `frescoStats`, `appClockDump`. Сервер знает о нестабильности клиента (ANR, исключения). Подробно: `notes/topics/107-opcode-stat-session-stats.md`.
