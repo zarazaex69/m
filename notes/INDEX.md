@@ -629,3 +629,4 @@ status: living
 - [[topics/519-connection-info]] — jf4 ConnectionInfo: VPN(hasTransport(4))/roaming(isNetworkRoaming())/backgroundRestriction/registerDefaultNetworkCallback #network-info #connectivity #vpn-detection #roaming #surveillance #telemetry
 - [[topics/520-rtd-additional-fields]] — rtd additional fields: isFakeChatsEnabled/isFullLogEnabled/callServers/moneyBotId/vpnChatBottomsheetEnabled + 18 more #rtd #pmskey #server-control #surveillance #debug #telemetry
 - [[topics/521-fake-chats-enabled]] — isFakeChatsEnabled: RTD flag for fake chats in PickerChatsListWidget #fake-chats #server-control #surveillance #chats-list
+- [[topics/522-user-log-report-debug]] — userLogReportChatId + debug-mode + user-debug-report: server-controlled debug fields #rtd #user-log-report #debug #surveillance #server-control

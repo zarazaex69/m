@@ -4222,3 +4222,11 @@ VPN(`hasTransport(4)`) / roaming(`isNetworkRoaming()`) / backgroundRestriction /
 ### 521. isFakeChatsEnabled
 
 RTD флаг для фейковых чатов в `PickerChatsListWidget`. Подробно: `notes/topics/521-fake-chats-enabled.md`.
+
+---
+
+## Дополнения 522
+
+### 522. userLogReportChatId + debug
+
+`userLogReportChatId` — ID чата для отчётов. `debug-mode`. `user-debug-report`. Все управляются сервером. Подробно: `notes/topics/522-user-log-report-debug.md`.
