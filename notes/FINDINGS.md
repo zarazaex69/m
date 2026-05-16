@@ -1640,3 +1640,11 @@ Hex-encoded: `BIT_SCREEN_TRACK_PRODUCER`(0), `BIT_VIDEO_TRACKS`(1), `BIT_WAITING
 ### 198. SessionRoomsManager + StereoRoomManager + RateManager
 
 `SessionRoomsManager` — breakout rooms: `assignParticipantsToRooms` (принудительное распределение). `StereoRoomManager` — сцена/аудитория: `promoteParticipant`/`unpromoteParticipant`/`grantAdmin`/`getHandsQueue`. `RateManager` — `getShouldRateConversation()` на основе серверных `RateHint`. Подробно: `notes/topics/198-session-stereo-rate-manager.md`.
+
+---
+
+## Дополнения 199
+
+### 199. CallsAudioManager + ScreenCaptureManager + VideoRenderManager
+
+`CallsAudioManager` — `onMutedForever`, proximity tracking при громкоговорителе, `State(IDLE/DIALING/RINGING/CONVERSATION)`. `ScreenCaptureManager` — `setAudioCaptureEnabled(true)` захватывает системный аудио при screenshare. `VideoRenderManager` — рендереры видео участников. Подробно: `notes/topics/199-calls-audio-screen-video-render.md`.

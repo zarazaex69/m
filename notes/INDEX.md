@@ -306,3 +306,4 @@ status: living
 - [[topics/196-debug-media-dump-manager]] — DebugManager+MediaDumpManager: requestMediaDump(remote audio+video), 6 audio intercept points, enableFullAudioDump in prod #calls #debug #dump #dev-in-prod
 - [[topics/197-ml-features-conversation-feature-manager]] — MLFeaturesManager(KWS+NS delegates+DownloadService) + ConversationFeatureManager(enableFeatureForAll/Roles) #calls #ml #kws #ns #server-control
 - [[topics/198-session-stereo-rate-manager]] — SessionRoomsManager(breakout/assignParticipants) + StereoRoomManager(promote/handsQueue) + RateManager #calls #rooms #stereo
+- [[topics/199-calls-audio-screen-video-render]] — CallsAudioManager(onMutedForever/proximity) + ScreenCaptureManager(setAudioCaptureEnabled=system audio) + VideoRenderManager #calls #audio #screen-capture
