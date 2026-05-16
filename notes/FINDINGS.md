@@ -868,3 +868,11 @@ WS-опкод 202. Ответ: `transcription` (текст) + `transcriptionStat
 ### 99. MyTracker PreInstall — OEM preinstall detection
 
 `PreInstallHandler` читает ресурсы вендорного приложения через `PackageManager` и системные свойства `ro.mytracker.preinstall.path` / `ro.appsflyer.preinstall.path`. Определяет, было ли MAX предустановлено производителем. Referrer отправляется на `tracker-api.vk-analytics.ru`. Однократная проверка (`preinstallRead` flag). Подробно: `notes/topics/99-mytracker-preinstall-oem.md`.
+
+---
+
+## Дополнения 100
+
+### 100. call-chat-members-load-config
+
+`ChatMembersLoadConfig` с полями: `newLoadingContactsLogicEnabled` (bool), `maxLoadCount` (int — сервер контролирует, сколько участников группового звонка видит пользователь), `minInCall` (int). Подробно: `notes/topics/100-call-chat-members-load-config.md`.
