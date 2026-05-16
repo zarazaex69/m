@@ -448,3 +448,4 @@ status: living
 - [[topics/338-root-detection-impl]] — Root detection: Build.PRODUCT(sdk)/Build.TAGS(test-keys)/Superuser.apk//system/xbin/su #security #root-detection #emulator #surveillance
 - [[topics/339-minidump-crash-handler]] — Minidump: installMinidumpWriterImpl(getCacheDir/tracer/minidump) via libtracernative #telemetry #apptracer #minidump #crash #native
 - [[topics/340-crash-report-exit-info]] — CrashReportInitializer: ApplicationExitInfo(getReason/getProcessName/getTimestamp/getTraceInputStream ANR trace) #telemetry #apptracer #crash-report #anr
+- [[topics/341-apptracer-crash-types]] — Apptracer crash types: CRASH/NON_FATAL/FATAL/ERROR/WARNING/NOTICE/INFO/DEBUG/MINIDUMP/ANR (getCacheDir/tracer/crashes) #telemetry #apptracer #crash-types #anr #minidump

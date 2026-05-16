@@ -2776,3 +2776,11 @@ Build.PRODUCT(sdk/google_sdk) + Build.TAGS(test-keys) + /system/app/Superuser.ap
 ### 340. CrashReportInitializer — ApplicationExitInfo
 
 `getReason()`/`getProcessName()`/`getTimestamp()`/`getTraceInputStream()`(ANR trace). ANR trace загружается на Apptracer. Подробно: `notes/topics/340-crash-report-exit-info.md`.
+
+---
+
+## Дополнения 341
+
+### 341. Apptracer Crash Types
+
+10 типов: CRASH/NON_FATAL/FATAL/ERROR/WARNING/NOTICE/INFO/DEBUG/MINIDUMP/ANR. Путь: getCacheDir/tracer/crashes. Подробно: `notes/topics/341-apptracer-crash-types.md`.
