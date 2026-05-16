@@ -3894,3 +3894,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 480. APP_REVIEW Analytics
 
 `{session_id, screen_from, trigger, mark}`. Оценка пользователя отправляется напрямую на сервер MAX. Подробно: `notes/topics/480-app-review-analytics.md`.
+
+---
+
+## Дополнения 481
+
+### 481. SHOW.SEARCH_RESPONSE
+
+`{counters: {RECENTS, ALL_CONTACTS, LOCAL_SEARCH}, inputQuery}`. Поисковый запрос отправляется на сервер. Подробно: `notes/topics/481-search-analytics.md`.
