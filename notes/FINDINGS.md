@@ -3934,3 +3934,11 @@ Step2(proxy/proxydomains) → Step3(debug-mode/user-debug-report/safeMode) → S
 ### 485. CONTACT_RENAME_BANNER + CONTEXT_MENU
 
 `CONTACT_RENAME_BANNER.save {user2Id}`. `CONTEXT_MENU.folder_context_menu_readall`. Подробно: `notes/topics/485-contact-rename-context-menu.md`.
+
+---
+
+## Дополнения 486
+
+### 486. CLICK events
+
+`open_broadcast_button_click {channel_id, hashed_broadcast_link}`. `profile_button_click {max_for_business}`. `video_speed_change {speed, sourceType}`. Подробно: `notes/topics/486-click-events.md`.

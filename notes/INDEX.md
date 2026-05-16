@@ -593,3 +593,4 @@ status: living
 - [[topics/483-channel-recsys-analytics]] — CHANNEL_RECSYS_FOLDER: channel_folder_open{channels_shown}/channel_folder_delete, recommendation system analytics #channel-recsys #telemetry #surveillance #channel-folder #recommendation
 - [[topics/484-auth-qr-analytics]] — AUTH_QR.LOG: all QR auth steps logged: qr_login_button_click/permission_decision/qr_scan_failed/qr_scan_succeeded #auth-qr #telemetry #surveillance #qr-auth #permission
 - [[topics/485-contact-rename-context-menu]] — CONTACT_RENAME_BANNER(save{user2Id}/show) + CONTEXT_MENU.folder_context_menu_readall #contact-rename #telemetry #surveillance #contact-analytics
+- [[topics/486-click-events]] — CLICK events: open_broadcast_button_click{channel_id,hashed_broadcast_link}/profile_button_click{max_for_business}/video_speed_change{speed,sourceType} #click-events #telemetry #surveillance #broadcast #video-speed #business
