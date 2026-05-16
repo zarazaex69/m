@@ -3104,3 +3104,11 @@ KWS (`ws_0`) + NS (`ns_1`). Конфиг с сервера: `{url, checksum, ena
 ### 381. WaitingRoom + UrlSharing + Feedback + StereoRoom
 
 `get-waiting-hall`. `UrlSharingInfo(url, initiatorId)`. `Feedback(key, source=USER_CLICK/GESTURES/UNKNOWN)`. `StereoRoom`: promoteParticipant/grantAdmin/revokeAdmin/handsQueue. Подробно: `notes/topics/381-waiting-room-urlsharing-feedback-stereo.md`.
+
+---
+
+## Дополнения 382
+
+### 382. ConversationStats
+
+18 компонентов. `bad_call_detected_by_audio_spotter(confidence)` — KWS сработал. `call_finish(reason, rate_reasons)`. `call_start(callType, warmupStatus)`. `client_requested_server_topology`. `ml_ready_to_use(modelId, durationMs)`. Подробно: `notes/topics/382-conversation-stats.md`.
