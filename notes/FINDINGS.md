@@ -3574,3 +3574,11 @@ SDK v0.1.13. 6 методов создания звонков. `setEmulatedNegot
 ### 440. VpnConnectedWarningBottomSheet
 
 "Отключите VPN" / "Чтобы пользоваться MAX". Серверно-управляемое предупреждение. Подробно: `notes/topics/440-vpn-warning-bottomsheet.md`.
+
+---
+
+## Дополнения 441
+
+### 441. NeuroAvatarsScreen
+
+Выбор/съёмка фото → генерация нейро-аватара на сервере. Используется при регистрации и редактировании профиля. Подробно: `notes/topics/441-neuro-avatars.md`.

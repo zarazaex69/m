@@ -548,3 +548,4 @@ status: living
 - [[topics/438-safe-mode]] — SafeMode: hide profile/calls from contacts only/chats with known only/content filter, safeMode/safeModeNoPin in UserSettings #safe-mode #privacy #content-filter #settings #surveillance
 - [[topics/439-qr-auth]] — QR Auth: SettingsDevicesScreen + QrAuthHintBottomSheet + :qr-scanner?mode=2, AuthQrUseCase/GetQrCodeUseCase #qr-auth #devices #session #security #settings
 - [[topics/440-vpn-warning-bottomsheet]] — VpnConnectedWarningBottomSheet: "Отключите VPN" / "Чтобы пользоваться MAX" #vpn #warning #surveillance #server-control
+- [[topics/441-neuro-avatars]] — NeuroAvatarsScreen: AI avatar generation from photo at registration, photo sent to server #neuro-avatars #ai #registration #login #surveillance
