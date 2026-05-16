@@ -556,3 +556,31 @@ PmsKey `opus-recorder` (#308), `opus-recorder-bitrate` (#309), `opus-recorder-sa
 ### 48. Поиск — WS-опкоды и server-controlled лимиты
 
 6 WS-опкодов: `CONTACT_SEARCH(37)`, `PUBLIC_SEARCH(60)`, `CHAT_SEARCH(68)`, `MSG_SEARCH_TOUCH(72)` (аналитика клика по результату), `MSG_SEARCH(73)`, `CHAT_SEARCH_COMMON_PARTICIPANTS(198)`. `pub-search-limit` (#291) — server-controlled лимит результатов. `MSG_SEARCH_TOUCH` — сервер знает не только что искали, но и что выбрали. `CHAT_SEARCH_COMMON_PARTICIPANTS` — потенциальный инструмент деанонимизации участников чатов. Подробно: `notes/topics/48-search-opcodes-server-controlled.md`.
+
+---
+
+## Дополнения 49-54
+
+### 49. Опросы — server-gated по типу чата
+
+5 PmsKey: `render-polls` (bool, default=false), `polls-in-p2p-chats` (bool), `polls-in-p2g-chats` (int — лимит участников), `polls-in-channels` (int), `poll-ttl` (JSON). Все default=false/0. `GET_POLL_UPDATES(306)` — сервер получает все голоса. Подробно: `notes/topics/49-polls-server-gated.md`.
+
+### 50. Реакции и отложенные сообщения
+
+7 WS-опкодов реакций: `MSG_REACTION(178)`, `MSG_CANCEL_REACTION(179)`, `MSG_GET_REACTIONS(180)`, `MSG_GET_DETAILED_REACTIONS(181)` (кто именно поставил), `CHAT_REACTIONS_SETTINGS_SET(257)` (per-chat политика реакций), `REACTIONS_SETTINGS_GET_BY_CHAT_ID(258)`, `NOTIF_MSG_REACTIONS_CHANGED(155)`. Отложенные сообщения: 3 PmsKey (`scheduled-messages-enabled` #48, `scheduled-posts-enabled` #49, `scheduled-faves-enabled` #50) — хранятся на сервере до отправки. Подробно: `notes/topics/50-reactions-scheduled-messages.md`.
+
+### 51. Организации, официальные аккаунты, денежные переводы
+
+`org-profile` (#221) — «Плашка представителя организации в профиле» (server-gated). `official-org` (#212) — верификация организаций без прозрачных критериев. `money-transfer-botid` (#81) — денежные переводы через бот-аккаунт (сервер видит все транзакции). `comments-enabled` — server-gated комментарии. Подробно: `notes/topics/51-organizations-money-transfer.md`.
+
+### 52. Network session PmsKey — server-controlled TLS validation
+
+`net-ssl-session-validate` (default=true) — сервер может отключить TLS-валидацию через PmsKey. `net-session-rbc-enabled` — «Reduce battery consumption». `net-client-dns-enabled` — кастомный DNS-клиент. `watchdog-config` — server-pushed конфиг watchdog-а. Подробно: `notes/topics/52-network-session-tls-flags.md`.
+
+### 53. ab-status и cfs
+
+`ab-status` — long-идентификатор A/B-группы пользователя, отправляемый на сервер при каждом подключении. `cfs` (default=true) — «Быстрый старт через клиентский бэкенд» для P2P-звонков. Подробно: `notes/topics/53-ab-status-cfs-pmskey.md`.
+
+### 54. WS session config fingerprint — 21 поле при каждом подключении
+
+`ubi.java` формирует 21-поле диагностический fingerprint, отправляемый серверу при каждом WS-подключении: `net-ssl-session-validate`, `ab-status`, `calls-sdk-log-audio`, `db-tr-ex-count`, `db-query-ex-count`, `enable-audio-messages-transcription`, `enable-video-messages-transcription` и др. Сервер получает полный snapshot конфигурации клиента при каждом подключении. Подробно: `notes/topics/54-ws-session-config-fingerprint.md`.
