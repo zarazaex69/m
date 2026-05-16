@@ -477,3 +477,4 @@ status: living
 - [[topics/367-link-interceptor-mytracker]] — LinkInterceptorActivity: URI → MyTracker.handleDeeplink(intent) — all deeplinks tracked by MyTracker #deeplinks #mytracker #attribution #surveillance
 - [[topics/368-webapp-vpn-exception]] — WebAppHttpClient.WebAppHasVpnException: VPN detected in WebApp HTTP client (mini-apps blocked with VPN) #webapp #vpn-detection #surveillance
 - [[topics/369-download-file-from-webapp]] — DownloadFileFromWebAppWorker: fileName/fileUrl ForegroundWorker for mini-app file downloads #webapp #file-download #worker
+- [[topics/370-tamtam-api-exceptions]] — tamtam.api exceptions: NonceException/SessionSendLimitException/UnknownOpcodeException/MaxRetryCountExceededException #protocol #api #exceptions #nonce
