@@ -2496,3 +2496,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 305. NOTIF_CONTACT WS
 
 `ContactUpdateAction`: ADD/UPDATE/REMOVE/BLOCK/UNBLOCK. Подробно: `notes/topics/305-notif-contact-ws.md`.
+
+---
+
+## Дополнения 306
+
+### 306. NOTIF_CONTACT_SORT WS
+
+`ids[]`(порядок контактов)/`phones[]`(порядок телефонов). Сервер синхронизирует порядок контактов между устройствами. Подробно: `notes/topics/306-notif-contact-sort-ws.md`.
