@@ -2152,3 +2152,11 @@ Multipart: stackTrace/uploadBean(type/format/severity/tags)/threadDump(threads.g
 ### 262. Protos.Present + ConfirmPresent — подарки
 
 `Present`: presentId/senderId/receiverId/status(NEW/RECEIVED/ACCEPTED/DECLINED/ACCEPTING). `ConfirmPresent`: accept/asPrivate. Подробно: `notes/topics/262-protos-present-gift.md`.
+
+---
+
+## Дополнения 263
+
+### 263. Protos.Video + Quality
+
+`Video`: videoId/duration/live/startTime/transcriptionStatus/thumbhashData. `Quality`: bitrate/height/width/isOriginal. Подробно: `notes/topics/263-protos-video-schema.md`.
