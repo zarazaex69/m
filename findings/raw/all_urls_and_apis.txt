@@ -1,0 +1,226 @@
+# MAX (ru.oneme.app) — все URL, API-эндпоинты и хосты
+# Извлечено из APK 26.15.3 + 26.16.0 (jadx, smali, assets, res, network_security_config)
+# Дата: 2026-05-16
+
+================================================================================
+## 1. БИЗНЕС-API (WebSocket / REST)
+================================================================================
+
+api.oneme.ru                                    — production API (WS + REST)
+api-test.oneme.ru                               — test-сервер #1
+api-test2.oneme.ru                              — test-сервер #2
+api-tg.oneme.ru                                 — «tg»-сервер (test gateway?)
+
+Порт: 443 (по умолчанию, задаётся серверно)
+Протокол: WebSocket (159 опкодов TamTam-протокола)
+Переключение: через DevMenu в release-сборке (SharedPreferences "dev_tools")
+
+================================================================================
+## 2. MAX — СОБСТВЕННЫЕ ДОМЕНЫ
+================================================================================
+
+https://max.ru                                  — основной домен
+https://max.ru/                                 — корень
+https://max.ru/joincall/                        — deeplink приглашения в звонок
+https://max.ru/:share-self-out                  — share deeplink
+https://max.ru/support                          — поддержка
+https://help.max.ru                             — справка
+https://help.max.ru/help/about/kak-zaregistrirovatsya-v-max
+https://legal.max.ru/pp                         — политика конфиденциальности
+https://legal.max.ru/ps                         — пользовательское соглашение
+https://go.max.ru/selfrecovery                  — self-recovery
+https://download.max.ru/#android?version=26.15.3 — CDN для APK (killswitch ForceUpdate)
+https://download.max.ru/#android?version=26.16.0 — CDN для APK (26.16.0)
+
+================================================================================
+## 3. ТЕЛЕМЕТРИЯ И ТРЕКЕРЫ
+================================================================================
+
+### Apptracer (OK.ru)
+https://sdk-api.apptracer.ru                    — crashes, ANR, heap dumps, perf metrics, sample upload
+  Пути:
+    /api/crash/trackSession?crashToken=...
+    /api/crash/upload (CRASH, MINIDUMP, ANR)
+    /api/sample/upload
+    /api/heap/upload
+    /api/perf/upload
+
+### MyTracker (VK)
+https://tracker-api.vk-analytics.ru/?           — attribution, ad-id, events, sensor data
+  Собирает: age/gender/email/phone/okId/vkId/vkConnectId/icqId,
+            список установленных приложений, данные датчиков
+
+### OneLog (OK.ru) — 2 канала
+  - ru.ok.android.onelog.UploadService           — общий аналитический канал
+  - ru.ok.android.externcalls.analytics.internal.upload.UploadService — аналитика звонков
+  Endpoint: динамический (через коллектор OK.ru)
+
+### Google
+https://pagead2.googlesyndication.com/pagead/gen_204?id=gmob-apps  — Google Ads ping
+https://firebaseinstallations.googleapis.com/v1/                    — Firebase Installations (FCM token)
+https://accounts.google.com/o/oauth2/revoke?token=                  — OAuth revoke
+
+================================================================================
+## 4. CLEARTEXT HTTP — MOBILE ID (Header Enrichment операторов РФ)
+================================================================================
+
+# network_security_config.xml — cleartextTrafficPermitted="true":
+
+mobileid.megafon.ru                             — Mobile ID Мегафон
+idgw.mobileid.mts.ru                            — Mobile ID МТС
+hhe.mts.ru                                     — Header Enrichment МТС
+he-mc.tele2.ru                                  — Header Enrichment Tele2
+he-mc.t2.ru                                     — Header Enrichment T2 (ребренд Tele2)
+balance.beeline.ru                              — Beeline (авто-определение номера)
+
+Протокол: HTTP (без TLS!) — оператор вписывает MSISDN/IMSI в заголовки
+
+================================================================================
+## 5. КАРТЫ И ГЕОЛОКАЦИЯ
+================================================================================
+
+https://geocode-maps.yandex.ru/v1?lang=ru_RU&results=1&format=json&geocode=
+https://static-maps.yandex.ru/v1?lang=ru_RU&maptype=future_map&scale=1.5&size=
+https://tiles.api-maps.yandex.ru/v1/tiles/?lang=ru_RU&l=map&projection=web_mercator&maptype=future_map&
+https://yandex.ru/maps
+https://www.google.com/maps/dir/?api=1&destination=
+
+================================================================================
+## 6. OK.RU / VK ЭКОСИСТЕМА
+================================================================================
+
+https://api.odnoklassniki.ru                    — API Одноклассников
+https://api.ok.ru                               — API OK.ru
+https://vkvideo.ru/live                         — VK Video (стриминг)
+
+================================================================================
+## 7. DNS / NTP
+================================================================================
+
+dns.google.com                                  — DoH (DNS-over-HTTPS), JSON API
+  URL: https://dns.google.com/resolve?...
+  Включается PMS-флагом: net-client-dns-enabled
+
+time.android.com                                — NTP синхронизация
+
+================================================================================
+## 8. МАГАЗИНЫ ПРИЛОЖЕНИЙ
+================================================================================
+
+https://play.google.com/store/apps/details?id=ru.oneme.app  — Google Play
+https://download.max.ru/...                                  — собственный CDN (мимо Play)
+
+================================================================================
+## 9. ЗВОНКИ (WebRTC / Signaling)
+================================================================================
+
+Сигналинг: endpoint задаётся серверно через PMS-ключ "calls-endpoint"
+WebRTC: libjingle_peerconnection_so.so (12.7 MB, OK.ru fork)
+SDK: one-video-calls-sdk + ru.ok.android.externcalls.sdk
+
+================================================================================
+## 10. ВСЕ УНИКАЛЬНЫЕ ХОСТЫ (из кода)
+================================================================================
+
+# Бизнес/продуктовые:
+api.oneme.ru
+api-test.oneme.ru
+api-test2.oneme.ru
+api-tg.oneme.ru
+max.ru
+download.max.ru
+help.max.ru
+legal.max.ru
+go.max.ru
+
+# Телеметрия:
+sdk-api.apptracer.ru
+tracker-api.vk-analytics.ru
+
+# OK.ru/VK:
+api.odnoklassniki.ru
+api.ok.ru
+vkvideo.ru
+
+# Операторы (cleartext):
+mobileid.megafon.ru
+idgw.mobileid.mts.ru
+hhe.mts.ru
+he-mc.tele2.ru
+he-mc.t2.ru
+balance.beeline.ru
+
+# Карты:
+geocode-maps.yandex.ru
+static-maps.yandex.ru
+tiles.api-maps.yandex.ru
+yandex.ru
+
+# Google:
+accounts.google.com
+firebaseinstallations.googleapis.com
+pagead2.googlesyndication.com
+www.googleapis.com
+www.google.com
+play.google.com
+
+# DNS/NTP:
+dns.google.com
+time.android.com
+
+================================================================================
+## 11. СЕРВЕРНО-УПРАВЛЯЕМЫЕ ENDPOINT'Ы (через PMS-флаги)
+================================================================================
+
+# Эти URL не захардкожены — задаются сервером через 334 PmsKey:
+
+calls-endpoint              — endpoint сигналинга звонков
+mytracker-enabled           — вкл/выкл MyTracker
+net-client-dns-enabled      — вкл/выкл DoH через dns.google.com
+tracer-non-fatal-crashed-enabled — вкл/выкл heap dumps в Apptracer
+perf-events                 — вкл/выкл perf-метрик
+mytracker-log-level         — уровень логирования MyTracker
+kws-model-url              — URL для скачивания KWS .tflite модели (26.15.3)
+ns-model-url               — URL для скачивания Noise Suppression модели
+
+================================================================================
+## 12. ПОЛНЫЙ СПИСОК URL ИЗ КОДА (raw, без фильтрации)
+================================================================================
+
+http://dashif.org/guidelines/last-segment-number
+http://dashif.org/guidelines/thumbnail_tile
+http://dashif.org/guidelines/trickmode
+http://dashif.org/thumbnail_tile
+http://max.ru
+http://ns.adobe.com/xap/1.0/
+https://accounts.google.com/o/oauth2/revoke?token=
+https://aomedia.org/emsg/ID3
+https://api.odnoklassniki.ru
+https://api.ok.ru
+https://default.url
+https://developer.apple.com/streaming/emsg-id3
+https://download.max.ru/#android?version=26.15.3
+https://download.max.ru/#android?version=26.16.0
+https://firebaseinstallations.googleapis.com/v1/
+https://geocode-maps.yandex.ru/v1?lang=ru_RU&results=1&format=json&geocode=
+https://go.max.ru/selfrecovery
+https://help.max.ru
+https://help.max.ru/help/about/kak-zaregistrirovatsya-v-max
+https://legal.max.ru/pp
+https://legal.max.ru/ps
+https://max.ru
+https://max.ru/
+https://max.ru/joincall/
+https://max.ru/:share-self-out
+https://max.ru/support
+https://pagead2.googlesyndication.com/pagead/gen_204?id=gmob-apps
+https://play.google.com/store/apps/details?id=ru.oneme.app
+https://sdk-api.apptracer.ru
+https://static-maps.yandex.ru/v1?lang=ru_RU&maptype=future_map&scale=1.5&size=
+https://tiles.api-maps.yandex.ru/v1/tiles/?lang=ru_RU&l=map&projection=web_mercator&maptype=future_map&
+https://tracker-api.vk-analytics.ru/?
+https://vkvideo.ru/live
+https://www.googleapis.com/auth/games
+https://www.googleapis.com/auth/games_lite
+https://www.google.com/maps/dir/?api=1&destination=
+https://yandex.ru/maps
