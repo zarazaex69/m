@@ -651,3 +651,8 @@ status: living
 ### 🔄 Версионный diff
 
 - [[topics/530-version-26.16.0-diff]] — **полный diff 26.15.3 → 26.16.0**: KWS удалён (Java+Native+stats), PmsKey→PmsProperty, Mobile ID/ASR/MediaDump/killswitch на месте, flash-call логин, CameraX, транскрипция видеосообщений #version-diff #26.16.0 #kws-removed #pmskey-renamed #cosmetic-fix #surveillance
+
+### 🔴 Критические находки
+
+- [[topics/531-wiretap-chain-collect-debug-dump]] — **WIRETAP CHAIN**: server signaling `collect-debug-dump` → MediaDumpManager → nativeSubmitDumpRequest (6 audio pipeline points: IN_ENTER/AFTER_NS/AFTER_ANIMOJI/EXIT + OUT_ENTER/EXIT) → DumpCallback → ShrinkDumpWorker → SampleUploadWorker → apptracer.ru. **Без UI/уведомления/звука. Production.** Без изменений в 26.16.0 #critical #wiretap #audio-dump #apptracer #signaling #production #surveillance
+- [[topics/532-speaker-recognition-profanity]] — **VOICE BIOMETRICS**: SpeakerRecognitionEngineFactory (1:N identification) + SpeakerRecognitionVerifierFactory (1:1 verification) + ProfanityFactory + ForcedAligner + AudioClassifier + SuperResolution. 22 алгоритма в libEnhancementLibShared.so, 15 ранее не документированы. **НЕ удалено в 26.16.0** (в отличие от KWS). Server-activatable через Config #critical #speaker-recognition #voice-biometrics #profanity #native #surveillance #undocumented

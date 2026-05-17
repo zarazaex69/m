@@ -4301,3 +4301,15 @@ RTD флаг для фейковых чатов в `PickerChatsListWidget`. По
 ### 529. SettingsDevicesScreen — сессии с location
 
 Структура сессии: `id`/`client`/`info`/**`location`**/`current`. Опкоды: 96 (список сессий) / 97 (завершить) / 98 (код: SMS/CALL) / 99 (регистрация: profile+phone). Подробно: `notes/topics/529-sessions-devices-opcodes.md`.
+
+---
+
+## 🔴 КРИТИЧЕСКИЕ ДОПОЛНЕНИЯ 531-532
+
+### 531. Wiretap Chain: collect-debug-dump → Audio Dump → Apptracer Upload
+
+**Полностью рабочая цепочка удалённого прослушивания звонков в production-сборке.** Сервер отправляет signaling-сообщение `collect-debug-dump` с `{audio: true, video: true, duration: N}` → `MediaDumpManagerImpl` вызывает `PeerConnectionFactory.nativeSubmitDumpRequest()` → нативный WebRTC записывает аудио из **6 точек pipeline** (сырой микрофон, после NS, после animoji, финальный исходящий, входящий собеседника сырой, финальный входящий) → `DumpCallback.onComplete()` → `ShrinkDumpWorker` → `SampleUploadWorker` → `POST https://sdk-api.apptracer.ru/api/sample/upload`. **Нет UI-подтверждения, нет уведомления, нет звука, нет индикатора.** Без изменений в 26.16.0. Подробно: `notes/topics/531-wiretap-chain-collect-debug-dump.md`.
+
+### 532. SpeakerRecognition + ProfanityFactory + 22 алгоритма в libEnhancementLibShared.so
+
+В нативной библиотеке скомпилированы и экспортированы **`vk::enh::SpeakerRecognitionEngineFactory`** (идентификация по голосу 1:N) и **`vk::enh::SpeakerRecognitionVerifierFactory`** (верификация 1:1). Также: **ProfanityFactory** (детекция мата, модель `/profanity/profanity_filter`), **ForcedAlignerFactory** (привязка слов к таймкодам), **AudioClassifierFactory** (классификация аудио-событий), **SuperResolutionFactory**. Всего 22 фабрики, из которых ранее были задокументированы только 7. SpeakerRecognition **НЕ удалён в 26.16.0** (в отличие от KWS). Активируется через тот же Config-механизм, модели загружаются с сервера. В сочетании с topic 531 — полный стек таргетированного прослушивания с голосовой биометрической идентификацией. Подробно: `notes/topics/532-speaker-recognition-profanity.md`.
