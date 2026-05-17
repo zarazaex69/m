@@ -148,6 +148,56 @@ WS-опкод **2** (`v75.java`, в 26.16.0 переименован в `fm4.jav
 - Нет SQLCipher и других механизмов шифрования локальной БД — `messages.db`, `contacts.db` хранятся в plaintext SQLite.
 - Нет нативного RCE в `libtracernative.so` — это стандартный Breakpad-based crash reporter без скрытых функций.
 
+### Волна 4 (17 мая 2026 ночью) — rizin/r2 + JS-bridge audit
+
+Параллельные субагенты на ML pipeline звонков, JS-bridge во всех WebView, tech.kwik QUIC stack, нативные библиотеки (libgleff/libffmpg/libimagepipeline/libjlottie), call recording через RecordManager. Что подтвердили БЕЗ новых backdoor-находок:
+
+- **tech.kwik QUIC** (33 файла) — чистый порт upstream Kwik кроме TLS bypass из 537. Никаких custom transport parameters (ID >= 0x3000), никаких custom frame types, никакой telemetry-инъекции в handshake, никакого connection migration abuse. Topic 537 дополнен полным трейсом: `qse` (empty TrustManager, hardcoded в `z68` ctor) → `tpiVar.s = qseVar` → в `tpi.b()` (CertificateVerify handler) `if (this.s != null) {/*пустой блок*/}`. `tpi.s` НИКОГДА не зануляется → else-ветка PKIX недостижима. Hostname check через `wpd → WTSignaling$nal$1 → bch` — пропускает любой сертификат с правильным SAN/CN. См. `notes/wave4/03-tech-kwik-quic-diff.md`.
+- **Нативные библиотеки** (libgleff, libffmpg, libimagepipeline, libnative-filters, libnative-imagetranscoder, libjlottie, libstatic-webp) — все clean или patched-without-backdoor. libffmpg = patched FFmpeg n4.4.3 с накопленными CVE, но БЕЗ network capability в native и БЕЗ backdoor-индикаторов. См. `notes/wave4/06-native-libs-functional-decomp.md`.
+- **RecordManager (call recording)** — имеет UI-индикатор «%s записывает · %s», но `privacy="PUBLIC"` hardcoded default; реальный covert-канал записи звонков — `collect-debug-dump` (topic 531), не RecordManager. См. `notes/wave4/02-call-recording-deepdive.md`.
+
+Новые находки 548-551:
+
+#### 548. Server-pushed ML pipeline в звонках — circular MD5 trust
+
+`MLFeaturesManagerImpl` через `RemoteSettings.get("android.mlfeatures.{ws_0|ns_1}")` получает JSON `{url, cs, use}` и качает .zip с произвольного URL. Защиты:
+
+- ❌ Нет криптографической подписи моделей
+- ❌ MD5 checksum приходит из ТОГО ЖЕ серверного конфига что и URL = circular trust
+- ❌ Нет whitelist доменов (только `Patterns.WEB_URL` regex)
+- ❌ Нет certificate pinning
+- ❌ Нет проверки типа engine в `.cfg` — Java передаёт в native только путь к директории
+
+В native `libEnhancementLibShared.so` 20+ engine типов в `Registry<std::string, Factory>` (`Pipeline`, `KWS`, `ASR`, `AudioClassifier`, `DiarizationEngine`, `SpeakerRecognitionEngine/Verifier`, `Wav2LipV1/V3/V4`, `Profanity`, `ForcedAligner`, `Animoji`, `SuperResolution`, `Nnet`, и др.). Какой engine создаётся — определяется содержимым `.cfg` файла (server-controlled). Расшифровка `.tflite` через hardcoded AES-128 ключ из 547. Engine исполняется на raw PCM микрофона ДО Opus-кодирования.
+
+**В 26.16.0 KWS удалён из Java, но `vk::enh::KWS` остался в native** — теоретически реактивируется через NS-канал (NS-конфиг приносит .cfg с KWS engine). Подробно: `notes/topics/548-ml-pipeline-circular-md5-trust.md`.
+
+#### 549. WebAppOpenMaxLink — JS-bridge deeplink injection без whitelist
+
+Метод `WebAppOpenMaxLink` (`bek` → `udk` → `wik` → `uhk`) принимает произвольный URL от мини-аппы и передаёт во внутренний deeplink-роутер `:link-intercept` БЕЗ валидации (нет whitelist доменов, нет regex по схемам, нет проверки структуры URL). Любая мини-апа в `WebAppRootScreen` может программно навигировать пользователя по любому `max://`-deeplink или `https://max.ru/` внутреннему роуту, включая `:auth?externalCallback=1` (IDP-flow).
+
+Сравнение: Telegram Bot API `openTelegramLink` ограничен доменом `t.me`. MAX это убрал. User-click 3s обходится через `webapp-exc` (550) для ботов в whitelist. Подробно: `notes/topics/549-webapp-openmaxlink-deeplink-injection.md`.
+
+#### 550. PmsKey `webapp-exc` — серверный per-bot user-click bypass
+
+Серверный список `botId`, освобождённых от 3-секундного user-click requirement для 5 опасных JS-bridge методов (`WebAppOpenLink`, `WebAppOpenMaxLink`, `WebAppShare`, `WebAppMaxShare`, `WebAppDownloadFile`). Сервер per-bot выключает клиентскую защиту в runtime через NOTIF_CONFIG (134). Без UI-индикации, что бот в exempt-list. Без UI-механизма проверить exemption.
+
+Превращает клиентскую защиту user-click в server-side rubber-stamp. Подробно: `notes/topics/550-webapp-exc-user-click-bypass.md`.
+
+#### 551. WebAppNfcEmulateNfcTag — NFC HCE доступен ВСЕМ мини-аппам без whitelist
+
+Метод доступен через ПУБЛИЧНЫЙ bridge `WebViewHandler` (любая мини-апа в `WebAppRootScreen`), нет user-confirm, нет whitelist, нет user-click окна. Любая мини-апа через `rfk.java` может запустить эмуляцию NFC-тэга (`one.me.webapp.util.WebAppNfcService` HostApduService) с произвольными hex-данными.
+
+Системные ограничения Android HCE (foreground, AID-filter, payment category) снижают impact, но не устраняют возможность эмуляции в категории `other`. В сочетании с 534 (server-side JS injection) — программное клонирование тэгов из любой мини-аппы. Подробно: `notes/topics/551-webapp-nfc-emulate-no-whitelist.md`.
+
+### Что НЕ нашли в волне 4 (для честности)
+
+- Нет custom QUIC transport parameters (ID >= 0x3000), нет custom frame types, нет telemetry в QUIC handshake, нет connection migration abuse. Единственная аномалия в QUIC — TLS bypass из 537 (теперь полностью протрассирован).
+- Нет hidden network/exfiltration в `libgleff.so`, `libffmpg.so`, `libimagepipeline.so`, `libnative-filters.so`, `libjlottie.so`, `libstatic-webp.so`. Все эти библиотеки — стандартные upstream сборки или patched-without-backdoor.
+- Нет hardcoded crypto keys в `.rodata` других .so помимо уже найденного Wav2Lip-AES (547) и DPS API key (542).
+- RecordManager сам по себе НЕ silent-recording канал — у него есть UI-индикатор. Реальный covert-канал записи звонков остаётся `collect-debug-dump` (531) и `nativeSubmitDumpRequest`.
+- WebView JS-bridge `WebAppRequestPhone` имеет `ConfirmationBottomSheet` — НЕ silent. Биометрия — стандартный `BiometricPrompt`. Storage — origin-isolated. Не все методы JS-bridge оказались дырявыми.
+
 ---
 
 
