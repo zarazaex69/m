@@ -23,7 +23,6 @@
 
 MAX — это форк-клиент TamTam (`ru.ok.tamtam.*` пакеты живут поверх `one.me.*`), с полным OK.ru-стеком трейсинга и аналитики, со встроенным каналом авторизации по номеру через мобильных операторов в **открытом HTTP**, с активным детектором VPN и навязчивой «отключите VPN» плашкой по серверной команде, с полноценной мини-апп платформой, в которой мини-апа может через JS-bridge получить MSISDN абонента и эмулировать NFC-карту, с серверно-управляемым killswitch-ом, который по флагу превращает любую версию в «обновитесь по нашей ссылке `https://download.max.ru/`», и с 334 серверно-управляемыми параметрами поведения (логирование чувствительных данных, отправка геолокации, отключение валидации TLS-сессии, fake-чаты, fake-in-app-review, конфиг сбора не-контактов и т. д.). E2E-шифрования нет.
 
-
 ## 🔴🔴 Финальные находки реверса (17 мая 2026)
 
 > Глубокая повторная вычитка через волны параллельных субагентов нашла три находки, которые жёстче всех ранее задокументированных. См. `notes/topics/542-`, `543-`, `544-` и материалы в `notes/wave1/`, `notes/wave2/`.
@@ -100,8 +99,58 @@ WS-опкод **2** (`v75.java`, в 26.16.0 переименован в `fm4.jav
 
 ---
 
+## 🔴🔴🔴 Волна 3 (17 мая 2026 вечером) — реверс через rizin/r2 + JNI-bridge audit
 
-## 1. Авторизация по номеру через мобильного оператора в открытом HTTP
+> Третья волна параллельных субагентов с фокусом на области, в которые ещё не лазили: реальная декомпиляция .so через rizin (не только strings/exports), ConnectionService/PhoneAccount, ServiceManager binder transactions, raw-frame interception в WebRTC, hidden API вне обфусцированного DPS, ContentProviders, локальные ключи шифрования.
+>
+> Большая часть треков подтвердила отсутствие новых находок (нет hidden API через ServiceManager.getService для IMEI/IMSI, нет ptrace других процессов в libtracernative, нет SQLCipher, нет PhoneAccount-перехвата PSTN-звонков, нет нативного RCE). Но три трека дали реально новый материал.
+
+### 545. Три параллельных канала перехвата raw audio в звонках
+
+В кастомном WebRTC от VK/OK существуют **три независимых параллельных канала** перехвата сырого аудио. Главное (после повторной верификации):
+
+**Реально подозрительный канал — `AudioRecordSampleHook`**: в `WebRtcAudioRecord.AudioRecordThread` есть production-ready open-subscriber API. Любой код в процессе MAX может зарегистрировать listener через `((CopyOnWriteArraySet) aeb.b).add(new dyk(intervalMs, listener))` и получать **каждый 10ms-буфер** raw PCM с микрофона **до передачи в native WebRTC** (то есть до NS/AEC/AGC и до Opus-кодирования). Никакой авторизации, никакой проверки caller-id, никакого UI.
+
+Второй канал — `nativeDeviceDataIsRecorded` через `AudioPlaybackCaptureConfiguration` (Android API 29+) — захватывает аудио **других приложений** (`USAGE_MEDIA` + `USAGE_GAME`). **Поправка к первому варианту этой заметки:** в первой версии я написал, что capture активируется автоматически без user-consent. Это **неверно**. В UI ScreenShareBottomSheet (`defpackage/k22.java`) есть **отдельный switch** `call_share_sound_switch` с заголовком «Транслировать звук» / «Share audio» (`R.string.call_context_dialog_share_sound`). При его переключении вызывается `z6g.b(z) → screenCaptureManager.setAudioCaptureEnabled(z)`. Audio других приложений захватывается **только при явном включении этого switch'а пользователем**. Это стандартная фича «share computer sound», существующая в Discord, Zoom, Telegram, WhatsApp, Google Meet — **не backdoor**. Признаю ошибку первой формулировки.
+
+Третий — `nativeSubmitDumpRequest` (детально в [[531-wiretap-chain-collect-debug-dump]]), но дополнен точным enum `DumpSource` с 6 точек audio pipeline (`IN_ENTER_PROCESSING`/`IN_AFTER_NS`/`IN_AFTER_ANIMOJI`/`IN_EXIT_PROCESSING`/`OUT_ENTER_PROCESSING`/`OUT_EXIT_PROCESSING`), включая **входящий поток собеседника** (1000, 1010). Кастомные WebRTC field trials `WebRTC-EncoderDataDumpDirectory` / `DecoderDataDumpDirectory` управляют дампом видео-фреймов и приходят с сервера через параметры звонка.
+
+Главная аномалия здесь — именно `AudioRecordSampleHook`: открытое API подписки на сырой микрофон без caller-check. Подробно: `notes/topics/545-three-audio-interception-channels.md`.
+
+### 546. `libqrcode.so` — anti-tamper для CallsSDK, спрятанный под именем «QR-генератор»
+
+Нативная библиотека `libqrcode.so` (138 KB), которая по имени и по экспортируемому Java-namespace `one.me.sdk.uikit.qr.QrCodeGenerator` выглядит как QR-кодер. На самом деле в `JNI_OnLoad` динамически регистрируются native-методы **для второго, не связанного с QR класса**: `one.me.callssdk.CallsSdkInitializer.IntegrityProtectionInit(Context)`, `sign_check`, `initializeSessionSeed(Context, byte[], byte[]) → byte[]`. Это:
+
+- Проверка APK-подписи через `PackageManager.getPackageInfo(...).signingInfo`
+- Генерация криптографического seed для сессии звонка, привязанного к integrity-проверке (модифицированный APK не получит валидный seed → сервер отклонит звонок)
+
+Это не уязвимость, а **намеренное code hiding**: security-critical логика помещена в библиотеку с обманным именем. Объясняет, почему MAX распространяется через собственный `download.max.ru` (см. [[12-force-update-killswitch]]) — собственная подпись пройдёт integrity-check. Подробно: `notes/topics/546-libqrcode-anti-tamper-code-hiding.md`.
+
+### 547. Server-controlled WebView SSL bypass + Wav2Lip deepfake + hardcoded TFLite key
+
+Шесть малых, но связанных находок:
+
+1. **PmsKey `web_app:ssl_check`** — серверно-управляемый флаг (а не DevMenu), при `true` все `SslError` в `xyc.onReceivedSslError()` принимаются через `sslErrorHandler.proceed()`. Это **адресный server-controlled MITM** на WebView мини-приложений и `VideoWebViewScreen` для конкретного пользователя без участия пользователя.
+2. **`syc.onCreateWindow` popup-WebView** — при `window.open()` создаётся новый WebView без явных setter'ов. По умолчанию `allowContentAccess = true` → popup может загружать `content://` URI и читать данные пользователя.
+3. **`VideoWebViewScreen` с `MIXED_CONTENT_ALWAYS_ALLOW(0)` + `allowContentAccess(true)`** — самая небезопасная mixed-content политика, разрешающая HTTP-ресурсы в HTTPS-контексте.
+4. **FAQ WebView (`nk6`) безусловно пропускает `max://` deeplinks** — внешняя FAQ-страница может триггерить произвольные deeplinks приложения.
+5. **Wav2Lip V1/V3/V4** — production deepfake engine для lip-sync в `libEnhancementLibShared.so`. Три версии в production-сборке + face detection (TFLite Detection PostProcess) + landmark caching. Без UI-toggle отключения. Активируется/деактивируется серверной конфигурацией.
+6. **Hardcoded AES key для расшифровки .tflite моделей**: `6f 8c c4 b7 19 d4 0d 16 d1 fc b9 ba bb c4 7d 7e` (16 байт) в `.rodata` libEnhancement @ 0x83513. Любой реверсер расшифровывает все серверно-загружаемые ML-модели.
+
+Подробно: `notes/topics/547-webview-ssl-bypass-deepfake-tflite-key.md`.
+
+### Что НЕ нашли в волне 3 (для честности)
+
+- Нет ServiceManager.getService обращений к скрытым системным сервисам (IPhoneSubInfo, ITelephony, ISms) — DPS обращается через reflection только к ConnectivityManager/NetworkCapabilities, не к Telephony hidden APIs.
+- Нет сбора IMEI/IMSI/MAC/ICCID/Serial — `READ_PHONE_STATE` permission в манифесте есть, но `getImei()`/`getSubscriberId()` не вызываются.
+- Нет ptrace других процессов в `libtracernative.so` — только legitimate Breakpad pattern на собственный процесс.
+- Нет PSTN-перехвата через `MANAGE_OWN_CALLS` + `ConnectionService` — PhoneAccount регистрируется как `SELF_MANAGED` (изоляция от telecom-stack), не как `CONNECTION_MANAGER`.
+- Нет SQLCipher и других механизмов шифрования локальной БД — `messages.db`, `contacts.db` хранятся в plaintext SQLite.
+- Нет нативного RCE в `libtracernative.so` — это стандартный Breakpad-based crash reporter без скрытых функций.
+
+---
+
+
 
 `res/xml/network_security_config.xml` whitelistит cleartext HTTP для шести доменов:
 
