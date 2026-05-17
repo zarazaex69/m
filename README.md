@@ -6,6 +6,14 @@
 >
 > Я **сохранил** все 529 тем по 26.15.3 — даже то, что они «испугались и удалили». Если на следующих релизах ещё что-то «исправят», я и это сохраню.
 
+> **🔥🔥 17 мая 2026 — финальная волна реверса.** Глубокая параллельная вычитка через субагентов нашла три находки серьёзнее всех ранее задокументированных:
+>
+> - **[`notes/topics/542-traceflow-dps-deanonymization.md`](notes/topics/542-traceflow-dps-deanonymization.md)** — отдельный обфусцированный SDK `ru.trace_flow.dps` для деанонимизации абонентов под VPN: реальный публичный IP через 6 внешних сервисов (yandex/ifconfig/ipify/amazonaws/mail.ru) + двойной VPN-детект (включая обход через перечисление `tun`/`ppp`/`tap`/`ipsec`) + привязка к `userId` + `deviceId` + оператору, отправка на `https://trace-flow.ru/api/v1/report` с hardcoded API-ключом `ply5hDvhupghrHVA5rqQD1ypiXAxbmE4A68ZzBa8ioc=`. Список хостов серверно обновляемый. Домен `trace-flow.ru` нигде в Privacy Policy не упомянут. **Самая жёсткая находка реверса.**
+> - **[`notes/topics/543-reconnect-ws-server-host-takeover.md`](notes/topics/543-reconnect-ws-server-host-takeover.md)** — WS-опкод 3 переписывает `server.host`/`server.port`/`server.useTls` в SharedPreferences без валидации (нет whitelist/regex/pinning), переживает logout+re-login (явная конструкция «сохранить → clear → восстановить» в `ri9.c()`), разрешает TLS downgrade на raw TCP. Scope: все 159 опкодов основного протокола. Адресный server-side MITM.
+> - **[`notes/topics/544-debug-ws-opcode-c2-channel.md`](notes/topics/544-debug-ws-opcode-c2-channel.md)** — WS-опкод 2 (`DEBUG`) с именованными командами `SYNC_CONTACTS` (принудительная выгрузка адресной книги) и `SEND_LOG` (искусственный crash → выгрузка логов на apptracer.ru). Поле `args:List<String>` парсится но не используется — готовая площадка для расширения. Без UI, без opt-out, без rate-limiting.
+>
+> Все три — production-код, проверены живьём в jadx + smali, без изменений в 26.16.0 (только обфускация имён). Связка 542+543+544 даёт server-side адресную компрометацию конкретного пользователя без обновления приложения. См. `notes/wave1/`, `notes/wave2/` для сырых отчётов и `notes/FINDINGS.md` (раздел «Финальные находки реверса»).
+
 Анализ ниже описывает **26.15.3** (база заметок). Diff к 26.16.0 — отдельным файлом, с пометками вида «в 26.16.0 удалено / переименовано / без изменений».
 
 ## Что в этом репозитории
